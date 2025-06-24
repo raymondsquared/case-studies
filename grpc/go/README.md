@@ -1,13 +1,18 @@
-# Case Studies
+# gRPC Case Studies
 
 ## Overview
-This repository showcases a curated collection of unique case studies from past projects. Each case highlights a complex challenge, the strategic approach taken, and the measurable outcomes achieved. The goal is to illustrate problem-solving capabilities, technical depth, and alignment with business objectives.
+This repository demonstrates the power of gRPC (Google Remote Procedure Call) through practical examples and real-world use cases. 
+gRPC is a high-performance, open-source universal RPC framework that enables efficient communication between services in a distributed system.
 
 ## Features
-- Real-world scenarios.
-- Clear articulation of the problem, approach, and solution.
-- Structured documentation with insights, visuals, and metrics.
-- Covers a range of domains including systems architecture, product delivery, and operational efficiency.
+- gRPC:
+  - server
+  - client
+- Protocol Buffers
+- Streaming
+- Cross-language
+- Authentication & Security
+- Performance
 
 ## Getting Started
 - TODO
@@ -46,8 +51,9 @@ Example:
 
 ## Inspiration
 - [3musketeers](https://3musketeers.io/)
-- [Semantic Versioning](https://semver.org/)
-- [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+- [gRPC](https://grpc.io/)
+- [Go Lang - PRoject Layout](https://github.com/golang-standards/project-layout)
+- TODO
 
 ## License
 This project is licensed under the MIT License. See the `LICENSE` file for full details.
