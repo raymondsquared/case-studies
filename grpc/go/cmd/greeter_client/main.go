@@ -3,8 +3,10 @@ package main
 import (
 	"context"
 	"flag"
+	"fmt"
 	"log"
 	"os"
+	"strconv"
 	"time"
 
 	"google.golang.org/grpc"
@@ -13,23 +15,32 @@ import (
 )
 
 const (
-	defaultServerURL = "0.0.0.0:50051"
-	defaultName      = "world"
+	defaultHost = "0.0.0.0"
+	defaultPort = 50051
+	defaultName = "world"
 )
 
 var (
-	flagServerURL = flag.String("addr", defaultServerURL, "the server URL to connect to")
-	flagName      = flag.String("name", defaultName, "Name to greet")
+	flagHost = flag.String("host", defaultHost, "the server host to connect to")
+	flagPort = flag.Int("port", defaultPort, "the server port to connect to")
+	flagName = flag.String("name", defaultName, "Name to greet")
 )
 
 func getServerURL() string {
-	url := *flagServerURL
+	host := *flagHost
+	port := *flagPort
 
-	if envURL := os.Getenv("SERVER_URL"); envURL != "" {
-		return envURL
+	if envHost := os.Getenv("SERVER_HOST"); envHost != "" {
+		host = envHost
 	}
 
-	return url
+	if envPortStr := os.Getenv("SERVER_PORT"); envPortStr != "" {
+		if p, err := strconv.Atoi(envPortStr); err == nil {
+			port = p
+		}
+	}
+
+	return fmt.Sprintf("%s:%d", host, port)
 }
 
 func getName() string {

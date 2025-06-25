@@ -11,6 +11,7 @@ import (
 
 	"google.golang.org/grpc"
 	helloworld "google.golang.org/grpc/examples/helloworld/helloworld"
+	"google.golang.org/grpc/reflection"
 )
 
 const (
@@ -52,8 +53,11 @@ func main() {
 	if err != nil {
 		log.Fatalf("failed to listen: %v", err)
 	}
+
 	s := grpc.NewServer()
 	helloworld.RegisterGreeterServer(s, &server{})
+	reflection.Register(s)
+
 	log.Printf("server listening at %v", lis.Addr())
 	if err := s.Serve(lis); err != nil {
 		log.Fatalf("failed to serve: %v", err)

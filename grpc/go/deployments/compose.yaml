@@ -1,6 +1,6 @@
 services:
   grpc-greeter-server:
-    image: raymondsquared/grpc-helloworld-server:0.0.1
+    image: raymondsquared/grpc-helloworld-server:0.0.2-20250625a
     ports:
       - "50051:50051"
     deploy:
@@ -14,9 +14,9 @@ services:
         retries: 3
 
   grpc-greeter-client:
-    image: raymondsquared/grpc-helloworld-client:0.0.1
+    image: raymondsquared/grpc-helloworld-client:0.0.2-20250625a
     environment:
-      SERVER_URL: "host.docker.internal:50051"
+      SERVER_HOST: "host.docker.internal"
     deploy:
       resources:
         limits:
