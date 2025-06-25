@@ -1,3 +1,2 @@
 vendor/
-scripts/grpc-greeter-server
-scripts/grpc-greeter-client
+bin/

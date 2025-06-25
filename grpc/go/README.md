@@ -52,7 +52,7 @@ Example:
 ## Inspiration
 - [3musketeers](https://3musketeers.io/)
 - [gRPC](https://grpc.io/)
-- [Go Lang - PRoject Layout](https://github.com/golang-standards/project-layout)
+- [Golang - Project Layout](https://github.com/golang-standards/project-layout)
 - TODO
 
 ## License

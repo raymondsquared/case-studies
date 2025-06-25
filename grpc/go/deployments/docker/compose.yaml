@@ -1,0 +1,52 @@
+services:
+  grpc-greeter-server:
+    image: raymondsquared/grpc-helloworld-server:0.0.2-20250630a
+    ports:
+      - "50051:50051"
+    environment:
+      SERVER_PORT: "50051"
+    deploy:
+      resources:
+        limits:
+          memory: 1G
+    healthcheck:
+      test: ["CMD", "ls", "-al"]
+      interval: 5s
+      timeout: 3s
+      retries: 3
+
+  grpc-greeter-client:
+    image: raymondsquared/grpc-helloworld-client:0.0.2-20250630a
+    environment:
+      # SERVER_HOST: "host.docker.internal"
+      SERVER_HOST: "grpc-greeter-server"
+      SERVER_PORT: "50051"
+    deploy:
+      resources:
+        limits:
+          memory: 1G
+    depends_on:
+      grpc-greeter-server:
+        condition: service_healthy
+    links:
+      - grpc-greeter-server
+
+  grpc-greeter-full:
+    image: raymondsquared/grpc-helloworld-full:0.0.2-20250630a
+    ports:
+      - "0.0.0.0:50052:50052"
+    environment:
+      # SERVER_HOST: "host.docker.internal"
+      SERVER_HOST: "grpc-greeter-server"
+      SERVER_PORT: "50051"
+      UI_HOST: "0.0.0.0"
+      UI_PORT: "50052"
+    deploy:
+      resources:
+        limits:
+          memory: 1G
+    depends_on:
+      grpc-greeter-server:
+        condition: service_healthy
+    links:
+      - grpc-greeter-server
