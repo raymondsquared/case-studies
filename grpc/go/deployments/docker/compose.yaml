@@ -10,7 +10,7 @@ services:
         limits:
           memory: 1G
     healthcheck:
-      test: ["CMD", "ls", "-al"]
+      test: ["CMD", "./grpc_health_probe", "-addr", "0.0.0.0:50051"]
       interval: 5s
       timeout: 3s
       retries: 3

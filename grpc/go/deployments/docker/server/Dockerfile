@@ -13,6 +13,10 @@ RUN cd scripts && make dependencies
 
 RUN cd scripts && make build-linux-server
 
+RUN GRPC_HEALTH_PROBE_VERSION=v0.4.13 && \
+    wget -qO/bin/grpc_health_probe https://github.com/grpc-ecosystem/grpc-health-probe/releases/download/${GRPC_HEALTH_PROBE_VERSION}/grpc_health_probe-linux-amd64 && \
+    chmod +x /bin/grpc_health_probe
+
 # --- FINAL STAGE ---
 # Use a minimal base image for the final runtime.
 # 'scratch' is another good option if we do need basic OS utilities (like a shell for debugging).
@@ -24,6 +28,7 @@ WORKDIR /app
 
 COPY --from=builder --chown=appuser:appgroup /app/bin/grpc-greeter-server .
 COPY --from=builder --chown=appuser:appgroup /app/deployments/docker/server/start.sh .
+COPY --from=builder --chown=appuser:appgroup /bin/grpc_health_probe .
 
 USER appuser
 

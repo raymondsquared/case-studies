@@ -12,6 +12,8 @@ import (
 	helloworldLocal "case-studies/grpc/cmd/helloworld"
 
 	"google.golang.org/grpc"
+	"google.golang.org/grpc/health"
+	grpc_health_v1 "google.golang.org/grpc/health/grpc_health_v1"
 	"google.golang.org/grpc/reflection"
 )
 
@@ -55,12 +57,16 @@ func main() {
 		log.Fatalf("failed to listen: %v", err)
 	}
 
-	s := grpc.NewServer()
-	helloworldLocal.RegisterGreeterServer(s, &server{})
-	reflection.Register(s)
+	helloWorldServer := grpc.NewServer()
+	helloworldLocal.RegisterGreeterServer(helloWorldServer, &server{})
+
+	healthServer := health.NewServer()
+	grpc_health_v1.RegisterHealthServer(helloWorldServer, healthServer)
+
+	reflection.Register(helloWorldServer)
 
 	log.Printf("server listening at %v", lis.Addr())
-	if err := s.Serve(lis); err != nil {
+	if err := helloWorldServer.Serve(lis); err != nil {
 		log.Fatalf("failed to serve: %v", err)
 	}
 }
