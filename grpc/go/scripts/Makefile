@@ -2,6 +2,14 @@
 dependencies:
 	go mod vendor
 
+.PHONY: proto-generate
+proto-generate:
+	cd .. && protoc --go_out=. \
+		--go_opt=paths=source_relative \
+		--go-grpc_out=. \
+		--go-grpc_opt=paths=source_relative \
+		cmd/helloworld/helloworld.proto
+
 .PHONY: run-server
 run-server:
 	go run ../cmd/greeter_server/main.go

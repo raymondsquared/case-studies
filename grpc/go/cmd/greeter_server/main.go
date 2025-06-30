@@ -9,8 +9,9 @@ import (
 	"os"
 	"strconv"
 
+	helloworldLocal "case-studies/grpc/cmd/helloworld"
+
 	"google.golang.org/grpc"
-	helloworld "google.golang.org/grpc/examples/helloworld/helloworld"
 	"google.golang.org/grpc/reflection"
 )
 
@@ -22,15 +23,15 @@ var (
 	flagPort = flag.Int("port", defaultPort, "The server port")
 )
 
-// server is used to implement helloworld.GreeterServer.
+// server is used to implement helloworldLocal.GreeterServer.
 type server struct {
-	helloworld.UnimplementedGreeterServer
+	helloworldLocal.UnimplementedGreeterServer
 }
 
-// SayHello implements helloworld.GreeterServer
-func (s *server) SayHello(_ context.Context, in *helloworld.HelloRequest) (*helloworld.HelloReply, error) {
+// SayHello implements helloworldLocal.GreeterServer
+func (s *server) SayHello(_ context.Context, in *helloworldLocal.HelloRequest) (*helloworldLocal.HelloReply, error) {
 	log.Printf("Received: %v", in.GetName())
-	return &helloworld.HelloReply{Message: "Hello " + in.GetName()}, nil
+	return &helloworldLocal.HelloReply{Message: "Hello " + in.GetName()}, nil
 }
 
 func getPort() int {
@@ -55,7 +56,7 @@ func main() {
 	}
 
 	s := grpc.NewServer()
-	helloworld.RegisterGreeterServer(s, &server{})
+	helloworldLocal.RegisterGreeterServer(s, &server{})
 	reflection.Register(s)
 
 	log.Printf("server listening at %v", lis.Addr())

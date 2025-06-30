@@ -11,7 +11,8 @@ import (
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
-	helloWorld "google.golang.org/grpc/examples/helloworld/helloworld"
+
+	helloworldLocal "case-studies/grpc/cmd/helloworld"
 )
 
 const (
@@ -65,11 +66,11 @@ func main() {
 	}
 	defer conn.Close()
 
-	client := helloWorld.NewGreeterClient(conn)
+	client := helloworldLocal.NewGreeterClient(conn)
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second)
 	defer cancel()
 
-	r, err := client.SayHello(ctx, &helloWorld.HelloRequest{Name: name})
+	r, err := client.SayHello(ctx, &helloworldLocal.HelloRequest{Name: name})
 	if err != nil {
 		log.Fatalf("could not greet: %v", err)
 	}
