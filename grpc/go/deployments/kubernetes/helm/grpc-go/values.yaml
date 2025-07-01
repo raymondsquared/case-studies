@@ -5,12 +5,12 @@ serviceAccount:
 
 serverImage:
   repository: raymondsquared/grpc-helloworld-server
-  tag: "0.0.2-20250630a"
+  tag: "0.0.2-20250630local"
   pullPolicy: "Always"
 
 clientImage:
   repository: raymondsquared/grpc-helloworld-client
-  tag: "0.0.2-20250630a"
+  tag: "0.0.2-20250630local"
   pullPolicy: "Always"
 
 replicaCount: 1

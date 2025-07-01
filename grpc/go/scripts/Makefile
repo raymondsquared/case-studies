@@ -1,10 +1,13 @@
+# Variables
 PROTO_DIRS=../cmd/helloworld
-CONTAINER_IMAGE_VERSION=0.0.2-20250630a
+CONTAINER_IMAGE_VERSION=0.0.2-20250630local
 
+# Dependencies
 .PHONY: dependencies
 dependencies:
 	go mod vendor
 
+# Generator
 .PHONY: proto-generate
 proto-generate:
 	@for dir in $(PROTO_DIRS); do \
@@ -19,10 +22,12 @@ proto-generate:
 	done
 	@echo "Generation complete."
 
+# Tests
 .PHONY: test
 test:
 	go test -v ./../...
 
+# Run
 .PHONY: run-server
 run-server:
 	go run ../cmd/greeter_server/*.go
@@ -43,10 +48,12 @@ prepare-k8s:
 run-k8s: prepare-k8s
 	kubectl apply -f ../deployments/kubernetes/helm-output.yaml
 
+# Clean
 .PHONY: clean-k8s
 clean-k8s:
 	kubectl delete -f ../deployments/kubernetes/helm-output.yaml
 
+# Build
 .PHONY: build-server
 build-server:
 	go build -o ../bin/grpc-greeter-server ../cmd/greeter_server/
@@ -66,6 +73,7 @@ build-linux-server:
 build-linux-client:
 	CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -ldflags="-w -s" -o ../bin/grpc-greeter-client ../cmd/greeter_client/
 
+# Package
 .PHONY: package-server
 package-server:
 	docker build -t raymondsquared/grpc-helloworld-server:$(CONTAINER_IMAGE_VERSION) --platform linux/amd64 -f ../deployments/docker/server/Dockerfile ../
@@ -96,6 +104,7 @@ package: package-server package-client
 .PHONY: package-arm
 package-arm: package-server-arm package-client-arm package-full-arm
 
+# Publish
 .PHONE: publish-server
 publish-server:
 	docker push raymondsquared/grpc-helloworld-server:$(CONTAINER_IMAGE_VERSION)

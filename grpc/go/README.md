@@ -8,8 +8,9 @@ gRPC is a high-performance, open-source universal RPC framework that enables eff
 ## Features
 
 - **gRPC Server & Client**: Complete implementation of a service
-  - Server: Implements a gRPC service that handles incoming requests, processes data, and returns responses.
+  - Server: Implements a gRPC service that handles incoming requests, processes data, and returns responses. [See screenshot](#screenshot---grpc-server).
   - Client: Connects to the gRPC server primarily for sending requests to the server.
+  
 - **Protocol Buffers**: Type-safe message definitions in a compressed format.
 
   - Compact Data Storage: Protobuf encodes data in a compact binary format, which significantly reduces payload size.
@@ -18,6 +19,9 @@ gRPC is a high-performance, open-source universal RPC framework that enables eff
     - Self-documenting service contracts
   - Cross-Language Support: Protobuf enables communication between services written in different languages (e.g., Go, Python, Java, C#, Node.js) by generating client and server code from the same `.proto` definitions.
   - Optimized Code Generation: Automatically generates efficient classes using [protoc](https://pkg.go.dev/github.com/golang/protobuf/protoc-gen-go).
+    - [messages](cmd/helloworld/helloworld_messages.pb.go)
+    - [services](cmd/helloworld/helloworld_services.pb.go)
+    - [gRPC](cmd/helloworld/helloworld_services_grpc.pb.go)
   - Backward & Forward Compatibility: Protobuf's schema evolution.
 
 - **Streaming**: Demonstrates gRPC's support for client-server, and bidirectional streaming, enabling efficient handling of large data sets and real-time communication.
@@ -96,7 +100,8 @@ make run-e2e
 
 ## Screenshots
 
-- TODO
+#### Screenshot - GRPC Server
+<img src="assets/grpc-server.png" alt="gRPC Server" width="400" />
 
 ## Testing
 
