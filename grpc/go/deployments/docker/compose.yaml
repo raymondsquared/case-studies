@@ -1,6 +1,6 @@
 services:
   grpc-greeter-server:
-    image: raymondsquared/grpc-helloworld-server:0.0.2-20250630a
+    image: raymondsquared/grpc-helloworld-server:${CONTAINER_IMAGE_VERSION}
     ports:
       - "50051:50051"
     environment:
@@ -16,7 +16,7 @@ services:
       retries: 3
 
   grpc-greeter-client:
-    image: raymondsquared/grpc-helloworld-client:0.0.2-20250630a
+    image: raymondsquared/grpc-helloworld-client:${CONTAINER_IMAGE_VERSION}
     environment:
       # SERVER_HOST: "host.docker.internal"
       SERVER_HOST: "grpc-greeter-server"
@@ -32,7 +32,7 @@ services:
       - grpc-greeter-server
 
   grpc-greeter-full:
-    image: raymondsquared/grpc-helloworld-full:0.0.2-20250630a
+    image: raymondsquared/grpc-helloworld-full:${CONTAINER_IMAGE_VERSION}
     ports:
       - "0.0.0.0:50052:50052"
     environment:

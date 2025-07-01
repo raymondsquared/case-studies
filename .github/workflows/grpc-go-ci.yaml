@@ -1,0 +1,35 @@
+name: gRPC Go - CI
+on:
+  push:
+    paths:
+      - grpc/go/**
+    branches:
+      - 'main'
+      # - 'feature/*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.24'
+      - name: Install dependencies
+        run: cd grpc/go/scripts && make dependencies
+      - name: build
+        run: cd grpc/go/scripts && make build
+  test:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.24'
+      - name: Install dependencies
+        run: cd grpc/go/scripts && make dependencies
+      - name: Test with the Go CLI
+        run: cd grpc/go/scripts && make test

@@ -1,8 +1,9 @@
+PROTO_DIRS=../cmd/helloworld
+CONTAINER_IMAGE_VERSION=0.0.2-20250630a
+
 .PHONY: dependencies
 dependencies:
 	go mod vendor
-
-PROTO_DIRS=../cmd/helloworld
 
 .PHONY: proto-generate
 proto-generate:
@@ -32,7 +33,7 @@ run-client:
 
 .PHONY: run-e2e
 run-e2e:
-	docker compose -p grpc-greeter -f ../deployments/docker/compose.yaml up -d
+	CONTAINER_IMAGE_VERSION=$(CONTAINER_IMAGE_VERSION) docker compose -p grpc-greeter -f ../deployments/docker/compose.yaml up -d
 
 .PHONY: run-k8s
 run-k8s:
@@ -59,34 +60,45 @@ build-linux-client:
 
 .PHONY: package-server
 package-server:
-	docker build -t raymondsquared/grpc-helloworld-server:0.0.2-20250630a --platform linux/arm64,linux/amd64 -f ../deployments/docker/server/Dockerfile ../
+	docker build -t raymondsquared/grpc-helloworld-server:$(CONTAINER_IMAGE_VERSION) --platform linux/amd64 -f ../deployments/docker/server/Dockerfile ../
 
 .PHONY: package-client
 package-client:
-	docker build -t raymondsquared/grpc-helloworld-client:0.0.2-20250630a --platform linux/arm64,linux/amd64 -f ../deployments/docker/client/Dockerfile ../
+	docker build -t raymondsquared/grpc-helloworld-client:$(CONTAINER_IMAGE_VERSION) --platform linux/amd64 -f ../deployments/docker/client/Dockerfile ../
 
 .PHONY: package-full
 package-full:
-	docker build -t raymondsquared/grpc-helloworld-full:0.0.2-20250630a --platform linux/arm64,linux/amd64 -f ../deployments/docker/full/Dockerfile ../
+	docker build -t raymondsquared/grpc-helloworld-full:$(CONTAINER_IMAGE_VERSION) --platform linux/amd64 -f ../deployments/docker/full/Dockerfile ../
 
-.PHONY: package-full-mac
-package-full-mac:
-	docker build -t raymondsquared/grpc-helloworld-full:0.0.2-20250630a --platform linux/arm64 -f ../deployments/docker/full/Dockerfile ../
+.PHONY: package-server-arm
+package-server-arm:
+	docker build -t raymondsquared/grpc-helloworld-server:$(CONTAINER_IMAGE_VERSION) --platform linux/arm64 -f ../deployments/docker/server/Dockerfile ../
+
+.PHONY: package-client-arm
+package-client-arm:
+	docker build -t raymondsquared/grpc-helloworld-client:$(CONTAINER_IMAGE_VERSION) --platform linux/arm64 -f ../deployments/docker/client/Dockerfile ../
+
+.PHONY: package-full-arm
+package-full-arm:
+	docker build -t raymondsquared/grpc-helloworld-full:$(CONTAINER_IMAGE_VERSION) --platform linux/arm64 -f ../deployments/docker/full/Dockerfile ../
 
 .PHONY: package
-package: package-server package-client package-full
+package: package-server package-client
+
+.PHONY: package-arm
+package-arm: package-server-arm package-client-arm package-full-arm
 
 .PHONE: publish-server
 publish-server:
-	docker push raymondsquared/grpc-helloworld-server:0.0.2-20250630a
+	docker push raymondsquared/grpc-helloworld-server:$(CONTAINER_IMAGE_VERSION)
 
 .PHONE: publish-client
 publish-client:
-	docker push raymondsquared/grpc-helloworld-client:0.0.2-20250630a
+	docker push raymondsquared/grpc-helloworld-client:$(CONTAINER_IMAGE_VERSION)
 
 .PHONE: publish-full
 publish-full:
-	docker push raymondsquared/grpc-helloworld-full:0.0.2-20250630a
+	docker push raymondsquared/grpc-helloworld-full:$(CONTAINER_IMAGE_VERSION)
 
 .PHONE: publish-all
 publish-all: publish-server publish-client publish-full

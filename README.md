@@ -20,9 +20,11 @@ This repository showcases a curated collection of unique case studies from past 
 
 ```
 case-studies/
+├── .github/                        # GitHub Action
+│   └── workflows/                  # Workflows directory for GitHub Action
 ├── grpc/                           # Case study
 │   └── go/                         # Programming language or Framework
-│       └── README.md                  # Sub-project documentation
+│       └── README.md               # Sub-project documentation
 └── README.md                       # Project documentation
 ```
 
