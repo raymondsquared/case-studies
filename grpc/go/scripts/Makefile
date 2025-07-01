@@ -2,21 +2,33 @@
 dependencies:
 	go mod vendor
 
+PROTO_DIRS=../cmd/helloworld
+
 .PHONY: proto-generate
 proto-generate:
-	cd .. && protoc --go_out=. \
-		--go_opt=paths=source_relative \
-		--go-grpc_out=. \
-		--go-grpc_opt=paths=source_relative \
-		cmd/helloworld/helloworld.proto
+	@for dir in $(PROTO_DIRS); do \
+		echo "Generating Go code from proto files in $$dir ..."; \
+		protoc \
+			-I=$$dir \
+			--go_out=$$dir \
+			--go_opt=paths=source_relative \
+			--go-grpc_out=$$dir \
+			--go-grpc_opt=paths=source_relative \
+			$$dir/*.proto; \
+	done
+	@echo "Generation complete."
+
+.PHONY: test
+test:
+	go test -v ./../...
 
 .PHONY: run-server
 run-server:
-	go run ../cmd/greeter_server/main.go
+	go run ../cmd/greeter_server/*.go
 
 .PHONY: run-client
 run-client:
-	go run ../cmd/greeter_client/main.go
+	go run ../cmd/greeter_client/*.go
 
 .PHONY: run-e2e
 run-e2e:

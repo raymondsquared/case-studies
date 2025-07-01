@@ -1,0 +1,13 @@
+edition = "2023";
+
+option go_package = "case-studies/grpc/cmd/helloworld";
+
+package helloworld;
+
+import "helloworld_messages.proto";
+
+// The greeting service definition.
+service Greeter {
+  // Sends a greeting
+  rpc SayHello (HelloRequest) returns (HelloReply) {}
+}

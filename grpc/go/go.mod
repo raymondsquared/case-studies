@@ -2,10 +2,8 @@ module case-studies/grpc
 
 go 1.24.2
 
-require (
-	google.golang.org/grpc v1.73.0
-	google.golang.org/protobuf v1.36.6
-)
+require google.golang.org/grpc v1.73.0
+require google.golang.org/protobuf v1.36.6
 
 require (
 	github.com/go-logr/logr v1.4.3 // indirect

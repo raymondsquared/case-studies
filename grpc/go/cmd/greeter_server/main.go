@@ -1,13 +1,11 @@
 package main
 
 import (
-	"context"
 	"flag"
 	"fmt"
-	"log"
+	"log/slog"
 	"net"
 	"os"
-	"strconv"
 
 	helloworldLocal "case-studies/grpc/cmd/helloworld"
 
@@ -15,58 +13,100 @@ import (
 	"google.golang.org/grpc/health"
 	grpc_health_v1 "google.golang.org/grpc/health/grpc_health_v1"
 	"google.golang.org/grpc/reflection"
+
+	"case-studies/grpc/internal/config"
+	"case-studies/grpc/internal/middleware"
+	"case-studies/grpc/internal/validation"
 )
 
-const (
-	defaultPort = 50051
-)
+func loadConfig() *config.ServerConfig {
+	flagPort := flag.Int("port", config.DefaultPort, "The server port")
 
-var (
-	flagPort = flag.Int("port", defaultPort, "The server port")
-)
+	flag.Parse()
 
-// server is used to implement helloworldLocal.GreeterServer.
-type server struct {
-	helloworldLocal.UnimplementedGreeterServer
-}
+	// Load base config from environment
+	baseConfig := config.LoadServerConfig()
 
-// SayHello implements helloworldLocal.GreeterServer
-func (s *server) SayHello(_ context.Context, in *helloworldLocal.HelloRequest) (*helloworldLocal.HelloReply, error) {
-	log.Printf("Received: %v", in.GetName())
-	return &helloworldLocal.HelloReply{Message: "Hello " + in.GetName()}, nil
-}
+	// Override with command line flags
+	baseConfig.Port = *flagPort
 
-func getPort() int {
-	port := *flagPort
-
-	if envPortStr := os.Getenv("SERVER_PORT"); envPortStr != "" {
-		if p, err := strconv.Atoi(envPortStr); err == nil {
-			return p
-		}
+	// Validate configuration
+	if err := validation.ValidatePort(baseConfig.Port); err != nil {
+		slog.Error("invalid port configuration", "error", err)
+		os.Exit(1)
 	}
 
-	return port
+	return baseConfig
+}
+
+func setupLogger() *slog.Logger {
+	opts := &slog.HandlerOptions{
+		Level: slog.LevelInfo,
+	}
+
+	if config.GetDebugMode() {
+		opts.Level = slog.LevelDebug
+	}
+
+	handler := slog.NewJSONHandler(os.Stdout, opts)
+	logger := slog.New(handler)
+	slog.SetDefault(logger)
+
+	return logger
+}
+
+func createGRPCServer(cfg *config.ServerConfig, logger *slog.Logger) *grpc.Server {
+	// Configure server options
+	serverOpts := []grpc.ServerOption{
+		grpc.ChainUnaryInterceptor(
+			middleware.LoggingInterceptor(logger),
+			middleware.ErrorInterceptor(),
+			middleware.RecoveryInterceptor(logger),
+		),
+	}
+
+	grpcServer := grpc.NewServer(serverOpts...)
+
+	// Register services
+	greeterServer := &server{logger: logger}
+	helloworldLocal.RegisterGreeterServer(grpcServer, greeterServer)
+
+	// Register health check service
+	healthServer := health.NewServer()
+	grpc_health_v1.RegisterHealthServer(grpcServer, healthServer)
+
+	// Set health status
+	healthServer.SetServingStatus("helloworld.Greeter", grpc_health_v1.HealthCheckResponse_SERVING)
+
+	// Register reflection service for debugging
+	reflection.Register(grpcServer)
+
+	logger.Info("gRPC server configured")
+
+	return grpcServer
 }
 
 func main() {
-	flag.Parse()
-	port := getPort() // No need to pass defaultPort, as flagPort already handles it
+	logger := setupLogger()
+	cfg := loadConfig()
 
-	lis, err := net.Listen("tcp", fmt.Sprintf(":%d", port))
+	logger.Info("starting gRPC server", "port", cfg.Port)
+
+	// Create listener
+	lis, err := net.Listen("tcp", fmt.Sprintf(":%d", cfg.Port))
 	if err != nil {
-		log.Fatalf("failed to listen: %v", err)
+		logger.Error("failed to listen", "error", err, "port", cfg.Port)
+		os.Exit(1)
 	}
 
-	helloWorldServer := grpc.NewServer()
-	helloworldLocal.RegisterGreeterServer(helloWorldServer, &server{})
+	// Create gRPC server
+	grpcServer := createGRPCServer(cfg, logger)
 
-	healthServer := health.NewServer()
-	grpc_health_v1.RegisterHealthServer(helloWorldServer, healthServer)
+	logger.Info("server listening", "address", lis.Addr())
 
-	reflection.Register(helloWorldServer)
-
-	log.Printf("server listening at %v", lis.Addr())
-	if err := helloWorldServer.Serve(lis); err != nil {
-		log.Fatalf("failed to serve: %v", err)
+	// Start serving
+	if err := grpcServer.Serve(lis); err != nil {
+		logger.Error("failed to serve", "error", err)
+		os.Exit(1)
 	}
 }
