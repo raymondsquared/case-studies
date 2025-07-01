@@ -1,0 +1,50 @@
+edition = "2023";
+
+option go_package = "case-studies/grpc/cmd/movie";
+
+package movie;
+
+message GetMovieInput {
+  float minimum_ratings_score = 1;
+}
+
+message GetMovieOutput {
+  repeated Movie movie = 1;
+}
+
+message Movie {
+  string movie_id = 1;
+  string title = 2;
+  string release_date = 3;
+  repeated string genre = 4;
+  Director director = 5;
+  repeated Producer producer = 6;
+  repeated CastMember cast = 7;
+  repeated CrewMember crew = 8;
+  string plot_summary = 9;
+  float ratings_score = 10;
+}
+
+message Director {
+  string name = 1;
+}
+
+message Producer {
+  string name = 1;
+}
+
+message CastMember {
+  string actor_name = 1;
+  string character_name = 2;
+  string role = 3;
+  string biography = 4;
+}
+
+message CrewMember {
+  string name = 1;
+  string role = 2;
+}
+
+message MovieProtoResponse {
+  string proto_content = 1;
+}

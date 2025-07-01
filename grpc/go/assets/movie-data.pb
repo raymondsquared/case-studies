@@ -1,0 +1,7144 @@
+
+¢
+	tt1234567The Grand Adventure
+2024-12-15"Action"	Adventure"Sci-Fi*
+
+Jane Doe2
+
+John Smith2
+Emily White:6
+Liam HemsworthCaptain JaxLead"Liam Hemsworth is:6
+Zoe Salda√±aDr. Elara VanceLead"Zoe Salda√±a is:9
+
+Idris ElbaCommander Thorne
+Supporting"Idris Elba is:.
+Margot RobbieKiraCameo"Margot Robbie is:*
+Chris PrattZorpVoice"Chris Pratt is:3
+Karen GillanNebula
+Supporting"Karen Gillan is:F
+Benedict Cumberbatch	Dr. Arion
+Supporting"Benedict Cumberbatch is:5
+Florence PughEvelyn
+Supporting"Florence Pugh is:?
+Timoth√©e ChalametKaelen
+Supporting"Timoth√©e Chalamet is:*
+ZendayaLyra
+Supporting"Zendaya is anB
+
+Sarah ChenCinematographerB
+	David LeeEditorB&
+Maria RodriguezProduction DesignerB
+	Tom EvansCostume DesignerB
+Alice GreenComposerB
+Michael BrownVFX SupervisorB
+Laura TaylorSound DesignerB!
+Robert DavisStunt CoordinatorJIn the yearUÖÎA
+Ö
+	tt0000001The Cosmic Echo
+2025-03-20"Sci-Fi"Mystery*
+Alex Turner2
+Sarah Jenkins2
+Mark Wilson:0
+Tom HollandEthan VanceLead"Tom Holland is:<
+Anya Taylor-JoyDr. Lena ThorneLead"Anya Taylor-Joy is:>
+Bryan CranstonGeneral Silas
+Supporting"Bryan Cranston isB 
+Eleanor VanceCinematographerB
+
+Daniel KimEditorB#
+Olivia SmithProduction DesignerJ	A team ofUÖÎŸ@
+î
+	tt0000002Whispers of the Forgotten City
+2025-06-10"	Adventure"Fantasy*
+
+Sofia Khan2
+Rajesh Gupta:&
+	Dev PatelArjunLead"Dev Patel is:3
+Naomi ScottPrincess LeenaLead"Naomi Scott isB
+Amelia JonesCinematographerB
+Michael ChenEditorJAn ancient mapU◊£¯@
+∂
+	tt0000003The Last Sentinel
+2025-09-01"Action"Thriller*
+Marcus Thorne2
+Lena Schmidt2
+Franz Becker:B
+Charlize TheronCommander Eva RostovaLead"Charlize Theron is:1
+Henry Cavill
+Agent KaelLead"Henry Cavill isB!
+Sophia M√ºllerCinematographerB
+Max HoffmannEditorJA highly trainedU
+◊√@
+£
+	tt0000004Echoes of Eternity
+2025-11-25"Drama"Romance*
+Chloe Dupont2
+Pierre Dubois:9
+Timoth√©e ChalametJulianLead"Timoth√©e Chalamet is:0
+Florence PughEleanorLead"Florence Pugh isB#
+Isabelle LaurentCinematographerB
+Jean-Luc MoreauEditorJTwo souls separatedUÏQ‡@
+ê
+	tt0000005The Crimson Tide
+2026-02-14"Horror"Supernatural*
+Kenji Tanaka2
+	Yuki Sato2
+Hiroshi Suzuki:'
+
+Sadie SinkMayaLead"Sadie Sink is:,
+Finn WolfhardLeoLead"Finn Wolfhard isB!
+Akira YamamotoCinematographerB
+Kazuo InoueEditorJ
+A group ofU)\ø@
+á
+	tt0000006Chronicles of the Lumina
+2026-05-01"Fantasy"Action*
+Elena Petrova2
+Dmitry Ivanov:)
+
+Chris PineKaelenLead"Chris Pine is:$
+ZendayaLyraLead"Zendaya is anB!
+Mikhail VolkovCinematographerB
+Anastasia SmirnovaEditorJ
+In a worldUÕÃÙ@
+û
+	tt0000007Steel Horizon
+2026-07-18"Sci-Fi"Action*
+Jackson Lee2
+Jessica White2
+Andrew Green:2
+John BoyegaCommander JaxLead"John Boyega is:1
+Daisy Ridley
+Pilot KiraLead"Daisy Ridley isB"
+Benjamin CarterCinematographerB
+Megan DaviesEditorJOn a colonizedU{Œ@
+´
+	tt0000008The Silent Witness
+2026-09-30"Thriller"Crime*
+Gabriel Moreno2
+Carmen Lopez:;
+Ana de ArmasDetective Sofia RamirezLead"Ana de Armas:4
+Oscar IsaacDr. Elias VanceLead"Oscar Isaac isB"
+Ricardo SanchezCinematographerB
+Maria GarciaEditorJA forensic psychologistUÖÎÒ@
+è
+	tt0000009A Celestial Melody
+2026-12-12"Musical"Romance*
+Lena Anderson2
+Erik Johansson:(
+
+Emma StoneClaraLead"Emma Stone is:*
+Ryan GoslingLeoLead"Ryan Gosling isB 
+Anna LindgrenCinematographerB
+Johan KarlssonEditorJTwo aspiring musiciansU·z¸@
+¶
+	tt0000010The Quantum Loop
+2027-03-05"Sci-Fi"Time Travel*
+Daniel Chang2
+Wei Li2	
+Mei Lin:@
+Benedict Cumberbatch	Dr. ArionLead"Benedict Cumberbatch is:1
+Karen Gillan
+Dr. AmeliaLead"Karen Gillan isB
+	Chen WangCinematographerB
+Lin ZhaoEditorJA brilliant physicistU
+◊À@
+Å
+	tt0000011Beneath the Obsidian Sky
+2027-06-20"Fantasy"	Adventure*
+Elara Vance2
+
+Owen Black:)
+Jason MomoaKaelLead"Jason Momoa is:%
+	Gal GadotLyraLead"Gal Gadot isB
+Liam ConnorCinematographerB
+Sophie ReedEditorJA young warriorUÖ„@
+´
+	tt0000012The Urban Whisper
+2027-09-15"Drama"Mystery*
+Samuel Park2
+Hye-jin Kim2
+Joon-ho Lee:2
+Steven YeunDetective KimLead"Steven Yeun is:8
+Rosamund PikeDr. Evelyn ReedLead"Rosamund Pike isB 
+Min-joon ChoiCinematographerB
+Seo-yeon ParkEditorJA seasoned detectiveU)\◊@
+Ñ
+	tt0000013Quantum Leap: Nexus
+2027-11-05"Sci-Fi"Action*
+
+Ava Sharma2
+Rohan Kapoor:*
+Simu LiuDr. Jian LiLead"Simu Liu is:-
+
+Gemma Chan
+Agent LenaLead"Gemma Chan isB
+David GuptaCinematographerB
+Priya SinghEditorJA rogue scientistUH·Í@
+≤
+	tt0000014The Forgotten Symphony
+2028-02-28"Drama"Music*
+Maria Rodriguez2
+Diego Sanchez:A
+Gael Garc√≠a BernalMaestro RicardoLead"Gael Garc√≠a Bernal:0
+Eiza Gonz√°lezElenaLead"Eiza Gonz√°lez isB$
+Juan Carlos PerezCinematographerB
+Sofia HernandezEditorJA disgraced composerUH·“@
+™
+	tt0000015Chronos Protocol
+2028-05-10"Sci-Fi"Thriller*
+
+Ethan Cole2
+Olivia Miller2
+
+Noah Davis:5
+Ryan ReynoldsAgent DeckerLead"Ryan Reynolds is:5
+Blake LivelyDr. Eva ThorneLead"Blake Lively isB"
+Charlotte GreenCinematographerB
+
+Liam WhiteEditorJA secret governmentU∏Ì@
+¡
+	tt0000016The Golden Compass: Ascendant
+2028-08-01"Fantasy"	Adventure*
+Arthur Pendelton2
+Guinevere Stone:=
+Millie Bobby BrownLyra BelacquaLead"Millie Bobby Brown:4
+Kit HaringtonLord AsrielLead"Kit Harington isB#
+Sirius BlackwoodCinematographerB
+Morgana Le FayEditorJContinuing their epicU§p›@
+Ω
+	tt0000017Fractured Reflections
+2028-10-20"Psychological Thriller"Mystery*
+Isabella Russo2
+Marco Rossi2
+Giulia Bianchi:,
+Noomi RapaceElenaLead"Noomi Rapace is:;
+Jake GyllenhaalDr. Alex MilesLead"Jake Gyllenhaal isB
+Luca MorettiCinematographerB
+Sofia ContiEditorJA woman sufferingU{Ê@
+˛
+	tt0000018The Cosmic Nomad
+2029-01-15"Sci-Fi"Drama*
+Aisha Rahman2
+Faisal Khan:%
+	Riz AhmedKianLead"Riz Ahmed is:3
+Lupita Nyong'oDr. LenaLead"Lupita Nyong'o isB
+Zara AliCinematographerB
+Omar HassanEditorJA lone astronautU√ı»@
+ë
+	tt0000019Legacy of the Sunstone
+2029-04-05"	Adventure"
+Historical*
+
+Chen Wei2	
+Jian Li2
+	Xiao Ling:,
+
+Donnie Yen	Master LiLead"Donnie Yen is:-
+	Liu YifeiPrincess MeiLead"Liu Yifei isB
+Wang LeiCinematographerB
+	Zhang HaoEditorJIn ancient China,UH·˙@
+ë
+	tt0000020The Resonance Project
+2029-07-22"Sci-Fi"Horror*
+Greta Hansen2
+
+Sven Olsen:3
+Florence Pugh
+Dr. AstridLead"Florence Pugh is:6
+Bill Skarsg√•rd	Dr. EliasLead"Bill Skarsg√•rd isB
+	Lars BergCinematographerB
+Ingrid SolbergEditorJ	A team ofU◊£∏@
+®
+	tt0000021City of Whispers
+2029-09-10"Thriller"Noir*
+Damien Roux2
+Marie LeBlanc:7
+Marion CotillardIsabelleLead"Marion Cotillard is:>
+Matthias SchoenaertsAntoineLead"Matthias Schoenaerts isB"
+Lucie ChevalierCinematographerB
+Antoine DuboisEditorJA cynical privateU∏’@
+â
+	tt0000022The Aetherium Protocol
+2029-11-01"Sci-Fi"	Cyberpunk*
+Hiroshi Sato2
+Kenji Nakamura:&
+MackenyuKaitoLead"Mackenyu is a:.
+Rina SawayamaAkiraLead"Rina Sawayama isB
+Yuto SuzukiCinematographerB
+Saki TanakaEditorJIn a futuristicU)\Ô@
+õ
+	tt0000023Heart of the Wilderness
+2030-02-18"	Adventure"Survival*
+Liam Gallagher2
+Saoirse Kelly:1
+Cillian MurphyDeclanLead"Cillian Murphy is:.
+Saoirse RonanFionaLead"Saoirse Ronan isB
+Ciaran DoyleCinematographerB
+Niamh O'ConnellEditorJAfter a planeUR∏∆@
+ù
+	tt0000024The Memory Weaver
+2030-04-10"Sci-Fi"Drama*
+Anna Kuznetsova2
+Sergei Volkov:0
+Daniel KaluuyaEliasLead"Daniel Kaluuya is:?
+Rebecca FergusonDr. Anya PetrovaLead"Rebecca Ferguson isB!
+Vladimir OrlovCinematographerB
+Olga IvanovaEditorJIn a futureUH·‚@
+ì
+	tt0000025Crimson Horizon
+2030-07-01"Western"Action*
+David Miller2
+Sarah Adams:2
+Chris PrattSheriff BrodyLead"Chris Pratt is:2
+Emily BluntEleanor VanceLead"Emily Blunt isB 
+Jack PetersonCinematographerB
+Chloe DaviesEditorJA seasoned sheriffU√ı–@
+û
+	tt0000026The Lumina Paradox
+2030-09-20"Sci-Fi"Mystery*
+Sofia Bellini2
+Giovanni Ricci:;
+Tom HiddlestonDr. Elias ThorneLead"Tom Hiddleston is:2
+Ana de ArmasAgent IsabellaLead"Ana de ArmasB#
+Alessandro ContiCinematographerB
+Laura FerrariEditorJ	A team ofU◊£Ë@
+ô
+	tt0000027Guardian of the Glade
+2030-11-15"Fantasy"Family*
+
+Emma Brown2
+Daniel White:,
+Ruby GillmanFionaLead"Ruby Gillman is:A
+Hugh JackmanThe Forest Spirit (voice)Voice"Hugh Jackman isB
+Chloe GreenCinematographerB
+Ethan TaylorEditorJA young girlU33À@
+®
+	tt0000028The Cipher Key
+2031-02-01"Thriller"	Espionage*
+
+Ben Carter2
+Laura Evans2
+Tom Harrison:-
+	Tom HardyAgent ThorneLead"Tom Hardy is:8
+Rosamund PikeNatalia PetrovaLead"Rosamund Pike isB
+James WilsonCinematographerB
+Olivia ClarkEditorJA master cryptographerU
+◊Û@
+á
+	tt0000029Cosmic Drift
+2031-04-25"Sci-Fi"Survival*
+
+Mira Patel2
+Akash Singh:&
+	Dev PatelRohanLead"Dev Patel is:7
+Deepika PadukoneDr. MayaLead"Deepika Padukone isB 
+Ananya SharmaCinematographerB
+	Vivek RaoEditorJAfter a catastrophicU§p≈@
+ä
+	tt0000030The Emerald Blade
+2031-07-10"Fantasy"Martial Arts*
+
+Zhang Li2	
+Wang Fu2
+	Ling Chen:&
+Jet LiMaster ChenLead"	Jet Li is:1
+Michelle YeohLady MeiLead"Michelle Yeoh isB
+	Xiao WangCinematographerB
+Min LiEditorJA legendary martialUR∏ˆ@
+í
+	tt0000031Neon Dreams, Iron Shadows
+2031-09-01"	Cyberpunk"Action*
+Kai Richter2
+Helena Brandt:&
+
+Jamie BellJaxLead"Jamie Bell is:1
+Alicia VikanderKiraLead"Alicia Vikander isB#
+Maximilian VogelCinematographerB
+Sophie WeberEditorJIn a dystopianU·z‹@
+ı
+	tt0000032The Horizon Line
+2031-11-20"Drama"	Adventure*
+
+Zara Ali2
+Ahmed Hassan:'
+
+Rami MalekOmarLead"Rami Malek is:,
+Nadine NjeimLaylaLead"Nadine Njeim isB
+
+Karim SaidCinematographerB
+Fatima KhanEditorJ
+A group ofUˆ(‰@
+¶
+	tt0000033Code: Chrysalis
+2032-02-14"Sci-Fi"Thriller*
+
+Maya Singh2
+Vikram Sharma:A
+Priyanka Chopra JonasDr. Eva RayLead"Priyanka Chopra Jonas:6
+Hrithik RoshanAgent ArjunLead"Hrithik Roshan isB
+
+Ravi KumarCinematographerB
+Sneha ReddyEditorJA brilliant scientistU\è“@
+â
+	tt0000034The Whispering Woods
+2032-04-05"Horror"Mystery*
+Finn O'Malley2
+Brendan Murphy:2
+Anya Taylor-JoyElaraLead"Anya Taylor-Joy is:)
+Jack ReynorLiamLead"Jack Reynor isB
+Aoife KellyCinematographerB
+Connor ByrneEditorJ
+A group ofUÖÎ@
+é
+	tt0000035Apex Protocol
+2032-06-20"Action"Sci-Fi*
+Jessica Chen2
+	David Kim:=
+Dwayne JohnsonCommander StoneLead"Dwayne Johnson, also:)
+	Gal GadotDr. LenaLead"Gal Gadot isB
+Chris AdamsCinematographerB
+Samantha GreenEditorJAn elite specialUÆ◊@
+à
+	tt0000036The Infinite Canvas
+2032-08-10"Drama"Art*
+Lucas Pereira2
+	Ana Silva:-
+Wagner MouraMiguelLead"Wagner Moura is:*
+Alice BragaSofiaLead"Alice Braga isB
+Thiago CostaCinematographerB
+Camila FernandesEditorJA struggling artistU  Ë@
+∞
+	tt0000037Echoes in the Void
+2032-10-05"Sci-Fi"Horror*
+Lena Petrov2
+Ivan Smirnov:E
+Alexander Skarsg√•rdCaptain VolkovLead"Alexander Skarsg√•rd is:3
+Olga KurylenkoDr. AnyaLead"Olga Kurylenko isB!
+Dmitry MorozovCinematographerB
+Svetlana SokolovaEditorJA deep-space miningUÆœ@
+õ
+	tt0000038The Gilded Cage
+2032-12-12"Historical Drama"Romance*
+Eleanor Vance2
+Richard Finch:1
+Emma WatsonLady EleanorLead"Emma Watson is:6
+Nicholas HoultLord ArthurLead"Nicholas Hoult isB 
+Edward ClarkeCinematographerB
+Victoria ShawEditorJ	In an eraUÆGÒ@
+ì
+	tt0000039Nexus Point
+2033-03-01"Sci-Fi"Thriller*
+Marcus Thorne2
+Lena Schmidt:1
+
+Idris ElbaDetective KaelLead"Idris Elba is:-
+Jodie ComerDr. AnyaLead"Jodie Comer isB"
+Franziska MaierCinematographerB
+Lukas BraunEditorJA detective investigatesUÖ”@
+ü
+	tt0000040Song of the River Spirit
+2033-05-20"Fantasy"Folklore*
+Sakura Yamamoto2
+Taro Suzuki:1
+Kanna HashimotoHanaLead"Kanna Hashimoto is:4
+Ryunosuke KamikiKenjiLead"Ryunosuke Kamiki isB!
+Hiroshi TanakaCinematographerB
+Yumi KobayashiEditorJIn a villageU{Ê@
+∫
+	tt0000041Deep Earth Contingency
+2033-08-05"Sci-Fi"Disaster*
+Chloe Dupont2
+Jean-Pierre Moreau:F
+Ad√®le ExarchopoulosDr. Cl√©mentineLead"Ad√®le Exarchopoulos is:8
+Louis GarrelProfessor AntoineLead"Louis Garrel isB 
+Mathilde RouxCinematographerB
+Julien PicardEditorJAs Earth's coreUR∏Ê@
+≈
+	tt0000042The Painted Veil of Lies
+2033-10-15"Historical Drama"Mystery*
+Simon Jenkins2
+Eleanor Vance:9
+Keira KnightleyLady EleanorLead"Keira Knightley is:D
+Benedict CumberbatchLord AshworthLead"Benedict Cumberbatch isB 
+Alastair ReedCinematographerB
+Clara DaviesEditorJIn Victorian England,U∏Â@
+ë
+	tt0000043
+Starforged
+2034-01-20"Sci-Fi"Space Opera*
+Sarah Koenig2
+
+John Davis:1
+Chris EvansCaptain KaelLead"Chris Evans is:6
+Zoe Salda√±aCommander ElaraLead"Zoe Salda√±a isB!
+Michael ThorneCinematographerB
+Emily WhiteEditorJA lone starshipU{Ó@
+≠
+	tt0000044The Last Codebreaker
+2034-03-10"Thriller"
+Historical*
+Lena Schmidt2
+Karl Fischer:@
+Michael FassbenderKlaus RichterLead"Michael Fassbender is:4
+Diane KrugerGreta NeumannLead"Diane Kruger isB!
+Tobias SchwarzCinematographerB
+Lena M√ºllerEditorJDuring World WarUR∏Ê@
+ö
+	tt0000045Sentinels of the Shifting Sands
+2034-06-05"	Adventure"Fantasy*
+
+Ahmed Khan2
+Omar Al-Farsi:3
+Mena MassoudPrince TariqLead"Mena Massoud is:3
+Naomi ScottPrincess ZairaLead"Naomi Scott isB
+	Fahad AliCinematographerB
+	Sara KhanEditorJIn a desertUq=“@
+¶
+	tt0000046The Quantum Equation
+2034-08-20"Sci-Fi"Drama*
+Dr. Eleanor Vance2
+Mark Johnson::
+Mahershala AliProfessor MilesLead"Mahershala Ali is:5
+Thandiwe NewtonDr. LenaLead"Thandiwe Newton isB 
+Robert MillerCinematographerB
+Jennifer DavisEditorJA brilliant butU=
+Ô@
+˛
+	tt0000047Neon Symphony
+2034-11-01"Musical"Sci-Fi*
+Ethan Hayes2
+Chloe Adams:6
+Timoth√©e ChalametJaxLead"Timoth√©e Chalamet is:$
+ZendayaLyraLead"Zendaya is anB 
+Sophie TurnerCinematographerB
+Liam CarterEditorJIn a futureU\è⁄@
+å
+	tt0000048The Shadow Protocol
+2035-02-14"Action"Thriller*
+
+Samuel Lee2
+
+Min-ji Kim:2
+Lee Byung-hun	Agent JinLead"Lee Byung-hun is:+
+
+Kim Tae-riSeo-yeonLead"Kim Tae-ri isB 
+Jae-hoon ParkCinematographerB
+
+Ye-rim AhnEditorJA former black-opsU\è‚@
+ö
+	tt0000049Whispers of the Deep
+2035-04-20"Sci-Fi"Horror*
+Sophie Muller2
+Lukas Schneider:-
+Lena HeadeyDr. AnyaLead"Lena Headey is:8
+Tom WlaschihaCaptain RichterLead"Tom Wlaschiha isB
+Felix BraunCinematographerB
+
+Greta KochEditorJA deep-sea researchU{∆@
+≤
+	tt0000050The Last Chronicle of Aethel
+2035-07-05"Fantasy"
+Historical*
+Arthur Pendelton2
+Guinevere Stone:2
+Henry CavillKing AethelLead"Henry Cavill is:8
+Alicia VikanderQueen ElaraLead"Alicia Vikander isB#
+Sirius BlackwoodCinematographerB
+Morgana Le FayEditorJIn a mythicalUè¬ı@
+ä
+	tt0000051The Anomaly Below
+2035-09-12"Sci-Fi"Mystery*
+
+Jane Doe2
+
+John Smith::
+Liam HemsworthDr. Miles VanceLead"Liam Hemsworth is:B
+Zoe Salda√±aCommander Elena 'Echo' DiazLead"Zoe Salda√±a is:=
+
+Idris ElbaGeneral Silas Thorne
+Supporting"Idris Elba isB
+
+Sarah ChenCinematographerB
+	David LeeEditorB&
+Maria RodriguezProduction DesignerJA deep-sea researchU\èÍ@
+í
+	tt0000052The Chronos Breach
+2035-11-28"Sci-Fi"Action*
+Alex Turner2
+Sarah Jenkins:/
+Tom Holland
+Ethan ColeLead"Tom Holland is:;
+Anya Taylor-JoyDr. Lena VanceLead"Anya Taylor-Joy isB 
+Eleanor VanceCinematographerB
+
+Daniel KimEditorJ
+A group ofU=
+Á@
+ã
+	tt0000053Whispers of Eldoria
+2036-02-10"Fantasy"	Adventure*
+
+Sofia Khan2
+Rajesh Gupta:'
+	Dev PatelKaelenLead"Dev Patel is:2
+Naomi ScottPrincess LyraLead"Naomi Scott isB
+Amelia JonesCinematographerB
+Michael ChenEditorJA reluctant heroUq=“@
+í
+	tt0000054The Last Bastion
+2036-04-01"Action"Post-Apocalyptic*
+Marcus Thorne2
+Lena Schmidt:1
+Charlize TheronMaraLead"Charlize Theron is:*
+Henry CavillJaxLead"Henry Cavill isB!
+Sophia M√ºllerCinematographerB
+Max HoffmannEditorJIn a desolateUÖÎÈ@
+§
+	tt0000055The Echo Chamber
+2036-06-25"Thriller"Psychological*
+Chloe Dupont2
+Pierre Dubois:9
+Timoth√©e ChalametArthurLead"Timoth√©e Chalamet is:.
+Florence PughElaraLead"Florence Pugh isB#
+Isabelle LaurentCinematographerB
+Jean-Luc MoreauEditorJA brilliant butU
+◊”@
+ı
+	tt0000056Crimson Veil
+2036-09-08"Horror"Mystery*
+Kenji Tanaka2
+	Yuki Sato:'
+
+Sadie SinkRikaLead"Sadie Sink is:,
+Finn WolfhardRenLead"Finn Wolfhard isB!
+Akira YamamotoCinematographerB
+Kazuo InoueEditorJ
+A group ofU
+◊„@
+õ
+	tt0000057Guardians of the Aether
+2036-11-22"Fantasy"Action*
+Elena Petrova2
+Dmitry Ivanov:3
+
+Chris PineCaptain ValeriusLead"Chris Pine is:)
+Zendaya	SeraphinaLead"Zendaya is anB!
+Mikhail VolkovCinematographerB
+Anastasia SmirnovaEditorJAn ancient orderUˆ(‹@
+ï
+	tt0000058Echoes of the Cosmos
+2037-02-05"Sci-Fi"Drama*
+Jackson Lee2
+Jessica White:3
+John BoyegaDr. Ben CarterLead"John Boyega is:6
+Daisy RidleyDr. Elara VanceLead"Daisy Ridley isB"
+Benjamin CarterCinematographerB
+Megan DaviesEditorJ	A team ofU{Ó@
+¢
+	tt0000059The Urban Maze
+2037-04-18"Thriller"Crime*
+Gabriel Moreno2
+Carmen Lopez::
+Ana de ArmasDetective Sofia TorresLead"Ana de Armas:1
+Oscar IsaacElias RomeroLead"Oscar Isaac isB"
+Ricardo SanchezCinematographerB
+Maria GarciaEditorJA determined detectiveU  »@
+é
+	tt0000060Rhapsody of Stars
+2037-07-01"Musical"Fantasy*
+Lena Anderson2
+Erik Johansson:,
+
+Emma Stone	SeraphinaLead"Emma Stone is:,
+Ryan GoslingOrionLead"Ryan Gosling isB 
+Anna LindgrenCinematographerB
+Johan KarlssonEditorJIn a fantasticalU\èÚ@
+é
+	tt0000061Quantum Echoes
+2037-09-15"Sci-Fi"Mystery*
+Daniel Chang2
+Wei Li:E
+Benedict CumberbatchProfessor ArisLead"Benedict Cumberbatch is:/
+Karen GillanDr. LenaLead"Karen Gillan isB
+	Chen WangCinematographerB
+Lin ZhaoEditorJA series ofUè¬›@
+˝
+	tt0000062The Starfall Prophecy
+2037-11-05"Fantasy"Epic*
+Elara Vance2
+
+Owen Black:)
+Jason MomoaKaelLead"Jason Momoa is:%
+	Gal GadotLyraLead"Gal Gadot isB
+Liam ConnorCinematographerB
+Sophie ReedEditorJAn ancient prophecyUÆGÈ@
+û
+	tt0000063The Ghost in the Machine
+2038-02-28"Sci-Fi"Thriller*
+Samuel Park2
+Hye-jin Kim:2
+Steven YeunDetective JinLead"Steven Yeun is:7
+Rosamund PikeDr. Evelyn ChoLead"Rosamund Pike isB 
+Min-joon ChoiCinematographerB
+Seo-yeon ParkEditorJA brilliant AIUR∏Œ@
+Ö
+	tt0000064Nexus Point: Divergence
+2038-05-10"Sci-Fi"Action*
+
+Ava Sharma2
+Rohan Kapoor:*
+Simu LiuDr. Jian LiLead"Simu Liu is:-
+
+Gemma Chan
+Agent LenaLead"Gemma Chan isB
+David GuptaCinematographerB
+Priya SinghEditorJThe portals toUè¬Â@
+±
+	tt0000065Melody of the Lost Souls
+2038-08-01"Drama"Music*
+Maria Rodriguez2
+Diego Sanchez:@
+Gael Garc√≠a BernalMaestro MiguelLead"Gael Garc√≠a Bernal:0
+Eiza Gonz√°lezSofiaLead"Eiza Gonz√°lez isB$
+Juan Carlos PerezCinematographerB
+Sofia HernandezEditorJA musician hauntedUH·⁄@
+ò
+	tt0000066Chronos Gambit
+2038-10-20"Sci-Fi"Thriller*
+
+Ethan Cole2
+Olivia Miller:5
+Ryan ReynoldsAgent ThorneLead"Ryan Reynolds is:7
+Blake LivelyDr. Evelyn VanceLead"Blake Lively isB"
+Charlotte GreenCinematographerB
+
+Liam WhiteEditorJA brilliant butU·zÏ@
+«
+	tt0000067$The Golden Compass: Shattered Worlds
+2039-01-15"Fantasy"	Adventure*
+Arthur Pendelton2
+Guinevere Stone:=
+Millie Bobby BrownLyra BelacquaLead"Millie Bobby Brown:4
+Kit HaringtonLord AsrielLead"Kit Harington isB#
+Sirius BlackwoodCinematographerB
+Morgana Le FayEditorJLyra's journey takesUÏQ–@
+π
+	tt0000068The Unseen Tapestry
+2039-03-05"Psychological Thriller"Supernatural*
+Isabella Russo2
+Marco Rossi:/
+Noomi RapaceDr. AnyaLead"Noomi Rapace is:<
+Jake GyllenhaalProfessor EliasLead"Jake Gyllenhaal isB
+Luca MorettiCinematographerB
+Sofia ContiEditorJA skeptical psychologistUR∏Ê@
+è
+	tt0000069The Last Starship
+2039-05-20"Sci-Fi"	Adventure*
+Aisha Rahman2
+Faisal Khan:-
+	Riz AhmedCaptain KianLead"Riz Ahmed is:3
+Lupita Nyong'oDr. LenaLead"Lupita Nyong'o isB
+Zara AliCinematographerB
+Omar HassanEditorJHumanity's last hopeUÆGŸ@
+˝
+	tt0000070The Dragon's Breath
+2039-08-01"Fantasy"Action*
+
+Chen Wei2	
+Jian Li:,
+
+Donnie Yen	Master LiLead"Donnie Yen is:.
+	Liu YifeiPrincess LingLead"Liu Yifei isB
+Wang LeiCinematographerB
+	Zhang HaoEditorJA mythical dragon,Uˆ(Ù@
+ñ
+	tt0000071The Glitch in the Matrix
+2039-10-10"Sci-Fi"Thriller*
+Greta Hansen2
+
+Sven Olsen:-
+Florence PughLenaLead"Florence Pugh is:1
+Bill Skarsg√•rdAxelLead"Bill Skarsg√•rd isB
+	Lars BergCinematographerB
+Ingrid SolbergEditorJA programmer workingUÆG—@
+ü
+	tt0000072Neon Echoes
+2039-12-05"	Cyberpunk"Drama*
+Damien Roux2
+Marie LeBlanc:4
+Marion CotillardElaraLead"Marion Cotillard is:;
+Matthias SchoenaertsKaelLead"Matthias Schoenaerts isB"
+Lucie ChevalierCinematographerB
+Antoine DuboisEditorJIn a rain-soaked,U∏Â@
+˝
+	tt0000073Data Stream
+2040-02-14"	Cyberpunk"Thriller*
+Hiroshi Sato2
+Kenji Nakamura:$
+MackenyuRenLead"Mackenyu is a:.
+Rina SawayamaAkariLead"Rina Sawayama isB
+Yuto SuzukiCinematographerB
+Saki TanakaEditorJA skilled dataU=
+ﬂ@
+î
+	tt0000074Untamed Wild
+2040-04-01"	Adventure"Action*
+Liam Gallagher2
+Saoirse Kelly:/
+Cillian MurphyKianLead"Cillian Murphy is:-
+Saoirse RonanErinLead"Saoirse Ronan isB
+Ciaran DoyleCinematographerB
+Niamh O'ConnellEditorJA seasoned survivalistUÖ„@
+ú
+	tt0000075Echoes of Tomorrow
+2040-06-15"Sci-Fi"Drama*
+Anna Kuznetsova2
+Sergei Volkov:5
+Daniel Kaluuya
+Dr. AlexeiLead"Daniel Kaluuya is:8
+Rebecca Ferguson	Dr. SofiaLead"Rebecca Ferguson isB!
+Vladimir OrlovCinematographerB
+Olga IvanovaEditorJIn a futureUè¬’@
+Ç
+	tt0000076Dust and Fury
+2040-08-30"Western"Revenge*
+David Miller2
+Sarah Adams:*
+Chris PrattCalebLead"Chris Pratt is:+
+Emily BluntMarthaLead"Emily Blunt isB 
+Jack PetersonCinematographerB
+Chloe DaviesEditorJA lone gunslingerU◊£Ë@
+±
+	tt0000077The Cosmic Tapestry
+2040-11-10"Sci-Fi"Philosophical*
+Sofia Bellini2
+Giovanni Ricci:;
+Tom HiddlestonDr. Elias ThorneLead"Tom Hiddleston is:6
+Ana de ArmasDr. Isabella RossiLead"Ana de ArmasB#
+Alessandro ContiCinematographerB
+Laura FerrariEditorJA journey throughU
+◊„@
+˚
+	tt0000078The Moonlit Grove
+2041-02-01"Fantasy"Romance*
+
+Emma Brown2
+Daniel White:+
+Ruby GillmanLyraLead"Ruby Gillman is:)
+Tom HollandFinnLead"Tom Holland isB
+Chloe GreenCinematographerB
+Ethan TaylorEditorJ
+In a worldU\èÍ@
+ö
+	tt0000079Project Nightingale
+2041-04-15"Thriller"	Espionage*
+
+Ben Carter2
+Laura Evans:-
+	Tom HardyAgent ThorneLead"Tom Hardy is:8
+Rosamund PikeDr. Evelyn ReedLead"Rosamund Pike isB
+James WilsonCinematographerB
+Olivia ClarkEditorJA retired espionageU33€@
+í
+	tt0000080Starfall Chronicles
+2041-07-01"Sci-Fi"	Adventure*
+
+Mira Patel2
+Akash Singh:.
+	Dev PatelCaptain ArjunLead"Dev Patel is:=
+Deepika PadukoneCommander TaraLead"Deepika Padukone isB 
+Ananya SharmaCinematographerB
+	Vivek RaoEditorJ	A crew ofU∏Ì@
+˜
+	tt0000081The Jade Dragon
+2041-09-10"Fantasy"Action*
+
+Zhang Li2	
+Wang Fu:&
+Jet LiMaster KwanLead"	Jet Li is:5
+Michelle YeohEmpress LingLead"Michelle Yeoh isB
+	Xiao WangCinematographerB
+Min LiEditorJA revered martialU=
+◊@
+ã
+	tt0000082Chrome City Renegades
+2041-11-25"	Cyberpunk"Action*
+Kai Richter2
+Helena Brandt:(
+
+Jamie BellCyrusLead"Jamie Bell is:1
+Alicia VikanderEchoLead"Alicia Vikander isB#
+Maximilian VogelCinematographerB
+Sophie WeberEditorJ	A band ofU
+◊„@
+ˇ
+	tt0000083The Desert Bloom
+2042-02-14"Drama"Survival*
+
+Zara Ali2
+Ahmed Hassan:(
+
+Rami MalekKamalLead"Rami Malek is:,
+Nadine NjeimAminaLead"Nadine Njeim isB
+
+Karim SaidCinematographerB
+Fatima KhanEditorJAfter being strandedUffﬁ@
+ö
+	tt0000084Aetheria
+2042-04-05"Sci-Fi"Fantasy*
+
+Maya Singh2
+Vikram Sharma:E
+Priyanka Chopra JonasDr. Rhea SharmaLead"Priyanka Chopra Jonas:9
+Hrithik RoshanCaptain VikramLead"Hrithik Roshan isB
+
+Ravi KumarCinematographerB
+Sneha ReddyEditorJ
+In a worldU)\Á@
+ú
+	tt0000085The Willow Creek Haunting
+2042-06-20"Horror"Found Footage*
+Finn O'Malley2
+Brendan Murphy:2
+Anya Taylor-JoySarahLead"Anya Taylor-Joy is:)
+Jack ReynorMarkLead"Jack Reynor isB
+Aoife KellyCinematographerB
+Connor ByrneEditorJA documentary filmUq=“@
+£
+	tt0000086Omega Protocol
+2042-08-10"Sci-Fi"Thriller*
+Jessica Chen2
+	David Kim:>
+Dwayne JohnsonCommander BriggsLead"Dwayne Johnson, also:0
+	Gal GadotDr. Anya SharmaLead"Gal Gadot isB
+Chris AdamsCinematographerB
+Samantha GreenEditorJA clandestine organizationUÖÎ@
+ä
+	tt0000087The Canvas of Time
+2042-10-05"Drama"Fantasy*
+Lucas Pereira2
+	Ana Silva:+
+Wagner MouraJoaoLead"Wagner Moura is:+
+Alice BragaIsabelLead"Alice Braga isB
+Thiago CostaCinematographerB
+Camila FernandesEditorJAn artist discoversUÖÎŸ@
+≠
+	tt0000088Cosmic Whispers
+2042-12-12"Sci-Fi"Mystery*
+Lena Petrov2
+Ivan Smirnov:@
+Alexander Skarsg√•rd	Dr. AntonLead"Alexander Skarsg√•rd is:8
+Olga KurylenkoCaptain KatyaLead"Olga Kurylenko isB!
+Dmitry MorozovCinematographerB
+Svetlana SokolovaEditorJA deep-space probeU{Ê@
+ç
+	tt0000089The Obsidian Rose
+2043-03-01"Fantasy"Action*
+Eleanor Vance2
+Richard Finch:*
+Emma WatsonElaraLead"Emma Watson is:/
+Nicholas HoultKaelLead"Nicholas Hoult isB 
+Edward ClarkeCinematographerB
+Victoria ShawEditorJA young sorceressUÆ◊@
+ô
+	tt0000090The Nexus Theory
+2043-05-20"Sci-Fi"Thriller*
+Marcus Thorne2
+Lena Schmidt:2
+
+Idris ElbaDr. Elias VanceLead"Idris Elba is:6
+Jodie ComerAgent Lena ThorneLead"Jodie Comer isB"
+Franziska MaierCinematographerB
+Lukas BraunEditorJA brilliant butUÏQ@
+ù
+	tt0000091Whispers of the Sakura
+2043-08-05"Drama"
+Historical*
+Sakura Yamamoto2
+Taro Suzuki:1
+Kanna HashimotoYumeLead"Kanna Hashimoto is:3
+Ryunosuke KamikiHaruLead"Ryunosuke Kamiki isB!
+Hiroshi TanakaCinematographerB
+Yumi KobayashiEditorJSet in feudalUˆ(‘@
+Æ
+	tt0000092Subterranean Secrets
+2043-10-15"Sci-Fi"Mystery*
+Chloe Dupont2
+Jean-Pierre Moreau:C
+Ad√®le ExarchopoulosDr. JulietteLead"Ad√®le Exarchopoulos is:8
+Louis GarrelProfessor LaurentLead"Louis Garrel isB 
+Mathilde RouxCinematographerB
+Julien PicardEditorJ	A team ofU◊£Ë@
+Æ
+	tt0000093The Clockwork Heart
+2044-01-20"	Steampunk"Romance*
+Simon Jenkins2
+Eleanor Vance:5
+Keira KnightleyLady AdaLead"Keira Knightley is:D
+Benedict CumberbatchLord AlistairLead"Benedict Cumberbatch isB 
+Alastair ReedCinematographerB
+Clara DaviesEditorJIn a steampunkU∏›@
+î
+	tt0000094Galactic Crusade
+2044-03-10"Sci-Fi"War*
+Sarah Koenig2
+
+John Davis:1
+Chris EvansGeneral KaelLead"Chris Evans is:5
+Zoe Salda√±aCommander ViraLead"Zoe Salda√±a isB!
+Michael ThorneCinematographerB
+Emily WhiteEditorJHumanity's last standU{Ó@
+¶
+	tt0000095The Turing Enigma
+2044-06-05"Thriller"AI*
+Lena Schmidt2
+Karl Fischer:D
+Michael FassbenderDr. Klaus RichterLead"Michael Fassbender is:5
+Diane KrugerDr. Lena VogelLead"Diane Kruger isB!
+Tobias SchwarzCinematographerB
+Lena M√ºllerEditorJA brilliant butU\è“@
+ä
+	tt0000096Oasis of the Ancients
+2044-08-20"	Adventure"Fantasy*
+
+Ahmed Khan2
+Omar Al-Farsi:,
+Mena MassoudJamalLead"Mena Massoud is:*
+Naomi ScottLaylaLead"Naomi Scott isB
+	Fahad AliCinematographerB
+	Sara KhanEditorJA young archaeologistUÖÎ@
+µ
+	tt0000097The Singularity Event
+2044-11-01"Sci-Fi"Disaster*
+Dr. Eleanor Vance2
+Mark Johnson:;
+Mahershala AliDr. Elias ThorneLead"Mahershala Ali is:<
+Thandiwe NewtonDr. Anya SharmaLead"Thandiwe Newton isB 
+Robert MillerCinematographerB
+Jennifer DavisEditorJHumanity faces itsU◊£ÿ@
+á
+	tt0000098Melody of the Machine
+2045-02-14"Musical"Sci-Fi*
+Ethan Hayes2
+Chloe Adams:6
+Timoth√©e ChalametLeoLead"Timoth√©e Chalamet is:%
+ZendayaElaraLead"Zendaya is anB 
+Sophie TurnerCinematographerB
+Liam CarterEditorJIn a futureUˆ(‰@
+é
+	tt0000099Code Red: Genesis
+2045-04-20"Action"Thriller*
+
+Samuel Lee2
+
+Min-ji Kim:2
+Lee Byung-hun	Agent LeeLead"Lee Byung-hun is:*
+
+Kim Tae-riDr. KimLead"Kim Tae-ri isB 
+Jae-hoon ParkCinematographerB
+
+Ye-rim AhnEditorJA top-secret governmentU§p›@
+î
+	tt0000100Abyssal Echoes
+2045-07-05"Sci-Fi"Horror*
+Sophie Muller2
+Lukas Schneider:0
+Lena HeadeyCaptain EvaLead"Lena Headey is:4
+Tom WlaschihaDr. RichterLead"Tom Wlaschiha isB
+Felix BraunCinematographerB
+
+Greta KochEditorJA deep-space salvageUR∏Ê@
+∑
+	tt0000101The Last Kingdom: A New Dawn
+2045-09-10"
+Historical"Drama*
+Arthur Pendelton2
+Guinevere Stone:2
+Henry CavillKing AlfredLead"Henry Cavill is:;
+Alicia VikanderQueen AelswithLead"Alicia Vikander isB#
+Sirius BlackwoodCinematographerB
+Morgana Le FayEditorJDecades after theUH·⁄@
+ü
+
+tt82912108Aurora Borealis
+2033-06-30"Sci-Fi"Thriller*
+Kai Richter2
+Ahmed Hassan2
+Faisal Khan:<
+
+Emma StoneCharacter ULead"American actress. Recipient:@
+Naomi ScottCharacter W
+Supporting"English actress, singer.:D
+Scarlett JohanssonCharacter W
+Supporting"American actress. One:A
+Ruby GillmanCharacter N
+Supporting"Australian actress knownB!
+Akira YamamotoCinematographerB
+Chris AdamsCinematographerB
+Priya SinghEditorB
+Megan DaviesEditorB
+	Tom EvansCostume DesignerJSheriff protects townU§p’@
+ˇ
+
+tt33730451The Quantum Divide
+2030-09-02"	Adventure"
+Historical*
+Simon Jenkins2
+Jean-Pierre Moreau:H
+Gael Garc√≠a BernalCharacter V
+Supporting"Mexican actor, director.:<
+Hugh JackmanCharacter QLead"Australian actor, singer,:;
+Alice BragaCharacter LVoice"Brazilian actress. Known:>
+Scarlett JohanssonCharacter HLead"American actress. One:8
+John BoyegaCharacter YCameo"British actor. GainedB
+Yumi KobayashiEditorB
+Sofia ContiEditorJVictorian high-society scandalUH·⁄@
+√
+
+tt70370122Celestial Ascent
+2028-11-02"Action"	Adventure"Sci-Fi*
+Elena Petrova2
+Helena Brandt2
+Franz Becker:?
+Bryan CranstonCharacter KCameo"American actor, director,:5
+Jack ReynorCharacter BVoice"Irish actor. KnownB
+	Vivek RaoEditorB"
+Franziska MaierCinematographerJElite unit retrievesU33≥@
+œ
+
+tt88163489Aetherial Divide
+2029-02-13"Fantasy"Martial Arts*
+Finn O'Malley2
+
+John Smith2
+Emily White:3
+ZendayaCharacter GVoice"American actress and:9
+Hrithik RoshanCharacter XVoice"Indian actor, works:1
+
+Donnie YenCharacter ILead"Hong Kong actor,:A
+	Liu YifeiCharacter YLead"!Chinese-American actress, singer,B
+Max HoffmannEditorB!
+Hiroshi TanakaCinematographerB!
+Robert DavisStunt CoordinatorJAstronaut stranded inU33A
+ÿ
+
+tt67422549Crimson Zenith
+2030-09-29"Fantasy"	Adventure*
+Arthur Pendelton2
+Akash Singh:;
+Jake GyllenhaalCharacter TLead"American actor. Known:=
+Jason MomoaCharacter A
+Supporting"American actor. KnownB
+
+Liam WhiteEditorB
+Connor ByrneEditorB
+Max HoffmannEditorB
+	Lars BergCinematographerJHacker and samuraiU◊£@
+·
+
+tt10566654Crimson Harvest
+2028-08-16"	Cyberpunk"Action*
+Samuel Park2
+
+Noah Davis:;
+Blake LivelyCharacter NCameo"American actress. Known::
+Noomi RapaceCharacter OVoice"Swedish actress. KnownB
+Svetlana SokolovaEditorB
+Megan DaviesEditorB
+Ciaran DoyleCinematographerB#
+Isabelle LaurentCinematographerJA ragtag crewU
+◊Î@
+Í
+
+tt64548379Echoes of Elysium
+2032-12-19"Sci-Fi"Action*
+Hiroshi Sato2
+Hiroshi Suzuki2
+Rohan Kapoor::
+
+Idris ElbaCharacter ICameo"English actor, producer,:F
+Saoirse RonanCharacter PCameo"!Irish/American actress. Recipient:A
+Ad√®le ExarchopoulosCharacter QCameo"French actress. KnownB
+Alice GreenComposerB
+Aoife KellyCinematographerB 
+Edward ClarkeCinematographerB
+James WilsonCinematographerB
+	Zhang HaoEditorJDetective investigates bizarreU33A
+ 
+
+tt73791448The Crimson Veil
+2030-04-14"Action"Sci-Fi*
+Lucas Pereira2
+Franz Becker2
+Sergei Volkov::
+Zoe Salda√±aCharacter ELead"American actress, known:B
+Hugh JackmanCharacter Z
+Supporting"Australian actor, singer,B 
+Mathilde RouxCinematographerB!
+Dmitry MorozovCinematographerJGeologists race toU·zƒ@
+”
+
+tt95040761Winter's Echo
+2026-05-02"Fantasy"Martial Arts*
+
+Emma Brown2
+Diego Sanchez:;
+Kanna HashimotoCharacter FCameo"Japanese actress and:7
+Daniel KaluuyaCharacter OCameo"British actor andB
+Anastasia SmirnovaEditorB#
+Sirius BlackwoodCinematographerB
+Thiago CostaCinematographerJRogue scientist opensUÖ£@
+Ñ
+
+tt21850034Crimson Dawn
+2032-10-30"Historical Drama"Mystery*
+Aisha Rahman2
+Marie LeBlanc:F
+Ad√®le ExarchopoulosCharacter L
+Supporting"French actress. Known:7
+Tom HollandCharacter HVoice"English actor. KnownB
+Wang LeiCinematographerB 
+Mathilde RouxCinematographerB
+Sofia ContiEditorB
+Lukas BraunEditorB
+Jean-Luc MoreauEditorJWarrior and mysticUq=¬@
+ø
+
+tt63734703The Sovereign Spark
+2027-04-02"	Cyberpunk"Action*
+Arthur Pendelton2
+
+John Davis:6
+	Riz AhmedCharacter PLead"British actor, rapper,:>
+Liam HemsworthCharacter MVoice"Australian actor, played:<
+Jake GyllenhaalCharacter RVoice"American actor. Known:D
+Priyanka Chopra JonasCharacter PCameo"Indian actress, singer,:9
+Noomi RapaceCharacter PLead"Swedish actress. KnownB$
+Juan Carlos PerezCinematographerB
+	Xiao WangCinematographerB 
+Anna LindgrenCinematographerB
+Ethan TaylorEditorJ!Detective investigates mysteriousUÖÎ—@
+ª
+
+tt37302525The Crimson Veil
+2031-11-11"Musical"Romance*
+
+Ethan Cole2
+	Yuki Sato2
+Pierre Dubois:B
+Timoth√©e ChalametCharacter QLead"American actor. Recipient:=
+Hugh JackmanCharacter KCameo"Australian actor, singer,:I
+Anya Taylor-JoyCharacter GLead"#American-British actress. Recipient:N
+Rina SawayamaCharacter KLead"*Japanese-British singer-songwriter, model,:;
+Blake LivelyCharacter QVoice"American actress. KnownB
+Aoife KellyCinematographerB
+Sofia HernandezEditorB"
+Franziska MaierCinematographerJGeologists race toUq=‚@
+—
+
+tt98592208Starfall Prophecy
+2030-02-18"Sci-Fi"Survival*
+Lena Anderson2
+Franz Becker:9
+Noomi RapaceCharacter ULead"Swedish actress. Known:;
+Bill Skarsg√•rdCharacter ACameo"Swedish actor. KnownB
+David GuptaCinematographerB"
+Charlotte GreenCinematographerB
+James WilsonCinematographerJLyra and daemonU  –@
+…
+
+tt52197166Solar Flare
+2032-08-08"Sci-Fi"Drama*
+
+Chen Wei2
+	Ana Silva2
+Taro Suzuki:8
+ZendayaCharacter O
+Supporting"American actress and:A
+Jet LiCharacter TLead"$Chinese-Singaporean actor, producer,:;
+Naomi ScottCharacter TCameo"English actress, singer.B
+Max HoffmannEditorB
+Thiago CostaCinematographerB
+Luca MorettiCinematographerB
+Laura TaylorSound DesignerB
+Sophie WeberEditorJDisgraced composer mentorsU=
+◊@
+ï
+
+tt90416410The Starless Night
+2031-06-01"Fantasy"Family*
+
+Ethan Cole2
+Marie LeBlanc2
+Emily White:;
+Alice BragaCharacter SCameo"Brazilian actress. Known:=
+
+Gemma ChanCharacter I
+Supporting"English actress. Known:8
+ZendayaCharacter M
+Supporting"American actress and:5
+MackenyuCharacter AVoice"Japanese actor. Known:7
+Tom HollandCharacter GCameo"English actor. KnownB
+
+Sarah ChenCinematographerB
+Svetlana SokolovaEditorB
+Aoife KellyCinematographerJ!Detective investigates mysteriousU§pÂ@
+Ã
+
+tt98986563Temporal Shift
+2027-01-02"Horror"Supernatural*
+
+Sofia Khan2
+Ahmed Hassan2
+Ivan Smirnov:;
+Ruby GillmanCharacter OLead"Australian actress known:>
+Tom HiddlestonCharacter U
+Supporting"English actor. Best:=
+
+Emma StoneCharacter JVoice"American actress. Recipient:9
+
+Idris ElbaCharacter QLead"English actor, producer,B
+Olivia ClarkEditorB
+Min LiEditorB"
+Charlotte GreenCinematographerJElite unit retrievesU√ıA
+Ø
+
+tt29815656Cybernetic Mirage
+2026-11-20"Western"Action*
+Jessica Chen2
+Hiroshi Suzuki2
+Andrew Green:G
+Margot RobbieCharacter K
+Supporting"Australian actress, producer.:6
+
+Jamie BellCharacter ZVoice"English actor. Known:>
+Ryan ReynoldsCharacter ACameo"Canadian actor, producer.:5
+MackenyuCharacter BCameo"Japanese actor. KnownB
+Fatima KhanEditorB
+Olga IvanovaEditorJTwo souls separatedUH·“@
+ã
+
+tt34580131Aetherial Divide
+2028-03-17"Thriller"Noir*
+Marcus Thorne2
+Jessica White::
+Zoe Salda√±aCharacter NLead"American actress, known:C
+Finn WolfhardCharacter O
+Supporting"Canadian actor, musician.:;
+Jake GyllenhaalCharacter HLead"American actor. KnownB
+Sophie WeberEditorB
+Laura FerrariEditorB"
+Benjamin CarterCinematographerJAstronaut stranded inUè¬•@
+û
+
+tt80329253The Digital Soul
+2026-08-11"Thriller"Crime*
+
+Maya Singh2
+Rohan Kapoor2
+
+Owen Black:B
+Jet LiCharacter MCameo"$Chinese-Singaporean actor, producer,:6
+Chris PrattCharacter LLead"American actor, roseB
+James WilsonCinematographerB
+Svetlana SokolovaEditorB 
+Edward ClarkeCinematographerB
+Anastasia SmirnovaEditorB
+	Tom EvansCostume DesignerJAmnesiac woman uncoversU·zº@
+˘
+
+tt11414184The Azure Key
+2025-08-25"Historical Drama"Romance*
+
+Maya Singh2
+	Xiao Ling2
+Emily White:;
+Karen GillanCharacter JCameo"Scottish actress. Known:9
+Ryan GoslingCharacter FVoice"Canadian actor. Known::
+Daisy RidleyCharacter NVoice"English actress. Known:F
+Alicia VikanderCharacter N
+Supporting"Swedish actress. RecipientB!
+Vladimir OrlovCinematographerB
+	Xiao WangCinematographerB
+Victoria ShawEditorB
+	Chen WangCinematographerJHacker and samuraiU∏≈@
+É
+
+tt94611102The Sovereign Spark
+2027-10-12"Sci-Fi"Action*
+Sakura Yamamoto2
+Giulia Bianchi:>
+Rebecca FergusonCharacter CCameo"Swedish actress. Known:>
+Ryan ReynoldsCharacter QCameo"Canadian actor, producer.:6
+
+Jamie BellCharacter FCameo"English actor. Known:?
+Marion CotillardCharacter QCameo"French actress, singer,B
+
+Sarah ChenCinematographerB#
+Alessandro ContiCinematographerB
+Omar HassanEditorB
+Olivia ClarkEditorB
+Clara DaviesEditorJYoung warrior protectsU\è˙@
+¬
+
+tt43138894Eternal Frontier
+2030-12-30"Sci-Fi"Mystery*
+Kai Richter2
+Erik Johansson:F
+Saoirse RonanCharacter KCameo"!Irish/American actress. Recipient:>
+Finn WolfhardCharacter KCameo"Canadian actor, musician.:6
+
+Rami MalekCharacter RLead"American actor. Known:B
+Jet LiCharacter VVoice"$Chinese-Singaporean actor, producer,:C
+Timoth√©e ChalametCharacter ZCameo"American actor. RecipientB 
+Anna LindgrenCinematographerB!
+Dmitry MorozovCinematographerB
+Niamh O'ConnellEditorB
+Clara DaviesEditorJCryptographer uncovers crypticU
+◊A
+¨
+
+tt39424463	Neon Veil
+2027-10-05"Action"Thriller*
+Arthur Pendelton2
+Saoirse Kelly2
+Laura Evans:C
+Ryan ReynoldsCharacter J
+Supporting"Canadian actor, producer.:=
+Wagner MouraCharacter XLead"Brazilian actor, director,:9
+Emma WatsonCharacter XLead"English actress, model,::
+Naomi ScottCharacter ALead"English actress, singer.:=
+
+Sadie SinkCharacter Z
+Supporting"American actress. BestB
+Chloe DaviesEditorB
+	Chen WangCinematographerB
+Michael BrownVFX SupervisorB
+Seo-yeon ParkEditorJGeologists race toUq=Í@
+˛
+
+tt93303728Nightfall Legacy
+2030-03-27"Fantasy"Action*
+
+Zara Ali2
+Andrew Green:I
+Anya Taylor-JoyCharacter SLead"#American-British actress. Recipient:=
+
+Gemma ChanCharacter O
+Supporting"English actress. Known:;
+Rosamund PikeCharacter NVoice"English actress. KnownB
+Sophie ReedEditorB
+Saki TanakaEditorB
+Fatima KhanEditorJElite unit retrievesU\è“@
+æ
+
+tt97480301Crystal Shards
+2030-12-31"Sci-Fi"Drama*
+Anna Kuznetsova2
+Diego Sanchez2
+	Ling Chen:E
+Ana de ArmasCharacter X
+Supporting"Cuban-Spanish actress. Began:<
+Ruby GillmanCharacter IVoice"Australian actress known:D
+Scarlett JohanssonCharacter U
+Supporting"American actress. One:8
+Nadine NjeimCharacter UVoice"Lebanese actress and:9
+	Gal GadotCharacter S
+Supporting"Israeli actress andB
+Megan DaviesEditorB 
+Alastair ReedCinematographerB
+	Tom EvansCostume DesignerB
+Amelia JonesCinematographerJRogue scientist opensU∏Ω@
+˜
+
+tt58726721Silent Sanctuary
+2028-03-12"Sci-Fi"Mystery*
+Sarah Koenig2	
+Jian Li2
+Sarah Jenkins:8
+Nadine NjeimCharacter KVoice"Lebanese actress and:<
+Tom HollandCharacter H
+Supporting"English actor. Known:5
+MackenyuCharacter GVoice"Japanese actor. Known:J
+Millie Bobby BrownCharacter JVoice" British actress/producer. Gained::
+Karen GillanCharacter CLead"Scottish actress. KnownB
+	Chen WangCinematographerB
+Ingrid SolbergEditorJDisgraced composer mentorsUR∏æ@
+Â
+
+tt11238658Spectral Bloom
+2025-01-20"Sci-Fi"Thriller*
+Kai Richter2
+Brendan Murphy2
+Diego Sanchez:>
+Finn WolfhardCharacter LVoice"Canadian actor, musician.:7
+	Riz AhmedCharacter QCameo"British actor, rapper,B 
+Robert MillerCinematographerB
+Lin ZhaoEditorB#
+Isabelle LaurentCinematographerJResearchers unleash terrifyingU{
+A
+Õ
+
+tt40860335Fading Echoes
+2026-05-07"Fantasy"Martial Arts*
+Sofia Bellini2
+Akash Singh2
+Dmitry Ivanov:<
+Ruby GillmanCharacter OCameo"Australian actress known:T
+Rina SawayamaCharacter J
+Supporting"*Japanese-British singer-songwriter, model,::
+MackenyuCharacter J
+Supporting"Japanese actor. KnownB
+Laura FerrariEditorB
+Sophie ReedEditorB!
+Sophia M√ºllerCinematographerB
+Zara AliCinematographerJAmnesiac woman uncoversUè¬’@
+ø
+
+tt94694197Winter's Grasp
+2028-04-23"Horror"Supernatural*
+Lena Anderson2
+Guinevere Stone2
+Hye-jin Kim:8
+Chris EvansCharacter HVoice"American actor. Known:9
+Ryunosuke KamikiCharacter DLead"Japanese actor andB
+	Chen WangCinematographerB
+
+Ravi KumarCinematographerJAstronaut stranded inUˆ(Ã@
+–
+
+tt26242325Iron Heartwood
+2034-10-18"Sci-Fi"Survival*
+Greta Hansen2
+Lena Schmidt2
+Faisal Khan:<
+Jake GyllenhaalCharacter DVoice"American actor. Known:B
+	Liu YifeiCharacter KCameo"!Chinese-American actress, singer,:@
+Benedict CumberbatchCharacter LCameo"English actor. Known:C
+Timoth√©e ChalametCharacter OCameo"American actor. RecipientB"
+Ricardo SanchezCinematographerB 
+Min-joon ChoiCinematographerJFriends on remoteU√ı A
+∏
+
+tt85139772Spirit of the Wilds
+2031-09-16"	Cyberpunk"Action*
+Chloe Dupont2
+Guinevere Stone:@
+Alexander Skarsg√•rdCharacter RCameo"Swedish actor. Known:G
+Jet LiCharacter R
+Supporting"$Chinese-Singaporean actor, producer,:=
+Michelle YeohCharacter ICameo"Malaysian actress. Known:;
+Kanna HashimotoCharacter DCameo"Japanese actress and:?
+Marion CotillardCharacter YVoice"French actress, singer,B!
+Hiroshi TanakaCinematographerB
+Laura TaylorSound DesignerB
+Alice GreenComposerB
+Niamh O'ConnellEditorJKing Alfred andU\è⁄@
+¨
+
+tt45096043The Astral Maze
+2034-06-09"Drama"Music*
+Chloe Dupont2
+Carmen Lopez2
+Vikram Sharma:@
+Karen GillanCharacter X
+Supporting"Scottish actress. Known:B
+
+Emma StoneCharacter M
+Supporting"American actress. RecipientB
+Chris AdamsCinematographerB 
+Alastair ReedCinematographerB
+Wang LeiCinematographerB
+Laura TaylorSound DesignerB
+Amelia JonesCinematographerJAspiring musicians fromU\è
+A
+Ô
+
+tt44228312The Astral Maze
+2025-01-09"Fantasy"Action*
+Sofia Bellini2
+Andrew Green2
+	Ana Silva:7
+Tom HollandCharacter JVoice"English actor. Known:@
+Deepika PadukoneCharacter Z
+Supporting"Indian actress. OneB
+Megan DaviesEditorB 
+Jack PetersonCinematographerB
+Sophie WeberEditorB
+Zara AliCinematographerJGirl discovers magicalU33A
+Ö
+
+tt61601624The Crimson Veil
+2031-11-01"Sci-Fi"Drama*
+Elena Petrova2
+Dmitry Ivanov2
+Giulia Bianchi:>
+Marion CotillardCharacter LLead"French actress, singer,:;
+Kanna HashimotoCharacter OVoice"Japanese actress andB
+Max HoffmannEditorB#
+Isabelle LaurentCinematographerB
+Johan KarlssonEditorB&
+Maria RodriguezProduction DesignerJAstronaut stranded inU  A
+Ì
+
+tt37250079Quantum Echoes
+2032-06-06"Sci-Fi"Horror*
+Alex Turner2
+Akash Singh2
+Sarah Adams:>
+Wagner MouraCharacter YCameo"Brazilian actor, director,::
+Naomi ScottCharacter ELead"English actress, singer.:9
+Daisy RidleyCharacter QLead"English actress. Known:G
+Margot RobbieCharacter K
+Supporting"Australian actress, producer.:;
+Blake LivelyCharacter WVoice"American actress. KnownB
+Saki TanakaEditorB
+Sophie WeberEditorJMartial artist trainsUH·¬@
+ò
+
+tt91767939Solar Flare
+2032-05-12"Musical"Romance*
+Alex Turner2
+Daniel White2
+Hiroshi Suzuki:J
+Millie Bobby BrownCharacter RCameo" British actress/producer. Gained:9
+Nicholas HoultCharacter HLead"English actor. Known:8
+Jason MomoaCharacter WCameo"American actor. Known:4
+Louis GarrelCharacter WVoice"French actor and:G
+Lupita Nyong'oCharacter HCameo"!Kenyan-Mexican actress. RecipientB
+Zara AliCinematographerB 
+Mathilde RouxCinematographerB
+Min LiEditorJTherapist discovers darkUÏQ¿@
+Ê
+
+tt94684827Mirrored Deception
+2026-11-10"Sci-Fi"Thriller*
+Marcus Thorne2
+	David Kim2
+Sarah Adams:?
+Nicholas HoultCharacter U
+Supporting"English actor. Known:@
+Ana de ArmasCharacter MCameo"Cuban-Spanish actress. BeganB
+Lukas BraunEditorB&
+Maria RodriguezProduction DesignerB
+
+Karim SaidCinematographerJTwo souls separatedU√ı‡@
+‰
+
+tt70286454Abyssal Heart
+2034-02-23"Sci-Fi"	Cyberpunk*
+Jessica Chen2	
+Jian Li:A
+Jake GyllenhaalCharacter D
+Supporting"American actor. Known:D
+Steven YeunCharacter U
+Supporting"South Korean-American actor.:=
+Florence PughCharacter VCameo"English actress. DebutedB$
+Juan Carlos PerezCinematographerB
+Lin ZhaoEditorB
+	Lars BergCinematographerB#
+Sirius BlackwoodCinematographerB#
+Alessandro ContiCinematographerJDetective investigates missingUffA
+Û
+
+tt18379521Nightfall Legacy
+2028-11-08"Western"Action*
+Lena Anderson2
+Diego Sanchez2
+Sergei Volkov:7
+
+Rami MalekCharacter XVoice"American actor. Known::
+Zoe Salda√±aCharacter FLead"American actress, known:;
+Dwayne JohnsonCharacter MLead"American actor, former:8
+ZendayaCharacter H
+Supporting"American actress and:8
+Chris EvansCharacter DVoice"American actor. KnownB 
+Min-joon ChoiCinematographerB
+Svetlana SokolovaEditorJProphecy foretells hero'sU·zA
+ƒ
+
+tt36461067Mirrored Deception
+2027-12-13"Thriller"	Espionage*
+Sakura Yamamoto2
+Pierre Dubois:8
+John BoyegaCharacter DVoice"British actor. Gained:;
+Rosamund PikeCharacter AVoice"English actress. Known:=
+
+Emma StoneCharacter WVoice"American actress. Recipient:B
+Jet LiCharacter XVoice"$Chinese-Singaporean actor, producer,:7
+
+Rami MalekCharacter SVoice"American actor. KnownB$
+Juan Carlos PerezCinematographerB&
+Maria RodriguezProduction DesignerB
+Amelia JonesCinematographerB
+Michael BrownVFX SupervisorJAstronaut stranded inUq=≤@
+É
+
+tt48966766Arcane Lumina
+2034-11-20"Sci-Fi"Thriller*
+Samuel Park2
+
+John Smith2
+Ivan Smirnov:>
+Wagner MouraCharacter ICameo"Brazilian actor, director,:<
+Hugh JackmanCharacter MLead"Australian actor, singer,B#
+Maximilian VogelCinematographerB
+Michael BrownVFX SupervisorB
+Niamh O'ConnellEditorB 
+Eleanor VanceCinematographerJIndividuals embark onUffÓ@
+ﬂ
+
+tt66097005Cosmic Nexus
+2034-04-26"Fantasy"Martial Arts*
+
+Ava Sharma2
+Jessica White:>
+Rebecca FergusonCharacter UVoice"Swedish actress. Known:?
+Matthias SchoenaertsCharacter ZLead"Belgian actor. KnownB
+Laura TaylorSound DesignerB
+
+Emily ChenEditorB
+Lin ZhaoEditorB
+David GuptaCinematographerJFriends on remoteUöô—@
+û
+
+tt34689316Desert Mirage
+2030-10-02"Horror"Mystery*
+
+Ava Sharma2
+	Yuki Sato:C
+Finn WolfhardCharacter R
+Supporting"Canadian actor, musician.:B
+Michelle YeohCharacter P
+Supporting"Malaysian actress. Known:5
+	Tom HardyCharacter KVoice"English actor. Known:6
+Tom HollandCharacter ALead"English actor. Known:;
+Jake GyllenhaalCharacter JLead"American actor. KnownB
+Laura FerrariEditorB
+Omar HassanEditorB
+Min LiEditorB
+
+Ravi KumarCinematographerB
+Sophie WeberEditorJMining crew encountersU§p	A
+
+
+tt93097164The Last Artifact
+2032-06-26"Sci-Fi"Horror*
+Marcus Thorne2
+Laura Evans::
+Noomi RapaceCharacter GCameo"Swedish actress. Known:4
+Jack ReynorCharacter CLead"Irish actor. Known:H
+Timoth√©e ChalametCharacter Q
+Supporting"American actor. RecipientB
+	Xiao WangCinematographerB
+Victoria ShawEditorJPhysicist manipulates time,U◊£A
+Â
+
+tt83698799Deserted Hope
+2033-04-28"Fantasy"Family*
+Isabella Russo2
+Taro Suzuki:9
+
+Idris ElbaCharacter GLead"English actor, producer,:8
+Cillian MurphyCharacter VCameo"Irish actor. Known:>
+Finn WolfhardCharacter CVoice"Canadian actor, musician.B#
+Alessandro ContiCinematographerB
+Laura FerrariEditorJSecret agency usesUÏQ∏@
+ß
+
+tt65799215The Rogue Protocol
+2031-01-06"	Adventure"Fantasy*
+Chloe Dupont2
+Mark Wilson:@
+Matthias SchoenaertsCharacter EVoice"Belgian actor. Known:9
+
+Idris ElbaCharacter LLead"English actor, producer,B
+Sofia HernandezEditorB
+Megan DaviesEditorJAncient map leadsUH·™@
+Ω
+
+tt24609143Aurora's Fall
+2029-07-16"Horror"Supernatural*
+Kai Richter2
+Andrew Green:4
+Louis GarrelCharacter HCameo"French actor and:E
+Benedict CumberbatchCharacter B
+Supporting"English actor. Known:?
+Emma WatsonCharacter J
+Supporting"English actress, model,B
+Camila FernandesEditorB!
+Vladimir OrlovCinematographerB
+
+Liam WhiteEditorB
+	Zhang HaoEditorB
+Wang LeiCinematographerJSheriff protects townUöô…@
+Ÿ
+
+tt81683238The Chronos Code
+2025-05-02"Sci-Fi"Drama*
+
+Maya Singh2
+Diego Sanchez:=
+
+Emma StoneCharacter RCameo"American actress. Recipient:7
+Oscar IsaacCharacter ZLead"American actor. KnownB
+Kazuo InoueEditorB
+Ingrid SolbergEditorB
+Victoria ShawEditorB 
+Alastair ReedCinematographerJMining crew encountersUÖÎ˘@
+©
+
+tt44667842The Shadowed Path
+2031-12-23"Musical"Romance*
+Gabriel Moreno2
+Guinevere Stone:<
+
+Rami MalekCharacter V
+Supporting"American actor. Known:;
+Deepika PadukoneCharacter RVoice"Indian actress. OneB
+Wang LeiCinematographerB
+Sophie ReedEditorJFriends on remoteUR∏∆@
+¶
+
+tt99786081Fallen Empire
+2031-09-26"Sci-Fi"	Cyberpunk*
+Liam Gallagher2
+Vikram Sharma2
+Faisal Khan:9
+Tom HiddlestonCharacter VVoice"English actor. Best:4
+Louis GarrelCharacter XCameo"French actor and:7
+Daniel KaluuyaCharacter GCameo"British actor and:5
+	Tom HardyCharacter LCameo"English actor. KnownB
+Svetlana SokolovaEditorB
+Chris AdamsCinematographerJRogue scientist opensU{A
+¸
+
+tt40495989Spirit of the Mountain
+2028-11-09"Fantasy"Family*
+Marcus Thorne2
+Richard Finch2
+Sarah Adams:3
+	Gal GadotCharacter JLead"Israeli actress and:9
+Daisy RidleyCharacter HLead"English actress. KnownB
+Fatima KhanEditorB#
+Sirius BlackwoodCinematographerB
+Amelia JonesCinematographerB
+	Vivek RaoEditorB
+Lin ZhaoEditorJA ragtag crewUff
+A
+∑
+
+tt58932537Echoes of the Past
+2033-07-06"Fantasy"	Adventure*
+Gabriel Moreno2
+Ahmed Hassan2
+Marie LeBlanc:O
+Rina SawayamaCharacter CCameo"*Japanese-British singer-songwriter, model,:8
+Henry CavillCharacter ACameo"British actor. Known:7
+
+Sadie SinkCharacter YLead"American actress. BestB 
+Anna LindgrenCinematographerB$
+Juan Carlos PerezCinematographerB
+Camila FernandesEditorJRogue scientist opensUˆ(‹@
+À
+
+tt48867727Fallen Empire
+2027-11-16"Fantasy"	Adventure*
+Anna Kuznetsova2
+Joon-ho Lee2
+Lena Schmidt:9
+	Gal GadotCharacter R
+Supporting"Israeli actress and:>
+Rebecca FergusonCharacter KCameo"Swedish actress. Known:@
+Ad√®le ExarchopoulosCharacter JLead"French actress. Known:8
+
+Sadie SinkCharacter MCameo"American actress. Best:4
+Jack ReynorCharacter DLead"Irish actor. KnownB 
+Mathilde RouxCinematographerB!
+Sophia M√ºllerCinematographerB
+Connor ByrneEditorB
+Thiago CostaCinematographerB
+	Zhang HaoEditorJAmnesiac woman uncoversUR∏æ@
+Ü
+
+tt63198000Deep Sea Enigma
+2029-11-12"Sci-Fi"Horror*
+Sarah Koenig2
+Hye-jin Kim:A
+	Liu YifeiCharacter ULead"!Chinese-American actress, singer,::
+Daisy RidleyCharacter GCameo"English actress. Known:9
+
+Idris ElbaCharacter QLead"English actor, producer,:6
+Chris PrattCharacter LLead"American actor, roseB"
+Benjamin CarterCinematographerB
+
+Daniel KimEditorB!
+Mikhail VolkovCinematographerB 
+Edward ClarkeCinematographerB
+Chris AdamsCinematographerJScientist develops AI,U√ıA
+¨
+
+tt44878934Eternal Bloom
+2031-06-22"Thriller"Noir*
+Arthur Pendelton2
+Rohan Kapoor:?
+Bryan CranstonCharacter CCameo"American actor, director,::
+Zoe Salda√±aCharacter HLead"American actress, knownB
+Ciaran DoyleCinematographerB
+Wang LeiCinematographerJLyra and daemonU=
+ﬂ@
+Ö
+
+tt87490145Echoes of the Future
+2033-03-23"Fantasy"	Adventure*
+Sakura Yamamoto2
+Olivia Miller:@
+Deepika PadukoneCharacter X
+Supporting"Indian actress. One:F
+Saoirse RonanCharacter YVoice"!Irish/American actress. Recipient:<
+Jake GyllenhaalCharacter IVoice"American actor. Known:=
+Florence PughCharacter SCameo"English actress. DebutedB
+
+Liam WhiteEditorB
+Yumi KobayashiEditorB
+Min LiEditorB
+Olivia ClarkEditorB 
+Jack PetersonCinematographerJRogue scientist opensUöôA
+¯
+
+tt56764170Crystal Shards
+2034-03-17"Sci-Fi"Mystery*
+Eleanor Vance2
+Faisal Khan2
+Jean-Pierre Moreau:>
+Liam HemsworthCharacter ICameo"Australian actor, played:@
+Ana de ArmasCharacter WVoice"Cuban-Spanish actress. Began:9
+Ryan GoslingCharacter SCameo"Canadian actor. Known:D
+Scarlett JohanssonCharacter R
+Supporting"American actress. OneB 
+Mathilde RouxCinematographerB
+James WilsonCinematographerB 
+Robert MillerCinematographerJDisgraced composer mentorsUˆ(‰@
+
+
+tt43431646Ironbound Oath
+2027-04-29"Sci-Fi"Thriller*
+Hiroshi Sato2
+
+Sven Olsen:?
+Marion CotillardCharacter IVoice"French actress, singer,:B
+Florence PughCharacter R
+Supporting"English actress. Debuted:5
+Jack ReynorCharacter JVoice"Irish actor. Known:<
+Jake GyllenhaalCharacter VVoice"American actor. KnownB
+Julien PicardEditorB
+Johan KarlssonEditorB
+Sophie ReedEditorB
+Chris AdamsCinematographerB
+	David LeeEditorJArtist discovers magicalU§p≠@
+≥
+
+tt91753947Echoes of Elysium
+2030-11-12"Fantasy"Folklore*
+Sofia Bellini2
+Tom Harrison:F
+Ad√®le ExarchopoulosCharacter P
+Supporting"French actress. Known:7
+Chris PrattCharacter BVoice"American actor, rose::
+Emma WatsonCharacter UCameo"English actress, model,::
+MackenyuCharacter Z
+Supporting"Japanese actor. KnownB
+Lukas BraunEditorB
+
+Sarah ChenCinematographerJVictorian high-society scandalUˆ(¥@
+®
+
+tt45434399	Neon Veil
+2026-05-28"Sci-Fi"Action*
+Elara Vance2
+Eleanor Vance2
+Saoirse Kelly:=
+
+Sadie SinkCharacter C
+Supporting"American actress. Best:9
+Simu LiuCharacter WCameo"Canadian actor, stuntman.:B
+Michelle YeohCharacter I
+Supporting"Malaysian actress. Known:?
+Emma WatsonCharacter Y
+Supporting"English actress, model,:4
+MackenyuCharacter ILead"Japanese actor. KnownB
+Julien PicardEditorB
+
+Liam WhiteEditorB!
+Hiroshi TanakaCinematographerB#
+Sirius BlackwoodCinematographerJAncient map leadsU·z A
+ê
+
+tt74693783Winter's Echo
+2033-07-19"Fantasy"Martial Arts*
+Sakura Yamamoto2
+
+John Davis2
+Jean-Pierre Moreau:E
+Alexander Skarsg√•rdCharacter V
+Supporting"Swedish actor. Known:A
+Olga KurylenkoCharacter LLead"Ukrainian-French actress and:@
+Ana de ArmasCharacter DCameo"Cuban-Spanish actress. Began:A
+Jet LiCharacter JLead"$Chinese-Singaporean actor, producer,:6
+
+Chris PineCharacter RLead"American actor. KnownB!
+Hiroshi TanakaCinematographerB
+Sophie WeberEditorJGeologists race toUÆﬂ@
+Ï
+
+tt53750297Echoes of the Past
+2033-12-05"Drama"Art*
+Marcus Thorne2
+	David Kim:;
+Alice BragaCharacter CVoice"Brazilian actress. Known:?
+Bryan CranstonCharacter DCameo"American actor, director,:9
+Ryan GoslingCharacter YCameo"Canadian actor. Known::
+Blake LivelyCharacter BLead"American actress. Known:F
+Ad√®le ExarchopoulosCharacter I
+Supporting"French actress. KnownB
+Chloe GreenCinematographerB
+Zara AliCinematographerJRogue scientist opensUöôÈ@
+û
+
+tt81654742Eternal Bloom
+2027-09-14"	Adventure"Survival*
+
+Ben Carter2
+Ivan Smirnov:@
+Naomi ScottCharacter E
+Supporting"English actress, singer.:<
+	Riz AhmedCharacter N
+Supporting"British actor, rapper,:=
+Emily BluntCharacter HVoice"British actress. Recipient:>
+Wagner MouraCharacter YVoice"Brazilian actor, director,:=
+
+Emma StoneCharacter VVoice"American actress. RecipientB
+Fatima KhanEditorB&
+Maria RodriguezProduction DesignerB
+Sneha ReddyEditorB
+Sophie ReedEditorJWarrior and mysticU√ı@
+¬
+
+tt83773152Whispering Sands
+2032-06-25"Drama"Romance*
+Liam Gallagher2
+Wei Li2
+	Yuki Sato:7
+
+Donnie YenCharacter W
+Supporting"Hong Kong actor,:@
+Ad√®le ExarchopoulosCharacter ZLead"French actress. KnownB 
+Anna LindgrenCinematographerB
+Svetlana SokolovaEditorJVictorian high-society scandalU∏A
+›
+
+tt88514897Solar Flare
+2026-03-09"Sci-Fi"Horror*
+Hiroshi Sato2
+Hye-jin Kim2
+Lena Schmidt::
+Daisy RidleyCharacter ZCameo"English actress. Known:?
+Emma WatsonCharacter R
+Supporting"English actress, model,:;
+Rosamund PikeCharacter KCameo"English actress. Known:D
+Scarlett JohanssonCharacter P
+Supporting"American actress. OneB
+
+Daniel KimEditorB
+Kazuo InoueEditorB
+	David LeeEditorB
+James WilsonCinematographerJLyra and daemonU·z§@
+à
+
+tt95551479The Verdant Curse
+2034-06-09"Sci-Fi"Action*
+Maria Rodriguez2
+Laura Evans::
+
+Idris ElbaCharacter UVoice"English actor, producer,::
+Jack ReynorCharacter G
+Supporting"Irish actor. KnownB
+Maria GarciaEditorB
+Yuto SuzukiCinematographerB
+Sneha ReddyEditorB 
+Mathilde RouxCinematographerB
+Svetlana SokolovaEditorJVictorian high-society scandalUÆˇ@
+Ë
+
+tt41596444The Azure Key
+2027-09-27"Sci-Fi"Survival*
+
+Maya Singh2
+Rohan Kapoor2
+
+Sven Olsen:>
+Ryan ReynoldsCharacter JCameo"Canadian actor, producer.:?
+Scarlett JohanssonCharacter PCameo"American actress. One:=
+Chris EvansCharacter Y
+Supporting"American actor. Known:?
+Alexander Skarsg√•rdCharacter LLead"Swedish actor. KnownB
+Victoria ShawEditorB
+Ethan TaylorEditorB
+Clara DaviesEditorB
+Liam ConnorCinematographerJSurvivors of planeU{∆@
+√
+
+tt59077675Whispers of Tomorrow
+2026-08-16"Sci-Fi"Mystery*
+Lena Petrov2
+Erik Johansson2
+Faisal Khan:B
+Keira KnightleyCharacter Z
+Supporting"English actress. Known::
+MackenyuCharacter Y
+Supporting"Japanese actor. Known:9
+Daisy RidleyCharacter ELead"English actress. KnownB"
+Franziska MaierCinematographerB
+Yuto SuzukiCinematographerB
+Samantha GreenEditorB
+
+Emily ChenEditorJResearchers unleash terrifyingUÏQ‡@
+˜
+
+tt63048265Winter's Echo
+2032-10-16"Fantasy"Action*
+Sofia Bellini2
+
+John Davis:>
+Steven YeunCharacter GLead"South Korean-American actor.::
+Emma WatsonCharacter JCameo"English actress, model,:I
+Priyanka Chopra JonasCharacter K
+Supporting"Indian actress, singer,B!
+Sophia M√ºllerCinematographerB
+Sophie WeberEditorJHumanity faces greatestU∏A
+‹
+
+tt84961022Emerald Dominion
+2030-08-25"Sci-Fi"Space Opera*
+
+Zhang Li2
+Ivan Smirnov2
+
+Sven Olsen:2
+
+Donnie YenCharacter QCameo"Hong Kong actor,:>
+Wagner MouraCharacter VVoice"Brazilian actor, director,:E
+Benedict CumberbatchCharacter X
+Supporting"English actor. Known:8
+Cillian MurphyCharacter ICameo"Irish actor. KnownB
+	Zhang HaoEditorB
+Luca MorettiCinematographerB
+	Vivek RaoEditorB
+Alice GreenComposerJAstronaut seeks newU
+◊√@
+÷
+
+tt40341916Silent Storm
+2030-08-18"Fantasy"	Adventure*
+Sarah Koenig2
+Mark Wilson2
+Taro Suzuki:C
+Liam HemsworthCharacter H
+Supporting"Australian actor, played:8
+Oscar IsaacCharacter UVoice"American actor. KnownB
+Yuto SuzukiCinematographerB
+Olivia ClarkEditorB
+Zara AliCinematographerJTwo souls separatedU{Ê@
+“
+
+tt17834153Cybernetic Mirage
+2027-10-04"Fantasy"Martial Arts*
+Simon Jenkins2
+Franz Becker:=
+Ryan ReynoldsCharacter YLead"Canadian actor, producer.:@
+Deepika PadukoneCharacter K
+Supporting"Indian actress. One:6
+
+Jamie BellCharacter ECameo"English actor. Known:=
+John BoyegaCharacter M
+Supporting"British actor. GainedB
+Chloe GreenCinematographerB!
+Mikhail VolkovCinematographerB
+Max HoffmannEditorJElite soldiers defendUˆ(¸@
+ï
+
+tt98574386Deep Space Drifters
+2033-04-10"Sci-Fi"Action*
+Simon Jenkins2
+Dmitry Ivanov2
+
+Sven Olsen:O
+Rina SawayamaCharacter DCameo"*Japanese-British singer-songwriter, model,:>
+Rebecca FergusonCharacter ICameo"Swedish actress. Known:=
+Hugh JackmanCharacter DCameo"Australian actor, singer,B
+Samantha GreenEditorB
+Seo-yeon ParkEditorJDetective investigates missingUè¬≠@
+»
+
+tt62955984The Crimson Veil
+2033-04-28"Sci-Fi"Action*
+Lucas Pereira2
+Tom Harrison2
+
+Noah Davis:=
+Keira KnightleyCharacter MVoice"English actress. Known:4
+MackenyuCharacter DLead"Japanese actor. Known:=
+Florence PughCharacter MCameo"English actress. Debuted:6
+Daniel KaluuyaCharacter CLead"British actor andB
+
+Karim SaidCinematographerB
+Saki TanakaEditorB
+	Zhang HaoEditorJ!Detective investigates mysteriousU   A
+‹
+
+tt18471605The Crystal Labyrinth
+2031-02-09"Fantasy"Martial Arts*
+
+Zara Ali2
+	Ana Silva:7
+Jason MomoaCharacter XLead"American actor. Known:@
+Blake LivelyCharacter O
+Supporting"American actress. KnownB
+Michael ChenEditorB
+Ciaran DoyleCinematographerB"
+Franziska MaierCinematographerJVictorian high-society scandalU=
+◊@
+æ
+
+tt31884793Starfall Prophecy
+2025-06-23"Fantasy"	Adventure*
+Elara Vance2
+	Yuki Sato2
+Jean-Pierre Moreau:?
+Steven YeunCharacter OVoice"South Korean-American actor.:6
+Chris PrattCharacter OLead"American actor, rose:5
+	Tom HardyCharacter WCameo"English actor. Known:>
+Rebecca FergusonCharacter PCameo"Swedish actress. Known:>
+Scarlett JohanssonCharacter VLead"American actress. OneB
+Maria GarciaEditorB 
+Edward ClarkeCinematographerB#
+Isabelle LaurentCinematographerB
+Max HoffmannEditorB
+Min LiEditorJA ragtag crewUÖ„@
+°
+
+tt72070218Crystal Shards
+2025-10-09"Drama"	Adventure*
+Hiroshi Sato2
+Tom Harrison2
+Sergei Volkov:;
+Bill Skarsg√•rdCharacter RCameo"Swedish actor. Known:2
+
+Donnie YenCharacter OVoice"Hong Kong actor,:=
+Cillian MurphyCharacter O
+Supporting"Irish actor. Known:8
+Jodie ComerCharacter WLead"English actress. KnownB
+Lukas BraunEditorB
+Camila FernandesEditorJYoung woman yearnsUÕÃ¸@
+ê
+
+tt17865002Cosmic Nexus
+2031-04-19"Historical Drama"Mystery*
+David Miller2
+Franz Becker2
+Joon-ho Lee:?
+Ana de ArmasCharacter PLead"Cuban-Spanish actress. Began:4
+	Dev PatelCharacter FLead"British actor. KnownB
+Chris AdamsCinematographerB
+Laura FerrariEditorB 
+Ananya SharmaCinematographerB
+Samantha GreenEditorB
+	David LeeEditorJArtist discovers magicalUÆß@
+Á
+
+tt25760050Lunar Requiem
+2028-09-20"	Adventure"Survival*
+Chloe Dupont2
+Giulia Bianchi2
+Akash Singh:C
+Gael Garc√≠a BernalCharacter ICameo"Mexican actor, director.:;
+Kanna HashimotoCharacter YCameo"Japanese actress andB
+Sofia HernandezEditorB 
+Jack PetersonCinematographerB
+Wang LeiCinematographerJAmnesiac woman uncoversU§p≈@
+Å
+
+tt51142956Celestial Ascent
+2029-05-21"Drama"Music*
+Daniel Chang2
+Wei Li:O
+Rina SawayamaCharacter TCameo"*Japanese-British singer-songwriter, model,:=
+Keira KnightleyCharacter CVoice"English actress. Known:A
+Jake GyllenhaalCharacter J
+Supporting"American actor. KnownB$
+Juan Carlos PerezCinematographerB
+Antoine DuboisEditorJElite soldiers defendU{
+A
+Æ
+
+tt83224135The Crimson Veil
+2025-04-17"Sci-Fi"Action*
+Chloe Dupont2
+Dmitry Ivanov2
+	Ling Chen:>
+Wagner MouraCharacter VVoice"Brazilian actor, director,:8
+Chris EvansCharacter VCameo"American actor. Known:F
+Saoirse RonanCharacter NCameo"!Irish/American actress. Recipient::
+Nicholas HoultCharacter KVoice"English actor. KnownB#
+Alessandro ContiCinematographerB
+Luca MorettiCinematographerB!
+Mikhail VolkovCinematographerB&
+Maria RodriguezProduction DesignerB
+Min LiEditorJScientists discover mysteriousUÏQ»@
+Ù
+
+tt15268048Abyssal Heart
+2034-06-23"Sci-Fi"Disaster*
+David Miller2
+Olivia Miller:@
+Matthias SchoenaertsCharacter VVoice"Belgian actor. Known:5
+	Tom HardyCharacter WVoice"English actor. Known:6
+
+Jamie BellCharacter GCameo"English actor. Known:B
+Jet LiCharacter BVoice"$Chinese-Singaporean actor, producer,B
+Priya SinghEditorB
+Laura FerrariEditorB#
+Maximilian VogelCinematographerB
+Sofia HernandezEditorB
+Sneha ReddyEditorJAmnesiac woman uncoversUffŒ@
+≠
+
+tt71699496The Sovereign Spark
+2030-04-09"Fantasy"Action*
+Daniel Chang2
+Dmitry Ivanov::
+
+Idris ElbaCharacter PVoice"English actor, producer,:8
+Nadine NjeimCharacter OCameo"Lebanese actress and:>
+Rebecca FergusonCharacter HCameo"Swedish actress. Known::
+Nicholas HoultCharacter SCameo"English actor. Known:=
+Emily BluntCharacter YCameo"British actress. RecipientB
+
+Sarah ChenCinematographerB#
+Sirius BlackwoodCinematographerB
+Maria GarciaEditorB 
+Alastair ReedCinematographerJTherapist discovers darkUR∏Œ@
+ì
+
+tt91483096The Last Artifact
+2025-02-24"Historical Drama"Mystery*
+Sakura Yamamoto2
+Sarah Jenkins2
+Jessica White:9
+Emma WatsonCharacter QLead"English actress, model,:8
+John BoyegaCharacter SCameo"British actor. Gained:6
+	Riz AhmedCharacter JLead"British actor, rapper,B
+
+Liam WhiteEditorB
+Anastasia SmirnovaEditorB
+Niamh O'ConnellEditorJSheriff protects townU=
+A
+‚
+
+tt84561935Stellar Drift
+2031-07-10"Sci-Fi"Drama*
+
+Mira Patel2
+	David Kim:>
+Scarlett JohanssonCharacter XLead"American actress. One:C
+Priyanka Chopra JonasCharacter CLead"Indian actress, singer,:@
+Deepika PadukoneCharacter R
+Supporting"Indian actress. One:8
+Oscar IsaacCharacter EVoice"American actor. KnownB
+Sneha ReddyEditorB
+Aoife KellyCinematographerB
+	Xiao WangCinematographerB
+	Chen WangCinematographerJGirl discovers magicalUÏQ‡@
+π
+
+tt42091256The Chronos Code
+2027-01-14"Sci-Fi"Time Travel*
+Simon Jenkins2
+Franz Becker:8
+John BoyegaCharacter DCameo"British actor. Gained:7
+Chris PrattCharacter GVoice"American actor, rose::
+Nicholas HoultCharacter MVoice"English actor. Known:6
+
+Chris PineCharacter VLead"American actor. KnownB
+Antoine DuboisEditorB
+Victoria ShawEditorB!
+Mikhail VolkovCinematographerJAstronaut stranded inU√ı»@
+ù
+
+tt27922415Crystal Heart
+2027-07-23"Historical Drama"Romance*
+Elara Vance2
+Joon-ho Lee2
+
+Owen Black:B
+Keira KnightleyCharacter L
+Supporting"English actress. Known::
+Zoe Salda√±aCharacter JLead"American actress, known:O
+Millie Bobby BrownCharacter N
+Supporting" British actress/producer. GainedB 
+Min-joon ChoiCinematographerB
+Sophie ReedEditorJVictorian high-society scandalUÖÎ˘@
+ÿ
+
+tt46494164Arcane Lumina
+2029-10-09"	Adventure"
+Historical*
+Sarah Koenig2
+Ahmed Hassan2
+
+Owen Black:;
+Kanna HashimotoCharacter DVoice"Japanese actress and:F
+Alicia VikanderCharacter Y
+Supporting"Swedish actress. Recipient:;
+Blake LivelyCharacter SCameo"American actress. Known:B
+Olga KurylenkoCharacter FCameo"Ukrainian-French actress and:D
+Scarlett JohanssonCharacter H
+Supporting"American actress. OneB
+	Chen WangCinematographerB
+Yuto SuzukiCinematographerB#
+Sirius BlackwoodCinematographerB 
+Alastair ReedCinematographerJFriends venture intoUˆ(¨@
+á
+
+tt53394703Chronicles of the Eldoria
+2030-04-06"Musical"Romance*
+Eleanor Vance2
+Emily White2
+Saoirse Kelly:B
+Timoth√©e ChalametCharacter ALead"American actor. Recipient:8
+Henry CavillCharacter GVoice"British actor. Known:5
+MackenyuCharacter OCameo"Japanese actor. Known:@
+Ana de ArmasCharacter CVoice"Cuban-Spanish actress. Began:5
+Jack ReynorCharacter NCameo"Irish actor. KnownB
+Wang LeiCinematographerB
+Thiago CostaCinematographerJCryptographer uncovers crypticUöô	A
+˙
+
+tt92191036Deep Earth Genesis
+2026-02-06"Sci-Fi"Mystery*
+
+Mira Patel2	
+Jian Li2
+Jean-Pierre Moreau:7
+
+Gemma ChanCharacter ILead"English actress. Known:?
+Scarlett JohanssonCharacter NVoice"American actress. OneB
+Ciaran DoyleCinematographerB!
+Sophia M√ºllerCinematographerB
+Olivia ClarkEditorB
+Svetlana SokolovaEditorJFriends venture intoUè¬≈@
+ß
+
+tt63085418The Shadow of Aethel
+2026-07-29"Sci-Fi"Thriller*
+Jessica Chen2
+Helena Brandt2
+Sergei Volkov:<
+Florence PughCharacter RLead"English actress. Debuted:A
+Alicia VikanderCharacter YCameo"Swedish actress. Recipient:A
+	Liu YifeiCharacter XLead"!Chinese-American actress, singer,B
+Kazuo InoueEditorB
+Lin ZhaoEditorB
+Ciaran DoyleCinematographerJForensic psychologist uncoversUff∂@
+˚
+
+tt77506243Eternal Bloom
+2029-07-04"Fantasy"Martial Arts*
+Isabella Russo2
+Wei Li2
+Guinevere Stone:>
+Hrithik RoshanCharacter F
+Supporting"Indian actor, works:O
+Charlize TheronCharacter GVoice"(South African/American actress/producer.B
+Sofia HernandezEditorB
+Antoine DuboisEditorB!
+Robert DavisStunt CoordinatorJCryptographer uncovers crypticU33Î@
+Û
+
+tt28086007Nightfall Legacy
+2034-01-07"Historical Drama"Mystery*
+Eleanor Vance2
+	Ling Chen:>
+Ryan ReynoldsCharacter MCameo"Canadian actor, producer.:3
+ZendayaCharacter YCameo"American actress andB!
+Dmitry MorozovCinematographerB
+Sophie ReedEditorB
+	Vivek RaoEditorB
+Michael ChenEditorB
+Chloe DaviesEditorJIndividuals embark onU◊£®@
+ø
+
+tt89147263Desert Mirage
+2033-05-14"Fantasy"	Adventure*
+Hiroshi Sato2
+	Yuki Sato:6
+
+Rami MalekCharacter ZLead"American actor. Known:B
+Jet LiCharacter VCameo"$Chinese-Singaporean actor, producer,B
+
+Daniel KimEditorB!
+Hiroshi TanakaCinematographerB
+Julien PicardEditorJYoung woman yearnsU◊£¿@
+ß
+
+tt43855163Whispers in the Dark
+2034-06-19"	Adventure"Fantasy*
+Daniel Chang2
+Eleanor Vance:A
+Dwayne JohnsonCharacter R
+Supporting"American actor, former:F
+Lupita Nyong'oCharacter ULead"!Kenyan-Mexican actress. Recipient:D
+Priyanka Chopra JonasCharacter RVoice"Indian actress, singer,:2
+
+Donnie YenCharacter CCameo"Hong Kong actor,B
+Wang LeiCinematographerB
+Max HoffmannEditorB$
+Juan Carlos PerezCinematographerB
+Victoria ShawEditorB!
+Robert DavisStunt CoordinatorJ!Detective investigates mysteriousUè¬ı@
+”
+
+tt53477109The Shadowed Path
+2026-04-15"Sci-Fi"Action*
+
+Zara Ali2
+
+John Davis:;
+Alice BragaCharacter BVoice"Brazilian actress. Known:;
+
+Jamie BellCharacter K
+Supporting"English actor. Known:2
+
+Donnie YenCharacter WCameo"Hong Kong actor,:A
+Jet LiCharacter HLead"$Chinese-Singaporean actor, producer,B
+Laura FerrariEditorB
+Michael ChenEditorB
+Chris AdamsCinematographerB!
+Robert DavisStunt CoordinatorJYoung woman yearnsU{Ê@
+ë
+
+tt30599570Cybernetic Mirage
+2029-12-26"Sci-Fi"Horror*
+Hiroshi Sato2
+Akash Singh2
+Faisal Khan:8
+Kit HaringtonCharacter OLead"English actor. Known:?
+
+Idris ElbaCharacter Z
+Supporting"English actor, producer,B
+Julien PicardEditorB"
+Lucie ChevalierCinematographerB
+Chris AdamsCinematographerB
+Lin ZhaoEditorB
+
+Karim SaidCinematographerJScientist develops AI,U=
+∑@
+Á
+
+tt66915225The Shadow of Aethel
+2031-07-27"Fantasy"Martial Arts*
+
+Maya Singh2
+Sergei Volkov:=
+Emily BluntCharacter RVoice"British actress. Recipient:;
+Alice BragaCharacter GVoice"Brazilian actress. Known:D
+Steven YeunCharacter K
+Supporting"South Korean-American actor.:6
+Daniel KaluuyaCharacter XLead"British actor and:7
+John BoyegaCharacter WLead"British actor. GainedB
+Sophie WeberEditorB 
+Robert MillerCinematographerJLyra and daemonUÖª@
+ï
+
+tt23441530Desert Mirage
+2027-01-24"	Cyberpunk"Action*
+Arthur Pendelton2
+Saoirse Kelly2
+Sergei Volkov:A
+Ad√®le ExarchopoulosCharacter YVoice"French actress. Known:E
+Matthias SchoenaertsCharacter K
+Supporting"Belgian actor. Known:>
+Wagner MouraCharacter OCameo"Brazilian actor, director,:8
+Cillian MurphyCharacter HCameo"Irish actor. Known:F
+Alicia VikanderCharacter M
+Supporting"Swedish actress. RecipientB
+Laura TaylorSound DesignerB
+Liam ConnorCinematographerJYoung woman yearnsU
+◊≥@
+à
+
+tt21146214Desert Bloom
+2029-02-16"Western"Action*
+Elara Vance2
+Lena Schmidt2
+Giovanni Ricci:;
+Rosamund PikeCharacter TCameo"English actress. Known:=
+Henry CavillCharacter I
+Supporting"British actor. KnownB
+Yumi KobayashiEditorB
+Zara AliCinematographerB
+
+Emily ChenEditorB
+Max HoffmannEditorB!
+Robert DavisStunt CoordinatorJAstronaut stranded inUÆGÈ@
+ü
+
+tt12364157Quantum Echoes
+2032-01-30"Psychological Thriller"Mystery*
+Jessica Chen2
+Marie LeBlanc:B
+Michelle YeohCharacter G
+Supporting"Malaysian actress. Known:?
+Daisy RidleyCharacter I
+Supporting"English actress. Known:8
+Kit HaringtonCharacter PLead"English actor. Known:C
+Eiza Gonz√°lezCharacter O
+Supporting"Mexican actress, singer.::
+
+Idris ElbaCharacter AVoice"English actor, producer,B
+Lin ZhaoEditorB
+Omar HassanEditorB
+Olga IvanovaEditorB
+Min LiEditorJComedian finds unexpectedU
+◊A
+ñ
+
+tt95818509Nexus of Worlds
+2026-04-08"Fantasy"	Adventure*
+Carlos Rivera2
+Jean-Pierre Moreau:H
+Timoth√©e ChalametCharacter M
+Supporting"American actor. Recipient:>
+Steven YeunCharacter ELead"South Korean-American actor.:7
+Chris PrattCharacter KVoice"American actor, rose:;
+Blake LivelyCharacter LVoice"American actress. KnownB"
+Franziska MaierCinematographerB#
+Alessandro ContiCinematographerB
+	Vivek RaoEditorB
+Victoria ShawEditorB
+Jean-Luc MoreauEditorJComedian finds unexpectedUff÷@
+˚
+
+tt34206631Resonance Project
+2033-09-03"Sci-Fi"Thriller*
+Maria Rodriguez2
+	Yuki Sato2
+Olivia Miller:=
+Cillian MurphyCharacter L
+Supporting"Irish actor. Known:=
+
+Sadie SinkCharacter G
+Supporting"American actress. Best:=
+Finn WolfhardCharacter RLead"Canadian actor, musician.:@
+Benedict CumberbatchCharacter FVoice"English actor. KnownB!
+Mikhail VolkovCinematographerB 
+Edward ClarkeCinematographerB"
+Benjamin CarterCinematographerJVictorian high-society scandalUÆG±@
+˘
+
+tt90389218Temporal Weave
+2029-06-28"Thriller"	Espionage*
+Finn O'Malley2
+Wei Li:5
+Jack ReynorCharacter TCameo"Irish actor. Known:>
+Ryan GoslingCharacter L
+Supporting"Canadian actor. Known:6
+
+Rami MalekCharacter MLead"American actor. Known::
+Kanna HashimotoCharacter TLead"Japanese actress and:7
+Jason MomoaCharacter WLead"American actor. KnownB
+Laura FerrariEditorB
+Connor ByrneEditorB
+Ciaran DoyleCinematographerB
+Kazuo InoueEditorJA ragtag crewUR∏˛@
+ï
+
+tt88099406The Astral Maze
+2029-01-20"Sci-Fi"Space Opera*
+Sofia Bellini2
+Lena Schmidt:<
+
+Emma StoneCharacter PLead"American actress. Recipient:=
+Florence PughCharacter ACameo"English actress. Debuted:O
+Rina SawayamaCharacter FVoice"*Japanese-British singer-songwriter, model,B
+Laura TaylorSound DesignerB!
+Akira YamamotoCinematographerJVictorian high-society scandalU\è∫@
+¥
+
+tt90002120Last Kingdom
+2031-08-09"Fantasy"Family*
+Marcus Thorne2
+
+Owen Black:8
+John BoyegaCharacter RCameo"British actor. Gained:?
+Ryunosuke KamikiCharacter G
+Supporting"Japanese actor and:<
+Hugh JackmanCharacter WLead"Australian actor, singer,B
+
+Daniel KimEditorB
+Max HoffmannEditorB
+
+Sarah ChenCinematographerB
+Yumi KobayashiEditorB#
+Mark JohnsonProduction DesignerJMaiden seeks RiverU◊£®@
+∆
+
+tt22516659City of Whispers
+2031-07-09"Action"Thriller*
+Sofia Hansen2
+Faisal Khan:?
+	Brad PittCharacter D
+Supporting"American actor, producer.:G
+Lupita Nyong'oCharacter WCameo"!Kenyan-Mexican actress. RecipientB 
+Min-joon ChoiCinematographerB
+Yumi KobayashiEditorJScientists discover mysteriousUÖÛ@
+â
+
+tt48882985Winter's Grasp
+2030-05-05"Action"Sci-Fi*
+Elara Vance2
+Rohan Kapoor:4
+MackenyuCharacter RLead"Japanese actor. Known:C
+Gael Garc√≠a BernalCharacter KVoice"Mexican actor, director.B
+	Vivek RaoEditorB
+Svetlana SokolovaEditorB
+Victoria ShawEditorB 
+Anna LindgrenCinematographerB#
+Alessandro ContiCinematographerJVictorian high-society scandalU·zA
+‡
+
+tt73597198Fractured Reflections
+2032-01-11"Sci-Fi"Space Opera*
+Fatima Zahra2
+Giulia Bianchi2
+Jessica White:7
+Oscar IsaacCharacter BLead"American actor. Known:?
+Jennifer LawrenceCharacter ALead"American actress. Known:=
+Rebecca FergusonCharacter MLead"Swedish actress. KnownB 
+Mathilde RouxCinematographerB 
+Min-joon ChoiCinematographerB
+Chloe DaviesEditorB
+Connor ByrneEditorB!
+Hiroshi TanakaCinematographerJGeologists race toU=
+A
+‘
+
+tt66876091Crystal Heart
+2029-11-19"Fantasy"	Adventure*
+Elena Petrova2
+Pierre Dubois2	
+Jian Li:>
+Eiza Gonz√°lezCharacter GVoice"Mexican actress, singer.:I
+Anya Taylor-JoyCharacter BLead"#American-British actress. Recipient:F
+Saoirse RonanCharacter NVoice"!Irish/American actress. RecipientB
+Luca MorettiCinematographerB"
+Benjamin CarterCinematographerB
+Ciaran DoyleCinematographerB
+Saki TanakaEditorJSheriff protects townUH· @
+ç
+
+tt16816332Nexus of Worlds
+2032-03-17"Sci-Fi"Survival*
+
+Ava Sharma2
+	Xiao Ling:A
+Dwayne JohnsonCharacter U
+Supporting"American actor, former:9
+Louis GarrelCharacter M
+Supporting"French actor and:?
+Daisy RidleyCharacter O
+Supporting"English actress. Known:6
+Chris PrattCharacter DLead"American actor, roseB
+Liam ConnorCinematographerB
+Ingrid SolbergEditorB"
+Franziska MaierCinematographerB 
+Anna LindgrenCinematographerB
+Amelia JonesCinematographerJArtist discovers magicalUÏQ®@
+Å
+
+tt88509647The Crimson Veil
+2032-03-19"Western"Action*
+Finn O'Malley2
+Marco Rossi2
+Brendan Murphy:T
+Rina SawayamaCharacter A
+Supporting"*Japanese-British singer-songwriter, model,:<
+Dwayne JohnsonCharacter YCameo"American actor, formerB
+Amelia JonesCinematographerB
+Chloe DaviesEditorB 
+Min-joon ChoiCinematographerJResearchers unleash terrifyingU◊£»@
+ê
+
+tt61300028Deep Earth Contingency
+2028-10-18"Drama"	Adventure*
+Eleanor Vance2
+Hiroshi Suzuki2
+Diego Sanchez:>
+Eiza Gonz√°lezCharacter BCameo"Mexican actress, singer.:O
+Millie Bobby BrownCharacter I
+Supporting" British actress/producer. Gained:7
+
+Rami MalekCharacter XVoice"American actor. KnownB
+Samantha GreenEditorB
+Sophie WeberEditorJHumanity faces greatestU·zÃ@
+≤
+
+tt32090321Heart of the Wilderness
+2025-03-06"Fantasy"Action*
+Eleanor Vance2
+Wei Li:;
+Deepika PadukoneCharacter DVoice"Indian actress. One:>
+Scarlett JohanssonCharacter YLead"American actress. One:;
+
+Jamie BellCharacter L
+Supporting"English actor. KnownB&
+Maria RodriguezProduction DesignerB
+Niamh O'ConnellEditorB 
+Eleanor VanceCinematographerB
+
+Emily ChenEditorJHacker uncovers dangerousU33´@
+ë
+
+tt58477314The Dream Weaver
+2028-11-22"Sci-Fi"Mystery*
+Maria Rodriguez2
+	Ling Chen:5
+Jack ReynorCharacter LVoice"Irish actor. Known:=
+Chris EvansCharacter T
+Supporting"American actor. Known::
+Noomi RapaceCharacter FVoice"Swedish actress. Known:9
+Daisy RidleyCharacter RLead"English actress. KnownB
+Connor ByrneEditorB
+Morgana Le FayEditorJAnimated toys goUÆGŸ@
+ª
+
+tt66531478Emerald Blade
+2025-09-11"Historical Drama"Mystery*
+Lee Joon-ho2
+Giovanni Ricci2	
+Mei Lin:>
+Eiza Gonz√°lezCharacter CVoice"Mexican actress, singer.:8
+ZendayaCharacter E
+Supporting"American actress andB
+
+Emily ChenEditorB
+Olga IvanovaEditorJCryptographer uncovers crypticUq=Ú@
+’
+
+tt10000304Starfall Prophecy
+2032-07-30"Sci-Fi"Thriller*
+David Miller2
+
+John Smith:7
+Cillian MurphyCharacter VLead"Irish actor. Known:7
+Tom HollandCharacter NVoice"English actor. Known:A
+Sandra BullockCharacter FVoice"American actress, producer.B
+Kazuo InoueEditorB"
+Franziska MaierCinematographerB
+Aoife KellyCinematographerB!
+Mikhail VolkovCinematographerB 
+Min-joon ChoiCinematographerJScientists discover mysteriousUÕÃ¨@
+
+
+tt88802025The Digital Soul
+2028-07-05"Sci-Fi"Drama*
+Arthur Pendelton2
+Hiroshi Suzuki:9
+Emma WatsonCharacter ULead"English actress, model,::
+	Tom HardyCharacter K
+Supporting"English actor. Known:A
+Dwayne JohnsonCharacter E
+Supporting"American actor, former:B
+Timoth√©e ChalametCharacter OLead"American actor. RecipientB
+
+Liam WhiteEditorB
+Connor ByrneEditorB#
+Isabelle LaurentCinematographerB
+Jean-Luc MoreauEditorJForensic psychologist uncoversU)\◊@
+≥
+
+tt12504607Phantom Protocol
+2034-09-29"Fantasy"Folklore*
+Chloe Dupont2
+Saoirse Kelly:=
+Jason MomoaCharacter N
+Supporting"American actor. Known::
+	Tom HardyCharacter T
+Supporting"English actor. Known:C
+Priyanka Chopra JonasCharacter XLead"Indian actress, singer,:8
+
+Sadie SinkCharacter DCameo"American actress. BestB#
+Mark JohnsonProduction DesignerB
+Yumi KobayashiEditorJAstronaut stranded inUÆG©@
+Õ
+
+tt72553070The Digital Soul
+2029-07-09"Sci-Fi"Disaster*
+Damien Roux2
+Guinevere Stone:;
+Alice BragaCharacter JCameo"Brazilian actress. Known:;
+Kanna HashimotoCharacter EVoice"Japanese actress and:?
+Alexander Skarsg√•rdCharacter NLead"Swedish actor. Known:9
+Daisy RidleyCharacter WLead"English actress. KnownB 
+Robert MillerCinematographerB
+Clara DaviesEditorB
+Omar HassanEditorJ!Detective investigates mysteriousUR∏
+A
+È
+
+tt26954907Painted Veil of Lies
+2033-11-06"Musical"Comedy*
+Damien Roux2
+Sarah Adams:7
+
+Rami MalekCharacter CVoice"American actor. Known:5
+Jack ReynorCharacter QCameo"Irish actor. Known:9
+Tom HiddlestonCharacter DCameo"English actor. Best:<
+
+Emma StoneCharacter OLead"American actress. Recipient:@
+Alexander Skarsg√•rdCharacter SCameo"Swedish actor. KnownB
+Ciaran DoyleCinematographerB
+Sofia HernandezEditorJVictorian high-society scandalUÆGA
+ï
+
+tt77037334Whispering Sands
+2030-07-31"	Cyberpunk"Action*
+Sarah Koenig2
+Richard Finch::
+Emma WatsonCharacter HCameo"English actress, model,:B
+Michelle YeohCharacter C
+Supporting"Malaysian actress. Known:4
+	Tom HardyCharacter FLead"English actor. Known:5
+Jack ReynorCharacter FVoice"Irish actor. KnownB 
+Anna LindgrenCinematographerB 
+Edward ClarkeCinematographerB
+Olga IvanovaEditorB!
+Vladimir OrlovCinematographerB$
+Juan Carlos PerezCinematographerJVictorian high-society scandalU{
+A
+‰
+
+tt16747828Chronicles of the Eldoria
+2027-11-29"Sci-Fi"Thriller*
+
+Sofia Khan2
+Kenji Nakamura2
+Sergei Volkov:4
+	Tom HardyCharacter TLead"English actor. Known:9
+Daisy RidleyCharacter ELead"English actress. KnownB
+Luca MorettiCinematographerB
+Priya SinghEditorB
+David GuptaCinematographerJResearchers unleash terrifyingU{ﬁ@
+⁄
+
+tt62311561Deserted Hope
+2031-06-19"Fantasy"	Adventure*
+
+Mira Patel2
+Erik Johansson2
+Tom Harrison:?
+Daisy RidleyCharacter X
+Supporting"English actress. Known:=
+Hugh JackmanCharacter MVoice"Australian actor, singer,:E
+Saoirse RonanCharacter VLead"!Irish/American actress. Recipient:8
+John BoyegaCharacter FCameo"British actor. GainedB
+
+Liam WhiteEditorB
+Lukas BraunEditorB"
+Ricardo SanchezCinematographerJYoung warrior protectsU=
+˜@
+Â
+
+tt12643433Stellar Drift
+2033-08-02"Sci-Fi"Space Opera*
+Carlos Rivera2
+Akash Singh2
+Sarah Jenkins:=
+Finn WolfhardCharacter WLead"Canadian actor, musician.:C
+Eiza Gonz√°lezCharacter A
+Supporting"Mexican actress, singer.:?
+Nicholas HoultCharacter M
+Supporting"English actor. Known:@
+Alexander Skarsg√•rdCharacter SVoice"Swedish actor. Known:4
+MackenyuCharacter XLead"Japanese actor. KnownB!
+Sophia M√ºllerCinematographerB 
+Anna LindgrenCinematographerB
+Chloe GreenCinematographerB
+Ciaran DoyleCinematographerB
+
+Ravi KumarCinematographerJLyra and daemonUq=
+A
+ı
+
+tt97119746Nexus Point
+2030-03-07"Sci-Fi"Time Travel*
+Marcus Thorne2
+Guinevere Stone2
+Akash Singh:9
+Tom HiddlestonCharacter PCameo"English actor. Best:>
+Hrithik RoshanCharacter Q
+Supporting"Indian actor, worksB
+Aoife KellyCinematographerB#
+Mark JohnsonProduction DesignerB!
+Sophia M√ºllerCinematographerJForensic psychologist uncoversUöô·@
+Ì
+
+tt19689782
+Lunar Glow
+2029-05-05"Drama"Mystery*
+Marcus Thorne2
+Lena Schmidt2
+Rohan Kapoor:9
+Ryunosuke KamikiCharacter ULead"Japanese actor and:7
+	Riz AhmedCharacter AVoice"British actor, rapper,B"
+Ricardo SanchezCinematographerB
+Michael ChenEditorB
+Antoine DuboisEditorB#
+Isabelle LaurentCinematographerJSecret agency usesU·z¨@
+Û
+
+tt13465935Silent Storm
+2033-02-14"Horror"Mystery*
+Lee Joon-ho2
+	David Kim:>
+Finn WolfhardCharacter ICameo"Canadian actor, musician.:@
+Bill Skarsg√•rdCharacter U
+Supporting"Swedish actor. Known:@
+Ad√®le ExarchopoulosCharacter VLead"French actress. KnownB 
+Ananya SharmaCinematographerB 
+Min-joon ChoiCinematographerJFriends on remoteUöô	A
+Ñ
+
+tt71749915Infinite Canvas
+2033-08-23"Thriller"	Espionage*
+Arthur Pendelton2
+Laura Evans2
+	Yuki Sato:F
+Ad√®le ExarchopoulosCharacter Z
+Supporting"French actress. Known:=
+Ryan ReynoldsCharacter TLead"Canadian actor, producer.:?
+Emma WatsonCharacter K
+Supporting"English actress, model,B
+	Chen WangCinematographerB
+Sophie ReedEditorJSecret agency usesUÆø@
+Ç
+
+tt59844108City of Whispers
+2025-07-07"Musical"Comedy*
+Lena Anderson2
+Guinevere Stone:;
+Karen GillanCharacter ICameo"Scottish actress. Known:B
+Olga KurylenkoCharacter OCameo"Ukrainian-French actress and:?
+Emma WatsonCharacter A
+Supporting"English actress, model,B
+	Chen WangCinematographerB
+	Lars BergCinematographerJScientists discover mysteriousU§pÂ@
+Û
+
+tt15742260Fading Echoes
+2029-06-22"Fantasy"	Adventure*
+
+Maya Singh2
+Juan Pablo Cortes:5
+	Tom HardyCharacter QCameo"English actor. Known:L
+Lupita Nyong'oCharacter U
+Supporting"!Kenyan-Mexican actress. Recipient:>
+Finn WolfhardCharacter ICameo"Canadian actor, musician.::
+Ryunosuke KamikiCharacter OVoice"Japanese actor and:9
+Tom HiddlestonCharacter ICameo"English actor. BestB
+Alice GreenComposerB"
+Lucie ChevalierCinematographerJSheriff protects townU\èA
+≤
+
+tt76297079Song of the River Spirit
+2025-10-08"Sci-Fi"Horror*
+Arthur Pendelton2	
+Wang Fu2
+Marco Rossi:7
+Chris PrattCharacter OVoice"American actor, rose:B
+
+Emma StoneCharacter I
+Supporting"American actress. Recipient:C
+Gael Garc√≠a BernalCharacter UCameo"Mexican actor, director.B
+Morgana Le FayEditorB
+	Lars BergCinematographerB
+Clara DaviesEditorB
+Lin ZhaoEditorJAstronaut stranded inUR∏Ó@
+µ
+
+tt10286542The Astral Maze
+2030-03-23"Horror"Mystery*
+
+Zhang Li2
+Hye-jin Kim:9
+Louis GarrelCharacter N
+Supporting"French actor and:=
+
+Emma StoneCharacter LCameo"American actress. Recipient:C
+Timoth√©e ChalametCharacter WVoice"American actor. Recipient::
+Rosamund PikeCharacter PLead"English actress. KnownB
+	David LeeEditorB
+Lin ZhaoEditorB#
+Alessandro ContiCinematographerJAnimated toys goU·zº@
+“
+
+tt11322873Aetherial Divide
+2033-08-30"Thriller"Noir*
+
+Jane Doe2
+Tom Harrison2
+
+John Davis:?
+Marion CotillardCharacter NVoice"French actress, singer,:3
+ZendayaCharacter DVoice"American actress andB
+Michael BrownVFX SupervisorB"
+Charlotte GreenCinematographerB
+	David LeeEditorJBiographical film aboutUˆ(A
+Ì
+
+tt98451776Gilded Cage
+2033-12-05"Thriller"Noir*
+Damien Roux2
+Jean-Pierre Moreau2
+	Xiao Ling:9
+Hrithik RoshanCharacter PCameo"Indian actor, works:8
+Chris EvansCharacter SCameo"American actor. KnownB
+Fatima KhanEditorB 
+Robert MillerCinematographerB
+Ethan TaylorEditorB
+Jean-Luc MoreauEditorJVictorian high-society scandalU33A
+∑
+
+tt35108334The Urban Echo
+2034-08-01"	Animation"Family*
+Maria Rodriguez2
+Guinevere Stone2
+Sarah Jenkins:>
+Bryan CranstonCharacter BLead"American actor, director,:F
+Lupita Nyong'oCharacter PLead"!Kenyan-Mexican actress. RecipientB!
+Dmitry MorozovCinematographerB
+David GuptaCinematographerB
+Liam ConnorCinematographerB
+Johan KarlssonEditorB
+Jean-Luc MoreauEditorJCryptographer uncovers crypticU\èA
+ù
+
+tt50012145The Rogue Protocol
+2029-07-21"Sci-Fi"Thriller*
+Isabella Russo2
+Nadia Benali2
+Diego Sanchez:@
+Bill Skarsg√•rdCharacter M
+Supporting"Swedish actor. Known:8
+Oscar IsaacCharacter MVoice"American actor. Known:A
+Dwayne JohnsonCharacter H
+Supporting"American actor, former:;
+
+Jamie BellCharacter O
+Supporting"English actor. KnownB
+Jessica TaylorEditorB#
+Mark JohnsonProduction DesignerB!
+Sophia M√ºllerCinematographerB
+Ingrid SolbergEditorB
+Sofia ContiEditorJDetective hunts serialUÖÎ	A
+‡
+
+tt73397237Winter's Grasp
+2025-02-21"Sci-Fi"	Cyberpunk*
+Kenji Tanaka2
+Juan Pablo Cortes2
+
+John Smith:B
+Margot RobbieCharacter ZVoice"Australian actress, producer.:D
+Bryan CranstonCharacter Q
+Supporting"American actor, director,B
+Chloe DaviesEditorB
+Sofia HernandezEditorB
+Yumi KobayashiEditorJElite unit retrievesU§pı@
+Ì
+
+tt39529339Quantum Echoes
+2027-12-08"Musical"Romance*
+
+Mira Patel2
+Emily White2
+Astrid Nilsson:@
+Blake LivelyCharacter B
+Supporting"American actress. Known:9
+	Brad PittCharacter TLead"American actor, producer.:9
+
+Idris ElbaCharacter JLead"English actor, producer,B
+
+Daniel KimEditorB
+Svetlana SokolovaEditorJMaiden seeks RiverU∏≠@
+ì
+
+tt38757082Cosmic Nexus
+2032-07-16"Sci-Fi"Drama*
+Giovanni Rossi2
+Mark Wilson2
+	Yuki Sato:@
+Benedict CumberbatchCharacter QCameo"English actor. Known:C
+Liam HemsworthCharacter X
+Supporting"Australian actor, played:C
+Wagner MouraCharacter M
+Supporting"Brazilian actor, director,:7
+Cillian MurphyCharacter CLead"Irish actor. Known:?
+Bryan CranstonCharacter RCameo"American actor, director,B
+Omar HassanEditorB 
+Min-joon ChoiCinematographerB
+Laura FerrariEditorJAncient map leadsUq=™@
+°
+
+tt43699247Iron Heartwood
+2030-04-05"Thriller"Crime*
+Sofia Hansen2
+Sergei Volkov2
+Marie LeBlanc:@
+Alexander Skarsg√•rdCharacter OVoice"Swedish actor. Known::
+Nicholas HoultCharacter XCameo"English actor. Known:O
+Anya Taylor-JoyCharacter S
+Supporting"#American-British actress. Recipient:J
+Millie Bobby BrownCharacter XCameo" British actress/producer. GainedB"
+Lucie ChevalierCinematographerB 
+Robert MillerCinematographerB
+	Chen WangCinematographerB
+Connor ByrneEditorJTherapist discovers darkUff
+A
+…
+
+tt68417234Emerald Dominion
+2032-08-10"	Animation"Family*
+Maria Rodriguez2
+Brendan Murphy2
+Sarah Adams:7
+
+Rami MalekCharacter XCameo"American actor. Known:G
+Olga KurylenkoCharacter W
+Supporting"Ukrainian-French actress andB
+Liam ConnorCinematographerB
+Michael ChenEditorJBiographical film aboutU=
+«@
+ã
+
+tt27650557Infinite Canvas
+2028-09-06"Sci-Fi"	Cyberpunk*
+Hiroshi Sato2
+Brendan Murphy2
+Carmen Lopez:>
+Jodie ComerCharacter G
+Supporting"English actress. Known:B
+Olga KurylenkoCharacter WCameo"Ukrainian-French actress and:G
+Lupita Nyong'oCharacter BCameo"!Kenyan-Mexican actress. Recipient:?
+Bryan CranstonCharacter WVoice"American actor, director,B
+	David LeeEditorB!
+Akira YamamotoCinematographerB
+Ingrid SolbergEditorB$
+Juan Carlos PerezCinematographerJAnimated toys goU33˚@
+ª
+
+tt94107280Aetherium Protocol
+2034-11-28"Sci-Fi"Mystery*
+Simon Jenkins2
+Daniel White:4
+Jack ReynorCharacter LLead"Irish actor. Known:>
+Kit HaringtonCharacter X
+Supporting"English actor. KnownB"
+Lucie ChevalierCinematographerB"
+Benjamin CarterCinematographerJTherapist discovers darkUÆˇ@
+¡
+
+tt49772477Cybernetic Mirage
+2026-07-22"Sci-Fi"Horror*
+Chloe Dupont2
+Ahmed Hassan:>
+Jodie ComerCharacter X
+Supporting"English actress. Known:A
+Sandra BullockCharacter NCameo"American actress, producer.B 
+Ananya SharmaCinematographerB#
+Mark JohnsonProduction DesignerJSheriff protects townUÆG°@
+˛
+
+tt26756870Cosmic Nexus
+2033-12-22"Sci-Fi"Thriller*
+Arthur Pendelton2
+Diego Sanchez2
+Kenji Nakamura:4
+	Tom HardyCharacter QLead"English actor. Known:<
+Hugh JackmanCharacter ELead"Australian actor, singer,:8
+
+Gemma ChanCharacter XCameo"English actress. KnownB#
+Maximilian VogelCinematographerB!
+Akira YamamotoCinematographerJOperative races toU·z¨@
+â
+
+tt42622048Legacy of the Sunstone
+2034-08-30"Comedy"Drama*
+Hiroshi Sato2
+	David Kim::
+Alice BragaCharacter BLead"Brazilian actress. Known:F
+Alicia VikanderCharacter S
+Supporting"Swedish actress. Recipient::
+	Brad PittCharacter WCameo"American actor, producer.:7
+Nadine NjeimCharacter SLead"Lebanese actress andB
+Yumi KobayashiEditorB
+Camila FernandesEditorB!
+Dmitry MorozovCinematographerB#
+Alessandro ContiCinematographerB
+Kazuo InoueEditorJArtist discovers magicalUˆ(‘@
+Ñ
+
+tt90089107Winter's Grasp
+2027-04-09"Drama"Mystery*
+Sofia Hansen2
+Brendan Murphy2
+
+John Smith:C
+Liam HemsworthCharacter E
+Supporting"Australian actor, played:A
+Alicia VikanderCharacter ECameo"Swedish actress. Recipient:<
+Jake GyllenhaalCharacter DVoice"American actor. KnownB!
+Dmitry MorozovCinematographerB
+Wang LeiCinematographerJLyra and daemonUÏQ¿@
+∂
+
+tt18822693The Obsidian Gate
+2028-09-26"Sci-Fi"Action*
+Sofia Bellini2
+Lena Schmidt2
+Richard Finch:4
+	Gal GadotCharacter NVoice"Israeli actress and:9
+Daisy RidleyCharacter SLead"English actress. KnownB
+Anastasia SmirnovaEditorB
+Niamh O'ConnellEditorJTherapist discovers darkUÏQ¯@
+Å
+
+tt41077228Apex Protocol
+2030-07-25"Horror"Mystery*
+Maria Rodriguez2
+Franz Becker2
+	Xiao Ling:9
+Nicholas HoultCharacter HLead"English actor. Known:K
+Saoirse RonanCharacter U
+Supporting"!Irish/American actress. Recipient:I
+Priyanka Chopra JonasCharacter X
+Supporting"Indian actress, singer,:>
+Rebecca FergusonCharacter FVoice"Swedish actress. Known:>
+Ryan ReynoldsCharacter IVoice"Canadian actor, producer.B
+Morgana Le FayEditorB
+
+Daniel KimEditorJKing Alfred andUff∂@
+≤
+
+tt23081269Winter's Echo
+2031-10-19"Fantasy"Family*
+Greta Hansen2
+Sarah Jenkins:7
+Jason MomoaCharacter BLead"American actor. Known:9
+
+Idris ElbaCharacter ZLead"English actor, producer,:=
+Florence PughCharacter QCameo"English actress. DebutedB
+Yuto SuzukiCinematographerB
+Thiago CostaCinematographerB
+Samantha GreenEditorB
+Fatima KhanEditorB
+Chloe DaviesEditorJRogue scientist opensU·z¥@
+ò
+
+tt40679029The Obsidian Gate
+2031-09-08"Action"	Adventure"Sci-Fi*
+Jessica Chen2
+Marco Rossi:=
+Florence PughCharacter MVoice"English actress. Debuted:A
+Angelina JolieCharacter GLead"American actress, filmmaker,:8
+
+Gemma ChanCharacter TCameo"English actress. KnownB
+Laura TaylorSound DesignerB
+Priya SinghEditorB#
+Isabelle LaurentCinematographerJElite unit retrievesUè¬˝@
+¨
+
+tt24715499Deserted Hope
+2028-01-14"Sci-Fi"Drama*
+Marcus Thorne2
+	Xiao Ling:F
+Alicia VikanderCharacter I
+Supporting"Swedish actress. Recipient:<
+
+Rami MalekCharacter W
+Supporting"American actor. Known:?
+Steven YeunCharacter NCameo"South Korean-American actor.::
+	Brad PittCharacter UVoice"American actor, producer.:<
+Jake GyllenhaalCharacter UVoice"American actor. KnownB 
+Mathilde RouxCinematographerB#
+Mark JohnsonProduction DesignerB
+Ethan TaylorEditorB
+Samantha GreenEditorJAspiring musicians fromUÖ€@
+€
+
+tt44502466Abyssal Heart
+2025-01-14"Sci-Fi"Action*
+
+Mira Patel2
+Olivia Miller:C
+Eiza Gonz√°lezCharacter L
+Supporting"Mexican actress, singer.:6
+Tom HollandCharacter ALead"English actor. Known:G
+Olga KurylenkoCharacter S
+Supporting"Ukrainian-French actress and::
+Blake LivelyCharacter SLead"American actress. KnownB
+	Kevin LeeCinematographerB
+Megan DaviesEditorB"
+Lucie ChevalierCinematographerJ"Astrophysicists investigate cosmicUH·∫@
+ö
+
+tt33546258Whispering Woods
+2029-12-04"Fantasy"Folklore*
+Hiroshi Sato2
+Guinevere Stone2
+Akash Singh:G
+Lupita Nyong'oCharacter UVoice"!Kenyan-Mexican actress. Recipient:>
+Kit HaringtonCharacter D
+Supporting"English actor. Known:7
+Daniel KaluuyaCharacter DCameo"British actor andB
+Olivia ClarkEditorB
+	David LeeEditorB!
+Vladimir OrlovCinematographerJYoung woman yearnsUR∏Ó@
+˜
+
+tt85931222The Sovereign Spark
+2028-02-26"Action"Sci-Fi*
+Daniel Chang2
+Ahmed Hassan:8
+Jodie ComerCharacter GLead"English actress. Known:@
+Alexander Skarsg√•rdCharacter BCameo"Swedish actor. Known:9
+Hrithik RoshanCharacter AVoice"Indian actor, worksB
+Ethan TaylorEditorB
+Jessica TaylorEditorB
+Olivia ClarkEditorJMaiden seeks RiverU{¶@
+˘
+
+tt92822027Solar Nexus
+2027-03-07"Crime"Drama*
+Samuel Park2
+Min-jun Park:I
+Priyanka Chopra JonasCharacter Z
+Supporting"Indian actress, singer,:@
+Alicia VikanderCharacter FLead"Swedish actress. Recipient:3
+ZendayaCharacter ECameo"American actress and:9
+Kit HaringtonCharacter VCameo"English actor. KnownB 
+Edward ClarkeCinematographerB
+Thiago CostaCinematographerB!
+Akira YamamotoCinematographerB
+Sophie WeberEditorB
+Michael ChenEditorJA ragtag crewU·z¥@
+ﬂ
+
+tt45236494	Neon Veil
+2033-04-09"Sci-Fi"Space Opera*
+Chloe Dupont2
+	Yuki Sato::
+Noomi RapaceCharacter WCameo"Swedish actress. Known:C
+Eiza Gonz√°lezCharacter F
+Supporting"Mexican actress, singer.:G
+Jet LiCharacter G
+Supporting"$Chinese-Singaporean actor, producer,B!
+Mikhail VolkovCinematographerB
+Yuto SuzukiCinematographerB
+Seo-yeon ParkEditorB#
+Maximilian VogelCinematographerB
+Jessica TaylorEditorJVictorian high-society scandalUff∆@
+†
+
+tt13786212The Crystal Labyrinth
+2030-03-18"	Cyberpunk"Action*
+Gabriel Moreno2
+Joon-ho Lee2
+Kenji Nakamura:8
+
+Gemma ChanCharacter FCameo"English actress. Known:J
+Millie Bobby BrownCharacter SCameo" British actress/producer. Gained:3
+ZendayaCharacter UVoice"American actress and:=
+Liam HemsworthCharacter KLead"Australian actor, played:7
+Tom HollandCharacter TCameo"English actor. KnownB#
+Maximilian VogelCinematographerB
+Johan KarlssonEditorB
+James WilsonCinematographerJFriends on remoteUÖA
+∆
+
+tt98018109Chronicles of the Eldoria
+2026-07-16"Drama"Romance*
+Aisha Rahman2
+
+Owen Black:<
+
+Chris PineCharacter U
+Supporting"American actor. Known:J
+Millie Bobby BrownCharacter PCameo" British actress/producer. Gained:B
+Jet LiCharacter WVoice"$Chinese-Singaporean actor, producer,:;
+Deepika PadukoneCharacter YCameo"Indian actress. One:<
+Ruby GillmanCharacter YCameo"Australian actress knownB#
+Mark JohnsonProduction DesignerB
+Min LiEditorB
+Priya SinghEditorB
+Anastasia SmirnovaEditorB
+Sneha ReddyEditorJMaiden seeks RiverU∏Ì@
+˝
+
+tt15256063The Urban Echo
+2030-06-23"Thriller"Noir*
+Elena Petrova2
+Erik Johansson::
+	Brad PittCharacter DVoice"American actor, producer.:@
+Bill Skarsg√•rdCharacter I
+Supporting"Swedish actor. Known:T
+Charlize TheronCharacter T
+Supporting"(South African/American actress/producer.:@
+Alexander Skarsg√•rdCharacter XCameo"Swedish actor. Known:=
+Michelle YeohCharacter CVoice"Malaysian actress. KnownB
+Ingrid SolbergEditorB
+Julien PicardEditorJAstronaut seeks newUR∏ˆ@
+í
+
+tt80837071The Obsidian Blade
+2025-09-14"Sci-Fi"Drama*
+Maria Rodriguez2
+Laura Evans2
+Daniel White:?
+Benedict CumberbatchCharacter QLead"English actor. Known:=
+Robert Downey Jr.Character YLead"American actor. KnownB
+Sophie WeberEditorB
+Thiago CostaCinematographerB
+Olga IvanovaEditorB 
+Ananya SharmaCinematographerB
+Seo-yeon ParkEditorJWarrior and mysticUÕÃA
+É
+
+tt45966168Winter's Echo
+2027-03-04"	Adventure"Fantasy*
+Anna Kuznetsova2
+Akash Singh:C
+Ryan ReynoldsCharacter U
+Supporting"Canadian actor, producer.:=
+
+Sadie SinkCharacter S
+Supporting"American actress. Best:6
+
+Chris PineCharacter GLead"American actor. Known:9
+Tom HiddlestonCharacter KVoice"English actor. BestB
+Wang LeiCinematographerB#
+Sirius BlackwoodCinematographerB
+Niamh O'ConnellEditorB
+Saki TanakaEditorB
+Morgana Le FayEditorJDisgraced composer mentorsU33A
+â
+
+tt12025739Echoes in the Void
+2029-08-01"Sports"Drama*
+
+Ben Carter2
+Sarah Jenkins2	
+Wang Fu:E
+Ana de ArmasCharacter U
+Supporting"Cuban-Spanish actress. Began:=
+Jason MomoaCharacter I
+Supporting"American actor. Known:7
+John BoyegaCharacter ELead"British actor. GainedB#
+Isabelle LaurentCinematographerB 
+Robert MillerCinematographerJAmnesiac woman uncoversUÆ∑@
+ì
+
+tt50963212Gilded Cage
+2029-07-09"Horror"Supernatural*
+
+Chen Wei2
+Franz Becker2
+Hye-jin Kim:>
+Marion CotillardCharacter NLead"French actress, singer,:=
+Hugh JackmanCharacter HVoice"Australian actor, singer,::
+Jack ReynorCharacter K
+Supporting"Irish actor. Known:@
+Alice BragaCharacter J
+Supporting"Brazilian actress. KnownB
+Victoria ShawEditorB
+Sofia HernandezEditorB
+
+Liam WhiteEditorB
+	Chen WangCinematographerB
+
+Karim SaidCinematographerJ"Astrophysicists investigate cosmicUÆG—@
+È
+
+tt70076291Emerald Dominion
+2030-03-15"Drama"Mystery*
+Eleanor Vance2
+	David Kim:A
+Margot RobbieCharacter ALead"Australian actress, producer.:8
+Henry CavillCharacter MCameo"British actor. Known::
+Jack ReynorCharacter F
+Supporting"Irish actor. Known:8
+
+Gemma ChanCharacter QVoice"English actress. KnownB
+Jean-Luc MoreauEditorB
+Morgana Le FayEditorB
+Fatima KhanEditorB
+Antoine DuboisEditorB
+Anna KimCostume DesignerJTwo souls separatedUöô·@
+®
+
+tt68134096Apex Protocol
+2027-04-22"Sci-Fi"Horror*
+
+Ava Sharma2
+Erik Johansson2
+Rohan Kapoor:5
+MackenyuCharacter ACameo"Japanese actor. Known::
+Ryunosuke KamikiCharacter JVoice"Japanese actor andB
+Samantha GreenEditorB
+Camila FernandesEditorJFriends on remoteUÖÎ¡@
+∏
+
+tt86070572Crimson Dawn
+2034-02-18"Horror"Mystery*
+Alex Turner2
+	Ana Silva:7
+Jason MomoaCharacter BLead"American actor. Known:@
+Naomi ScottCharacter X
+Supporting"English actress, singer.:9
+Ryan GoslingCharacter UVoice"Canadian actor. Known::
+Deepika PadukoneCharacter ILead"Indian actress. OneB
+Saki TanakaEditorB
+Wang LeiCinematographerB
+Thiago CostaCinematographerJAspiring musicians fromUffA
+Ñ
+
+tt89307492Galactic Bloom
+2029-01-02"Drama"	Adventure*
+David Miller2
+Tom Harrison2
+Laura Evans:;
+Bill Skarsg√•rdCharacter DVoice"Swedish actor. Known:7
+
+Chris PineCharacter XCameo"American actor. KnownB 
+Ananya SharmaCinematographerB
+Zara AliCinematographerB 
+Mathilde RouxCinematographerB
+
+Sarah ChenCinematographerJScientists discover mysteriousU=
+«@
+ﬁ
+
+tt57409047Resonance Project
+2025-03-22"Sci-Fi"Action*
+
+Zara Ali2
+Akash Singh2
+	Xiao Ling::
+	Dev PatelCharacter W
+Supporting"British actor. Known::
+Deepika PadukoneCharacter GLead"Indian actress. OneB
+Sophie ReedEditorB
+Liam ConnorCinematographerB
+Max HoffmannEditorB
+Megan DaviesEditorJIndividuals embark onU33Î@
+Ø
+
+tt89574562Horizon Line
+2026-04-09"Action"Sci-Fi*
+Fatima Zahra2
+Faisal Khan2
+Min-jun Park:6
+Tom HollandCharacter JLead"English actor. Known:8
+Cillian MurphyCharacter VCameo"Irish actor. KnownB
+Laura FerrariEditorB#
+Sirius BlackwoodCinematographerJAstronaut seeks newU=
+ß@
+µ
+
+tt37480051Emerald Dominion
+2028-11-02"Psychological Thriller"Mystery*
+Simon Jenkins2
+Diego Sanchez::
+
+Idris ElbaCharacter QVoice"English actor, producer,:C
+Rebecca FergusonCharacter S
+Supporting"Swedish actress. Known:C
+Finn WolfhardCharacter R
+Supporting"Canadian actor, musician.::
+	Tom HardyCharacter Q
+Supporting"English actor. Known:>
+Kit HaringtonCharacter T
+Supporting"English actor. KnownB
+Sofia ContiEditorB
+Saki TanakaEditorB
+Connor ByrneEditorB
+Kazuo InoueEditorJ"Astrophysicists investigate cosmicUH·‚@
+Ë
+
+tt51985405Silent Witness
+2033-10-12"	Adventure"Survival*
+
+Chen Wei2	
+Wang Fu2
+Rajesh Gupta:>
+Bryan CranstonCharacter PLead"American actor, director,:9
+
+Idris ElbaCharacter JLead"English actor, producer,:7
+Chris PrattCharacter WCameo"American actor, rose:=
+Rebecca FergusonCharacter KLead"Swedish actress. KnownB
+Lukas BraunEditorB
+Aoife KellyCinematographerB
+	Lars BergCinematographerB
+Fatima KhanEditorJForensic psychologist uncoversUˆ(¸@
+Ç
+
+tt75082607Emerald Dominion
+2032-02-19"	Cyberpunk"Action*
+Lena Petrov2
+Saoirse Kelly:=
+Henry CavillCharacter Y
+Supporting"British actor. Known:9
+Tom HiddlestonCharacter HCameo"English actor. BestB
+	Xiao WangCinematographerB#
+Sirius BlackwoodCinematographerB"
+Ricardo SanchezCinematographerB
+	Vivek RaoEditorB
+	Zhang HaoEditorJTwo souls separatedU◊£Ë@
+˝
+
+tt59641251Quantum Nexus
+2034-09-21"Fantasy"Action*
+Jackson Lee2
+Hye-jin Kim2
+Mark Wilson:=
+
+Emma StoneCharacter EVoice"American actress. Recipient:D
+Priyanka Chopra JonasCharacter KVoice"Indian actress, singer,:7
+
+Donnie YenCharacter N
+Supporting"Hong Kong actor,:<
+
+Rami MalekCharacter X
+Supporting"American actor. KnownB!
+Dmitry MorozovCinematographerB#
+Sirius BlackwoodCinematographerB!
+Robert DavisStunt CoordinatorB
+Olivia ClarkEditorJYoung woman yearnsUè¬ı@
+Â
+
+tt79694609Solar Flare
+2026-02-27"Action"Sci-Fi*
+Greta Hansen2
+Tom Harrison:C
+Gael Garc√≠a BernalCharacter ECameo"Mexican actor, director.:7
+Henry CavillCharacter ZLead"British actor. Known:8
+Oscar IsaacCharacter TVoice"American actor. Known:7
+
+Donnie YenCharacter B
+Supporting"Hong Kong actor,::
+	Brad PittCharacter WCameo"American actor, producer.B 
+Alastair ReedCinematographerB 
+Edward ClarkeCinematographerJArtist discovers magicalU∏	A
+ﬂ
+
+tt88247650Heart of the Wilderness
+2028-03-17"Thriller"Crime*
+Lena Anderson2
+Laura Evans:3
+Louis GarrelCharacter XLead"French actor and:@
+Bill Skarsg√•rdCharacter X
+Supporting"Swedish actor. Known:B
+Olga KurylenkoCharacter VCameo"Ukrainian-French actress andB
+Luca MorettiCinematographerB!
+Akira YamamotoCinematographerB
+Chloe DaviesEditorB!
+Hiroshi TanakaCinematographerB
+	Kevin LeeCinematographerJVictorian high-society scandalU)\A
+Ú
+
+tt50902077Aetherium Protocol
+2029-07-09"	Adventure"Survival*
+
+Ben Carter2
+Daniel White:@
+Zoe Salda√±aCharacter I
+Supporting"American actress, known:A
+Alicia VikanderCharacter ZCameo"Swedish actress. Recipient:8
+Cillian MurphyCharacter CCameo"Irish actor. Known:>
+Wagner MouraCharacter AVoice"Brazilian actor, director,B
+Antoine DuboisEditorB
+Jean-Luc MoreauEditorB
+Sofia ContiEditorB!
+Hiroshi TanakaCinematographerJForensic psychologist uncoversUÖÎA
+∂
+
+tt86903984Echoes in the Void
+2034-12-21"Sci-Fi"Horror*
+
+Zhang Li2
+Giovanni Ricci:I
+Priyanka Chopra JonasCharacter Z
+Supporting"Indian actress, singer,:8
+Tom HiddlestonCharacter SLead"English actor. Best:9
+Louis GarrelCharacter M
+Supporting"French actor and:=
+Hugh JackmanCharacter SVoice"Australian actor, singer,::
+
+Idris ElbaCharacter OCameo"English actor, producer,B
+Omar HassanEditorB
+Morgana Le FayEditorB
+Kazuo InoueEditorB
+Jessica TaylorEditorB!
+Vladimir OrlovCinematographerJRogue scientist opensU∏Â@
+Ú
+
+tt63187937Guardian of the Glade
+2031-06-17"Psychological Thriller"Mystery*
+Daniel Chang2
+Mark Wilson2
+Pierre Dubois:9
+Ryunosuke KamikiCharacter KLead"Japanese actor and:B
+Gael Garc√≠a BernalCharacter NLead"Mexican actor, director.B!
+Dmitry MorozovCinematographerB
+Omar HassanEditorB
+Zara AliCinematographerJMartial artist trainsUÏQÿ@
+§
+
+tt90069216
+Cipher Key
+2029-01-30"Sci-Fi"Thriller*
+Elara Vance2
+Marie LeBlanc:8
+Cillian MurphyCharacter NCameo"Irish actor. Known:3
+ZendayaCharacter SCameo"American actress and:4
+	Tom HardyCharacter YLead"English actor. Known:C
+Gael Garc√≠a BernalCharacter DVoice"Mexican actor, director.B
+Laura TaylorSound DesignerB 
+Alastair ReedCinematographerJPhysicist manipulates time,U)\A
+¿
+
+tt32835709Crystal Heart
+2025-09-06"Horror"Supernatural*
+
+Emma Brown2
+Saoirse Kelly2
+Franz Becker:=
+Michelle YeohCharacter QVoice"Malaysian actress. Known:>
+Marion CotillardCharacter OLead"French actress, singer,:;
+Karen GillanCharacter VVoice"Scottish actress. Known:A
+Leonardo DiCaprioCharacter ULead"American actor, producer.B
+Max HoffmannEditorB
+Ethan TaylorEditorJScientists discover mysteriousUH·A
+ÿ
+
+tt79816540	Neon Veil
+2033-04-20"Sci-Fi"Horror*
+Lena Petrov2
+
+John Davis2
+Akash Singh:?
+Alexander Skarsg√•rdCharacter LLead"Swedish actor. Known:;
+Deepika PadukoneCharacter BCameo"Indian actress. One:8
+
+Gemma ChanCharacter SVoice"English actress. Known:5
+Jack ReynorCharacter LCameo"Irish actor. Known:8
+Cillian MurphyCharacter XCameo"Irish actor. KnownB
+Antoine DuboisEditorB
+Wang LeiCinematographerJSurvivors of planeUÕÃÃ@
+Ì
+
+tt18631508Desert Mirage
+2028-05-27"Historical Drama"Romance*
+
+Ethan Cole2
+
+John Davis2
+Nadia Benali:=
+Robert Downey Jr.Character YLead"American actor. Known:J
+Millie Bobby BrownCharacter JVoice" British actress/producer. GainedB#
+Olivia SmithProduction DesignerB
+Anastasia SmirnovaEditorB
+Wang LeiCinematographerJA ragtag crewUÖÎA
+¡
+
+tt59271241Abyssal Heart
+2026-11-09"Sci-Fi"Survival*
+Isabella Russo2
+Lena Schmidt:G
+Angelina JolieCharacter J
+Supporting"American actress, filmmaker,:;
+Zoe Salda√±aCharacter QCameo"American actress, known:@
+Ana de ArmasCharacter EVoice"Cuban-Spanish actress. Began:>
+Rebecca FergusonCharacter XCameo"Swedish actress. Known:A
+Ad√®le ExarchopoulosCharacter NCameo"French actress. KnownB
+	Xiao WangCinematographerB
+	Lars BergCinematographerB
+
+Daniel KimEditorB
+Ingrid SolbergEditorB
+Omar HassanEditorJAncient map leadsU  @
+è
+
+tt97595040The Digital Soul
+2031-01-22"Sci-Fi"Space Opera*
+
+Maya Singh2
+	Ana Silva2
+Min-jun Park:@
+Jennifer LawrenceCharacter PCameo"American actress. Known:9
+Jodie ComerCharacter RVoice"English actress. KnownB
+Sofia HernandezEditorB
+Seo-yeon ParkEditorB#
+Olivia SmithProduction DesignerB
+Camila FernandesEditorB
+Zara AliCinematographerJLyra and daemonU·zA
+ﬁ
+
+tt60593049Eternal Frontier
+2030-02-21"Drama"Music*
+Elara Vance2
+Marie LeBlanc::
+Kanna HashimotoCharacter QLead"Japanese actress and:<
+
+Chris PineCharacter M
+Supporting"American actor. KnownB
+Camila FernandesEditorB
+Alice GreenComposerB!
+Robert DavisStunt CoordinatorB
+Jean-Luc MoreauEditorJGeologists race toUq=Í@
+ø
+
+tt22120047Crimson Harvest
+2031-05-08"Psychological Thriller"Mystery*
+Arthur Pendelton2
+Hye-jin Kim:2
+
+Donnie YenCharacter JVoice"Hong Kong actor,:@
+Kanna HashimotoCharacter I
+Supporting"Japanese actress and:8
+Kit HaringtonCharacter PLead"English actor. KnownB
+Laura TaylorSound DesignerB
+Jessica TaylorEditorB
+Min LiEditorB
+Aoife KellyCinematographerB
+Saki TanakaEditorJArtist discovers magicalU√ı∏@
+Ú
+
+tt51227786Chronos Descent
+2026-10-17"Sci-Fi"Disaster*
+Kenji Tanaka2
+Eleanor Vance2
+Diego Sanchez:D
+Bryan CranstonCharacter Q
+Supporting"American actor, director,:@
+Alexander Skarsg√•rdCharacter WCameo"Swedish actor. Known::
+Rosamund PikeCharacter LLead"English actress. Known:@
+Deepika PadukoneCharacter X
+Supporting"Indian actress. OneB
+Niamh O'ConnellEditorB
+	Zhang HaoEditorB
+Min LiEditorB#
+Sirius BlackwoodCinematographerJFriends on remoteUÏQA
+€
+
+tt69842142Deep Earth Contingency
+2033-03-24"Sci-Fi"Drama*
+Giovanni Rossi2
+	Yuki Sato:=
+John BoyegaCharacter T
+Supporting"British actor. Gained:7
+	Riz AhmedCharacter UVoice"British actor, rapper,:>
+Simu LiuCharacter V
+Supporting"Canadian actor, stuntman.B
+
+Sarah ChenCinematographerB"
+Charlotte GreenCinematographerB
+Svetlana SokolovaEditorB!
+Robert DavisStunt CoordinatorB
+Victoria ShawEditorJ"Astrophysicists investigate cosmicU√ı®@
+Ø
+
+tt95818471Whispers of the Cosmos
+2026-11-10"Drama"Mystery*
+Chloe Dupont2
+
+John Smith:G
+Angelina JolieCharacter S
+Supporting"American actress, filmmaker,:;
+Jake GyllenhaalCharacter WLead"American actor. Known:=
+Emily BluntCharacter ICameo"British actress. RecipientB
+Samantha GreenEditorB
+Wang LeiCinematographerB
+Johan KarlssonEditorB
+Anastasia SmirnovaEditorJGirl discovers magicalUÖÎÈ@
+ì
+
+tt93345306Song of the River Spirit
+2034-03-26"Sci-Fi"	Cyberpunk*
+Chloe Dupont2
+	Ling Chen:B
+Gael Garc√≠a BernalCharacter ALead"Mexican actor, director.:2
+
+Donnie YenCharacter SCameo"Hong Kong actor,:@
+Benedict CumberbatchCharacter MVoice"English actor. Known:O
+Anya Taylor-JoyCharacter T
+Supporting"#American-British actress. Recipient:6
+	Riz AhmedCharacter DLead"British actor, rapper,B 
+Anna LindgrenCinematographerB
+Alice GreenComposerB
+Priya SinghEditorJIndividuals embark onUè¬A
+Ë
+
+tt67832546Echoes of the Future
+2029-06-05"Historical Drama"Romance*
+
+Ethan Cole2
+Lena Schmidt:=
+Keira KnightleyCharacter ACameo"English actress. Known:8
+Nadine NjeimCharacter HCameo"Lebanese actress and:;
+Kanna HashimotoCharacter SCameo"Japanese actress and:3
+	Gal GadotCharacter OLead"Israeli actress andB
+Anna KimCostume DesignerB
+Svetlana SokolovaEditorB
+Michael BrownVFX SupervisorB
+Ciaran DoyleCinematographerJSecret agency usesU33A
+£
+
+tt56012168The Forgotten Song
+2033-07-07"Thriller"	Espionage*
+Lucas Pereira2
+Rajesh Gupta2
+Ahmed Hassan:7
+
+Sadie SinkCharacter GLead"American actress. Best:<
+Emily BluntCharacter NLead"British actress. Recipient:H
+Gael Garc√≠a BernalCharacter T
+Supporting"Mexican actor, director.B
+Clara DaviesEditorB 
+Anna LindgrenCinematographerB
+Johan KarlssonEditorJElite soldiers defendUˆ(¨@
+˘
+
+tt53391363Abyssal Heart
+2031-06-07"Fantasy"Action*
+Giovanni Rossi2
+Daniel White:A
+Sandra BullockCharacter CVoice"American actress, producer.:<
+
+Emma StoneCharacter TLead"American actress. Recipient:8
+
+Gemma ChanCharacter GVoice"English actress. KnownB
+Anastasia SmirnovaEditorB
+Amelia JonesCinematographerJForensic psychologist uncoversU
+◊Û@
+˙
+
+tt76449955Abyssal Heart
+2025-11-10"Sci-Fi"Drama*
+Lee Joon-ho2
+
+John Smith:O
+Millie Bobby BrownCharacter U
+Supporting" British actress/producer. Gained::
+Jack ReynorCharacter X
+Supporting"Irish actor. Known:7
+Tom HollandCharacter VCameo"English actor. Known:7
+Chris EvansCharacter BLead"American actor. KnownB
+Ciaran DoyleCinematographerB
+Svetlana SokolovaEditorB
+Chloe GreenCinematographerB&
+Maria RodriguezProduction DesignerJPhysicist manipulates time,UÏQ A
+§
+
+tt33375699Horizon Line
+2032-05-09"Sports"Drama*
+
+Chen Wei2
+	Yuki Sato2
+Marco Rossi:@
+Bill Skarsg√•rdCharacter V
+Supporting"Swedish actor. Known:9
+Simu LiuCharacter XVoice"Canadian actor, stuntman.:8
+Cillian MurphyCharacter ICameo"Irish actor. Known::
+
+Idris ElbaCharacter VVoice"English actor, producer,:7
+
+Donnie YenCharacter X
+Supporting"Hong Kong actor,B 
+Min-joon ChoiCinematographerB!
+Robert DavisStunt CoordinatorB"
+Charlotte GreenCinematographerB
+Victoria ShawEditorJWarrior and mysticUÆGA
+“
+
+tt92056690Silent Witness
+2031-10-21"Fantasy"Folklore*
+
+Maya Singh2
+
+Sven Olsen:E
+Jennifer LawrenceCharacter Y
+Supporting"American actress. Known:9
+Tom HiddlestonCharacter ZCameo"English actor. Best:>
+Ryan ReynoldsCharacter VVoice"Canadian actor, producer.B
+
+Karim SaidCinematographerB
+Chris AdamsCinematographerB
+Michael BrownVFX SupervisorB 
+Eleanor VanceCinematographerB
+	Chen WangCinematographerJGeologists race toUff∆@
+Ä
+
+tt97741449Whispers of the Wind
+2028-10-05"Sci-Fi"Time Travel*
+Aisha Rahman2
+Kenji Nakamura:=
+
+Sadie SinkCharacter D
+Supporting"American actress. Best:<
+Hugh JackmanCharacter MLead"Australian actor, singer,:B
+Margot RobbieCharacter CVoice"Australian actress, producer.B
+Morgana Le FayEditorB 
+Eleanor VanceCinematographerJHumanity faces greatestU§pÌ@
+˚
+
+tt13831676Deserted Hope
+2027-03-01"Musical"Comedy*
+Giovanni Rossi2
+Juan Pablo Cortes2
+Astrid Nilsson:9
+Kit HaringtonCharacter ECameo"English actor. Known:@
+Matthias SchoenaertsCharacter DVoice"Belgian actor. Known:=
+Chris EvansCharacter B
+Supporting"American actor. KnownB
+	Xiao WangCinematographerB
+Sophie WeberEditorJAncient map leadsUˆ(A
+î
+
+tt12907898Winter's Grasp
+2032-12-19"Drama"Mystery*
+Sofia Bellini2
+Mark Wilson2
+Marie LeBlanc:>
+Eiza Gonz√°lezCharacter ICameo"Mexican actress, singer.::
+Kanna HashimotoCharacter ULead"Japanese actress and:>
+Ryan ReynoldsCharacter BVoice"Canadian actor, producer.B&
+Maria RodriguezProduction DesignerB
+	Xiao WangCinematographerJ"Astrophysicists investigate cosmicUH·Í@
+≤
+
+tt80559391Phantom Protocol
+2026-09-22"Fantasy"	Adventure*
+Jessica Chen2
+Nadia Benali:8
+Simu LiuCharacter CLead"Canadian actor, stuntman.:E
+Jennifer LawrenceCharacter R
+Supporting"American actress. KnownB
+Niamh O'ConnellEditorB
+Chloe GreenCinematographerJFriends on remoteUˆ(ƒ@
+ä
+
+tt57584136Memory Weaver
+2027-12-04"Sci-Fi"Space Opera*
+Jessica Chen2	
+Jian Li2
+	David Kim:?
+
+Idris ElbaCharacter L
+Supporting"English actor, producer,:>
+Marion CotillardCharacter XLead"French actress, singer,:F
+Ad√®le ExarchopoulosCharacter C
+Supporting"French actress. KnownB#
+Mark JohnsonProduction DesignerB
+Morgana Le FayEditorJHumanity faces greatestUÖÎA
+€
+
+tt69678105Silent Witness
+2029-04-30"Drama"Romance*
+Carlos Rivera2
+
+John Smith2
+Ivan Smirnov::
+Nicholas HoultCharacter LVoice"English actor. Known:>
+Eiza Gonz√°lezCharacter JCameo"Mexican actress, singer.B
+James WilsonCinematographerB
+Michael BrownVFX SupervisorB
+Chloe DaviesEditorJAspiring musicians fromUÖÎπ@
+—
+
+tt67261960Aetherium Protocol
+2027-05-26"Sci-Fi"Action*
+Chloe Dupont2
+Brendan Murphy2
+Olivia Miller:3
+ZendayaCharacter FCameo"American actress and:5
+	Tom HardyCharacter OVoice"English actor. Known:=
+Henry CavillCharacter Z
+Supporting"British actor. KnownB
+Sneha ReddyEditorB
+Amelia JonesCinematographerB
+Ciaran DoyleCinematographerB
+Jean-Luc MoreauEditorB
+Ingrid SolbergEditorJ"Astrophysicists investigate cosmicUH·™@
+É
+
+tt92929855
+Cipher Key
+2029-07-27"Sports"Drama*
+
+Zhang Li2
+Giovanni Ricci2
+Marie LeBlanc::
+Naomi ScottCharacter ULead"English actress, singer.:9
+	Gal GadotCharacter M
+Supporting"Israeli actress and:@
+Matthias SchoenaertsCharacter PCameo"Belgian actor. Known:7
+Tom HollandCharacter OCameo"English actor. Known:=
+Oscar IsaacCharacter M
+Supporting"American actor. KnownB
+Yuto SuzukiCinematographerB
+Min LiEditorB#
+Olivia SmithProduction DesignerJGeologists race toUÆGA
+œ
+
+tt20262447Gilded Cage
+2031-06-19"	Animation"Family*
+Sakura Yamamoto2
+Laura Evans2
+Emily White:4
+Louis GarrelCharacter DVoice"French actor and:<
+Daniel KaluuyaCharacter K
+Supporting"British actor andB 
+Eleanor VanceCinematographerB
+Seo-yeon ParkEditorB
+Johan KarlssonEditorJGirl discovers magicalU33Û@
+Ñ
+
+tt69741885Winter's Echo
+2031-05-30"Crime"Drama*
+Arthur Pendelton2
+
+Noah Davis:A
+Sandra BullockCharacter OVoice"American actress, producer.:D
+Priyanka Chopra JonasCharacter LCameo"Indian actress, singer,:>
+Eiza Gonz√°lezCharacter HCameo"Mexican actress, singer.:O
+Rina SawayamaCharacter HCameo"*Japanese-British singer-songwriter, model,:>
+Robert Downey Jr.Character LVoice"American actor. KnownB
+Sophie ReedEditorB
+Kazuo InoueEditorJScientists discover mysteriousUÖ˚@
+Ù
+
+tt56510193The Crystal Labyrinth
+2025-03-07"	Adventure"Fantasy*
+Lee Joon-ho2
+Faisal Khan::
+Ryunosuke KamikiCharacter ZVoice"Japanese actor and:5
+	Dev PatelCharacter UVoice"British actor. Known:7
+
+Sadie SinkCharacter HLead"American actress. Best:=
+Robert Downey Jr.Character XLead"American actor. KnownB
+Priya SinghEditorB
+Thiago CostaCinematographerB
+Connor ByrneEditorB"
+Ricardo SanchezCinematographerB
+Max HoffmannEditorJAstronaut stranded inU§pÕ@
+è
+
+tt52544039Whispers of the Cosmos
+2029-10-25"Thriller"Noir*
+Alex Turner2
+Jean-Pierre Moreau2
+Min-jun Park:8
+Jodie ComerCharacter ULead"English actress. Known:<
+
+Rami MalekCharacter C
+Supporting"American actor. Known:?
+Alexander Skarsg√•rdCharacter ELead"Swedish actor. Known:9
+Hrithik RoshanCharacter ECameo"Indian actor, worksB
+	Lars BergCinematographerB
+Saki TanakaEditorB
+
+Liam WhiteEditorB
+Ethan TaylorEditorB
+Samantha GreenEditorJ"Astrophysicists investigate cosmicUˆ(¸@
+ù
+
+tt91841287Abyssal Heart
+2027-12-11"Horror"Mystery*
+Kai Richter2
+Kenji Nakamura:=
+Hugh JackmanCharacter XCameo"Australian actor, singer,::
+Naomi ScottCharacter MLead"English actress, singer.:8
+Simu LiuCharacter MLead"Canadian actor, stuntman.:=
+Florence PughCharacter JVoice"English actress. DebutedB
+Min LiEditorB
+	Lars BergCinematographerJProphecy foretells hero'sUÕÃ‰@
+Ê
+
+tt66692234Whispers of the Wind
+2028-03-16"Horror"Supernatural*
+Simon Jenkins2
+Hiroshi Suzuki:<
+Daniel KaluuyaCharacter L
+Supporting"British actor and:H
+Gael Garc√≠a BernalCharacter S
+Supporting"Mexican actor, director.:=
+Robert Downey Jr.Character WLead"American actor. Known:8
+Kit HaringtonCharacter VLead"English actor. KnownB!
+Robert DavisStunt CoordinatorB 
+Anna LindgrenCinematographerB
+Liam ConnorCinematographerJMaiden seeks RiverUÖÛ@
+Ñ
+
+tt87016422Desert Mirage
+2032-03-24"Fantasy"Folklore*
+Kenji Tanaka2
+Franz Becker:B
+	Liu YifeiCharacter EVoice"!Chinese-American actress, singer,:A
+Sandra BullockCharacter OVoice"American actress, producer.:=
+
+Sadie SinkCharacter M
+Supporting"American actress. BestB
+Ingrid SolbergEditorB
+Chloe DaviesEditorB
+Lukas BraunEditorJUnderdog team trainsU=
+A
+Ü
+
+tt61061733Eternal Frontier
+2026-08-04"Sci-Fi"	Cyberpunk*
+Marcus Thorne2
+Min-jun Park2
+Giulia Bianchi:4
+Louis GarrelCharacter OCameo"French actor and:;
+Bill Skarsg√•rdCharacter NCameo"Swedish actor. Known:=
+Florence PughCharacter RVoice"English actress. Debuted:E
+Matthias SchoenaertsCharacter S
+Supporting"Belgian actor. KnownB
+Liam ConnorCinematographerB
+Jessica TaylorEditorB!
+Hiroshi TanakaCinematographerB!
+Akira YamamotoCinematographerJYoung warrior protectsUÕÃ A
+‡
+
+tt66634151Legacy of the Sunstone
+2029-04-19"Musical"Romance*
+Maria Rodriguez2
+Hiroshi Suzuki:8
+Oscar IsaacCharacter ECameo"American actor. Known:;
+Zoe Salda√±aCharacter BCameo"American actress, known:F
+Saoirse RonanCharacter DCameo"!Irish/American actress. Recipient:G
+Margot RobbieCharacter N
+Supporting"Australian actress, producer.:@
+Jennifer LawrenceCharacter HCameo"American actress. KnownB#
+Maximilian VogelCinematographerB
+Lin ZhaoEditorB
+Chloe GreenCinematographerB
+Priya SinghEditorB 
+Mathilde RouxCinematographerJRomantic musical aboutU√ı¯@
+¢
+
+tt58256882Cosmic Nexus
+2026-12-19"Action"	Adventure"Sci-Fi*
+Isabella Russo2
+Nadia Benali2
+Laura Evans::
+Nicholas HoultCharacter RCameo"English actor. Known:=
+Nadine NjeimCharacter Y
+Supporting"Lebanese actress and:=
+Hugh JackmanCharacter SCameo"Australian actor, singer,B
+Zara AliCinematographerB
+Maria GarciaEditorB
+Liam ConnorCinematographerJDisgraced composer mentorsUq=Ú@
+™
+
+tt82056998Eternal Bloom
+2028-05-16"Fantasy"Family*
+Isabella Russo2
+Ahmed Hassan2
+Hye-jin Kim:<
+Ruby GillmanCharacter MCameo"Australian actress known:A
+Dwayne JohnsonCharacter O
+Supporting"American actor, former:8
+Jason MomoaCharacter DCameo"American actor. Known:@
+Jennifer LawrenceCharacter FCameo"American actress. Known:;
+Zoe Salda√±aCharacter JVoice"American actress, knownB#
+Olivia SmithProduction DesignerB"
+Charlotte GreenCinematographerB!
+Sophia M√ºllerCinematographerJElite unit retrievesUÆA
+™
+
+tt63372340Deep Earth Genesis
+2030-04-03"Drama"Art*
+
+Ben Carter2
+Andrew Green2
+Kenji Nakamura:6
+
+Jamie BellCharacter WCameo"English actor. Known:;
+Rosamund PikeCharacter NCameo"English actress. KnownB
+Michael BrownVFX SupervisorB!
+Akira YamamotoCinematographerB
+
+Emily ChenEditorB#
+Mark JohnsonProduction DesignerB#
+Sirius BlackwoodCinematographerJ"Astrophysicists investigate cosmicU§pµ@
+π
+
+tt81839382Guardian of the Glade
+2030-01-16"Sci-Fi"Space Opera*
+Isabella Russo2
+Laura Evans2
+Marco Rossi:B
+	Liu YifeiCharacter YVoice"!Chinese-American actress, singer,:9
+Emma WatsonCharacter MLead"English actress, model,:3
+	Gal GadotCharacter YLead"Israeli actress and:7
+Cillian MurphyCharacter QLead"Irish actor. Known:;
+Dwayne JohnsonCharacter ZLead"American actor, formerB#
+Olivia SmithProduction DesignerB
+Ethan TaylorEditorB
+Laura TaylorSound DesignerB#
+Sirius BlackwoodCinematographerJOperative races toUÆGπ@
+Ö
+
+tt69777760Quantum Nexus
+2034-05-14"Historical Drama"Romance*
+
+Chen Wei2
+Marco Rossi2
+Giovanni Ricci:?
+Benedict CumberbatchCharacter HLead"English actor. Known:9
+Nicholas HoultCharacter LLead"English actor. Known:@
+Matthias SchoenaertsCharacter MVoice"Belgian actor. KnownB!
+Dmitry MorozovCinematographerB
+Sneha ReddyEditorJHumanity faces greatestUH·¬@
+ä
+
+tt16378242Last Kingdom
+2033-04-04"	Animation"Family*
+Daniel Chang2
+Jessica White:D
+Priyanka Chopra JonasCharacter UVoice"Indian actress, singer,:1
+
+Donnie YenCharacter XLead"Hong Kong actor,B
+Jean-Luc MoreauEditorB&
+Maria RodriguezProduction DesignerB
+Olivia ClarkEditorB
+Laura TaylorSound DesignerB
+Fatima KhanEditorJDetective investigates bizarreU◊£‡@
+€
+
+tt96873884Iron Heartwood
+2028-08-24"Sci-Fi"	Cyberpunk*
+Kenji Tanaka2
+Helena Brandt2
+Kenji Nakamura:@
+Bill Skarsg√•rdCharacter X
+Supporting"Swedish actor. Known:C
+Priyanka Chopra JonasCharacter FLead"Indian actress, singer,:<
+Chris PrattCharacter D
+Supporting"American actor, rose:D
+Marion CotillardCharacter O
+Supporting"French actress, singer,:6
+	Riz AhmedCharacter ELead"British actor, rapper,B!
+Vladimir OrlovCinematographerB
+Lin ZhaoEditorB
+	Lars BergCinematographerB
+Connor ByrneEditorB
+Chloe DaviesEditorJForensic psychologist uncoversUH·‚@
+√
+
+tt17583894Guardian of the Glade
+2030-03-23"Comedy"Drama*
+Marcus Thorne2
+Diego Sanchez:<
+Ruby GillmanCharacter HVoice"Australian actress known:@
+Benedict CumberbatchCharacter SVoice"English actor. Known:?
+Bryan CranstonCharacter KCameo"American actor, director,:B
+Leonardo DiCaprioCharacter KVoice"American actor, producer.:7
+
+Chris PineCharacter KVoice"American actor. KnownB
+Jessica TaylorEditorB
+Liam ConnorCinematographerB#
+Olivia SmithProduction DesignerB$
+Juan Carlos PerezCinematographerJHacker uncovers dangerousU
+◊˚@
+‘
+
+tt15646286Galactic Warden
+2028-12-28"Sci-Fi"Action*
+Liam Gallagher2
+Franz Becker2
+Hiroshi Suzuki:?
+Marion CotillardCharacter BVoice"French actress, singer,:9
+Emma WatsonCharacter TLead"English actress, model,:9
+Kit HaringtonCharacter QCameo"English actor. Known:<
+Keira KnightleyCharacter ILead"English actress. KnownB
+	David LeeEditorB#
+Alessandro ContiCinematographerB
+Sophie WeberEditorJHacker uncovers dangerousU  A
+ô
+
+tt24780160Fractured Reflections
+2025-11-22"Historical Drama"Romance*
+Anna Kuznetsova2
+Ahmed Hassan2
+Sarah Adams:>
+Rebecca FergusonCharacter YCameo"Swedish actress. Known:F
+Ad√®le ExarchopoulosCharacter V
+Supporting"French actress. KnownB
+Niamh O'ConnellEditorB
+Yumi KobayashiEditorB
+Anastasia SmirnovaEditorB!
+Sophia M√ºllerCinematographerJArtist discovers magicalUÕÃ¥@
+ü
+
+tt59081695The Last Artifact
+2031-08-06"Musical"Romance*
+Chloe Dupont2
+Pierre Dubois:8
+Chris EvansCharacter OCameo"American actor. Known:=
+Michelle YeohCharacter HCameo"Malaysian actress. Known:D
+Priyanka Chopra JonasCharacter NVoice"Indian actress, singer,B
+Chloe DaviesEditorB
+Laura FerrariEditorB 
+Alastair ReedCinematographerB
+Priya SinghEditorJAncient map leadsUˆ(¸@
+∑
+
+tt35838366Eternal Frontier
+2030-12-16"	Adventure"
+Historical*
+Chloe Dupont2
+Luca Marino2	
+Jian Li:<
+Daniel KaluuyaCharacter V
+Supporting"British actor and:F
+Saoirse RonanCharacter YCameo"!Irish/American actress. Recipient:?
+Ryunosuke KamikiCharacter J
+Supporting"Japanese actor andB!
+Hiroshi TanakaCinematographerB
+Megan DaviesEditorB
+Lin ZhaoEditorB
+Alice GreenComposerJGirl discovers magicalU)\ﬂ@
+™
+
+tt81616719Shadow of the Colossus
+2028-02-20"Action"Thriller*
+Greta Hansen2
+Guinevere Stone2
+	Ana Silva:A
+Alicia VikanderCharacter DVoice"Swedish actress. Recipient:I
+Priyanka Chopra JonasCharacter F
+Supporting"Indian actress, singer,:=
+Florence PughCharacter VVoice"English actress. Debuted:;
+Zoe Salda√±aCharacter ZVoice"American actress, known:>
+Robert Downey Jr.Character GCameo"American actor. KnownB 
+Ananya SharmaCinematographerB"
+Charlotte GreenCinematographerJ!Detective investigates mysteriousU√ı‡@
+ü
+
+tt11687599Stellar Genesis
+2032-02-14"Sci-Fi"Action*
+
+Maya Singh2
+Giulia Bianchi:=
+Keira KnightleyCharacter GVoice"English actress. Known:B
+Olga KurylenkoCharacter OVoice"Ukrainian-French actress and:3
+ZendayaCharacter KVoice"American actress and:B
+Margot RobbieCharacter VVoice"Australian actress, producer.B
+Lukas BraunEditorB
+Kazuo InoueEditorJRogue scientist opensUˆ(A
+œ
+
+tt38953880Gilded Cage
+2028-07-12"Sci-Fi"Action*
+Samuel Park2
+Erik Johansson::
+Daisy RidleyCharacter VCameo"English actress. Known:B
+Timoth√©e ChalametCharacter JLead"American actor. RecipientB
+Chloe DaviesEditorB!
+Akira YamamotoCinematographerB 
+Ananya SharmaCinematographerJSheriff protects townUÕÃA
+”
+
+tt90318750Galactic Warden
+2031-05-22"Fantasy"	Adventure*
+Isabella Russo2	
+Wang Fu2
+Jean-Pierre Moreau:7
+
+Donnie YenCharacter F
+Supporting"Hong Kong actor,:=
+Oscar IsaacCharacter Q
+Supporting"American actor. Known:C
+Rebecca FergusonCharacter V
+Supporting"Swedish actress. Known:E
+Matthias SchoenaertsCharacter J
+Supporting"Belgian actor. Known:;
+Kanna HashimotoCharacter QVoice"Japanese actress andB
+	Xiao WangCinematographerB
+Chris AdamsCinematographerB!
+Akira YamamotoCinematographerB 
+Mathilde RouxCinematographerJArtist discovers magicalUÕÃÙ@
+∆
+
+tt95487970Silent Witness
+2031-03-27"Thriller"Crime*
+Damien Roux2
+Brendan Murphy2	
+Mei Lin:=
+Florence PughCharacter VVoice"English actress. Debuted:?
+
+Idris ElbaCharacter R
+Supporting"English actor, producer,:7
+Tom HollandCharacter AVoice"English actor. Known:C
+Gael Garc√≠a BernalCharacter TVoice"Mexican actor, director.:=
+Nadine NjeimCharacter L
+Supporting"Lebanese actress andB
+Connor ByrneEditorB#
+Mark JohnsonProduction DesignerB
+
+Emily ChenEditorB
+Ingrid SolbergEditorB
+	Kevin LeeCinematographerJSurvivors of planeUˆ(¸@
+ﬂ
+
+tt90913141Fallen Empire
+2027-12-24"Sci-Fi"Mystery*
+Eleanor Vance2
+Kenji Nakamura:9
+Jodie ComerCharacter FCameo"English actress. Known:?
+Jennifer LawrenceCharacter GLead"American actress. KnownB
+Olivia ClarkEditorB
+Samantha GreenEditorB
+Ethan TaylorEditorB 
+Alastair ReedCinematographerJElite soldiers defendUÆA
+Å
+
+tt20579430Aurora Borealis
+2028-04-16"	Animation"Family*
+
+Emma Brown2
+Sergei Volkov2
+Olivia Miller:6
+
+Rami MalekCharacter JLead"American actor. Known:4
+	Dev PatelCharacter PLead"British actor. Known:?
+Alexander Skarsg√•rdCharacter DLead"Swedish actor. Known:<
+Jake GyllenhaalCharacter MCameo"American actor. KnownB
+Niamh O'ConnellEditorB
+Megan DaviesEditorB
+Maria GarciaEditorB#
+Sirius BlackwoodCinematographerB
+
+Karim SaidCinematographerJHacker and samuraiUè¬A
+Ò
+
+tt58532256Cybernetic Mirage
+2028-10-17"Thriller"	Espionage*
+Chloe Dupont2
+Faisal Khan2
+
+Sven Olsen:?
+Nicholas HoultCharacter E
+Supporting"English actor. Known:4
+MackenyuCharacter FLead"Japanese actor. Known:T
+Charlize TheronCharacter Q
+Supporting"(South African/American actress/producer.:?
+Steven YeunCharacter PVoice"South Korean-American actor.B#
+Olivia SmithProduction DesignerB
+	Chen WangCinematographerB
+Jessica TaylorEditorJYoung woman yearnsUR∏∂@
+≤
+
+tt86134939Aurora Borealis
+2033-09-26"Sci-Fi"Drama*
+Jessica Chen2
+Erik Johansson2
+
+Owen Black::
+Zoe Salda√±aCharacter BLead"American actress, known:C
+Eiza Gonz√°lezCharacter H
+Supporting"Mexican actress, singer.:9
+Simu LiuCharacter YVoice"Canadian actor, stuntman.:8
+Jason MomoaCharacter ZCameo"American actor. KnownB
+Victoria ShawEditorB
+Ingrid SolbergEditorJDisgraced composer mentorsU=
+A
+œ
+
+tt37587816Chronos Descent
+2025-12-20"Thriller"Crime*
+Chloe Dupont2
+Andrew Green2
+
+John Smith:N
+Charlize TheronCharacter ULead"(South African/American actress/producer.:9
+Simu LiuCharacter OCameo"Canadian actor, stuntman.:G
+Leonardo DiCaprioCharacter J
+Supporting"American actor, producer.:>
+Rebecca FergusonCharacter CCameo"Swedish actress. KnownB
+Svetlana SokolovaEditorB
+	Chen WangCinematographerJAncient map leadsU=
+Ô@
+Î
+
+tt30237376Aetherium Protocol
+2031-01-06"	Cyberpunk"Action*
+Finn O'Malley2
+Marco Rossi2
+Diego Sanchez:>
+Scarlett JohanssonCharacter ELead"American actress. One:>
+Ryan ReynoldsCharacter SCameo"Canadian actor, producer.B
+Ciaran DoyleCinematographerB"
+Ricardo SanchezCinematographerB
+Max HoffmannEditorJHumanity faces greatestU
+◊≥@
+Î
+
+tt90673015Ironclad Destiny
+2034-03-20"Sci-Fi"Drama*
+Maria Rodriguez2
+Pierre Dubois:9
+Ryan GoslingCharacter VCameo"Canadian actor. Known::
+Bill Skarsg√•rdCharacter DLead"Swedish actor. KnownB
+Ingrid SolbergEditorB
+Michael BrownVFX SupervisorB
+
+Daniel KimEditorB
+James WilsonCinematographerJCryptographer uncovers crypticUöô	A
+∆
+
+tt93594888Echoes of Elysium
+2028-07-27"Sci-Fi"Horror*
+Isabella Russo2
+Astrid Nilsson:B
+	Liu YifeiCharacter ZVoice"!Chinese-American actress, singer,:9
+Tom HiddlestonCharacter BCameo"English actor. BestB!
+Vladimir OrlovCinematographerB
+Chris AdamsCinematographerJDetective investigates missingU§pÌ@
+Ú
+
+tt42251806The Iron Citadel
+2032-06-12"Psychological Thriller"Mystery*
+Jackson Lee2
+Olivia Miller2
+Richard Finch:@
+Alexander Skarsg√•rdCharacter DVoice"Swedish actor. Known:D
+Scarlett JohanssonCharacter O
+Supporting"American actress. One:<
+
+Emma StoneCharacter ILead"American actress. RecipientB
+Morgana Le FayEditorB
+
+Sarah ChenCinematographerB"
+Franziska MaierCinematographerB
+Jessica TaylorEditorB
+Yuto SuzukiCinematographerJSurvivors of planeUÏQ®@
+À
+
+tt20217873Cybernetic Mirage
+2029-04-12"Historical Drama"Romance*
+Sofia Hansen2
+Guinevere Stone2	
+Wang Fu:@
+Naomi ScottCharacter A
+Supporting"English actress, singer.:G
+Leonardo DiCaprioCharacter C
+Supporting"American actor, producer.:@
+Ad√®le ExarchopoulosCharacter MLead"French actress. KnownB
+Antoine DuboisEditorB
+Clara DaviesEditorB
+Svetlana SokolovaEditorB
+Camila FernandesEditorJTherapist discovers darkUq=A
+‘
+
+tt34156509Silent Sanctuary
+2026-02-13"Sci-Fi"Survival*
+Sakura Yamamoto2
+Giulia Bianchi:9
+Hrithik RoshanCharacter TVoice"Indian actor, works:@
+Naomi ScottCharacter Q
+Supporting"English actress, singer.:4
+Louis GarrelCharacter TCameo"French actor and:8
+Jodie ComerCharacter KLead"English actress. KnownB#
+Isabelle LaurentCinematographerB
+Ingrid SolbergEditorB
+Lukas BraunEditorB
+Sneha ReddyEditorJSecret agency usesU33ª@
+‘
+
+tt79191867The Quantum Divide
+2026-04-30"Thriller"	Espionage*
+Carlos Rivera2
+Kenji Nakamura:8
+Henry CavillCharacter PVoice"British actor. Known:G
+Leonardo DiCaprioCharacter L
+Supporting"American actor, producer.B
+	Zhang HaoEditorB
+Lukas BraunEditorB#
+Maximilian VogelCinematographerJElite soldiers defendU·z‹@
+§
+
+tt59353920Starfall Prophecy
+2028-12-10"Action"Thriller*
+
+Zara Ali2
+Richard Finch:;
+Deepika PadukoneCharacter BVoice"Indian actress. One:E
+Saoirse RonanCharacter KLead"!Irish/American actress. Recipient:B
+Olga KurylenkoCharacter CCameo"Ukrainian-French actress and:7
+Jason MomoaCharacter DLead"American actor. Known:O
+Millie Bobby BrownCharacter U
+Supporting" British actress/producer. GainedB
+Antoine DuboisEditorB#
+Maximilian VogelCinematographerB
+Jessica TaylorEditorJArtist discovers magicalU∏≠@
+û
+
+tt95043564Nightfall Legacy
+2033-05-13"Drama"Romance*
+
+Sofia Khan2
+Hiroshi Suzuki:<
+Daniel KaluuyaCharacter M
+Supporting"British actor and:7
+
+Gemma ChanCharacter DLead"English actress. Known:?
+Emma WatsonCharacter L
+Supporting"English actress, model,B
+Lukas BraunEditorB 
+Alastair ReedCinematographerB
+Alice GreenComposerB
+Samantha GreenEditorJComedian finds unexpectedUff
+A
+ß
+
+tt73039386The Dream Weaver
+2028-06-02"Sci-Fi"Survival*
+Samuel Park2
+Saoirse Kelly2
+	Ling Chen:G
+Lupita Nyong'oCharacter PCameo"!Kenyan-Mexican actress. Recipient:<
+Chris PrattCharacter O
+Supporting"American actor, rose:<
+Dwayne JohnsonCharacter NVoice"American actor, former:C
+Wagner MouraCharacter W
+Supporting"Brazilian actor, director,:?
+Jennifer LawrenceCharacter DLead"American actress. KnownB
+Sophie ReedEditorB
+Seo-yeon ParkEditorB
+	Chen WangCinematographerJCryptographer uncovers crypticU
+◊£@
+Ü
+
+tt63839658Last Kingdom
+2026-11-05"Fantasy"Action*
+Isabella Russo2
+Sarah Adams2
+	Yuki Sato:>
+Eiza Gonz√°lezCharacter YCameo"Mexican actress, singer.:>
+Ryan ReynoldsCharacter OCameo"Canadian actor, producer.:F
+Ad√®le ExarchopoulosCharacter C
+Supporting"French actress. Known:A
+	Liu YifeiCharacter TLead"!Chinese-American actress, singer,:7
+
+Chris PineCharacter JCameo"American actor. KnownB
+Michael ChenEditorB
+Chloe GreenCinematographerJDetective investigates bizarreU◊£‡@
+‰
+
+tt38436053Nexus Point
+2030-03-23"Sci-Fi"Mystery*
+Marcus Thorne2
+Andrew Green2
+Tom Harrison:>
+Tom HiddlestonCharacter R
+Supporting"English actor. Best:?
+Steven YeunCharacter QVoice"South Korean-American actor.B
+Chloe GreenCinematographerB
+Luca MorettiCinematographerB 
+Min-joon ChoiCinematographerJWarrior and mysticU◊£∏@
+¡
+
+tt95795780Fading Echoes
+2032-02-26"	Cyberpunk"Action*
+
+Emma Brown2
+Jean-Pierre Moreau:<
+Dwayne JohnsonCharacter ECameo"American actor, former:4
+MackenyuCharacter JLead"Japanese actor. Known:O
+Rina SawayamaCharacter PVoice"*Japanese-British singer-songwriter, model,:6
+Tom HollandCharacter GLead"English actor. KnownB"
+Lucie ChevalierCinematographerB#
+Isabelle LaurentCinematographerJScientist develops AI,U◊£‡@
+Œ
+
+tt11176028The Sovereign Spark
+2032-03-31"Fantasy"Family*
+Maria Rodriguez2
+Erik Johansson::
+Daisy RidleyCharacter ZCameo"English actress. Known:>
+Liam HemsworthCharacter RVoice"Australian actor, played:;
+Bill Skarsg√•rdCharacter OCameo"Swedish actor. Known:N
+Rina SawayamaCharacter TLead"*Japanese-British singer-songwriter, model,:D
+Scarlett JohanssonCharacter P
+Supporting"American actress. OneB
+	Tom EvansCostume DesignerB!
+Akira YamamotoCinematographerB&
+Maria RodriguezProduction DesignerB
+Laura FerrariEditorJSecret agency usesUÏQ@
+ò
+
+tt71671178The Shadowed Path
+2026-12-31"Musical"Comedy*
+
+Mira Patel2
+Hye-jin Kim:B
+Margot RobbieCharacter UVoice"Australian actress, producer.:B
+Hugh JackmanCharacter G
+Supporting"Australian actor, singer,:>
+Jodie ComerCharacter M
+Supporting"English actress. Known:>
+Ryan ReynoldsCharacter JVoice"Canadian actor, producer.:E
+Jennifer LawrenceCharacter F
+Supporting"American actress. KnownB
+Chloe DaviesEditorB
+Min LiEditorB
+Maria GarciaEditorB
+	Zhang HaoEditorJWarrior and mysticUff÷@
+ä
+
+tt36509246Code Chrysalis
+2027-07-07"Sports"Drama*
+
+Sofia Khan2
+Dmitry Ivanov::
+	Dev PatelCharacter O
+Supporting"British actor. Known:@
+Sandra BullockCharacter ALead"American actress, producer.:C
+Robert Downey Jr.Character T
+Supporting"American actor. KnownB 
+Min-joon ChoiCinematographerB
+Johan KarlssonEditorB
+Michael ChenEditorJMining crew encountersUH·‚@
+…
+
+tt56646800
+Starforged
+2034-11-04"Sci-Fi"Mystery*
+Damien Roux2
+	David Kim2
+Marco Rossi:>
+Simu LiuCharacter C
+Supporting"Canadian actor, stuntman.:;
+Blake LivelyCharacter PCameo"American actress. Known:4
+	Gal GadotCharacter OVoice"Israeli actress andB
+Luca MorettiCinematographerB#
+Maximilian VogelCinematographerB 
+Min-joon ChoiCinematographerB
+Omar HassanEditorB
+	Tom EvansCostume DesignerJAncient map leadsUÖÎ—@
+é
+
+tt60707793City of Whispers
+2029-12-26"Fantasy"Martial Arts*
+
+Maya Singh2
+Jean-Pierre Moreau:A
+Alicia VikanderCharacter GCameo"Swedish actress. Recipient:@
+Blake LivelyCharacter K
+Supporting"American actress. Known:H
+Timoth√©e ChalametCharacter P
+Supporting"American actor. RecipientB
+Michael BrownVFX SupervisorB
+Liam ConnorCinematographerJSurvivors of planeU{Ó@
+∫
+
+tt10882317The Shadow of Aethel
+2025-07-30"Horror"Mystery*
+Arthur Pendelton2
+Joon-ho Lee:;
+Deepika PadukoneCharacter RCameo"Indian actress. One:@
+Benedict CumberbatchCharacter TVoice"English actor. Known:I
+Anya Taylor-JoyCharacter ILead"#American-British actress. RecipientB
+Julien PicardEditorB
+Anastasia SmirnovaEditorB 
+Edward ClarkeCinematographerB
+	Zhang HaoEditorJComedian finds unexpectedU∏µ@
+ñ
+
+tt77878091The Chronos Code
+2027-11-12"Thriller"Crime*
+Greta Hansen2
+
+John Davis2
+Juan Pablo Cortes::
+Noomi RapaceCharacter HVoice"Swedish actress. Known:<
+Michelle YeohCharacter JLead"Malaysian actress. KnownB
+Olga IvanovaEditorB
+
+Daniel KimEditorB!
+Hiroshi TanakaCinematographerB#
+Olivia SmithProduction DesignerB
+
+Ravi KumarCinematographerJOperative races toUÆÔ@
+‚
+
+tt37915670Deep Earth Genesis
+2026-02-12"Fantasy"Folklore*
+Arthur Pendelton2
+Pierre Dubois:;
+Alice BragaCharacter EVoice"Brazilian actress. Known:>
+Kit HaringtonCharacter L
+Supporting"English actor. Known::
+Daisy RidleyCharacter EVoice"English actress. KnownB"
+Charlotte GreenCinematographerB#
+Mark JohnsonProduction DesignerB
+	Zhang HaoEditorB#
+Sirius BlackwoodCinematographerB 
+Mathilde RouxCinematographerJHacker uncovers dangerousUÏQ A
+ê
+
+tt45503609The Forgotten Relic
+2026-01-17"Sci-Fi"Mystery*
+Marcus Thorne2
+Ivan Smirnov:6
+
+Jamie BellCharacter YCameo"English actor. Known:<
+
+Emma StoneCharacter SLead"American actress. Recipient:>
+Rebecca FergusonCharacter BCameo"Swedish actress. Known:<
+Dwayne JohnsonCharacter SCameo"American actor, former:N
+Charlize TheronCharacter SLead"(South African/American actress/producer.B
+Niamh O'ConnellEditorB
+Max HoffmannEditorB 
+Mathilde RouxCinematographerJAncient map leadsUÆA
+®
+
+tt80743567City of Whispers
+2031-08-19"	Animation"Family*
+Lena Petrov2
+Lena Schmidt::
+Blake LivelyCharacter TLead"American actress. Known:F
+Ad√®le ExarchopoulosCharacter C
+Supporting"French actress. Known:9
+Ryan GoslingCharacter AVoice"Canadian actor. Known:4
+MackenyuCharacter XLead"Japanese actor. Known:>
+Liam HemsworthCharacter DCameo"Australian actor, playedB
+Wang LeiCinematographerB
+Morgana Le FayEditorB
+Michael BrownVFX SupervisorB 
+Jack PetersonCinematographerJMining crew encountersUR∏∆@
+≠
+
+tt10363222Crimson Dawn
+2028-07-02"Fantasy"	Adventure*
+Sakura Yamamoto2
+
+John Davis:9
+Kit HaringtonCharacter HCameo"English actor. Known:>
+Bryan CranstonCharacter RLead"American actor, director,:@
+Jennifer LawrenceCharacter ACameo"American actress. KnownB!
+Akira YamamotoCinematographerB
+Michael BrownVFX SupervisorB
+Min LiEditorB!
+Dmitry MorozovCinematographerJAstronaut stranded inUè¬A
+°
+
+tt51359038Ironclad Destiny
+2033-11-28"Sci-Fi"Space Opera*
+Anna Kuznetsova2
+Taro Suzuki2
+	David Kim:B
+Margot RobbieCharacter FCameo"Australian actress, producer.:A
+Angelina JolieCharacter ZLead"American actress, filmmaker,B
+Clara DaviesEditorB
+Wang LeiCinematographerB
+Ethan TaylorEditorB
+David GuptaCinematographerB!
+Mikhail VolkovCinematographerJElite soldiers defendU◊£¿@
+ú
+
+tt86975324Temporal Shift
+2031-03-19"Sci-Fi"	Cyberpunk*
+Chloe Dupont2
+Giovanni Ricci:O
+Rina SawayamaCharacter TVoice"*Japanese-British singer-songwriter, model,:A
+Jet LiCharacter YLead"$Chinese-Singaporean actor, producer,:@
+Matthias SchoenaertsCharacter UCameo"Belgian actor. Known:>
+Ryan GoslingCharacter F
+Supporting"Canadian actor. Known:6
+	Riz AhmedCharacter ULead"British actor, rapper,B
+Camila FernandesEditorB
+Fatima KhanEditorB
+David GuptaCinematographerJAspiring musicians fromU
+◊£@
+Ó
+
+tt50085666Whispering Woods
+2029-06-14"Horror"Mystery*
+Sakura Yamamoto2
+Hye-jin Kim:A
+Ruby GillmanCharacter S
+Supporting"Australian actress known:@
+Deepika PadukoneCharacter B
+Supporting"Indian actress. OneB
+Wang LeiCinematographerB
+Jean-Luc MoreauEditorB
+Zara AliCinematographerB!
+Mikhail VolkovCinematographerJA ragtag crewUH·™@
+¿
+
+tt73082691The Iron Citadel
+2034-07-13"Western"Action*
+Kai Richter2
+Min-jun Park2
+Pierre Dubois:;
+Karen GillanCharacter QCameo"Scottish actress. Known:>
+Robert Downey Jr.Character QVoice"American actor. Known::
+Jack ReynorCharacter A
+Supporting"Irish actor. KnownB
+Olivia ClarkEditorB
+	Kevin LeeCinematographerB!
+Dmitry MorozovCinematographerB!
+Robert DavisStunt CoordinatorJProphecy foretells hero'sU
+◊£@
+∞
+
+tt34760878
+Lunar Glow
+2033-07-09"Fantasy"Folklore*
+Sakura Yamamoto2
+Franz Becker:9
+Ryan GoslingCharacter JCameo"Canadian actor. Known:@
+Blake LivelyCharacter K
+Supporting"American actress. Known:4
+	Tom HardyCharacter JLead"English actor. Known:A
+	Liu YifeiCharacter MLead"!Chinese-American actress, singer,:=
+Florence PughCharacter NVoice"English actress. DebutedB 
+Anna LindgrenCinematographerB!
+Hiroshi TanakaCinematographerB
+Chloe GreenCinematographerB
+Sneha ReddyEditorJForensic psychologist uncoversUÖÛ@
+Ô
+
+tt59630221The Azure Key
+2031-09-29"Sci-Fi"	Cyberpunk*
+Kai Richter2	
+Jian Li:>
+Finn WolfhardCharacter ZCameo"Canadian actor, musician.:7
+
+Chris PineCharacter FVoice"American actor. Known:>
+Kit HaringtonCharacter L
+Supporting"English actor. Known:<
+Daniel KaluuyaCharacter X
+Supporting"British actor andB
+
+Daniel KimEditorB
+Sofia HernandezEditorB
+	Tom EvansCostume DesignerB
+Sophie WeberEditorB!
+Robert DavisStunt CoordinatorJOperative races toUÖÎ@
+Ω
+
+tt55637455Iron Heartwood
+2026-12-28"Drama"	Adventure*
+Lucas Pereira2
+Diego Sanchez2
+Carmen Lopez:@
+Kanna HashimotoCharacter W
+Supporting"Japanese actress and:F
+Alicia VikanderCharacter S
+Supporting"Swedish actress. RecipientB
+	Lars BergCinematographerB"
+Lucie ChevalierCinematographerB
+Laura TaylorSound DesignerB 
+Eleanor VanceCinematographerB
+Anastasia SmirnovaEditorJDetective investigates missingUˆ(¸@
+°
+
+tt51018918	Neon Veil
+2026-06-29"Sci-Fi"Time Travel*
+Elena Petrova2
+Ivan Smirnov:=
+Wagner MouraCharacter OLead"Brazilian actor, director,:A
+Ruby GillmanCharacter R
+Supporting"Australian actress known:3
+Louis GarrelCharacter DLead"French actor and:E
+Jennifer LawrenceCharacter G
+Supporting"American actress. KnownB
+Michael ChenEditorB
+Kazuo InoueEditorJElite unit retrievesU·zÏ@
+¨
+
+tt78786675Winter's Grasp
+2034-01-05"	Animation"Family*
+Hiroshi Sato2
+Jean-Pierre Moreau:B
+Angelina JolieCharacter MCameo"American actress, filmmaker,:=
+Robert Downey Jr.Character FLead"American actor. KnownB
+Laura FerrariEditorB#
+Mark JohnsonProduction DesignerB"
+Ricardo SanchezCinematographerB"
+Lucie ChevalierCinematographerB#
+Sirius BlackwoodCinematographerJYoung warrior protectsUöô˘@
+ﬁ
+
+tt91459632Silent Storm
+2031-08-06"Sci-Fi"Horror*
+Elena Petrova2
+Andrew Green::
+Ryunosuke KamikiCharacter DCameo"Japanese actor and:<
+
+Rami MalekCharacter U
+Supporting"American actor. KnownB
+Alice GreenComposerB
+Anastasia SmirnovaEditorB
+Yuto SuzukiCinematographerB
+Liam ConnorCinematographerJKing Alfred andUÆGA
+Ã
+
+tt18622504The Last Artifact
+2032-05-13"Sci-Fi"Space Opera*
+Gabriel Moreno2
+Taro Suzuki2
+	Xiao Ling:@
+Alice BragaCharacter W
+Supporting"Brazilian actress. Known:6
+Tom HollandCharacter ALead"English actor. Known:=
+Keira KnightleyCharacter ECameo"English actress. Known:>
+Robert Downey Jr.Character LVoice"American actor. KnownB
+Victoria ShawEditorB
+Megan DaviesEditorB
+Michael ChenEditorJAstronaut stranded inUÖÎ©@
+¸
+
+tt52448874The Forgotten Song
+2034-04-28"Sci-Fi"Action*
+Anna Kuznetsova2
+Min-jun Park2	
+Jian Li:=
+Florence PughCharacter JCameo"English actress. Debuted:=
+John BoyegaCharacter C
+Supporting"British actor. Gained:A
+Jake GyllenhaalCharacter Y
+Supporting"American actor. Known:@
+Jennifer LawrenceCharacter RCameo"American actress. KnownB
+Aoife KellyCinematographerB
+Jessica TaylorEditorB
+Connor ByrneEditorB
+David GuptaCinematographerJGirl discovers magicalU  ∞@
+÷
+
+tt68964929Fractured Reflections
+2032-06-04"Horror"Supernatural*
+Samuel Park2
+Taro Suzuki:9
+Simu LiuCharacter FCameo"Canadian actor, stuntman.:7
+
+Chris PineCharacter GCameo"American actor. Known:3
+ZendayaCharacter ICameo"American actress and:9
+Tom HiddlestonCharacter WVoice"English actor. BestB
+Chloe GreenCinematographerB
+Camila FernandesEditorB
+Anna KimCostume DesignerB
+Wang LeiCinematographerJFriends on remoteUq=Ú@
+ﬂ
+
+tt68506146Memory Weaver
+2027-02-28"Sci-Fi"Thriller*
+Marcus Thorne2
+Brendan Murphy:B
+Florence PughCharacter G
+Supporting"English actress. Debuted:2
+
+Donnie YenCharacter HCameo"Hong Kong actor,B
+Laura FerrariEditorB!
+Dmitry MorozovCinematographerB
+Sophie WeberEditorB
+Niamh O'ConnellEditorJAstronaut stranded inU{∂@
+∞
+
+tt68287359Cybernetic Mirage
+2031-12-23"	Adventure"Fantasy*
+
+Mira Patel2
+Sarah Adams:6
+
+Jamie BellCharacter FVoice"English actor. Known:7
+	Riz AhmedCharacter MVoice"British actor, rapper,:<
+Ruby GillmanCharacter ZCameo"Australian actress known:?
+Matthias SchoenaertsCharacter ALead"Belgian actor. KnownB
+Luca MorettiCinematographerB
+Megan DaviesEditorB
+Lukas BraunEditorJA ragtag crewUÆß@
+≠
+
+tt23387204Celestial Ascent
+2026-04-22"Sci-Fi"Survival*
+Simon Jenkins2
+Rohan Kapoor::
+
+Idris ElbaCharacter UVoice"English actor, producer,:5
+MackenyuCharacter GCameo"Japanese actor. KnownB 
+Ananya SharmaCinematographerB
+Julien PicardEditorJPhysicist manipulates time,U√ı–@
+‹
+
+tt43792577Memory Weaver
+2028-04-05"	Animation"Family*
+Jackson Lee2
+Sergei Volkov2
+Mark Wilson:B
+Emily BluntCharacter Q
+Supporting"British actress. Recipient:6
+Tom HollandCharacter KLead"English actor. KnownB
+	Xiao WangCinematographerB
+Omar HassanEditorB
+Svetlana SokolovaEditorJScientists discover mysteriousUÆGA
+Ô
+
+tt72356290Phantom Protocol
+2033-12-22"Sci-Fi"Mystery*
+Fatima Zahra2
+
+Noah Davis2
+Marco Rossi:@
+Ad√®le ExarchopoulosCharacter ILead"French actress. Known:B
+Michelle YeohCharacter K
+Supporting"Malaysian actress. KnownB
+Olivia ClarkEditorB
+Thiago CostaCinematographerB!
+Hiroshi TanakaCinematographerJDetective investigates missingUÆ˜@
+å
+
+tt42389721
+Lunar Glow
+2028-09-29"	Animation"Family*
+Damien Roux2
+Diego Sanchez:?
+Nicholas HoultCharacter T
+Supporting"English actor. Known:=
+Hugh JackmanCharacter XVoice"Australian actor, singer,:=
+Keira KnightleyCharacter PVoice"English actress. KnownB
+Omar HassanEditorB
+David GuptaCinematographerB#
+Isabelle LaurentCinematographerJTwo souls separatedUöô±@
+‡
+
+tt92869106Last Kingdom
+2025-07-23"Horror"Supernatural*
+Aisha Rahman2
+Helena Brandt2
+
+Sven Olsen:5
+
+Jamie BellCharacter YLead"English actor. Known:@
+Ad√®le ExarchopoulosCharacter NLead"French actress. KnownB
+Yuto SuzukiCinematographerB#
+Olivia SmithProduction DesignerB
+Ciaran DoyleCinematographerJKing Alfred andU◊£¯@
+ú
+
+tt87861628Mirrored Deception
+2032-02-04"Musical"Romance*
+Sofia Bellini2
+Dmitry Ivanov2
+Giulia Bianchi::
+Deepika PadukoneCharacter ELead"Indian actress. One:;
+Dwayne JohnsonCharacter DLead"American actor, former:7
+Oscar IsaacCharacter MLead"American actor. Known:O
+Charlize TheronCharacter NVoice"(South African/American actress/producer.B
+Omar HassanEditorB
+Niamh O'ConnellEditorB
+Aoife KellyCinematographerB
+Victoria ShawEditorB
+
+Sarah ChenCinematographerJGirl discovers magicalU
+◊A
+∞
+
+tt92684262Stellar Genesis
+2025-12-15"Sci-Fi"Disaster*
+David Miller2
+	Xiao Ling2
+Carmen Lopez:=
+Cillian MurphyCharacter M
+Supporting"Irish actor. Known:?
+Nicholas HoultCharacter M
+Supporting"English actor. Known:5
+MackenyuCharacter FVoice"Japanese actor. Known:7
+	Riz AhmedCharacter BVoice"British actor, rapper,B
+Yumi KobayashiEditorB
+Laura FerrariEditorJForensic psychologist uncoversU  A
+Ã
+
+tt74957221The Dream Weaver
+2030-08-24"Sci-Fi"Space Opera*
+Lee Joon-ho2
+Pierre Dubois:H
+Timoth√©e ChalametCharacter A
+Supporting"American actor. Recipient:B
+Leonardo DiCaprioCharacter OVoice"American actor, producer.:E
+Benedict CumberbatchCharacter U
+Supporting"English actor. Known:7
+
+Rami MalekCharacter KVoice"American actor. Known:>
+Wagner MouraCharacter QCameo"Brazilian actor, director,B
+Morgana Le FayEditorB#
+Maximilian VogelCinematographerB
+Johan KarlssonEditorB
+Ciaran DoyleCinematographerJDetective investigates bizarreU§p›@
+ù
+
+tt73205661Gilded Cage
+2031-05-26"	Animation"Family*
+Gabriel Moreno2
+Astrid Nilsson:3
+	Gal GadotCharacter FLead"Israeli actress and:8
+Chris EvansCharacter YCameo"American actor. KnownB
+Luca MorettiCinematographerB
+Sophie WeberEditorJMaiden seeks RiverU=
+Ô@
+¢
+
+tt56951089Stellar Drift
+2027-09-14"Sci-Fi"Mystery*
+Kenji Tanaka2
+Helena Brandt2
+Hiroshi Suzuki:8
+Ryan GoslingCharacter CLead"Canadian actor. Known:@
+Alexander Skarsg√•rdCharacter XVoice"Swedish actor. Known:=
+Florence PughCharacter EVoice"English actress. Debuted:;
+Blake LivelyCharacter KCameo"American actress. Known:8
+Cillian MurphyCharacter EVoice"Irish actor. KnownB
+	Chen WangCinematographerB
+Lin ZhaoEditorB
+David GuptaCinematographerB
+Jessica TaylorEditorJOperative races toUÕÃA
+‘
+
+tt47720188Deep Sea Enigma
+2026-02-19"Sci-Fi"Space Opera*
+Maria Rodriguez2
+Erik Johansson2
+Guinevere Stone:@
+Alicia VikanderCharacter ALead"Swedish actress. Recipient:7
+Tom HollandCharacter PVoice"English actor. Known:D
+Marion CotillardCharacter U
+Supporting"French actress, singer,:?
+Bryan CranstonCharacter ECameo"American actor, director,:7
+Chris PrattCharacter JVoice"American actor, roseB 
+Robert MillerCinematographerB
+
+Sarah ChenCinematographerB
+Sophie WeberEditorB
+	Zhang HaoEditorB
+	Xiao WangCinematographerJAnimated toys goU◊£ÿ@
+ù
+
+tt30064823Crimson Zenith
+2030-01-22"Sci-Fi"Thriller*
+
+Chen Wei2
+Joon-ho Lee2
+
+Sven Olsen:=
+
+Sadie SinkCharacter F
+Supporting"American actress. Best::
+Emma WatsonCharacter OVoice"English actress, model,::
+Deepika PadukoneCharacter ZLead"Indian actress. One:B
+Olga KurylenkoCharacter ZCameo"Ukrainian-French actress andB
+Thiago CostaCinematographerB!
+Vladimir OrlovCinematographerB
+	Lars BergCinematographerB
+	Tom EvansCostume DesignerB 
+Min-joon ChoiCinematographerJAstronaut stranded inUÖÎ¡@
+±
+
+tt63868477Emerald Blade
+2033-01-23"Sci-Fi"Thriller*
+Liam Gallagher2	
+Wang Fu:9
+Nicholas HoultCharacter JLead"English actor. Known:B
+Jet LiCharacter HVoice"$Chinese-Singaporean actor, producer,B"
+Benjamin CarterCinematographerB"
+Franziska MaierCinematographerJA ragtag crewUÖÎA
+É
+
+tt95239958Whispers of the Wind
+2029-12-02"Historical Drama"Mystery*
+Lena Anderson2
+
+Owen Black:?
+Marion CotillardCharacter QCameo"French actress, singer,:A
+Margot RobbieCharacter ILead"Australian actress, producer.B"
+Ricardo SanchezCinematographerB
+Lukas BraunEditorB
+	Chen WangCinematographerB
+Liam ConnorCinematographerJAspiring musicians fromU{Œ@
+ƒ
+
+tt41896841Stellar Drift
+2031-10-22"	Adventure"Fantasy*
+Sofia Hansen2
+Pierre Dubois:9
+
+Idris ElbaCharacter GLead"English actor, producer,:5
+MackenyuCharacter FVoice"Japanese actor. KnownB
+Saki TanakaEditorB 
+Ananya SharmaCinematographerB
+	Zhang HaoEditorB
+Min LiEditorJKing Alfred andUR∏æ@
+ƒ
+
+tt28682102Winter's Echo
+2026-04-26"Historical Drama"Romance*
+Carlos Rivera2	
+Wang Fu2
+Tom Harrison:8
+Chris EvansCharacter DCameo"American actor. Known::
+
+Idris ElbaCharacter XCameo"English actor, producer,:O
+Millie Bobby BrownCharacter M
+Supporting" British actress/producer. GainedB
+Michael BrownVFX SupervisorB
+Anastasia SmirnovaEditorB
+Camila FernandesEditorB
+	Kevin LeeCinematographerJLyra and daemonU  ∏@
+ù
+
+tt89385040The Forgotten Song
+2028-04-16"Musical"Comedy*
+Daniel Chang2
+
+John Davis:<
+Michelle YeohCharacter BLead"Malaysian actress. Known:<
+Florence PughCharacter WLead"English actress. Debuted:D
+Marion CotillardCharacter J
+Supporting"French actress, singer,:4
+	Tom HardyCharacter CLead"English actor. KnownB
+Michael ChenEditorB
+Victoria ShawEditorJGeologists race toU◊£ÿ@
+õ
+
+tt80752717Crystal Shards
+2031-03-21"Musical"Comedy*
+
+Ben Carter2
+Saoirse Kelly2
+Jean-Pierre Moreau:8
+Henry CavillCharacter XVoice"British actor. Known:B
+
+Emma StoneCharacter I
+Supporting"American actress. Recipient:<
+Keira KnightleyCharacter ULead"English actress. KnownB 
+Alastair ReedCinematographerB
+Alice GreenComposerB
+Liam ConnorCinematographerJLyra and daemonU
+◊√@
+‡
+
+tt90707177The Obsidian Gate
+2029-08-15"Drama"Romance*
+Lucas Pereira2
+Vikram Sharma2
+Akash Singh:<
+
+Emma StoneCharacter SLead"American actress. Recipient:9
+Tom HiddlestonCharacter ACameo"English actor. BestB
+Svetlana SokolovaEditorB
+Anna KimCostume DesignerB 
+Ananya SharmaCinematographerJAmnesiac woman uncoversU√ı∏@
+„
+
+tt56977788Deep Earth Genesis
+2033-02-24"Psychological Thriller"Mystery*
+
+Jane Doe2
+Faisal Khan2
+Diego Sanchez:<
+Daniel KaluuyaCharacter I
+Supporting"British actor and:D
+Priyanka Chopra JonasCharacter KCameo"Indian actress, singer,:>
+Wagner MouraCharacter RVoice"Brazilian actor, director,:7
+Tom HollandCharacter GVoice"English actor. KnownB!
+Vladimir OrlovCinematographerB#
+Isabelle LaurentCinematographerJVictorian high-society scandalUˆ(§@
+€
+
+tt28551337Echoes in the Void
+2031-12-05"Crime"Drama*
+Elara Vance2
+Akash Singh::
+Ryunosuke KamikiCharacter DVoice"Japanese actor and:@
+Benedict CumberbatchCharacter DCameo"English actor. KnownB
+
+Karim SaidCinematographerB
+Sophie ReedEditorB
+Laura TaylorSound DesignerB
+
+Daniel KimEditorJYoung woman yearnsU\è @
+Û
+
+tt34301906Chronos Descent
+2034-05-17"Sci-Fi"Mystery*
+Carlos Rivera2
+Franz Becker2
+Mark Wilson:?
+Ryunosuke KamikiCharacter I
+Supporting"Japanese actor and:=
+Emily BluntCharacter QVoice"British actress. Recipient:@
+Alexander Skarsg√•rdCharacter UVoice"Swedish actor. KnownB
+
+Emily ChenEditorB
+Clara DaviesEditorJHacker and samuraiU=
+∑@
+∫
+
+tt59822476Stellar Genesis
+2028-07-31"Sci-Fi"Thriller*
+Kenji Tanaka2
+Jean-Pierre Moreau2
+Daniel White:C
+Priyanka Chopra JonasCharacter TLead"Indian actress, singer,:?
+Bryan CranstonCharacter ICameo"American actor, director,:@
+Alexander Skarsg√•rdCharacter MVoice"Swedish actor. KnownB!
+Akira YamamotoCinematographerB
+	Lars BergCinematographerB"
+Ricardo SanchezCinematographerJSheriff protects townU◊£A
+ì
+
+tt76955908
+Cipher Key
+2033-05-01"Psychological Thriller"Mystery*
+Chloe Dupont2
+Luca Marino2
+Marco Rossi::
+Kanna HashimotoCharacter JLead"Japanese actress and:<
+Dwayne JohnsonCharacter OCameo"American actor, former:7
+Nadine NjeimCharacter XLead"Lebanese actress andB!
+Hiroshi TanakaCinematographerB#
+Olivia SmithProduction DesignerJResearchers unleash terrifyingUÖ≥@
+ß
+
+tt15971594Painted Veil of Lies
+2034-12-05"Musical"Romance*
+
+Sofia Khan2
+Juan Pablo Cortes2
+Daniel White:G
+Olga KurylenkoCharacter X
+Supporting"Ukrainian-French actress and:>
+Ryan ReynoldsCharacter OCameo"Canadian actor, producer.:8
+Cillian MurphyCharacter DCameo"Irish actor. KnownB
+Ingrid SolbergEditorB
+Chloe GreenCinematographerB
+	Chen WangCinematographerJGeologists race toUÏQ∞@
+É
+
+tt11229434Guardian of the Glade
+2025-04-20"Sports"Drama*
+David Miller2
+
+Sven Olsen:4
+	Gal GadotCharacter UCameo"Israeli actress and:;
+
+Jamie BellCharacter C
+Supporting"English actor. Known:7
+
+Sadie SinkCharacter WLead"American actress. Best::
+Zoe Salda√±aCharacter ULead"American actress, knownB
+
+Karim SaidCinematographerB
+Chris AdamsCinematographerB!
+Sophia M√ºllerCinematographerB
+	Tom EvansCostume DesignerB
+
+Emily ChenEditorJ!Detective investigates mysteriousU◊£A
+Ω
+
+tt26853362Celestial Harmony
+2030-03-25"	Cyberpunk"Action*
+Elara Vance2
+Giovanni Ricci2
+Juan Pablo Cortes:;
+
+Jamie BellCharacter O
+Supporting"English actor. Known:4
+	Gal GadotCharacter UVoice"Israeli actress and:;
+Jake GyllenhaalCharacter XLead"American actor. Known:B
+Florence PughCharacter R
+Supporting"English actress. DebutedB#
+Sirius BlackwoodCinematographerB
+Yumi KobayashiEditorJLyra and daemonUÆø@
+à
+
+tt35088460Solar Winds
+2028-05-23"Sci-Fi"Space Opera*
+Finn O'Malley2
+Dmitry Ivanov2
+Wei Li:E
+Jennifer LawrenceCharacter M
+Supporting"American actress. Known:=
+Henry CavillCharacter P
+Supporting"British actor. Known:G
+Angelina JolieCharacter N
+Supporting"American actress, filmmaker,B
+Sophie ReedEditorB
+Zara AliCinematographerJTherapist discovers darkUÖ„@
+†
+
+tt91992769Deep Space Drifters
+2031-08-13"Drama"Art*
+
+Ben Carter2
+Emily White:I
+Millie Bobby BrownCharacter DLead" British actress/producer. Gained:;
+Deepika PadukoneCharacter IVoice"Indian actress. One:<
+Jake GyllenhaalCharacter JVoice"American actor. Known:4
+	Gal GadotCharacter LVoice"Israeli actress andB
+Laura FerrariEditorB
+Fatima KhanEditorJBiographical film aboutUH·A
+ô
+
+tt55954011
+Starforged
+2034-10-04"Comedy"Drama*
+
+Maya Singh2
+Jessica White2
+	Ling Chen::
+Bill Skarsg√•rdCharacter VLead"Swedish actor. Known::
+Daisy RidleyCharacter EVoice"English actress. Known:8
+Tom HiddlestonCharacter SLead"English actor. Best:4
+Louis GarrelCharacter AVoice"French actor andB
+
+Karim SaidCinematographerB
+Sophie WeberEditorJFriends venture intoU∏≈@
+Ÿ
+
+tt35895543Ironclad Destiny
+2034-08-22"	Adventure"Fantasy*
+
+Maya Singh2
+Mark Wilson2
+Daniel White:5
+Jack ReynorCharacter ICameo"Irish actor. Known:7
+
+Chris PineCharacter KCameo"American actor. Known:6
+
+Jamie BellCharacter ICameo"English actor. Known:7
+
+Sadie SinkCharacter ULead"American actress. Best::
+Zoe Salda√±aCharacter QLead"American actress, knownB
+Anna KimCostume DesignerB
+Kazuo InoueEditorJMartial artist trainsUq=“@
+Û
+
+tt48351378The Chronos Paradox
+2027-08-10"Action"Thriller*
+Lena Anderson2
+
+John Davis2
+Hye-jin Kim:7
+Nadine NjeimCharacter ULead"Lebanese actress and:;
+Kanna HashimotoCharacter LVoice"Japanese actress and:?
+Nicholas HoultCharacter D
+Supporting"English actor. KnownB
+Anastasia SmirnovaEditorB
+	David LeeEditorJAstronaut stranded inUÕÃ‰@
+Ã
+
+tt54705855Last Kingdom
+2029-08-15"Fantasy"	Adventure*
+Sofia Bellini2
+Akash Singh2
+	Ling Chen:=
+Wagner MouraCharacter FLead"Brazilian actor, director,:5
+Jack ReynorCharacter ZVoice"Irish actor. Known:F
+Alicia VikanderCharacter S
+Supporting"Swedish actress. RecipientB
+Luca MorettiCinematographerB
+Michael BrownVFX SupervisorB
+Sofia ContiEditorB
+
+Emily ChenEditorB
+Ingrid SolbergEditorJAmnesiac woman uncoversUq=¬@
+À
+
+tt32418662
+Lunar Glow
+2034-10-24"Fantasy"Action*
+Greta Hansen2
+Emily White2
+
+Noah Davis:<
+Emily BluntCharacter TLead"British actress. Recipient:7
+Henry CavillCharacter KLead"British actor. Known:@
+Benedict CumberbatchCharacter KVoice"English actor. Known:D
+Priyanka Chopra JonasCharacter HCameo"Indian actress, singer,:F
+Sandra BullockCharacter N
+Supporting"American actress, producer.B
+
+Liam WhiteEditorB
+Zara AliCinematographerB
+Fatima KhanEditorB
+David GuptaCinematographerB
+Jean-Luc MoreauEditorJYoung warrior protectsUÖ„@
+Æ
+
+tt36018399
+Starforged
+2026-11-20"Sci-Fi"Horror*
+
+Zara Ali2
+Sergei Volkov2
+Richard Finch::
+Karen GillanCharacter PLead"Scottish actress. Known:;
+Deepika PadukoneCharacter RVoice"Indian actress. OneB
+
+Daniel KimEditorB
+Niamh O'ConnellEditorJPhysicist manipulates time,U  ®@
+‘
+
+tt83866564Silent Storm
+2032-07-03"Sci-Fi"Mystery*
+
+Zhang Li2
+Jean-Pierre Moreau2
+Luca Marino:B
+Leonardo DiCaprioCharacter CVoice"American actor, producer.:>
+Tom HiddlestonCharacter Y
+Supporting"English actor. Best:=
+Michelle YeohCharacter DCameo"Malaysian actress. Known:9
+Simu LiuCharacter TVoice"Canadian actor, stuntman.B
+Min LiEditorB 
+Edward ClarkeCinematographerB
+Amelia JonesCinematographerJWarrior and mysticUH·¬@
+è
+
+tt83866257Deserted Hope
+2033-08-05"Sci-Fi"Thriller*
+
+Chen Wei2
+Min-jun Park:>
+Ryan ReynoldsCharacter LCameo"Canadian actor, producer.:3
+Louis GarrelCharacter JLead"French actor and:3
+ZendayaCharacter KVoice"American actress andB
+
+Emily ChenEditorB
+
+Daniel KimEditorB
+Jean-Luc MoreauEditorB
+Lin ZhaoEditorB
+Samantha GreenEditorJFriends venture intoU◊£@
+Î
+
+tt42126101Forgotten Starship
+2029-02-08"Action"	Adventure"Sci-Fi*
+Elara Vance2
+Giulia Bianchi2
+Erik Johansson:8
+Jason MomoaCharacter AVoice"American actor. Known:8
+
+Gemma ChanCharacter AVoice"English actress. KnownB
+
+Ravi KumarCinematographerB 
+Robert MillerCinematographerB
+Sofia ContiEditorJScientists discover mysteriousUq=™@
+©
+
+tt47224211Last Kingdom
+2025-08-30"Sci-Fi"Survival*
+Lucas Pereira2
+Erik Johansson:5
+Jack ReynorCharacter PCameo"Irish actor. Known:7
+	Riz AhmedCharacter UVoice"British actor, rapper,:3
+Louis GarrelCharacter PLead"French actor and:B
+Olga KurylenkoCharacter JVoice"Ukrainian-French actress andB"
+Franziska MaierCinematographerB&
+Maria RodriguezProduction DesignerJHacker and samuraiUÏQ∏@
+Ì
+
+tt10077613Cosmic Drift
+2034-01-12"Thriller"Noir*
+Anna Kuznetsova2
+Akash Singh2
+Giovanni Ricci:?
+Scarlett JohanssonCharacter NCameo"American actress. One:C
+Liam HemsworthCharacter G
+Supporting"Australian actor, played::
+	Dev PatelCharacter D
+Supporting"British actor. Known:=
+
+Emma StoneCharacter PVoice"American actress. Recipient:N
+Rina SawayamaCharacter NLead"*Japanese-British singer-songwriter, model,B
+Ingrid SolbergEditorB
+Niamh O'ConnellEditorB
+
+Ravi KumarCinematographerB 
+Anna LindgrenCinematographerB
+David GuptaCinematographerJRogue scientist opensUÆß@
+‘
+
+tt54887839The Shadow of Aethel
+2025-07-13"Sci-Fi"Action*
+Sofia Bellini2
+	Yuki Sato2
+Akash Singh:;
+Zoe Salda√±aCharacter DCameo"American actress, known:@
+Ana de ArmasCharacter UCameo"Cuban-Spanish actress. Began:5
+Jack ReynorCharacter WVoice"Irish actor. Known:@
+Ad√®le ExarchopoulosCharacter CLead"French actress. Known:>
+Jodie ComerCharacter Z
+Supporting"English actress. KnownB
+Megan DaviesEditorB"
+Lucie ChevalierCinematographerB
+
+Liam WhiteEditorB!
+Robert DavisStunt CoordinatorB
+Chloe GreenCinematographerJMartial artist trainsU√ıA
+Ø
+
+tt75908664Abyssal Heart
+2032-08-24"Drama"Mystery*
+
+Ethan Cole2
+Saoirse Kelly2
+Tom Harrison:8
+Ryan GoslingCharacter HLead"Canadian actor. Known:7
+Cillian MurphyCharacter OLead"Irish actor. Known:7
+
+Chris PineCharacter TVoice"American actor. Known:B
+Leonardo DiCaprioCharacter JCameo"American actor, producer.B
+Sophie WeberEditorB#
+Olivia SmithProduction DesignerJElite soldiers defendUÆﬂ@
+˙
+
+tt10161509The Rogue Protocol
+2029-10-23"Thriller"Crime*
+Anna Kuznetsova2
+Lena Schmidt2
+
+Noah Davis:;
+Kanna HashimotoCharacter SCameo"Japanese actress and:O
+Rina SawayamaCharacter HVoice"*Japanese-British singer-songwriter, model,:E
+Matthias SchoenaertsCharacter H
+Supporting"Belgian actor. Known:7
+
+Rami MalekCharacter IVoice"American actor. KnownB!
+Dmitry MorozovCinematographerB
+Jessica TaylorEditorB!
+Sophia M√ºllerCinematographerJAspiring musicians fromUöôÈ@
+ì
+
+tt15478290The Obsidian Blade
+2032-04-16"Fantasy"	Adventure*
+Elara Vance2
+Olivia Miller2
+Ivan Smirnov:=
+Emily BluntCharacter GVoice"British actress. Recipient:A
+Margot RobbieCharacter OLead"Australian actress, producer.:9
+Ryan GoslingCharacter FCameo"Canadian actor. Known:9
+Kit HaringtonCharacter RCameo"English actor. Known:G
+Angelina JolieCharacter G
+Supporting"American actress, filmmaker,B
+Megan DaviesEditorB
+Saki TanakaEditorB
+Sofia ContiEditorJMartial artist trainsUˆ(Ã@
+‚
+
+tt78212985Fading Echoes
+2028-06-04"Sci-Fi"Survival*
+Sarah Koenig2
+Rohan Kapoor2
+Dmitry Ivanov:A
+Leonardo DiCaprioCharacter SLead"American actor, producer.:@
+Jennifer LawrenceCharacter QVoice"American actress. Known:9
+Kit HaringtonCharacter CCameo"English actor. Known:F
+Saoirse RonanCharacter VCameo"!Irish/American actress. RecipientB
+	Zhang HaoEditorB
+Camila FernandesEditorB"
+Lucie ChevalierCinematographerJElite unit retrievesUR∏A
+±
+
+tt74005615Eternal Bloom
+2029-08-11"Sci-Fi"Action*
+Aisha Rahman2
+Ivan Smirnov2
+Akash Singh:F
+Saoirse RonanCharacter FCameo"!Irish/American actress. Recipient:>
+Rebecca FergusonCharacter WVoice"Swedish actress. Known:O
+Rina SawayamaCharacter YCameo"*Japanese-British singer-songwriter, model,B
+Michael ChenEditorB
+
+Sarah ChenCinematographerB
+
+Ravi KumarCinematographerJIndividuals embark onUÕÃ‘@
+ˇ
+
+tt74513306Code Chrysalis
+2031-12-03"Thriller"Noir*
+Elara Vance2
+Ahmed Hassan2
+Hiroshi Suzuki:=
+Michelle YeohCharacter EVoice"Malaysian actress. Known:=
+
+Sadie SinkCharacter Z
+Supporting"American actress. Best:D
+Bryan CranstonCharacter O
+Supporting"American actor, director,:@
+Jennifer LawrenceCharacter JVoice"American actress. Known:7
+
+Chris PineCharacter BCameo"American actor. KnownB!
+Robert DavisStunt CoordinatorB
+Olivia ClarkEditorJAstronaut stranded inUÆ«@
+π
+
+tt48639603Abyssal Heart
+2033-03-01"Drama"	Adventure*
+Greta Hansen2
+Sarah Adams:<
+Tom HollandCharacter R
+Supporting"English actor. Known:<
+Ruby GillmanCharacter OVoice"Australian actress knownB
+Lukas BraunEditorB
+Sofia HernandezEditorB
+Morgana Le FayEditorJSurvivors of planeU∏≈@
+„
+
+tt77070928Ironclad Destiny
+2032-01-05"Historical Drama"Mystery*
+
+Jane Doe2
+Franz Becker:H
+Timoth√©e ChalametCharacter A
+Supporting"American actor. Recipient:8
+ZendayaCharacter Y
+Supporting"American actress andB
+	Kevin LeeCinematographerB#
+Mark JohnsonProduction DesignerB 
+Eleanor VanceCinematographerJWarrior and mysticU◊£¯@
+Ò
+
+tt73263681Forgotten Lullaby
+2034-11-10"Drama"Mystery*
+
+Ethan Cole2
+Emily White2	
+Mei Lin:8
+Henry CavillCharacter XCameo"British actor. Known:<
+Emily BluntCharacter ZLead"British actress. Recipient:<
+Michelle YeohCharacter CLead"Malaysian actress. Known:B
+Angelina JolieCharacter JCameo"American actress, filmmaker,:?
+Bryan CranstonCharacter QVoice"American actor, director,B
+	Zhang HaoEditorB 
+Alastair ReedCinematographerJElite soldiers defendUq=⁄@
+ˆ
+
+tt88759862Deep Space Drifters
+2028-08-07"Fantasy"	Adventure*
+Arthur Pendelton2
+Min-jun Park2
+Taro Suzuki:4
+MackenyuCharacter OLead"Japanese actor. Known:?
+Benedict CumberbatchCharacter JLead"English actor. Known:9
+Jodie ComerCharacter YVoice"English actress. KnownB
+Omar HassanEditorB
+Lin ZhaoEditorJVictorian high-society scandalUÆG˘@
+Ç
+
+tt66143929Ironbound Oath
+2032-11-12"Horror"Supernatural*
+David Miller2
+
+Noah Davis2
+	Ling Chen::
+MackenyuCharacter S
+Supporting"Japanese actor. Known:;
+Bill Skarsg√•rdCharacter QCameo"Swedish actor. Known:A
+Dwayne JohnsonCharacter Z
+Supporting"American actor, former:B
+	Liu YifeiCharacter WCameo"!Chinese-American actress, singer,B
+Alice GreenComposerB!
+Robert DavisStunt CoordinatorB
+Ciaran DoyleCinematographerB
+Sofia ContiEditorJDetective investigates bizarreU◊£®@
+Ω
+
+tt31385801Whispers of Tomorrow
+2029-04-01"	Adventure"Fantasy*
+Lee Joon-ho2
+Vikram Sharma:B
+Michelle YeohCharacter Q
+Supporting"Malaysian actress. Known:4
+	Tom HardyCharacter FLead"English actor. Known:;
+Ruby GillmanCharacter QLead"Australian actress known:O
+Millie Bobby BrownCharacter I
+Supporting" British actress/producer. GainedB"
+Benjamin CarterCinematographerB
+	Zhang HaoEditorJAstronaut seeks newU)\A
+∆
+
+tt85833321The Quantum Divide
+2026-10-07"Sci-Fi"Disaster*
+
+Sofia Khan2
+Nadia Benali2
+Kenji Nakamura:;
+Rosamund PikeCharacter SCameo"English actress. Known:5
+Jack ReynorCharacter VCameo"Irish actor. Known:>
+Hrithik RoshanCharacter L
+Supporting"Indian actor, works:?
+Jennifer LawrenceCharacter OLead"American actress. KnownB
+Olga IvanovaEditorB
+Megan DaviesEditorB
+Omar HassanEditorJElite soldiers defendU\è⁄@
+Ô
+
+tt15636436The Forgotten Relic
+2032-04-12"Fantasy"Action*
+David Miller2
+Astrid Nilsson:B
+Margot RobbieCharacter JVoice"Australian actress, producer.:6
+Daniel KaluuyaCharacter MLead"British actor and:7
+	Riz AhmedCharacter VVoice"British actor, rapper,:N
+Charlize TheronCharacter FLead"(South African/American actress/producer.B
+Samantha GreenEditorB
+
+Ravi KumarCinematographerB
+Michael BrownVFX SupervisorB
+Max HoffmannEditorJAncient map leadsUÕÃA
+‘
+
+tt62945383The Golden Compass
+2030-09-07"	Adventure"Fantasy*
+
+Ava Sharma2
+Daniel White2
+Giulia Bianchi:?
+Bryan CranstonCharacter EVoice"American actor, director,:6
+Chris PrattCharacter BLead"American actor, rose:A
+Olga KurylenkoCharacter WLead"Ukrainian-French actress andB
+Chris AdamsCinematographerB
+Zara AliCinematographerB 
+Min-joon ChoiCinematographerB"
+Franziska MaierCinematographerJDetective investigates missingU∏Â@
+≤
+
+tt19112248Heart of the Wilderness
+2026-02-17"Sci-Fi"Survival*
+
+Ethan Cole2	
+Jian Li:F
+Ad√®le ExarchopoulosCharacter Y
+Supporting"French actress. Known:F
+Lupita Nyong'oCharacter FLead"!Kenyan-Mexican actress. Recipient:4
+	Tom HardyCharacter SLead"English actor. KnownB
+Liam ConnorCinematographerB
+Morgana Le FayEditorB
+Johan KarlssonEditorB!
+Vladimir OrlovCinematographerJSecret agency usesU
+◊Û@
+ò
+
+tt37072603Memory Weaver
+2025-10-14"Sci-Fi"	Cyberpunk*
+Arthur Pendelton2
+Faisal Khan:;
+Blake LivelyCharacter ZVoice"American actress. Known:8
+Nadine NjeimCharacter BCameo"Lebanese actress and:;
+Naomi ScottCharacter FVoice"English actress, singer.:C
+Gael Garc√≠a BernalCharacter ZCameo"Mexican actor, director.:B
+Jet LiCharacter YCameo"$Chinese-Singaporean actor, producer,B
+
+Daniel KimEditorB 
+Mathilde RouxCinematographerB
+Wang LeiCinematographerB
+	Vivek RaoEditorJA ragtag crewUÖ„@
+·
+
+tt64660135Heart of the Wilderness
+2028-07-21"Drama"Music*
+
+Maya Singh2
+Hiroshi Suzuki:<
+
+Rami MalekCharacter A
+Supporting"American actor. Known:I
+Anya Taylor-JoyCharacter OLead"#American-British actress. Recipient:D
+Scarlett JohanssonCharacter E
+Supporting"American actress. One:7
+John BoyegaCharacter KLead"British actor. Gained:;
+Kanna HashimotoCharacter JCameo"Japanese actress andB
+Sofia HernandezEditorB&
+Maria RodriguezProduction DesignerB
+Kazuo InoueEditorB 
+Edward ClarkeCinematographerB"
+Franziska MaierCinematographerJScientist develops AI,Uè¬›@
+Ö
+
+tt31176039Fading Echoes
+2026-12-20"Fantasy"Family*
+Fatima Zahra2
+Pierre Dubois2
+Ahmed Hassan:8
+Jason MomoaCharacter VVoice"American actor. Known:K
+Saoirse RonanCharacter H
+Supporting"!Irish/American actress. Recipient:?
+Scarlett JohanssonCharacter ZVoice"American actress. OneB
+Morgana Le FayEditorB 
+Mathilde RouxCinematographerJAncient map leadsUÖÎ@
+õ
+
+tt55429922Song of the River Spirit
+2032-03-30"Sci-Fi"Drama*
+Lee Joon-ho2
+
+John Smith2	
+Mei Lin:8
+Hrithik RoshanCharacter VLead"Indian actor, works:T
+Rina SawayamaCharacter F
+Supporting"*Japanese-British singer-songwriter, model,:5
+	Tom HardyCharacter AVoice"English actor. KnownB#
+Sirius BlackwoodCinematographerB
+Svetlana SokolovaEditorJ"Astrophysicists investigate cosmicU∏µ@
+˘
+
+tt60817020The Iron Citadel
+2033-12-25"Fantasy"Family*
+
+Ben Carter2
+Saoirse Kelly:4
+	Gal GadotCharacter ZVoice"Israeli actress and:=
+Robert Downey Jr.Character RLead"American actor. KnownB
+Min LiEditorB 
+Robert MillerCinematographerB
+Zara AliCinematographerB
+Laura FerrariEditorB#
+Olivia SmithProduction DesignerJUnderdog team trainsUH·A
+£
+
+tt25098063Mirrored Deception
+2030-01-25"Sci-Fi"Time Travel*
+Liam Gallagher2
+Joon-ho Lee2
+Giovanni Ricci:=
+Florence PughCharacter KVoice"English actress. Debuted:;
+Naomi ScottCharacter TCameo"English actress, singer.:5
+MackenyuCharacter YVoice"Japanese actor. KnownB
+
+Ravi KumarCinematographerB!
+Dmitry MorozovCinematographerB
+Yuto SuzukiCinematographerJTwo souls separatedUq=A
+ì
+
+tt90662499Crimson Zenith
+2032-07-25"Horror"Mystery*
+Sarah Koenig2
+
+Owen Black2
+Astrid Nilsson:>
+Steven YeunCharacter VLead"South Korean-American actor.:C
+Priyanka Chopra JonasCharacter ILead"Indian actress, singer,:A
+Olga KurylenkoCharacter JLead"Ukrainian-French actress andB
+Lin ZhaoEditorB
+Sofia HernandezEditorB
+Jessica TaylorEditorJOperative races toUÆ˜@
+˝
+
+tt59796954Echoes of the Past
+2034-04-06"Drama"Mystery*
+Elena Petrova2
+Rohan Kapoor2
+Pierre Dubois:B
+Olga KurylenkoCharacter EVoice"Ukrainian-French actress and:B
+Leonardo DiCaprioCharacter YCameo"American actor, producer.:;
+Zoe Salda√±aCharacter QVoice"American actress, known:D
+Priyanka Chopra JonasCharacter PCameo"Indian actress, singer,B"
+Charlotte GreenCinematographerB
+Alice GreenComposerB 
+Robert MillerCinematographerJDetective investigates missingU{æ@
+ﬂ
+
+tt95656282Chronos Descent
+2032-01-12"Thriller"Crime*
+Damien Roux2
+Jean-Pierre Moreau2
+Marco Rossi:=
+Robert Downey Jr.Character DLead"American actor. Known:B
+Jet LiCharacter ZVoice"$Chinese-Singaporean actor, producer,B
+	Lars BergCinematographerB
+Sofia ContiEditorB
+Yuto SuzukiCinematographerJSecret agency usesUöô·@
+∞
+
+tt48298155Whispers of Tomorrow
+2025-01-26"Thriller"Crime*
+Lena Anderson2
+Faisal Khan:4
+Louis GarrelCharacter XVoice"French actor and:C
+Priyanka Chopra JonasCharacter XLead"Indian actress, singer,:6
+Chris PrattCharacter ULead"American actor, roseB
+Anna KimCostume DesignerB
+	Vivek RaoEditorB
+Antoine DuboisEditorB 
+Mathilde RouxCinematographerB
+
+Liam WhiteEditorJHacker and samuraiUÖÎ…@
+ﬁ
+
+tt15326689Whispers of the Cosmos
+2032-10-06"Sci-Fi"	Cyberpunk*
+Maria Rodriguez2
+Marco Rossi2
+	Yuki Sato:9
+Ryunosuke KamikiCharacter ULead"Japanese actor and:?
+
+Idris ElbaCharacter K
+Supporting"English actor, producer,B
+Niamh O'ConnellEditorB
+Luca MorettiCinematographerB
+Olivia ClarkEditorJAstronaut stranded inUˆ(¥@
+ÿ
+
+tt37934589Nebula's Embrace
+2030-03-25"	Adventure"
+Historical*
+Marcus Thorne2
+Brendan Murphy:=
+
+Emma StoneCharacter CVoice"American actress. Recipient:=
+Wagner MouraCharacter NLead"Brazilian actor, director,::
+Rosamund PikeCharacter BLead"English actress. Known:8
+
+Gemma ChanCharacter MCameo"English actress. KnownB
+Sophie WeberEditorB
+	Vivek RaoEditorB"
+Lucie ChevalierCinematographerB
+
+Liam WhiteEditorJGeologists race toUR∏ˆ@
+÷
+
+tt98753128Aetherial Divide
+2034-09-01"Drama"	Adventure*
+Elena Petrova2
+Jean-Pierre Moreau2
+Sarah Jenkins:?
+Emma WatsonCharacter Y
+Supporting"English actress, model,:G
+	Liu YifeiCharacter V
+Supporting"!Chinese-American actress, singer,B
+Svetlana SokolovaEditorB 
+Mathilde RouxCinematographerJHacker and samuraiU=
+«@
+Ú
+
+tt63983420A New Horizon
+2026-04-18"Horror"Mystery*
+Marcus Thorne2
+Franz Becker::
+Daisy RidleyCharacter DVoice"English actress. Known:C
+Robert Downey Jr.Character R
+Supporting"American actor. Known:9
+Emma WatsonCharacter WLead"English actress, model,:3
+Louis GarrelCharacter GLead"French actor andB
+	David LeeEditorB
+Yuto SuzukiCinematographerB
+Connor ByrneEditorB"
+Franziska MaierCinematographerB
+Priya SinghEditorJComedian finds unexpectedUÖÎ	A
+π
+
+tt14357217Crimson Horizon
+2034-10-01"Western"Action*
+Samuel Park2
+Juan Pablo Cortes2
+Laura Evans:>
+Rebecca FergusonCharacter RCameo"Swedish actress. Known:;
+Deepika PadukoneCharacter BCameo"Indian actress. One:4
+	Tom HardyCharacter NLead"English actor. Known::
+Daisy RidleyCharacter ZCameo"English actress. Known:5
+MackenyuCharacter WVoice"Japanese actor. KnownB
+
+Emily ChenEditorB
+	Lars BergCinematographerB
+Saki TanakaEditorB!
+Mikhail VolkovCinematographerB
+Ingrid SolbergEditorJAspiring musicians fromUè¬≈@
+ù
+
+tt64988444Forgotten Starship
+2025-03-02"Musical"Comedy*
+Fatima Zahra2
+Olivia Miller:7
+Henry CavillCharacter NLead"British actor. Known::
+Naomi ScottCharacter OLead"English actress, singer.B
+Saki TanakaEditorB
+Julien PicardEditorJAstronaut seeks newUR∏Ó@
+õ
+
+tt86792997
+Lunar Glow
+2031-02-10"Sci-Fi"Time Travel*
+Sofia Bellini2
+Lena Schmidt2
+Min-jun Park:>
+Steven YeunCharacter NLead"South Korean-American actor.:<
+Dwayne JohnsonCharacter KVoice"American actor, formerB
+Anastasia SmirnovaEditorB#
+Alessandro ContiCinematographerB
+Priya SinghEditorB
+Michael BrownVFX SupervisorB
+Yumi KobayashiEditorJAmnesiac woman uncoversU◊£†@
+à
+
+tt60711348Nebula's Embrace
+2028-03-05"Drama"Mystery*
+
+Ava Sharma2
+Wei Li2
+Laura Evans:@
+Ana de ArmasCharacter MCameo"Cuban-Spanish actress. Began:B
+Emily BluntCharacter P
+Supporting"British actress. RecipientB
+Laura TaylorSound DesignerB
+Saki TanakaEditorB
+
+Ravi KumarCinematographerB
+Sneha ReddyEditorB
+Ethan TaylorEditorJElite soldiers defendU§pA
+õ
+
+tt98843631The Chronos Paradox
+2026-04-02"Action"Thriller*
+
+Ava Sharma2
+Astrid Nilsson2
+Sergei Volkov:9
+	Brad PittCharacter FLead"American actor, producer.:>
+Robert Downey Jr.Character HCameo"American actor. Known:O
+Charlize TheronCharacter NVoice"(South African/American actress/producer.:=
+Oscar IsaacCharacter Z
+Supporting"American actor. KnownB 
+Alastair ReedCinematographerB
+Olga IvanovaEditorB
+	Zhang HaoEditorB
+Camila FernandesEditorB
+Max HoffmannEditorJRomantic musical aboutU33≥@
+ˇ
+
+tt37919909Silent Witness
+2027-08-17"	Animation"Family*
+
+Zhang Li2
+Pierre Dubois:@
+Benedict CumberbatchCharacter PVoice"English actor. Known::
+Naomi ScottCharacter VLead"English actress, singer.:?
+Scarlett JohanssonCharacter GVoice"American actress. One:7
+	Riz AhmedCharacter ZCameo"British actor, rapper,B
+Ethan TaylorEditorB 
+Eleanor VanceCinematographerB
+
+Emily ChenEditorB"
+Charlotte GreenCinematographerB!
+Mikhail VolkovCinematographerJFriends on remoteU√ı A
+Û
+
+tt74482382Fading Echoes
+2027-04-28"Thriller"Noir*
+Fatima Zahra2
+Sarah Adams:J
+Millie Bobby BrownCharacter ACameo" British actress/producer. Gained::
+Zoe Salda√±aCharacter YLead"American actress, known:<
+Florence PughCharacter KLead"English actress. DebutedB 
+Min-joon ChoiCinematographerB
+Clara DaviesEditorJScientist develops AI,UÖ´@
+§
+
+tt81952835The Rogue Protocol
+2027-01-09"Horror"Supernatural*
+Lena Anderson2
+Hiroshi Suzuki2
+Akash Singh:C
+Liam HemsworthCharacter K
+Supporting"Australian actor, played:3
+ZendayaCharacter NVoice"American actress and:9
+Jodie ComerCharacter LVoice"English actress. KnownB
+Laura FerrariEditorB
+Lukas BraunEditorB
+Connor ByrneEditorB
+Yumi KobayashiEditorJMaiden seeks RiverU  A
+•
+
+tt29278253Fading Echoes
+2029-09-11"Drama"Music*
+Jackson Lee2
+Juan Pablo Cortes2
+Pierre Dubois:9
+Tom HiddlestonCharacter HVoice"English actor. Best::
+
+Idris ElbaCharacter RCameo"English actor, producer,::
+Rosamund PikeCharacter ULead"English actress. Known:3
+	Gal GadotCharacter MLead"Israeli actress andB
+Victoria ShawEditorB
+Laura TaylorSound DesignerJTwo souls separatedU\èÍ@
+Â
+
+tt66775614The Golden Compass
+2027-02-06"Comedy"Drama*
+Arthur Pendelton2
+
+John Davis:8
+
+Sadie SinkCharacter TVoice"American actress. Best:<
+Chris PrattCharacter C
+Supporting"American actor, rose:=
+Oscar IsaacCharacter Y
+Supporting"American actor. Known:@
+Alexander Skarsg√•rdCharacter GCameo"Swedish actor. Known:B
+Jet LiCharacter VCameo"$Chinese-Singaporean actor, producer,B
+Niamh O'ConnellEditorB
+Sofia ContiEditorJWarrior and mysticU∏Ω@
+≥
+
+tt48726701Deserted Hope
+2025-04-09"Fantasy"Folklore*
+Liam Gallagher2
+Akash Singh:C
+Finn WolfhardCharacter H
+Supporting"Canadian actor, musician.:=
+Keira KnightleyCharacter MCameo"English actress. Known:=
+Henry CavillCharacter R
+Supporting"British actor. Known:?
+
+Idris ElbaCharacter Y
+Supporting"English actor, producer,B 
+Robert MillerCinematographerB
+	Lars BergCinematographerJA ragtag crewUÕÃ¥@
+Ì
+
+tt75494689Aurora's Fall
+2034-08-13"Action"Thriller*
+
+Ben Carter2
+Jessica White:?
+Ryunosuke KamikiCharacter M
+Supporting"Japanese actor and:A
+Alicia VikanderCharacter TCameo"Swedish actress. Recipient:>
+Wagner MouraCharacter DCameo"Brazilian actor, director,:C
+Gael Garc√≠a BernalCharacter CVoice"Mexican actor, director.B!
+Mikhail VolkovCinematographerB
+Clara DaviesEditorB
+Samantha GreenEditorB
+Luca MorettiCinematographerJLyra and daemonUöô…@
+ÿ
+
+tt46353546Whispering Woods
+2034-07-28"Musical"Comedy*
+Alex Turner2
+Wei Li:>
+Rebecca FergusonCharacter FCameo"Swedish actress. Known:H
+Timoth√©e ChalametCharacter S
+Supporting"American actor. RecipientB!
+Robert DavisStunt CoordinatorB
+Morgana Le FayEditorB"
+Lucie ChevalierCinematographerJOperative races toU·z¨@
+˘
+
+tt13948549The Forgotten Relic
+2025-10-06"Sci-Fi"Thriller*
+Kenji Tanaka2
+Kenji Nakamura2
+Ahmed Hassan:8
+Simu LiuCharacter VLead"Canadian actor, stuntman.:<
+	Riz AhmedCharacter E
+Supporting"British actor, rapper,:E
+Benedict CumberbatchCharacter P
+Supporting"English actor. Known:7
+Chris EvansCharacter NLead"American actor. KnownB
+Sofia HernandezEditorB
+	Zhang HaoEditorB"
+Lucie ChevalierCinematographerB
+Zara AliCinematographerJTherapist discovers darkU§pA
+´
+
+tt35605675The Shadow of Aethel
+2028-09-26"Sci-Fi"Thriller*
+Jessica Chen2
+Giulia Bianchi2
+Sarah Adams:7
+Chris EvansCharacter GLead"American actor. Known:@
+Matthias SchoenaertsCharacter OCameo"Belgian actor. Known:>
+Scarlett JohanssonCharacter LLead"American actress. One:1
+
+Donnie YenCharacter PLead"Hong Kong actor,:;
+Ruby GillmanCharacter FLead"Australian actress knownB
+Anna KimCostume DesignerB
+Niamh O'ConnellEditorB
+Yumi KobayashiEditorB
+David GuptaCinematographerJRogue scientist opensUÆø@
+œ
+
+tt90150884Starfall Prophecy
+2026-06-11"Sci-Fi"Mystery*
+
+Emma Brown2
+Vikram Sharma:6
+
+Jamie BellCharacter LVoice"English actor. Known:@
+Kanna HashimotoCharacter I
+Supporting"Japanese actress andB"
+Ricardo SanchezCinematographerB
+
+Ravi KumarCinematographerB
+Chris AdamsCinematographerJAnimated toys goUÆ˜@
+°
+
+tt51261847Crimson Dawn
+2030-01-10"Sci-Fi"Mystery*
+Elena Petrova2
+	Xiao Ling:C
+Liam HemsworthCharacter Y
+Supporting"Australian actor, played:7
+Chris EvansCharacter ELead"American actor. Known:8
+
+Gemma ChanCharacter SVoice"English actress. KnownB
+Thiago CostaCinematographerB
+Johan KarlssonEditorB!
+Hiroshi TanakaCinematographerB
+Antoine DuboisEditorJAstronaut stranded inUR∏A
+˜
+
+tt48588933Nexus Point
+2032-03-27"Historical Drama"Romance*
+Chloe Dupont2
+	Ana Silva2
+	Xiao Ling:;
+Rosamund PikeCharacter MVoice"English actress. Known:5
+	Dev PatelCharacter OCameo"British actor. Known:A
+Sandra BullockCharacter IVoice"American actress, producer.:@
+Benedict CumberbatchCharacter HCameo"English actor. Known:?
+Daisy RidleyCharacter I
+Supporting"English actress. KnownB
+	Tom EvansCostume DesignerB#
+Olivia SmithProduction DesignerB#
+Maximilian VogelCinematographerB 
+Ananya SharmaCinematographerB
+Chloe GreenCinematographerJ!Detective investigates mysteriousU{Œ@
+—
+
+tt99446872Emerald Blade
+2027-02-15"Historical Drama"Romance*
+Sarah Koenig2
+Taro Suzuki2
+Wei Li:9
+Jodie ComerCharacter AVoice"English actress. Known:<
+Ruby GillmanCharacter OCameo"Australian actress known:A
+Dwayne JohnsonCharacter L
+Supporting"American actor, former:?
+Noomi RapaceCharacter D
+Supporting"Swedish actress. KnownB!
+Robert DavisStunt CoordinatorB
+Ciaran DoyleCinematographerJDetective investigates missingUq=∫@
+ê
+
+tt63549160Deep Earth Contingency
+2025-01-11"	Adventure"
+Historical*
+Lucas Pereira2
+Emily White2
+
+John Smith::
+Rosamund PikeCharacter PLead"English actress. Known:@
+Zoe Salda√±aCharacter M
+Supporting"American actress, knownB
+
+Liam WhiteEditorB#
+Maximilian VogelCinematographerB
+
+Sarah ChenCinematographerB
+James WilsonCinematographerJPhysicist manipulates time,UÆG—@
+Œ
+
+tt79980868Desert Mirage
+2029-03-19"Drama"Art*
+Hiroshi Sato2
+Akash Singh:;
+Zoe Salda√±aCharacter MCameo"American actress, known:<
+Daniel KaluuyaCharacter A
+Supporting"British actor and:I
+Priyanka Chopra JonasCharacter Z
+Supporting"Indian actress, singer,:C
+Timoth√©e ChalametCharacter QCameo"American actor. RecipientB
+Jean-Luc MoreauEditorB"
+Lucie ChevalierCinematographerB
+
+Daniel KimEditorJSheriff protects townU◊£–@
+≤
+
+tt15563873Shadow of the Colossus
+2034-06-14"Sports"Drama*
+
+Zhang Li2
+Jessica White2
+Giovanni Ricci:>
+Robert Downey Jr.Character NVoice"American actor. Known:>
+Ryan ReynoldsCharacter VCameo"Canadian actor, producer.:<
+Emily BluntCharacter HLead"British actress. Recipient:7
+Oscar IsaacCharacter ELead"American actor. Known:7
+Henry CavillCharacter TLead"British actor. KnownB
+Sophie ReedEditorB
+Laura TaylorSound DesignerB"
+Charlotte GreenCinematographerB 
+Anna LindgrenCinematographerJAnimated toys goU·z§@
+Ñ
+
+tt94938816Phantom Protocol
+2030-06-16"Thriller"Crime*
+Daniel Chang2
+Guinevere Stone:A
+Sandra BullockCharacter ECameo"American actress, producer.:A
+Margot RobbieCharacter ALead"Australian actress, producer.B
+	Vivek RaoEditorB
+Olivia ClarkEditorB
+Aoife KellyCinematographerB
+Priya SinghEditorB!
+Sophia M√ºllerCinematographerJGeologists race toU
+◊´@
+¢
+
+tt68619246Eternal Frontier
+2033-12-20"	Animation"Family*
+
+Ava Sharma2
+	Yuki Sato2
+Rajesh Gupta:@
+Ana de ArmasCharacter ICameo"Cuban-Spanish actress. Began:=
+John BoyegaCharacter A
+Supporting"British actor. GainedB#
+Maximilian VogelCinematographerB
+Lukas BraunEditorB
+Chris AdamsCinematographerB&
+Maria RodriguezProduction DesignerB
+Sofia ContiEditorJBiographical film aboutU)\A
+˜
+
+tt41777103The Chronos Paradox
+2028-05-13"Drama"Mystery*
+Fatima Zahra2
+Eleanor Vance:B
+Margot RobbieCharacter ZVoice"Australian actress, producer.:I
+Priyanka Chopra JonasCharacter X
+Supporting"Indian actress, singer,:L
+Lupita Nyong'oCharacter I
+Supporting"!Kenyan-Mexican actress. Recipient:C
+Gael Garc√≠a BernalCharacter JCameo"Mexican actor, director.B
+Victoria ShawEditorB
+
+Emily ChenEditorB
+Olivia ClarkEditorB
+Sofia ContiEditorJHacker and samuraiUè¬	A
+Õ
+
+tt63094385Eternal Frontier
+2025-11-30"Comedy"Drama*
+Daniel Chang2
+Jessica White:9
+
+Idris ElbaCharacter RLead"English actor, producer,:J
+Millie Bobby BrownCharacter KCameo" British actress/producer. GainedB
+Connor ByrneEditorB
+Seo-yeon ParkEditorB
+Anna KimCostume DesignerJYoung warrior protectsU·zÏ@
+π
+
+tt52755446Echoes in the Void
+2027-07-01"Musical"Romance*
+Elara Vance2
+	Xiao Ling::
+Karen GillanCharacter OLead"Scottish actress. Known:@
+Alicia VikanderCharacter ELead"Swedish actress. Recipient:>
+Eiza Gonz√°lezCharacter ZCameo"Mexican actress, singer.B
+Anastasia SmirnovaEditorB
+Jean-Luc MoreauEditorB
+Ciaran DoyleCinematographerB 
+Edward ClarkeCinematographerJDetective investigates missingUH·
+A
+ü
+
+tt51206230Celestial Harmony
+2030-03-22"	Cyberpunk"Action*
+Isabella Russo2
+	Ling Chen:7
+
+Chris PineCharacter AVoice"American actor. Known:@
+Karen GillanCharacter P
+Supporting"Scottish actress. Known::
+MackenyuCharacter F
+Supporting"Japanese actor. Known:I
+Anya Taylor-JoyCharacter ZLead"#American-British actress. RecipientB&
+Maria RodriguezProduction DesignerB
+Liam ConnorCinematographerB!
+Mikhail VolkovCinematographerB
+Victoria ShawEditorB#
+Sirius BlackwoodCinematographerJAnimated toys goUè¬˝@
+’
+
+tt79818693Stellar Genesis
+2025-03-10"Thriller"Crime*
+Finn O'Malley2
+
+Owen Black2
+Rajesh Gupta:A
+Alicia VikanderCharacter WCameo"Swedish actress. Recipient:<
+Ruby GillmanCharacter KCameo"Australian actress knownB
+Morgana Le FayEditorB
+Jean-Luc MoreauEditorB
+Niamh O'ConnellEditorJUnderdog team trainsU{¶@
+ü
+
+tt21987742Fading Echoes
+2034-03-13"Sci-Fi"Mystery*
+Chloe Dupont2
+	Ana Silva:<
+Keira KnightleyCharacter QLead"English actress. Known:8
+Nadine NjeimCharacter LVoice"Lebanese actress and:<
+Chris PrattCharacter X
+Supporting"American actor, rose::
+Karen GillanCharacter CLead"Scottish actress. Known:G
+	Liu YifeiCharacter S
+Supporting"!Chinese-American actress, singer,B
+Camila FernandesEditorB
+Liam ConnorCinematographerB
+Sophie WeberEditorB
+
+Emily ChenEditorJDetective investigates bizarreUÕÃA
+∂
+
+tt93117150Winter's Grasp
+2026-10-02"Sci-Fi"Survival*
+
+Emma Brown2
+Helena Brandt:E
+Matthias SchoenaertsCharacter G
+Supporting"Belgian actor. Known:9
+Jodie ComerCharacter WCameo"English actress. Known:K
+Saoirse RonanCharacter K
+Supporting"!Irish/American actress. Recipient:6
+
+Jamie BellCharacter DCameo"English actor. KnownB
+Johan KarlssonEditorB
+Sneha ReddyEditorJDetective investigates missingU33´@
+©
+
+tt68921697The Chronos Paradox
+2032-05-08"	Animation"Family*
+Isabella Russo2
+Giovanni Ricci2
+Rohan Kapoor:>
+Robert Downey Jr.Character ZVoice"American actor. Known:7
+
+Chris PineCharacter YCameo"American actor. Known:9
+Noomi RapaceCharacter CLead"Swedish actress. KnownB
+Chloe DaviesEditorB
+	Kevin LeeCinematographerB
+Megan DaviesEditorB
+Svetlana SokolovaEditorJLyra and daemonUöô—@
+∑
+
+tt68263909Infinite Canvas
+2029-01-09"Sci-Fi"Disaster*
+Chloe Dupont2
+
+Sven Olsen:7
+Tom HollandCharacter KVoice"English actor. Known:J
+Millie Bobby BrownCharacter TVoice" British actress/producer. Gained:A
+Jake GyllenhaalCharacter K
+Supporting"American actor. Known:9
+Nicholas HoultCharacter HLead"English actor. KnownB
+Wang LeiCinematographerB
+	Zhang HaoEditorJ"Astrophysicists investigate cosmicU◊£A
+ä
+
+tt71046570Last Kingdom
+2032-06-28"	Adventure"
+Historical*
+
+Emma Brown2
+Sergei Volkov:8
+
+Gemma ChanCharacter GVoice"English actress. Known:9
+Tom HiddlestonCharacter FVoice"English actor. Best:<
+Ruby GillmanCharacter FCameo"Australian actress known:9
+Daisy RidleyCharacter ALead"English actress. Known:A
+Sandra BullockCharacter XCameo"American actress, producer.B#
+Alessandro ContiCinematographerB
+	Tom EvansCostume DesignerB
+Liam ConnorCinematographerJGeologists race toU\èA
+Û
+
+tt55930644Ephemeral Bonds
+2028-01-19"Fantasy"	Adventure*
+Maria Rodriguez2
+Kenji Nakamura:>
+Scarlett JohanssonCharacter QLead"American actress. One:;
+Kanna HashimotoCharacter CCameo"Japanese actress and::
+Deepika PadukoneCharacter TLead"Indian actress. One:>
+Liam HemsworthCharacter JVoice"Australian actor, played:B
+Olga KurylenkoCharacter CCameo"Ukrainian-French actress andB
+Olga IvanovaEditorB!
+Akira YamamotoCinematographerJMaiden seeks RiverU·zƒ@
+Ç
+
+tt67143621
+Cipher Key
+2034-08-27"Fantasy"	Adventure*
+
+Maya Singh2
+Pierre Dubois:B
+Gael Garc√≠a BernalCharacter TLead"Mexican actor, director.:;
+Dwayne JohnsonCharacter SLead"American actor, former:;
+Karen GillanCharacter EVoice"Scottish actress. KnownB
+Olga IvanovaEditorB
+Svetlana SokolovaEditorB
+Morgana Le FayEditorJAspiring musicians fromUH· @
+¬
+
+tt50119401The Urban Echo
+2034-11-15"Western"Action*
+Greta Hansen2
+Daniel White2
+Sergei Volkov:@
+Sandra BullockCharacter OLead"American actress, producer.:A
+	Liu YifeiCharacter VLead"!Chinese-American actress, singer,B
+Seo-yeon ParkEditorB
+Thiago CostaCinematographerJSurvivors of planeU∏A
+Í
+
+tt82912783Lumina Paradox
+2033-08-24"Action"Sci-Fi*
+Eleanor Vance2
+Sarah Adams2
+Richard Finch:3
+	Gal GadotCharacter YLead"Israeli actress and:3
+ZendayaCharacter UCameo"American actress and:>
+Liam HemsworthCharacter PCameo"Australian actor, playedB!
+Sophia M√ºllerCinematographerB
+Lukas BraunEditorJRomantic musical aboutU√ı A
+◊
+
+tt93626699Nightfall Legacy
+2033-04-15"Sci-Fi"Thriller*
+Aisha Rahman2
+Saoirse Kelly2
+Marco Rossi:5
+Jack ReynorCharacter NVoice"Irish actor. Known:J
+Millie Bobby BrownCharacter GCameo" British actress/producer. Gained::
+Noomi RapaceCharacter QCameo"Swedish actress. Known:?
+	Brad PittCharacter Q
+Supporting"American actor, producer.:C
+Timoth√©e ChalametCharacter UCameo"American actor. RecipientB
+	David LeeEditorB
+Kazuo InoueEditorB"
+Franziska MaierCinematographerB 
+Edward ClarkeCinematographerB
+Chloe DaviesEditorJAstronaut stranded inUöô±@
+∏
+
+tt93539183Shadow of the Colossus
+2030-11-29"Action"Sci-Fi*
+David Miller2
+Vikram Sharma:?
+Bryan CranstonCharacter HCameo"American actor, director,:>
+Eiza Gonz√°lezCharacter IVoice"Mexican actress, singer.:;
+Deepika PadukoneCharacter HVoice"Indian actress. One:;
+Kanna HashimotoCharacter UVoice"Japanese actress and:@
+Alicia VikanderCharacter WLead"Swedish actress. RecipientB
+Chloe GreenCinematographerB
+Ingrid SolbergEditorB
+Omar HassanEditorB"
+Franziska MaierCinematographerJResearchers unleash terrifyingU
+◊Û@
+œ
+
+tt59208695The Crystal Labyrinth
+2030-02-09"Sci-Fi"Mystery*
+Carlos Rivera2	
+Jian Li::
+Daisy RidleyCharacter TCameo"English actress. Known:A
+Ad√®le ExarchopoulosCharacter XCameo"French actress. Known:@
+Benedict CumberbatchCharacter GCameo"English actor. Known:2
+
+Donnie YenCharacter KCameo"Hong Kong actor,B
+Amelia JonesCinematographerB
+Chloe GreenCinematographerB
+Michael BrownVFX SupervisorJRogue scientist opensUÖÎ±@
+œ
+
+tt43463599Lumina Paradox
+2030-01-09"Sci-Fi"Horror*
+
+Ethan Cole2
+Emily White2	
+Mei Lin:3
+Louis GarrelCharacter GLead"French actor and:6
+Tom HollandCharacter YLead"English actor. Known:<
+Dwayne JohnsonCharacter GVoice"American actor, former:8
+Oscar IsaacCharacter ECameo"American actor. Known:B
+Timoth√©e ChalametCharacter KLead"American actor. RecipientB
+	Zhang HaoEditorB
+Sophie WeberEditorJOperative races toUÏQ»@
+¥
+
+tt22810660The Azure Key
+2028-03-19"Action"Sci-Fi*
+
+Maya Singh2
+Guinevere Stone:C
+Finn WolfhardCharacter W
+Supporting"Canadian actor, musician.:7
+Chris EvansCharacter PLead"American actor. Known:7
+Daniel KaluuyaCharacter KCameo"British actor and:@
+Zoe Salda√±aCharacter P
+Supporting"American actress, known:O
+Rina SawayamaCharacter SVoice"*Japanese-British singer-songwriter, model,B
+
+Sarah ChenCinematographerB
+Anastasia SmirnovaEditorB
+Anna KimCostume DesignerB
+	Xiao WangCinematographerJGeologists race toU√ıA
+Ú
+
+tt90847164Code Chrysalis
+2030-05-08"Drama"Music*
+Damien Roux2
+
+John Davis2
+	Ana Silva:2
+
+Donnie YenCharacter NVoice"Hong Kong actor,:7
+Chris PrattCharacter BVoice"American actor, rose:B
+Angelina JolieCharacter MCameo"American actress, filmmaker,:@
+Bill Skarsg√•rdCharacter R
+Supporting"Swedish actor. Known:4
+Louis GarrelCharacter GVoice"French actor andB 
+Robert MillerCinematographerB 
+Ananya SharmaCinematographerJDetective investigates bizarreUffÊ@
+¡
+
+tt59842582
+Starforged
+2033-06-15"Sci-Fi"Action*
+Marcus Thorne2
+Daniel White2
+Taro Suzuki:<
+
+Emma StoneCharacter RLead"American actress. Recipient:D
+Priyanka Chopra JonasCharacter ZVoice"Indian actress, singer,B
+	Tom EvansCostume DesignerB
+Amelia JonesCinematographerJGeologists race toU∏A
+¨
+
+tt77035370Nightfall Legacy
+2030-10-20"Historical Drama"Romance*
+Sakura Yamamoto2
+
+Noah Davis:J
+Millie Bobby BrownCharacter ECameo" British actress/producer. Gained:9
+Ryan GoslingCharacter MVoice"Canadian actor. KnownB
+Chloe GreenCinematographerB
+James WilsonCinematographerB!
+Robert DavisStunt CoordinatorB
+Yuto SuzukiCinematographerB
+
+Daniel KimEditorJDetective investigates missingU∏Ω@
+ 
+
+tt19524205The Verdant Curse
+2026-03-26"Psychological Thriller"Mystery*
+Elara Vance2
+Dmitry Ivanov:>
+Marion CotillardCharacter LLead"French actress, singer,:D
+Bryan CranstonCharacter I
+Supporting"American actor, director,:?
+Steven YeunCharacter QCameo"South Korean-American actor.:8
+ZendayaCharacter U
+Supporting"American actress andB
+Camila FernandesEditorB#
+Isabelle LaurentCinematographerJAstronaut stranded inUffﬁ@
+Ë
+
+tt74490379Cybernetic Mirage
+2030-06-05"Crime"Drama*
+Maria Rodriguez2
+Marco Rossi:;
+Karen GillanCharacter ICameo"Scottish actress. Known:@
+Alice BragaCharacter K
+Supporting"Brazilian actress. KnownB
+Laura TaylorSound DesignerB
+Sophie ReedEditorB
+Niamh O'ConnellEditorB
+David GuptaCinematographerJSheriff protects townUR∏∂@
+
+
+tt12783325Whispers in the Dark
+2031-08-06"Fantasy"	Adventure*
+Kai Richter2
+Faisal Khan2
+Ivan Smirnov:G
+Margot RobbieCharacter K
+Supporting"Australian actress, producer.:?
+Emma WatsonCharacter Y
+Supporting"English actress, model,:>
+Robert Downey Jr.Character TCameo"American actor. KnownB!
+Dmitry MorozovCinematographerB
+Amelia JonesCinematographerB
+	Chen WangCinematographerB
+Yuto SuzukiCinematographerB
+Fatima KhanEditorJDetective hunts serialUÖ”@
+˛
+
+tt98930331
+Starforged
+2033-07-10"Horror"Supernatural*
+Arthur Pendelton2
+Luca Marino:=
+Michelle YeohCharacter PCameo"Malaysian actress. Known:5
+	Dev PatelCharacter YVoice"British actor. KnownB
+Sofia HernandezEditorB
+Megan DaviesEditorB
+	Tom EvansCostume DesignerB
+Omar HassanEditorB 
+Eleanor VanceCinematographerJComedian finds unexpectedUÕÃº@
+û
+
+tt17207032Winter's Grasp
+2025-01-01"Musical"Romance*
+Fatima Zahra2
+Rohan Kapoor2
+Daniel White:A
+Ad√®le ExarchopoulosCharacter FVoice"French actress. Known:B
+Angelina JolieCharacter ECameo"American actress, filmmaker,:H
+Timoth√©e ChalametCharacter I
+Supporting"American actor. Recipient:O
+Charlize TheronCharacter PCameo"(South African/American actress/producer.:>
+Tom HiddlestonCharacter D
+Supporting"English actor. BestB
+	David LeeEditorB
+Ciaran DoyleCinematographerJIndividuals embark onUÖ˚@

@@ -10,13 +10,15 @@ gRPC is a high-performance, open-source universal RPC framework that enables eff
 - **gRPC Server & Client**: Complete implementation of a service
   - Server: Implements a gRPC service that handles incoming requests, processes data, and returns responses. [See screenshot](#screenshot---grpc-server).
   - Client: Connects to the gRPC server primarily for sending requests to the server.
-  
 - **Protocol Buffers**: Type-safe message definitions in a compressed format.
 
   - Compact Data Storage: Protobuf encodes data in a compact binary format, which significantly reduces payload size.
-  - Strongly Typed & Schema-Driven: Protobuf uses predefined schemas (`.proto` files) that clearly define data structures, providing:
-    - Compile-time type checking
-    - Self-documenting service contracts
+    - | [JSON](assets/movie-data.json) | [Protocol Buffer](assets/movie-data.pb) |
+      | ------------------------------ | --------------------------------------- |
+      | 622 KB                         | 209 KB                                  |
+  - Strongly Typed & Schema-Driven: Protobuf uses predefined schemas (`.proto` files) that clearly define data structures, providing: compile-time type checking and self-documenting service contracts
+    - [messages](cmd/movie/movie_messages.proto)
+    - [services](cmd/movie/movie_services.proto)
   - Cross-Language Support: Protobuf enables communication between services written in different languages (e.g., Go, Python, Java, C#, Node.js) by generating client and server code from the same `.proto` definitions.
   - Optimized Code Generation: Automatically generates efficient classes using [protoc](https://pkg.go.dev/github.com/golang/protobuf/protoc-gen-go).
     - [messages](cmd/helloworld/helloworld_messages.pb.go)
@@ -101,6 +103,7 @@ make run-e2e
 ## Screenshots
 
 #### Screenshot - GRPC Server
+
 <img src="assets/grpc-server.png" alt="gRPC Server" width="400" />
 
 ## Testing
@@ -110,6 +113,8 @@ make test
 ```
 
 ## API Reference
+
+#### Hello World
 
 The project implements a simple Hello World gRPC service:
 
@@ -129,9 +134,15 @@ message HelloReply {
 }
 ```
 
+#### Movie
+
+- [messages](cmd/movie/movie_messages.proto)
+- [services](cmd/movie/movie_services.proto)
+
 ## Inspiration
 
 - [3musketeers](https://3musketeers.io/)
+- [Protocol Buffers](https://protobuf.dev/)
 - [gRPC](https://grpc.io/)
 - [Golang - Project Layout](https://github.com/golang-standards/project-layout)
 - TODO

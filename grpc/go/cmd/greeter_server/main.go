@@ -8,6 +8,7 @@ import (
 	"os"
 
 	helloworldLocal "case-studies/grpc/cmd/helloworld"
+	"case-studies/grpc/cmd/movie"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/health"
@@ -21,20 +22,25 @@ import (
 
 func loadConfig() *config.ServerConfig {
 	flagPort := flag.Int("port", config.DefaultPort, "The server port")
+	flagMovieDataFilePath := flag.String("movie-data-file-path", config.DefaultMovieDataFilePath, "The file path for movie data")
 
 	flag.Parse()
 
-	// Load base config from environment
 	baseConfig := config.LoadServerConfig()
 
-	// Only override with command line flag if it was set by the user
 	if flag.CommandLine.Lookup("port").Value.String() != fmt.Sprintf("%d", config.DefaultPort) || flag.NFlag() > 0 {
 		baseConfig.Port = *flagPort
 	}
+	if flag.CommandLine.Lookup("movie-data-file-path").Value.String() != config.DefaultMovieDataFilePath || flag.NFlag() > 0 {
+		baseConfig.MovieDataFilePath = *flagMovieDataFilePath
+	}
 
-	// Validate configuration
 	if err := validation.ValidatePort(baseConfig.Port); err != nil {
 		slog.Error("invalid port configuration", "error", err)
+		os.Exit(1)
+	}
+	if err := validation.ValidateMovieDataFilePath(baseConfig.MovieDataFilePath); err != nil {
+		slog.Error("invalid file data path configuration", "error", err)
 		os.Exit(1)
 	}
 
@@ -58,7 +64,6 @@ func setupLogger() *slog.Logger {
 }
 
 func createGRPCServer(cfg *config.ServerConfig, logger *slog.Logger) *grpc.Server {
-	// Configure server options
 	serverOpts := []grpc.ServerOption{
 		grpc.ChainUnaryInterceptor(
 			middleware.LoggingInterceptor(logger),
@@ -70,17 +75,18 @@ func createGRPCServer(cfg *config.ServerConfig, logger *slog.Logger) *grpc.Serve
 	grpcServer := grpc.NewServer(serverOpts...)
 
 	// Register services
-	greeterServer := &server{logger: logger}
+	greeterServer := &server{logger: logger, movieDataFilePath: cfg.MovieDataFilePath}
+	movieServer := &server{logger: logger, movieDataFilePath: cfg.MovieDataFilePath}
 	helloworldLocal.RegisterGreeterServer(grpcServer, greeterServer)
+	movie.RegisterGetterServer(grpcServer, movieServer)
 
 	// Register health check service
 	healthServer := health.NewServer()
 	grpc_health_v1.RegisterHealthServer(grpcServer, healthServer)
 
-	// Set health status
 	healthServer.SetServingStatus("helloworld.Greeter", grpc_health_v1.HealthCheckResponse_SERVING)
+	healthServer.SetServingStatus("movie.Getter", grpc_health_v1.HealthCheckResponse_SERVING)
 
-	// Register reflection service for debugging
 	reflection.Register(grpcServer)
 
 	logger.Info("gRPC server configured")
@@ -94,7 +100,6 @@ func main() {
 
 	logger.Info("starting gRPC server", "port", cfg.Port)
 
-	// Create listener
 	lis, err := net.Listen("tcp", fmt.Sprintf(":%d", cfg.Port))
 	if err != nil {
 		logger.Error("failed to listen", "error", err, "port", cfg.Port)
@@ -106,7 +111,6 @@ func main() {
 
 	logger.Info("server listening", "address", lis.Addr())
 
-	// Start serving
 	if err := grpcServer.Serve(lis); err != nil {
 		logger.Error("failed to serve", "error", err)
 		os.Exit(1)

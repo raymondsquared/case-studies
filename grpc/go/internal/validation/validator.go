@@ -111,3 +111,29 @@ func SanitizeString(input string) string {
 
 	return strings.TrimSpace(result.String())
 }
+
+// ValidateMovieRatings validates that the movie rating is between 0.01 and 9.99
+func ValidateMovieRatings(rating float32) error {
+	if rating < 0.00 || rating > 10.00 {
+		return status.Errorf(codes.InvalidArgument, "ratings must be between 0.00 and 10.00")
+	}
+	return nil
+}
+
+// ValidateMovieDataFilePath validates a file path for movie data files
+func ValidateMovieDataFilePath(path string) error {
+	if path == "" {
+		return status.Errorf(codes.InvalidArgument, "file path cannot be empty")
+	}
+
+	if len(path) > 255 {
+		return status.Errorf(codes.InvalidArgument, "file path too long (max 255 characters)")
+	}
+
+	// Check for invalid characters in file paths
+	if strings.ContainsAny(path, "<>:\"\\|?*") {
+		return status.Errorf(codes.InvalidArgument, "file path contains invalid characters")
+	}
+
+	return nil
+}

@@ -24,6 +24,7 @@ WORKDIR /app
 
 COPY --from=builder --chown=appuser:appgroup /app/bin/grpc-greeter-client .
 COPY --from=builder --chown=appuser:appgroup /app/deployments/docker/client/start.sh .
+COPY --from=builder --chown=appuser:appgroup /app/assets/movie-data.json .
 
 USER appuser
 

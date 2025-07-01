@@ -37,6 +37,7 @@ COPY --from=builder --chown=appuser:appgroup /app/bin/grpc-greeter-client .
 COPY --from=builder --chown=appuser:appgroup /app/grpcurl .
 COPY --from=builder --chown=appuser:appgroup /app/grpcui .
 COPY --from=builder --chown=appuser:appgroup /app/deployments/docker/full/start.sh .
+COPY --from=builder --chown=appuser:appgroup /app/assets/movie-data.json .
 
 USER appuser
 

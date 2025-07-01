@@ -62,10 +62,10 @@ Example:
 
 ## Status & Roadmap
 
-| Items      | Status      |
-| ---------- | ----------- |
+| Items              | Status      |
+| ------------------ | ----------- |
 | [gRPC](./grpc/go/) | IN PROGRESS |
-| Kubernetes | TO DO       |
+| Kubernetes         | TO DO       |
 
 ## Inspiration
 

@@ -1,0 +1,16 @@
+edition = "2023";
+
+option go_package = "case-studies/grpc/cmd/movie";
+
+package movie;
+
+import "movie_messages.proto";
+import "google/protobuf/empty.proto";
+
+service Getter {
+  rpc GetMovieByRatings (GetMovieInput) returns (GetMovieOutput) {}
+}
+
+service MovieProtoService {
+  rpc GetMoviesProto (google.protobuf.Empty) returns (MovieProtoResponse) {}
+}

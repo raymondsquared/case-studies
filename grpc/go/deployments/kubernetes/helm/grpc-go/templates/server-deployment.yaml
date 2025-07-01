@@ -47,6 +47,8 @@ spec:
               value: {{ include "grpc-go.fullname" . }}-service
             - name: SERVER_PORT
               value: {{ .Values.serverPort }}
+            - name: MOVIE_DATA_FILE_PATH
+              value: "./"
           ports:
             - name: tcp
               containerPort: {{ .Values.service.port }}

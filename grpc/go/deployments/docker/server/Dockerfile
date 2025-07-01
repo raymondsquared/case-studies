@@ -29,6 +29,7 @@ WORKDIR /app
 COPY --from=builder --chown=appuser:appgroup /app/bin/grpc-greeter-server .
 COPY --from=builder --chown=appuser:appgroup /app/deployments/docker/server/start.sh .
 COPY --from=builder --chown=appuser:appgroup /bin/grpc_health_probe .
+COPY --from=builder --chown=appuser:appgroup /app/assets/movie-data.json .
 
 USER appuser
 

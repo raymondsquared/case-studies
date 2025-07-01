@@ -1,6 +1,6 @@
 # Variables
-PROTO_DIRS=../cmd/helloworld
-CONTAINER_IMAGE_VERSION=0.0.2-20250630local
+PROTO_DIRS=../cmd/helloworld ../cmd/movie
+CONTAINER_IMAGE_VERSION=0.0.2-20250701local
 
 # Dependencies
 .PHONY: dependencies
