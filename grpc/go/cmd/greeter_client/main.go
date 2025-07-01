@@ -26,10 +26,16 @@ func loadConfig() *config.ClientConfig {
 	// Load base config from environment
 	baseConfig := config.LoadClientConfig()
 
-	// Override with command line flags
-	baseConfig.Host = *flagHost
-	baseConfig.Port = *flagPort
-	baseConfig.Name = *flagName
+	// Only override with command line flags if they were set by the user
+	if flag.CommandLine.Lookup("host").Value.String() != config.DefaultHost || flag.NFlag() > 0 {
+		baseConfig.Host = *flagHost
+	}
+	if flag.CommandLine.Lookup("port").Value.String() != fmt.Sprintf("%d", config.DefaultPort) || flag.NFlag() > 0 {
+		baseConfig.Port = *flagPort
+	}
+	if flag.CommandLine.Lookup("name").Value.String() != config.DefaultName || flag.NFlag() > 0 {
+		baseConfig.Name = *flagName
+	}
 
 	// Validate configuration
 	if err := validation.ValidateHost(baseConfig.Host); err != nil {

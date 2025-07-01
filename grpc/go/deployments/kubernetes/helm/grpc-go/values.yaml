@@ -1,0 +1,48 @@
+namespace: grpc-go
+
+serviceAccount:
+  name: "grpc-go-sa"
+
+serverImage:
+  repository: raymondsquared/grpc-helloworld-server
+  tag: "0.0.2-20250630a"
+  pullPolicy: "Always"
+
+clientImage:
+  repository: raymondsquared/grpc-helloworld-client
+  tag: "0.0.2-20250630a"
+  pullPolicy: "Always"
+
+replicaCount: 1
+
+resources:
+  limits:
+    cpu: 500m
+    memory: 512Mi
+  requests:
+    cpu: 250m
+    memory: 256Mi
+
+podSecurityContext:
+  fsGroup: 1000
+  runAsGroup: 1000
+  runAsUser: 1000
+  supplementalGroups:
+    - 1000
+
+securityContext:
+  allowPrivilegeEscalation: false
+  capabilities:
+    drop:
+      - ALL
+  privileged: false
+  readOnlyRootFilesystem: true
+  runAsNonRoot: true
+
+service:
+  type: NodePort
+  port: 50051
+  targetPort: 50051
+
+app:
+  serverPort: 500051

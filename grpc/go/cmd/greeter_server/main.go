@@ -27,8 +27,10 @@ func loadConfig() *config.ServerConfig {
 	// Load base config from environment
 	baseConfig := config.LoadServerConfig()
 
-	// Override with command line flags
-	baseConfig.Port = *flagPort
+	// Only override with command line flag if it was set by the user
+	if flag.CommandLine.Lookup("port").Value.String() != fmt.Sprintf("%d", config.DefaultPort) || flag.NFlag() > 0 {
+		baseConfig.Port = *flagPort
+	}
 
 	// Validate configuration
 	if err := validation.ValidatePort(baseConfig.Port); err != nil {

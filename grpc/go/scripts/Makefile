@@ -35,9 +35,17 @@ run-client:
 run-e2e:
 	CONTAINER_IMAGE_VERSION=$(CONTAINER_IMAGE_VERSION) docker compose -p grpc-greeter -f ../deployments/docker/compose.yaml up -d
 
+.PHONY: prepare-k8s
+prepare-k8s: 
+	helm template local-release -f ../deployments/kubernetes/helm/grpc-go/values.yaml ../deployments/kubernetes/helm/grpc-go > ../deployments/kubernetes/helm-output.yaml
+
 .PHONY: run-k8s
-run-k8s:
-	kubectl apply -f ../deployments/kubernetes/manifests.yaml
+run-k8s: prepare-k8s
+	kubectl apply -f ../deployments/kubernetes/helm-output.yaml
+
+.PHONY: clean-k8s
+clean-k8s:
+	kubectl delete -f ../deployments/kubernetes/helm-output.yaml
 
 .PHONY: build-server
 build-server:

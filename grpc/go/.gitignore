@@ -1,2 +1,4 @@
 vendor/
 bin/
+
+helm-output.yaml
