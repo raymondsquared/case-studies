@@ -23,7 +23,7 @@ const (
 
 type HelloRequest struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
-	Name          *string                `protobuf:"bytes,1,opt,name=name" json:"name,omitempty"`
+	Name          string                 `protobuf:"bytes,1,opt,name=name,proto3" json:"name,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -59,15 +59,15 @@ func (*HelloRequest) Descriptor() ([]byte, []int) {
 }
 
 func (x *HelloRequest) GetName() string {
-	if x != nil && x.Name != nil {
-		return *x.Name
+	if x != nil {
+		return x.Name
 	}
 	return ""
 }
 
 type HelloReply struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
-	Message       *string                `protobuf:"bytes,1,opt,name=message" json:"message,omitempty"`
+	Message       string                 `protobuf:"bytes,1,opt,name=message,proto3" json:"message,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -103,8 +103,8 @@ func (*HelloReply) Descriptor() ([]byte, []int) {
 }
 
 func (x *HelloReply) GetMessage() string {
-	if x != nil && x.Message != nil {
-		return *x.Message
+	if x != nil {
+		return x.Message
 	}
 	return ""
 }
@@ -119,7 +119,7 @@ const file_helloworld_messages_proto_rawDesc = "" +
 	"\x04name\x18\x01 \x01(\tR\x04name\"&\n" +
 	"\n" +
 	"HelloReply\x12\x18\n" +
-	"\amessage\x18\x01 \x01(\tR\amessageB\"Z case-studies/grpc/cmd/helloworldb\beditionsp\xe8\a"
+	"\amessage\x18\x01 \x01(\tR\amessageB\"Z case-studies/grpc/cmd/helloworldb\x06proto3"
 
 var (
 	file_helloworld_messages_proto_rawDescOnce sync.Once

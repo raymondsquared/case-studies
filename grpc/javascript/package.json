@@ -1,0 +1,19 @@
+{
+  "name": "grpc-javascript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start-client": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "google-protobuf": "^3.21.4",
+    "minimist": "^1.2.8"
+  },
+  "devDependencies": {
+    "@grpc/grpc-js": "^1.13.4",
+    "grpc-tools": "^1.13.0"
+  }
+}

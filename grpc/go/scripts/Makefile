@@ -1,5 +1,6 @@
 # Variables
 PROTO_DIRS=../cmd/helloworld ../cmd/movie
+PROTO_JS_DIRS=../../javascript/protobuf
 CONTAINER_IMAGE_VERSION=0.0.2-20250701local
 
 # Dependencies
@@ -8,8 +9,8 @@ dependencies:
 	go mod vendor
 
 # Generator
-.PHONY: proto-generate
-proto-generate:
+.PHONY: proto-generate-go
+proto-generate-go:
 	@for dir in $(PROTO_DIRS); do \
 		echo "Generating Go code from proto files in $$dir ..."; \
 		protoc \
@@ -20,7 +21,7 @@ proto-generate:
 			--go-grpc_opt=paths=source_relative \
 			$$dir/*.proto; \
 	done
-	@echo "Generation complete."
+	@echo "Go code generation complete."
 
 # Tests
 .PHONY: test

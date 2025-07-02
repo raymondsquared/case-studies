@@ -33,7 +33,7 @@ func (s *server) SayHello(ctx context.Context, in *helloworldLocal.HelloRequest)
 	sanitizedName := validation.SanitizeString(in.GetName())
 
 	message := fmt.Sprintf("Hello %s! Welcome to gRPC server.", sanitizedName)
-	response := &helloworldLocal.HelloReply{Message: &message}
+	response := &helloworldLocal.HelloReply{Message: message}
 
 	duration := time.Since(start)
 	s.logger.Info("processed greeting request",

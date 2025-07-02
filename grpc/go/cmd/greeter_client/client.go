@@ -15,7 +15,7 @@ func MakeGreeterRequest(ctx context.Context, client helloworld.GreeterClient, na
 	logger.Info("sending greeting request", "name", name)
 
 	sanitizedName := validation.SanitizeString(name)
-	request := &helloworld.HelloRequest{Name: &sanitizedName}
+	request := &helloworld.HelloRequest{Name: sanitizedName}
 
 	response, err := client.SayHello(ctx, request)
 
@@ -32,7 +32,7 @@ func MakeGreeterRequest(ctx context.Context, client helloworld.GreeterClient, na
 func MakeGetterRequest(ctx context.Context, client movie.GetterClient, ratings float32, filePath string, logger *slog.Logger) error {
 	logger.Info("sending getting movies with minimum ratings_score request", "ratings", ratings)
 
-	sanitisedRatingsScore := &ratings
+	sanitisedRatingsScore := ratings
 	request := &movie.GetMovieInput{MinimumRatingsScore: sanitisedRatingsScore}
 
 	response, err := client.GetMovieByRatings(ctx, request)

@@ -29,7 +29,7 @@ const file_movie_services_proto_rawDesc = "" +
 	"\x06Getter\x12B\n" +
 	"\x11GetMovieByRatings\x12\x14.movie.GetMovieInput\x1a\x15.movie.GetMovieOutput\"\x002Z\n" +
 	"\x11MovieProtoService\x12E\n" +
-	"\x0eGetMoviesProto\x12\x16.google.protobuf.Empty\x1a\x19.movie.MovieProtoResponse\"\x00B\x1dZ\x1bcase-studies/grpc/cmd/movieb\beditionsp\xe8\a"
+	"\x0eGetMoviesProto\x12\x16.google.protobuf.Empty\x1a\x19.movie.MovieProtoResponse\"\x00B\x1dZ\x1bcase-studies/grpc/cmd/movieb\x06proto3"
 
 var file_movie_services_proto_goTypes = []any{
 	(*GetMovieInput)(nil),      // 0: movie.GetMovieInput

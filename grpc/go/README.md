@@ -20,6 +20,7 @@ gRPC is a high-performance, open-source universal RPC framework that enables eff
     - [messages](cmd/movie/movie_messages.proto)
     - [services](cmd/movie/movie_services.proto)
   - Cross-Language Support: Protobuf enables communication between services written in different languages (e.g., Go, Python, Java, C#, Node.js) by generating client and server code from the same `.proto` definitions.
+    - [Javascript](../javascript/)
   - Optimized Code Generation: Automatically generates efficient classes using [protoc](https://pkg.go.dev/github.com/golang/protobuf/protoc-gen-go).
     - [messages](cmd/helloworld/helloworld_messages.pb.go)
     - [services](cmd/helloworld/helloworld_services.pb.go)
@@ -98,6 +99,15 @@ make run-client
 ```bash
 make package
 make run-e2e
+```
+
+### Run Kuebrentes
+
+**Example**:
+
+```bash
+make package
+make run-k8s
 ```
 
 ## Screenshots

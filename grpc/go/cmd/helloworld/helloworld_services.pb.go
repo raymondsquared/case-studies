@@ -27,7 +27,7 @@ const file_helloworld_services_proto_rawDesc = "" +
 	"\x19helloworld_services.proto\x12\n" +
 	"helloworld\x1a\x19helloworld_messages.proto2I\n" +
 	"\aGreeter\x12>\n" +
-	"\bSayHello\x12\x18.helloworld.HelloRequest\x1a\x16.helloworld.HelloReply\"\x00B\"Z case-studies/grpc/cmd/helloworldb\beditionsp\xe8\a"
+	"\bSayHello\x12\x18.helloworld.HelloRequest\x1a\x16.helloworld.HelloReply\"\x00B\"Z case-studies/grpc/cmd/helloworldb\x06proto3"
 
 var file_helloworld_services_proto_goTypes = []any{
 	(*HelloRequest)(nil), // 0: helloworld.HelloRequest

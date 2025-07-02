@@ -23,7 +23,7 @@ const (
 
 type GetMovieInput struct {
 	state               protoimpl.MessageState `protogen:"open.v1"`
-	MinimumRatingsScore *float32               `protobuf:"fixed32,1,opt,name=minimum_ratings_score,json=minimumRatingsScore" json:"minimum_ratings_score,omitempty"`
+	MinimumRatingsScore float32                `protobuf:"fixed32,1,opt,name=minimum_ratings_score,json=minimumRatingsScore,proto3" json:"minimum_ratings_score,omitempty"`
 	unknownFields       protoimpl.UnknownFields
 	sizeCache           protoimpl.SizeCache
 }
@@ -59,15 +59,15 @@ func (*GetMovieInput) Descriptor() ([]byte, []int) {
 }
 
 func (x *GetMovieInput) GetMinimumRatingsScore() float32 {
-	if x != nil && x.MinimumRatingsScore != nil {
-		return *x.MinimumRatingsScore
+	if x != nil {
+		return x.MinimumRatingsScore
 	}
 	return 0
 }
 
 type GetMovieOutput struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
-	Movie         []*Movie               `protobuf:"bytes,1,rep,name=movie" json:"movie,omitempty"`
+	Movie         []*Movie               `protobuf:"bytes,1,rep,name=movie,proto3" json:"movie,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -111,16 +111,16 @@ func (x *GetMovieOutput) GetMovie() []*Movie {
 
 type Movie struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
-	MovieId       *string                `protobuf:"bytes,1,opt,name=movie_id,json=movieId" json:"movie_id,omitempty"`
-	Title         *string                `protobuf:"bytes,2,opt,name=title" json:"title,omitempty"`
-	ReleaseDate   *string                `protobuf:"bytes,3,opt,name=release_date,json=releaseDate" json:"release_date,omitempty"`
-	Genre         []string               `protobuf:"bytes,4,rep,name=genre" json:"genre,omitempty"`
-	Director      *Director              `protobuf:"bytes,5,opt,name=director" json:"director,omitempty"`
-	Producer      []*Producer            `protobuf:"bytes,6,rep,name=producer" json:"producer,omitempty"`
-	Cast          []*CastMember          `protobuf:"bytes,7,rep,name=cast" json:"cast,omitempty"`
-	Crew          []*CrewMember          `protobuf:"bytes,8,rep,name=crew" json:"crew,omitempty"`
-	PlotSummary   *string                `protobuf:"bytes,9,opt,name=plot_summary,json=plotSummary" json:"plot_summary,omitempty"`
-	RatingsScore  *float32               `protobuf:"fixed32,10,opt,name=ratings_score,json=ratingsScore" json:"ratings_score,omitempty"`
+	MovieId       string                 `protobuf:"bytes,1,opt,name=movie_id,json=movieId,proto3" json:"movie_id,omitempty"`
+	Title         string                 `protobuf:"bytes,2,opt,name=title,proto3" json:"title,omitempty"`
+	ReleaseDate   string                 `protobuf:"bytes,3,opt,name=release_date,json=releaseDate,proto3" json:"release_date,omitempty"`
+	Genre         []string               `protobuf:"bytes,4,rep,name=genre,proto3" json:"genre,omitempty"`
+	Director      *Director              `protobuf:"bytes,5,opt,name=director,proto3" json:"director,omitempty"`
+	Producer      []*Producer            `protobuf:"bytes,6,rep,name=producer,proto3" json:"producer,omitempty"`
+	Cast          []*CastMember          `protobuf:"bytes,7,rep,name=cast,proto3" json:"cast,omitempty"`
+	Crew          []*CrewMember          `protobuf:"bytes,8,rep,name=crew,proto3" json:"crew,omitempty"`
+	PlotSummary   string                 `protobuf:"bytes,9,opt,name=plot_summary,json=plotSummary,proto3" json:"plot_summary,omitempty"`
+	RatingsScore  float32                `protobuf:"fixed32,10,opt,name=ratings_score,json=ratingsScore,proto3" json:"ratings_score,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -156,22 +156,22 @@ func (*Movie) Descriptor() ([]byte, []int) {
 }
 
 func (x *Movie) GetMovieId() string {
-	if x != nil && x.MovieId != nil {
-		return *x.MovieId
+	if x != nil {
+		return x.MovieId
 	}
 	return ""
 }
 
 func (x *Movie) GetTitle() string {
-	if x != nil && x.Title != nil {
-		return *x.Title
+	if x != nil {
+		return x.Title
 	}
 	return ""
 }
 
 func (x *Movie) GetReleaseDate() string {
-	if x != nil && x.ReleaseDate != nil {
-		return *x.ReleaseDate
+	if x != nil {
+		return x.ReleaseDate
 	}
 	return ""
 }
@@ -212,22 +212,22 @@ func (x *Movie) GetCrew() []*CrewMember {
 }
 
 func (x *Movie) GetPlotSummary() string {
-	if x != nil && x.PlotSummary != nil {
-		return *x.PlotSummary
+	if x != nil {
+		return x.PlotSummary
 	}
 	return ""
 }
 
 func (x *Movie) GetRatingsScore() float32 {
-	if x != nil && x.RatingsScore != nil {
-		return *x.RatingsScore
+	if x != nil {
+		return x.RatingsScore
 	}
 	return 0
 }
 
 type Director struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
-	Name          *string                `protobuf:"bytes,1,opt,name=name" json:"name,omitempty"`
+	Name          string                 `protobuf:"bytes,1,opt,name=name,proto3" json:"name,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -263,15 +263,15 @@ func (*Director) Descriptor() ([]byte, []int) {
 }
 
 func (x *Director) GetName() string {
-	if x != nil && x.Name != nil {
-		return *x.Name
+	if x != nil {
+		return x.Name
 	}
 	return ""
 }
 
 type Producer struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
-	Name          *string                `protobuf:"bytes,1,opt,name=name" json:"name,omitempty"`
+	Name          string                 `protobuf:"bytes,1,opt,name=name,proto3" json:"name,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -307,18 +307,18 @@ func (*Producer) Descriptor() ([]byte, []int) {
 }
 
 func (x *Producer) GetName() string {
-	if x != nil && x.Name != nil {
-		return *x.Name
+	if x != nil {
+		return x.Name
 	}
 	return ""
 }
 
 type CastMember struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
-	ActorName     *string                `protobuf:"bytes,1,opt,name=actor_name,json=actorName" json:"actor_name,omitempty"`
-	CharacterName *string                `protobuf:"bytes,2,opt,name=character_name,json=characterName" json:"character_name,omitempty"`
-	Role          *string                `protobuf:"bytes,3,opt,name=role" json:"role,omitempty"`
-	Biography     *string                `protobuf:"bytes,4,opt,name=biography" json:"biography,omitempty"`
+	ActorName     string                 `protobuf:"bytes,1,opt,name=actor_name,json=actorName,proto3" json:"actor_name,omitempty"`
+	CharacterName string                 `protobuf:"bytes,2,opt,name=character_name,json=characterName,proto3" json:"character_name,omitempty"`
+	Role          string                 `protobuf:"bytes,3,opt,name=role,proto3" json:"role,omitempty"`
+	Biography     string                 `protobuf:"bytes,4,opt,name=biography,proto3" json:"biography,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -354,37 +354,37 @@ func (*CastMember) Descriptor() ([]byte, []int) {
 }
 
 func (x *CastMember) GetActorName() string {
-	if x != nil && x.ActorName != nil {
-		return *x.ActorName
+	if x != nil {
+		return x.ActorName
 	}
 	return ""
 }
 
 func (x *CastMember) GetCharacterName() string {
-	if x != nil && x.CharacterName != nil {
-		return *x.CharacterName
+	if x != nil {
+		return x.CharacterName
 	}
 	return ""
 }
 
 func (x *CastMember) GetRole() string {
-	if x != nil && x.Role != nil {
-		return *x.Role
+	if x != nil {
+		return x.Role
 	}
 	return ""
 }
 
 func (x *CastMember) GetBiography() string {
-	if x != nil && x.Biography != nil {
-		return *x.Biography
+	if x != nil {
+		return x.Biography
 	}
 	return ""
 }
 
 type CrewMember struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
-	Name          *string                `protobuf:"bytes,1,opt,name=name" json:"name,omitempty"`
-	Role          *string                `protobuf:"bytes,2,opt,name=role" json:"role,omitempty"`
+	Name          string                 `protobuf:"bytes,1,opt,name=name,proto3" json:"name,omitempty"`
+	Role          string                 `protobuf:"bytes,2,opt,name=role,proto3" json:"role,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -420,22 +420,22 @@ func (*CrewMember) Descriptor() ([]byte, []int) {
 }
 
 func (x *CrewMember) GetName() string {
-	if x != nil && x.Name != nil {
-		return *x.Name
+	if x != nil {
+		return x.Name
 	}
 	return ""
 }
 
 func (x *CrewMember) GetRole() string {
-	if x != nil && x.Role != nil {
-		return *x.Role
+	if x != nil {
+		return x.Role
 	}
 	return ""
 }
 
 type MovieProtoResponse struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
-	ProtoContent  *string                `protobuf:"bytes,1,opt,name=proto_content,json=protoContent" json:"proto_content,omitempty"`
+	ProtoContent  string                 `protobuf:"bytes,1,opt,name=proto_content,json=protoContent,proto3" json:"proto_content,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -471,8 +471,8 @@ func (*MovieProtoResponse) Descriptor() ([]byte, []int) {
 }
 
 func (x *MovieProtoResponse) GetProtoContent() string {
-	if x != nil && x.ProtoContent != nil {
-		return *x.ProtoContent
+	if x != nil {
+		return x.ProtoContent
 	}
 	return ""
 }
@@ -514,7 +514,7 @@ const file_movie_messages_proto_rawDesc = "" +
 	"\x04name\x18\x01 \x01(\tR\x04name\x12\x12\n" +
 	"\x04role\x18\x02 \x01(\tR\x04role\"9\n" +
 	"\x12MovieProtoResponse\x12#\n" +
-	"\rproto_content\x18\x01 \x01(\tR\fprotoContentB\x1dZ\x1bcase-studies/grpc/cmd/movieb\beditionsp\xe8\a"
+	"\rproto_content\x18\x01 \x01(\tR\fprotoContentB\x1dZ\x1bcase-studies/grpc/cmd/movieb\x06proto3"
 
 var (
 	file_movie_messages_proto_rawDescOnce sync.Once
