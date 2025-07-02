@@ -32,11 +32,15 @@ RUN addgroup -g 1000 appgroup && adduser -u 1000 -D -G appgroup -S appuser
 
 WORKDIR /app
 
+RUN chown appuser:appgroup /app
+
 COPY --from=builder --chown=appuser:appgroup /app/bin/grpc-greeter-server .
 COPY --from=builder --chown=appuser:appgroup /app/bin/grpc-greeter-client .
+COPY --from=builder --chown=appuser:appgroup /app/bin/grpc-movie-server .
+COPY --from=builder --chown=appuser:appgroup /app/bin/grpc-movie-client .
 COPY --from=builder --chown=appuser:appgroup /app/grpcurl .
 COPY --from=builder --chown=appuser:appgroup /app/grpcui .
-COPY --from=builder --chown=appuser:appgroup /app/deployments/docker/full/start.sh .
+COPY --from=builder --chown=appuser:appgroup /app/deployments/docker/helloworld-full/start.sh .
 COPY --from=builder --chown=appuser:appgroup /app/assets/movie-data.json .
 
 USER appuser

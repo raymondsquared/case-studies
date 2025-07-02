@@ -1,0 +1,35 @@
+services:
+  grpc-movie-server:
+    image: raymondsquared/grpc-movie-server:${CONTAINER_IMAGE_VERSION}
+    ports:
+      - "50051:50051"
+    environment:
+      SERVER_PORT: "50051"
+      MOVIE_DATA_FILE_PATH: "./"
+    deploy:
+      resources:
+        limits:
+          memory: 1G
+    healthcheck:
+      test: ["CMD", "./grpc_health_probe", "-addr", "0.0.0.0:50051"]
+      interval: 5s
+      timeout: 3s
+      retries: 3
+
+  grpc-movie-client:
+    image: raymondsquared/grpc-movie-client:${CONTAINER_IMAGE_VERSION}
+    environment:
+      # SERVER_HOST: "host.docker.internal"
+      SERVER_HOST: "grpc-movie-server"
+      SERVER_PORT: "50051"
+      MOVIE_DATA_FILE_PATH: "./"
+    deploy:
+      resources:
+        limits:
+          memory: 1G
+    depends_on:
+      grpc-movie-server:
+        condition: service_healthy
+    links:
+      - grpc-movie-server
+      

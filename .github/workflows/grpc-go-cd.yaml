@@ -52,7 +52,7 @@ jobs:
           echo "Deploying to environment: ${{ github.event.inputs.target_environment }} ..."
       - name: Package into docker image
         run: |
-          cd grpc/go/scripts && make package CONTAINER_IMAGE_VERSION=${{ needs.prepare.outputs.final_release_version }}
+          cd grpc/go/scripts && make package-helloworld CONTAINER_IMAGE_VERSION=${{ needs.prepare.outputs.final_release_version }}
       - name: Save Docker image as tar
         run: |
           docker save raymondsquared/grpc-helloworld-server:${{ needs.prepare.outputs.final_release_version }} -o grpc-go-server-image.tar
@@ -76,7 +76,7 @@ jobs:
           echo "Deploying to environment: ${{ github.event.inputs.target_environment }} ..."
       - name: Package into docker image
         run: |
-          cd grpc/go/scripts && make package CONTAINER_IMAGE_VERSION=${{ needs.prepare.outputs.final_release_version }}
+          cd grpc/go/scripts && make package-helloworld CONTAINER_IMAGE_VERSION=${{ needs.prepare.outputs.final_release_version }}
       - name: Save Docker images as tar
         run: |
           docker save raymondsquared/grpc-helloworld-server:${{ needs.prepare.outputs.final_release_version }} -o grpc-go-client-image.tar
@@ -110,7 +110,7 @@ jobs:
           password: ${{ secrets.DOCKER_HUB_PASSWORD }}
       - name: Push Docker image
         run: |
-          cd grpc/go/scripts && make publish-server CONTAINER_IMAGE_VERSION=${{ needs.package-server.outputs.final_release_version }}
+          cd grpc/go/scripts && make publish-helloworld-server CONTAINER_IMAGE_VERSION=${{ needs.package-server.outputs.final_release_version }}
   publish-client:
     needs: package-client
     runs-on: ubuntu-latest
@@ -134,4 +134,4 @@ jobs:
           password: ${{ secrets.DOCKER_HUB_PASSWORD }}
       - name: Push Docker image
         run: |
-          cd grpc/go/scripts && make publish-client CONTAINER_IMAGE_VERSION=${{ needs.package-client.outputs.final_release_version }}
+          cd grpc/go/scripts && make publish-helloworld-client CONTAINER_IMAGE_VERSION=${{ needs.package-client.outputs.final_release_version }}

@@ -7,12 +7,13 @@ import (
 	"net"
 	"os"
 
+	"case-studies/grpc/cmd/movie"
+
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/health"
 	grpc_health_v1 "google.golang.org/grpc/health/grpc_health_v1"
 	"google.golang.org/grpc/reflection"
 
-	"case-studies/grpc/cmd/helloworld"
 	"case-studies/grpc/internal/config"
 	"case-studies/grpc/internal/middleware"
 	"case-studies/grpc/internal/validation"
@@ -20,6 +21,7 @@ import (
 
 func loadConfig() *config.ServerConfig {
 	flagPort := flag.Int("port", config.DefaultPort, "The server port")
+	flagMovieDataFilePath := flag.String("movie-data-file-path", config.DefaultMovieDataFilePath, "The file path for movie data")
 
 	flag.Parse()
 
@@ -28,9 +30,16 @@ func loadConfig() *config.ServerConfig {
 	if flag.CommandLine.Lookup("port").Value.String() != fmt.Sprintf("%d", config.DefaultPort) || flag.NFlag() > 0 {
 		baseConfig.Port = *flagPort
 	}
+	if flag.CommandLine.Lookup("movie-data-file-path").Value.String() != config.DefaultMovieDataFilePath || flag.NFlag() > 0 {
+		baseConfig.MovieDataFilePath = *flagMovieDataFilePath
+	}
 
 	if err := validation.ValidatePort(baseConfig.Port); err != nil {
 		slog.Error("invalid port configuration", "error", err)
+		os.Exit(1)
+	}
+	if err := validation.ValidateMovieDataFilePath(baseConfig.MovieDataFilePath); err != nil {
+		slog.Error("invalid file data path configuration", "error", err)
 		os.Exit(1)
 	}
 
@@ -65,8 +74,8 @@ func createGRPCServer(cfg *config.ServerConfig, logger *slog.Logger) *grpc.Serve
 	grpcServer := grpc.NewServer(serverOpts...)
 
 	// Register services
-	greeterServer := &server{logger: logger}
-	helloworld.RegisterGreeterServer(grpcServer, greeterServer)
+	movieServer := &server{logger: logger, movieDataFilePath: cfg.MovieDataFilePath}
+	movie.RegisterGetterServer(grpcServer, movieServer)
 
 	// Register health check service
 	healthServer := health.NewServer()

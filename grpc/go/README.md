@@ -13,7 +13,7 @@ gRPC is a high-performance, open-source universal RPC framework that enables eff
 - **Protocol Buffers**: Type-safe message definitions in a compressed format.
 
   - Compact Data Storage: Protobuf encodes data in a compact binary format, which significantly reduces payload size.
-    - | [JSON](assets/movie-data.json) | [Protocol Buffer](assets/movie-data.pb) |
+    - | [JSON](assets/movie-data.json) | [Protocol Buffer](assets/movie-data.textpb) |
       | ------------------------------ | --------------------------------------- |
       | 622 KB                         | 209 KB                                  |
   - Strongly Typed & Schema-Driven: Protobuf uses predefined schemas (`.proto` files) that clearly define data structures, providing: compile-time type checking and self-documenting service contracts
@@ -26,6 +26,7 @@ gRPC is a high-performance, open-source universal RPC framework that enables eff
     - [services](cmd/helloworld/helloworld_services.pb.go)
     - [gRPC](cmd/helloworld/helloworld_services_grpc.pb.go)
   - Backward & Forward Compatibility: Protobuf's schema evolution.
+    - 
 
 - **Streaming**: Demonstrates gRPC's support for client-server, and bidirectional streaming, enabling efficient handling of large data sets and real-time communication.
 - **Auth**: Supports authentication and authorization mechanisms, including SSL/TLS for encrypted communication, token-based authentication, and integration with existing identity providers.

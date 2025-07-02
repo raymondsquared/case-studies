@@ -11,7 +11,11 @@ COPY . .
 
 RUN cd scripts && make dependencies
 
-RUN cd scripts && make build-linux-client
+RUN cd scripts && make build-linux-server
+
+RUN GRPC_HEALTH_PROBE_VERSION=v0.4.13 && \
+    wget -qO/bin/grpc_health_probe https://github.com/grpc-ecosystem/grpc-health-probe/releases/download/${GRPC_HEALTH_PROBE_VERSION}/grpc_health_probe-linux-amd64 && \
+    chmod +x /bin/grpc_health_probe
 
 # --- FINAL STAGE ---
 # Use a minimal base image for the final runtime.
@@ -22,17 +26,22 @@ RUN addgroup -g 1000 appgroup && adduser -u 1000 -D -G appgroup -S appuser
 
 WORKDIR /app
 
-COPY --from=builder --chown=appuser:appgroup /app/bin/grpc-greeter-client .
-COPY --from=builder --chown=appuser:appgroup /app/deployments/docker/client/start.sh .
+RUN chown appuser:appgroup /app
+
+COPY --from=builder --chown=appuser:appgroup /app/bin/grpc-movie-server .
+COPY --from=builder --chown=appuser:appgroup /app/deployments/docker/movie-server/start.sh .
+COPY --from=builder --chown=appuser:appgroup /bin/grpc_health_probe .
 COPY --from=builder --chown=appuser:appgroup /app/assets/movie-data.json .
 
 USER appuser
 
+EXPOSE 50051
+
 # RUN pwd
-# RUN ls -al
+RUN ls -al
 
 # Use ENTRYPOINT to always execute your start.sh script
 ENTRYPOINT ["./start.sh"]
 
 # Use CMD to provide default arguments to the ENTRYPOINT
-CMD ["./grpc-greeter-client"]
+CMD ["./grpc-movie-server"]

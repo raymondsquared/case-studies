@@ -29,17 +29,29 @@ test:
 	go test -v ./../...
 
 # Run
-.PHONY: run-server
-run-server:
+.PHONY: run-helloworld-server
+run-helloworld-server:
 	go run ../cmd/greeter_server/*.go
 
-.PHONY: run-client
-run-client:
+.PHONY: run-movie-server
+run-movie-server:
+	go run ../cmd/movie_server/*.go
+
+.PHONY: run-helloworld-client
+run-helloworld-client:
 	go run ../cmd/greeter_client/*.go
 
-.PHONY: run-e2e
-run-e2e:
-	CONTAINER_IMAGE_VERSION=$(CONTAINER_IMAGE_VERSION) docker compose -p grpc-greeter -f ../deployments/docker/compose.yaml up -d
+.PHONY: run-movie-client
+run-movie-client:
+	go run ../cmd/movie_client/*.go
+
+.PHONY: run-helloworld-e2e
+run-helloworld-e2e:
+	CONTAINER_IMAGE_VERSION=$(CONTAINER_IMAGE_VERSION) docker compose -p grpc-greeter -f ../deployments/docker/helloworld-compose.yaml up -d
+
+.PHONY: run-movie-e2e
+run-movie-e2e:
+	CONTAINER_IMAGE_VERSION=$(CONTAINER_IMAGE_VERSION) docker compose -p grpc-movie -f ../deployments/docker/movie-compose.yaml up -d
 
 .PHONY: prepare-k8s
 prepare-k8s: 
@@ -58,10 +70,12 @@ clean-k8s:
 .PHONY: build-server
 build-server:
 	go build -o ../bin/grpc-greeter-server ../cmd/greeter_server/
+	go build -o ../bin/grpc-movie-server ../cmd/movie_server/
 
 .PHONY: build-client
 build-client:
 	go build -o ../bin/grpc-greeter-client ../cmd/greeter_client/
+	go build -o ../bin/grpc-movie-client ../cmd/movie_client/
 
 .PHONY: build
 build: build-server build-client
@@ -69,54 +83,89 @@ build: build-server build-client
 .PHONY: build-linux-server
 build-linux-server:
 	CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -ldflags="-w -s" -o ../bin/grpc-greeter-server ../cmd/greeter_server/
+	CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -ldflags="-w -s" -o ../bin/grpc-movie-server ../cmd/movie_server/
 
 .PHONY: build-linux-client
 build-linux-client:
 	CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -ldflags="-w -s" -o ../bin/grpc-greeter-client ../cmd/greeter_client/
+	CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -ldflags="-w -s" -o ../bin/grpc-movie-client ../cmd/movie_client/
 
 # Package
-.PHONY: package-server
-package-server:
-	docker build -t raymondsquared/grpc-helloworld-server:$(CONTAINER_IMAGE_VERSION) --platform linux/amd64 -f ../deployments/docker/server/Dockerfile ../
+.PHONY: package-helloworld-server
+package-helloworld-server:
+	docker build -t raymondsquared/grpc-helloworld-server:$(CONTAINER_IMAGE_VERSION) --platform linux/amd64 -f ../deployments/docker/helloworld-server/Dockerfile ../
 
-.PHONY: package-client
-package-client:
-	docker build -t raymondsquared/grpc-helloworld-client:$(CONTAINER_IMAGE_VERSION) --platform linux/amd64 -f ../deployments/docker/client/Dockerfile ../
+.PHONY: package-helloworld-client
+package-helloworld-client:
+	docker build -t raymondsquared/grpc-helloworld-client:$(CONTAINER_IMAGE_VERSION) --platform linux/amd64 -f ../deployments/docker/helloworld-client/Dockerfile ../
 
-.PHONY: package-full
-package-full:
-	docker build -t raymondsquared/grpc-helloworld-full:$(CONTAINER_IMAGE_VERSION) --platform linux/amd64 -f ../deployments/docker/full/Dockerfile ../
+.PHONY: package-helloworld-full
+package-helloworld-full:
+	docker build -t raymondsquared/grpc-helloworld-full:$(CONTAINER_IMAGE_VERSION) --platform linux/amd64 -f ../deployments/docker/helloworld-full/Dockerfile ../
 
-.PHONY: package-server-arm
-package-server-arm:
-	docker build -t raymondsquared/grpc-helloworld-server:$(CONTAINER_IMAGE_VERSION) --platform linux/arm64 -f ../deployments/docker/server/Dockerfile ../
+.PHONY: package-helloworld-server-arm
+package-helloworld-server-arm:
+	docker build -t raymondsquared/grpc-helloworld-server:$(CONTAINER_IMAGE_VERSION) --platform linux/arm64 -f ../deployments/docker/helloworld-server/Dockerfile ../
 
-.PHONY: package-client-arm
-package-client-arm:
-	docker build -t raymondsquared/grpc-helloworld-client:$(CONTAINER_IMAGE_VERSION) --platform linux/arm64 -f ../deployments/docker/client/Dockerfile ../
+.PHONY: package-helloworld-client-arm
+package-helloworld-client-arm:
+	docker build -t raymondsquared/grpc-helloworld-client:$(CONTAINER_IMAGE_VERSION) --platform linux/arm64 -f ../deployments/docker/helloworld-client/Dockerfile ../
 
-.PHONY: package-full-arm
-package-full-arm:
-	docker build -t raymondsquared/grpc-helloworld-full:$(CONTAINER_IMAGE_VERSION) --platform linux/arm64 -f ../deployments/docker/full/Dockerfile ../
+.PHONY: package-helloworld-full-arm
+package-helloworld-full-arm:
+	docker build -t raymondsquared/grpc-helloworld-full:$(CONTAINER_IMAGE_VERSION) --platform linux/arm64 -f ../deployments/docker/helloworld-full/Dockerfile ../
 
-.PHONY: package
-package: package-server package-client
+.PHONY: package-movie-server
+package-movie-server:
+	docker build -t raymondsquared/grpc-movie-server:$(CONTAINER_IMAGE_VERSION) --platform linux/amd64 -f ../deployments/docker/movie-server/Dockerfile ../
 
-.PHONY: package-arm
-package-arm: package-server-arm package-client-arm package-full-arm
+.PHONY: package-movie-client
+package-movie-client:
+	docker build -t raymondsquared/grpc-movie-client:$(CONTAINER_IMAGE_VERSION) --platform linux/amd64 -f ../deployments/docker/movie-client/Dockerfile ../
+
+.PHONY: package-movie-server-arm
+package-movie-server-arm:
+	docker build -t raymondsquared/grpc-movie-server:$(CONTAINER_IMAGE_VERSION) --platform linux/arm64 -f ../deployments/docker/movie-server/Dockerfile ../
+
+.PHONY: package-movie-client-arm
+package-movie-client-arm:
+	docker build -t raymondsquared/grpc-movie-client:$(CONTAINER_IMAGE_VERSION) --platform linux/arm64 -f ../deployments/docker/movie-client/Dockerfile ../
+
+.PHONY: package-helloworld
+package-helloworld: package-helloworld-server package-helloworld-client
+
+.PHONY: package-movie
+package-movie: package-movie-server package-movie-client
+
+.PHONY: package-helloworld-arm
+package-helloworld-arm: package-helloworld-server-arm package-helloworld-client-arm package-helloworld-full-arm
+
+.PHONY: package-movie-arm
+package-movie-arm: package-movie-server-arm package-movie-client-arm
 
 # Publish
-.PHONE: publish-server
-publish-server:
+.PHONE: publish-helloworld-server
+publish-helloworld-server:
 	docker push raymondsquared/grpc-helloworld-server:$(CONTAINER_IMAGE_VERSION)
 
-.PHONE: publish-client
-publish-client:
+.PHONE: publish-helloworld-client
+publish-helloworld-client:
 	docker push raymondsquared/grpc-helloworld-client:$(CONTAINER_IMAGE_VERSION)
 
-.PHONE: publish-full
-publish-full:
+.PHONE: publish-helloworld-full
+publish-helloworld-full:
 	docker push raymondsquared/grpc-helloworld-full:$(CONTAINER_IMAGE_VERSION)
 
-.PHONE: publish-all
-publish-all: publish-server publish-client publish-full
+.PHONE: publish-movie-server
+publish-movie-server:
+	docker push raymondsquared/grpc-movie-server:$(CONTAINER_IMAGE_VERSION)
+
+.PHONE: publish-movie-client
+publish-movie-client:
+	docker push raymondsquared/grpc-movie-client:$(CONTAINER_IMAGE_VERSION)
+
+.PHONE: publish-helloworld-all
+publish-helloworld-all: publish-helloworld-server publish-helloworld-client publish-helloworld-full
+
+.PHONE: publish-movie-all
+publish-movie-all: publish-movie-server publish-movie-client

@@ -5,7 +5,6 @@ services:
       - "50051:50051"
     environment:
       SERVER_PORT: "50051"
-      MOVIE_DATA_FILE_PATH: "./"
     deploy:
       resources:
         limits:
@@ -22,7 +21,6 @@ services:
       # SERVER_HOST: "host.docker.internal"
       SERVER_HOST: "grpc-greeter-server"
       SERVER_PORT: "50051"
-      MOVIE_DATA_FILE_PATH: "./"
     deploy:
       resources:
         limits:

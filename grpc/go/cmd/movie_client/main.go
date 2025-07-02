@@ -6,8 +6,9 @@ import (
 	"fmt"
 	"log/slog"
 	"os"
+	"path/filepath"
 
-	"case-studies/grpc/cmd/helloworld"
+	"case-studies/grpc/cmd/movie"
 	"case-studies/grpc/internal/config"
 	"case-studies/grpc/internal/middleware"
 	"case-studies/grpc/internal/validation"
@@ -20,6 +21,7 @@ func loadConfig() *config.ClientConfig {
 	flagHost := flag.String("host", config.DefaultHost, "the server host to connect to")
 	flagPort := flag.Int("port", config.DefaultPort, "the server port to connect to")
 	flagName := flag.String("name", config.DefaultName, "Name to greet")
+	flagMovieDataFilePath := flag.String("movie-data-file-path", config.DefaultMovieDataFilePath, "The file path for movie data")
 
 	flag.Parse()
 
@@ -36,6 +38,9 @@ func loadConfig() *config.ClientConfig {
 	if flag.CommandLine.Lookup("name").Value.String() != config.DefaultName || flag.NFlag() > 0 {
 		baseConfig.Name = *flagName
 	}
+	if flag.CommandLine.Lookup("movie-data-file-path").Value.String() != config.DefaultMovieDataFilePath || flag.NFlag() > 0 {
+		baseConfig.MovieDataFilePath = *flagMovieDataFilePath
+	}
 
 	// Validate configuration
 	if err := validation.ValidateHost(baseConfig.Host); err != nil {
@@ -48,6 +53,10 @@ func loadConfig() *config.ClientConfig {
 	}
 	if err := validation.ValidateName(baseConfig.Name); err != nil {
 		slog.Error("invalid name configuration", "error", err)
+		os.Exit(1)
+	}
+	if err := validation.ValidateMovieDataFilePath(baseConfig.MovieDataFilePath); err != nil {
+		slog.Error("invalid file data path configuration", "error", err)
 		os.Exit(1)
 	}
 
@@ -88,6 +97,21 @@ func CreateGRPCConnection(cfg *config.ClientConfig, logger *slog.Logger) (*grpc.
 	return conn, nil
 }
 
+func WriteMoviesToFile(response *movie.GetMovieOutput, filePath string, logger *slog.Logger) error {
+	w, err := NewMovieFileWriter(filepath.Join(filePath, "movie-data.textpb"))
+	if err != nil {
+		return fmt.Errorf("could not create file writer: %w", err)
+	}
+	defer w.Close()
+
+	if err := WriteMovieResponse(w, response); err != nil {
+		return err
+	}
+
+	logger.Info("movie data written to file", "path", filepath.Join(filePath, "movie-data.pb"))
+	return nil
+}
+
 func main() {
 	logger := setupLogger()
 	cfg := loadConfig()
@@ -110,14 +134,20 @@ func main() {
 	}()
 
 	// Create clients
-	helloworldClient := helloworld.NewGreeterClient(conn)
+	movieClient := movie.NewGetterClient(conn)
 
 	// Use background context for request
 	requestCtx := context.Background()
 
 	// Make the requests
-	if err := MakeGreeterRequest(requestCtx, helloworldClient, cfg.Name, logger); err != nil {
+	response, err := MakeGetterRequest(requestCtx, movieClient, 0.1, logger)
+	if err != nil {
 		logger.Error("request failed", "error", err)
+		os.Exit(1)
+	}
+
+	if err := WriteMoviesToFile(response, cfg.MovieDataFilePath, logger); err != nil {
+		logger.Error("failed to write movies to file", "error", err)
 		os.Exit(1)
 	}
 
