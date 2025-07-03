@@ -7,6 +7,7 @@ import (
 	"log/slog"
 	"os"
 	"path/filepath"
+	"time"
 
 	"case-studies/grpc/cmd/movie"
 	"case-studies/grpc/internal/config"
@@ -17,7 +18,7 @@ import (
 	"google.golang.org/grpc/credentials/insecure"
 )
 
-func loadConfig() *config.ClientConfig {
+func loadConfig(logger *slog.Logger) *config.ClientConfig {
 	flagHost := flag.String("host", config.DefaultHost, "the server host to connect to")
 	flagPort := flag.Int("port", config.DefaultPort, "the server port to connect to")
 	flagName := flag.String("name", config.DefaultName, "Name to greet")
@@ -44,19 +45,19 @@ func loadConfig() *config.ClientConfig {
 
 	// Validate configuration
 	if err := validation.ValidateHost(baseConfig.Host); err != nil {
-		slog.Error("invalid host configuration", "error", err)
+		logger.Error("startup: invalid host configuration", "function", "loadConfig", "error", err)
 		os.Exit(1)
 	}
 	if err := validation.ValidatePort(baseConfig.Port); err != nil {
-		slog.Error("invalid port configuration", "error", err)
+		logger.Error("startup: invalid port configuration", "function", "loadConfig", "error", err)
 		os.Exit(1)
 	}
 	if err := validation.ValidateName(baseConfig.Name); err != nil {
-		slog.Error("invalid name configuration", "error", err)
+		logger.Error("startup: invalid name configuration", "function", "loadConfig", "error", err)
 		os.Exit(1)
 	}
 	if err := validation.ValidateMovieDataFilePath(baseConfig.MovieDataFilePath); err != nil {
-		slog.Error("invalid file data path configuration", "error", err)
+		logger.Error("startup: invalid file data path configuration", "function", "loadConfig", "error", err)
 		os.Exit(1)
 	}
 
@@ -114,22 +115,19 @@ func WriteMoviesToFile(response *movie.GetMovieOutput, filePath string, logger *
 
 func main() {
 	logger := setupLogger()
-	cfg := loadConfig()
+	cfg := loadConfig(logger)
 
-	logger.Info("starting gRPC client",
-		"host", cfg.Host,
-		"port", cfg.Port,
-		"name", cfg.Name)
+	logger.Info("startup: starting gRPC client", "function", "main", "host", cfg.Host, "port", cfg.Port, "name", cfg.Name)
 
 	// Create gRPC connection
 	conn, err := CreateGRPCConnection(cfg, logger)
 	if err != nil {
-		logger.Error("failed to create connection", "error", err)
+		logger.Error("startup: failed to create connection", "function", "main", "error", err)
 		os.Exit(1)
 	}
 	defer func() {
 		if err := conn.Close(); err != nil {
-			logger.Error("failed to close connection", "error", err)
+			logger.Error("shutdown: failed to close connection", "function", "main", "error", err)
 		}
 	}()
 
@@ -140,16 +138,25 @@ func main() {
 	requestCtx := context.Background()
 
 	// Make the requests
+	logger.Info("request: making the first request", "function", "main")
+
 	response, err := MakeGetterRequest(requestCtx, movieClient, 0.1, logger)
 	if err != nil {
-		logger.Error("request failed", "error", err)
+		logger.Error("request: failed", "function", "main", "error", err)
 		os.Exit(1)
 	}
 
 	if err := WriteMoviesToFile(response, cfg.MovieDataFilePath, logger); err != nil {
-		logger.Error("failed to write movies to file", "error", err)
+		logger.Error("request: failed to write movies to file", "function", "main", "error", err)
 		os.Exit(1)
 	}
 
-	logger.Info("client completed successfully")
+	logger.Info("request: first request completed successfully", "function", "main")
+
+	time.Sleep(time.Second * 3)
+
+	// Streaming
+	MakeGetterRequestChat(movieClient, logger)
+
+	logger.Info("shutdown: client completed successfully", "function", "main")
 }

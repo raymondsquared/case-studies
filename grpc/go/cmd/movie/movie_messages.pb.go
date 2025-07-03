@@ -66,10 +66,12 @@ func (x *GetMovieInput) GetMinimumRatingsScore() float32 {
 }
 
 type GetMovieOutput struct {
-	state         protoimpl.MessageState `protogen:"open.v1"`
-	Movie         []*Movie               `protobuf:"bytes,1,rep,name=movie,proto3" json:"movie,omitempty"`
-	unknownFields protoimpl.UnknownFields
-	sizeCache     protoimpl.SizeCache
+	state           protoimpl.MessageState `protogen:"open.v1"`
+	Movie           []*Movie               `protobuf:"bytes,1,rep,name=movie,proto3" json:"movie,omitempty"`
+	MovieCount      int32                  `protobuf:"varint,2,opt,name=movie_count,json=movieCount,proto3" json:"movie_count,omitempty"`
+	MovieCountSoFar int32                  `protobuf:"varint,3,opt,name=movie_count_so_far,json=movieCountSoFar,proto3" json:"movie_count_so_far,omitempty"`
+	unknownFields   protoimpl.UnknownFields
+	sizeCache       protoimpl.SizeCache
 }
 
 func (x *GetMovieOutput) Reset() {
@@ -107,6 +109,20 @@ func (x *GetMovieOutput) GetMovie() []*Movie {
 		return x.Movie
 	}
 	return nil
+}
+
+func (x *GetMovieOutput) GetMovieCount() int32 {
+	if x != nil {
+		return x.MovieCount
+	}
+	return 0
+}
+
+func (x *GetMovieOutput) GetMovieCountSoFar() int32 {
+	if x != nil {
+		return x.MovieCountSoFar
+	}
+	return 0
 }
 
 type Movie struct {
@@ -483,9 +499,12 @@ const file_movie_messages_proto_rawDesc = "" +
 	"\n" +
 	"\x14movie_messages.proto\x12\x05movie\"C\n" +
 	"\rGetMovieInput\x122\n" +
-	"\x15minimum_ratings_score\x18\x01 \x01(\x02R\x13minimumRatingsScore\"4\n" +
+	"\x15minimum_ratings_score\x18\x01 \x01(\x02R\x13minimumRatingsScore\"\x82\x01\n" +
 	"\x0eGetMovieOutput\x12\"\n" +
-	"\x05movie\x18\x01 \x03(\v2\f.movie.MovieR\x05movie\"\xe1\x02\n" +
+	"\x05movie\x18\x01 \x03(\v2\f.movie.MovieR\x05movie\x12\x1f\n" +
+	"\vmovie_count\x18\x02 \x01(\x05R\n" +
+	"movieCount\x12+\n" +
+	"\x12movie_count_so_far\x18\x03 \x01(\x05R\x0fmovieCountSoFar\"\xe1\x02\n" +
 	"\x05Movie\x12\x19\n" +
 	"\bmovie_id\x18\x01 \x01(\tR\amovieId\x12\x14\n" +
 	"\x05title\x18\x02 \x01(\tR\x05title\x12!\n" +

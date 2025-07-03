@@ -8,11 +8,37 @@ gRPC is a high-performance, open-source universal RPC framework that enables eff
 ## Features
 
 - **gRPC Server & Client**: Complete implementation of a service
+
   - Server: Implements a gRPC service that handles incoming requests, processes data, and returns responses. [See screenshot](#screenshot---grpc-server).
   - Client: Connects to the gRPC server primarily for sending requests to the server.
+
 - **Protocol Buffers**: See [Protocol Buffers](#protocol-buffers) section below for more details.
-- **Streaming**: Demonstrates gRPC's support for client-server, and bidirectional streaming, enabling efficient handling of large data sets and real-time communication.
+
+- **[HTTP/2](https://http2.github.io/)** is a replacement for HTTP/1.x.
+
+  - Binary support: Uses a binary framing layer, being a successor of the text-based HTTP/1.x.
+  - Data compression of HTTP headers.
+  - HTTP/2 Server Push: Allows servers to proactively send resources to clients without an explicit request.
+    - But it's not truly full-duplex: Communication is still initiated by the client.
+  - Multiplexing multiple requests over a single TCP connection, graceful shutdown using [GOAWAY](https://httpwg.org/specs/rfc9113.html#rfc.section.6.8) frames.
+
+- **Streaming**: Supports for client-server, and bidirectional streaming, enabling efficient handling of high-volume data sets and real-time communication.
+
+  Bidirectional streaming avoids the overhead of establishing a new connection for each message, reducing latency and improving throughput compared to traditional request/response models.
+
+  See [stream](cmd/movie/movie_services.proto) example.
+
+  - What does it mean for [WebSockets](https://websocket.org/) then?
+
+    While HTTP/2 now addresses many use cases previously handled by WebSockets,
+    One key distinction is in the ability to push of raw binary data from a server directly to a JavaScript client within a web browser.
+    While HTTP/2 is designed with bidirectional binary streaming capabilities,
+
+    - current browser JavaScript APIs do not yet offer native support for consuming these binary data frames directly.
+    - Browser APIs (like Fetch) often don't expose HTTP/2's full-duplex capabilities for request-response.
+
 - **Auth**: Supports authentication and authorisation mechanisms, including SSL/TLS for encrypted communication, token-based authentication, and integration with existing identity providers.
+
 - **Performance**: High performance, using HTTP/2 for multiplexed streams, header compression, and efficient binary serialisation via Protocol Buffers.
 
 ### Protocol Buffers

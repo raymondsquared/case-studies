@@ -9,7 +9,6 @@ package movie
 import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
-	emptypb "google.golang.org/protobuf/types/known/emptypb"
 	reflect "reflect"
 	unsafe "unsafe"
 )
@@ -25,23 +24,20 @@ var File_movie_services_proto protoreflect.FileDescriptor
 
 const file_movie_services_proto_rawDesc = "" +
 	"\n" +
-	"\x14movie_services.proto\x12\x05movie\x1a\x14movie_messages.proto\x1a\x1bgoogle/protobuf/empty.proto2L\n" +
+	"\x14movie_services.proto\x12\x05movie\x1a\x14movie_messages.proto2\x98\x01\n" +
 	"\x06Getter\x12B\n" +
-	"\x11GetMovieByRatings\x12\x14.movie.GetMovieInput\x1a\x15.movie.GetMovieOutput\"\x002Z\n" +
-	"\x11MovieProtoService\x12E\n" +
-	"\x0eGetMoviesProto\x12\x16.google.protobuf.Empty\x1a\x19.movie.MovieProtoResponse\"\x00B\x1dZ\x1bcase-studies/grpc/cmd/movieb\x06proto3"
+	"\x11GetMovieByRatings\x12\x14.movie.GetMovieInput\x1a\x15.movie.GetMovieOutput\"\x00\x12J\n" +
+	"\x15GetMovieByRatingsChat\x12\x14.movie.GetMovieInput\x1a\x15.movie.GetMovieOutput\"\x00(\x010\x01B\x1dZ\x1bcase-studies/grpc/cmd/movieb\x06proto3"
 
 var file_movie_services_proto_goTypes = []any{
-	(*GetMovieInput)(nil),      // 0: movie.GetMovieInput
-	(*emptypb.Empty)(nil),      // 1: google.protobuf.Empty
-	(*GetMovieOutput)(nil),     // 2: movie.GetMovieOutput
-	(*MovieProtoResponse)(nil), // 3: movie.MovieProtoResponse
+	(*GetMovieInput)(nil),  // 0: movie.GetMovieInput
+	(*GetMovieOutput)(nil), // 1: movie.GetMovieOutput
 }
 var file_movie_services_proto_depIdxs = []int32{
 	0, // 0: movie.Getter.GetMovieByRatings:input_type -> movie.GetMovieInput
-	1, // 1: movie.MovieProtoService.GetMoviesProto:input_type -> google.protobuf.Empty
-	2, // 2: movie.Getter.GetMovieByRatings:output_type -> movie.GetMovieOutput
-	3, // 3: movie.MovieProtoService.GetMoviesProto:output_type -> movie.MovieProtoResponse
+	0, // 1: movie.Getter.GetMovieByRatingsChat:input_type -> movie.GetMovieInput
+	1, // 2: movie.Getter.GetMovieByRatings:output_type -> movie.GetMovieOutput
+	1, // 3: movie.Getter.GetMovieByRatingsChat:output_type -> movie.GetMovieOutput
 	2, // [2:4] is the sub-list for method output_type
 	0, // [0:2] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name
@@ -63,7 +59,7 @@ func file_movie_services_proto_init() {
 			NumEnums:      0,
 			NumMessages:   0,
 			NumExtensions: 0,
-			NumServices:   2,
+			NumServices:   1,
 		},
 		GoTypes:           file_movie_services_proto_goTypes,
 		DependencyIndexes: file_movie_services_proto_depIdxs,

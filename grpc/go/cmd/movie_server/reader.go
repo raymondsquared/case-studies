@@ -21,14 +21,14 @@ func (r *MoviesFileReader) Close() error {
 func NewMoviesFileReader(filePath string, logger *slog.Logger) (*MoviesFileReader, error) {
 	cwd, err := os.Getwd()
 	if err != nil {
-		logger.Error("failed to get working directory", "error", err)
+		logger.Error("MoviesFileReader: failed to get working directory", "function", "NewMoviesFileReader", "error", err)
 		return nil, err
 	}
 
 	jsonPath := filepath.Join(cwd, filepath.Join(filePath, "movie-data.json"))
 	file, err := os.Open(jsonPath)
 	if err != nil {
-		logger.Error("failed to open movies file", "error", err)
+		logger.Error("MoviesFileReader: failed to open movies file", "function", "NewMoviesFileReader", "error", err)
 		return nil, err
 	}
 	return &MoviesFileReader{file: file}, nil

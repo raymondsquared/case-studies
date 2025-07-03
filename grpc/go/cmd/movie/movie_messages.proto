@@ -10,6 +10,8 @@ message GetMovieInput {
 
 message GetMovieOutput {
   repeated Movie movie = 1;
+  int32 movie_count = 2;
+  int32 movie_count_so_far = 3;
 }
 
 message Movie {

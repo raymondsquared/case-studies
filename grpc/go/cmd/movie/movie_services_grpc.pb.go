@@ -11,7 +11,6 @@ import (
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
 	status "google.golang.org/grpc/status"
-	emptypb "google.golang.org/protobuf/types/known/emptypb"
 )
 
 // This is a compile-time assertion to ensure that this generated file
@@ -20,7 +19,8 @@ import (
 const _ = grpc.SupportPackageIsVersion9
 
 const (
-	Getter_GetMovieByRatings_FullMethodName = "/movie.Getter/GetMovieByRatings"
+	Getter_GetMovieByRatings_FullMethodName     = "/movie.Getter/GetMovieByRatings"
+	Getter_GetMovieByRatingsChat_FullMethodName = "/movie.Getter/GetMovieByRatingsChat"
 )
 
 // GetterClient is the client API for Getter service.
@@ -28,6 +28,7 @@ const (
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
 type GetterClient interface {
 	GetMovieByRatings(ctx context.Context, in *GetMovieInput, opts ...grpc.CallOption) (*GetMovieOutput, error)
+	GetMovieByRatingsChat(ctx context.Context, opts ...grpc.CallOption) (grpc.BidiStreamingClient[GetMovieInput, GetMovieOutput], error)
 }
 
 type getterClient struct {
@@ -48,11 +49,25 @@ func (c *getterClient) GetMovieByRatings(ctx context.Context, in *GetMovieInput,
 	return out, nil
 }
 
+func (c *getterClient) GetMovieByRatingsChat(ctx context.Context, opts ...grpc.CallOption) (grpc.BidiStreamingClient[GetMovieInput, GetMovieOutput], error) {
+	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
+	stream, err := c.cc.NewStream(ctx, &Getter_ServiceDesc.Streams[0], Getter_GetMovieByRatingsChat_FullMethodName, cOpts...)
+	if err != nil {
+		return nil, err
+	}
+	x := &grpc.GenericClientStream[GetMovieInput, GetMovieOutput]{ClientStream: stream}
+	return x, nil
+}
+
+// This type alias is provided for backwards compatibility with existing code that references the prior non-generic stream type by name.
+type Getter_GetMovieByRatingsChatClient = grpc.BidiStreamingClient[GetMovieInput, GetMovieOutput]
+
 // GetterServer is the server API for Getter service.
 // All implementations must embed UnimplementedGetterServer
 // for forward compatibility.
 type GetterServer interface {
 	GetMovieByRatings(context.Context, *GetMovieInput) (*GetMovieOutput, error)
+	GetMovieByRatingsChat(grpc.BidiStreamingServer[GetMovieInput, GetMovieOutput]) error
 	mustEmbedUnimplementedGetterServer()
 }
 
@@ -65,6 +80,9 @@ type UnimplementedGetterServer struct{}
 
 func (UnimplementedGetterServer) GetMovieByRatings(context.Context, *GetMovieInput) (*GetMovieOutput, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetMovieByRatings not implemented")
+}
+func (UnimplementedGetterServer) GetMovieByRatingsChat(grpc.BidiStreamingServer[GetMovieInput, GetMovieOutput]) error {
+	return status.Errorf(codes.Unimplemented, "method GetMovieByRatingsChat not implemented")
 }
 func (UnimplementedGetterServer) mustEmbedUnimplementedGetterServer() {}
 func (UnimplementedGetterServer) testEmbeddedByValue()                {}
@@ -105,6 +123,13 @@ func _Getter_GetMovieByRatings_Handler(srv interface{}, ctx context.Context, dec
 	return interceptor(ctx, in, info, handler)
 }
 
+func _Getter_GetMovieByRatingsChat_Handler(srv interface{}, stream grpc.ServerStream) error {
+	return srv.(GetterServer).GetMovieByRatingsChat(&grpc.GenericServerStream[GetMovieInput, GetMovieOutput]{ServerStream: stream})
+}
+
+// This type alias is provided for backwards compatibility with existing code that references the prior non-generic stream type by name.
+type Getter_GetMovieByRatingsChatServer = grpc.BidiStreamingServer[GetMovieInput, GetMovieOutput]
+
 // Getter_ServiceDesc is the grpc.ServiceDesc for Getter service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -117,108 +142,13 @@ var Getter_ServiceDesc = grpc.ServiceDesc{
 			Handler:    _Getter_GetMovieByRatings_Handler,
 		},
 	},
-	Streams:  []grpc.StreamDesc{},
-	Metadata: "movie_services.proto",
-}
-
-const (
-	MovieProtoService_GetMoviesProto_FullMethodName = "/movie.MovieProtoService/GetMoviesProto"
-)
-
-// MovieProtoServiceClient is the client API for MovieProtoService service.
-//
-// For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
-type MovieProtoServiceClient interface {
-	GetMoviesProto(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (*MovieProtoResponse, error)
-}
-
-type movieProtoServiceClient struct {
-	cc grpc.ClientConnInterface
-}
-
-func NewMovieProtoServiceClient(cc grpc.ClientConnInterface) MovieProtoServiceClient {
-	return &movieProtoServiceClient{cc}
-}
-
-func (c *movieProtoServiceClient) GetMoviesProto(ctx context.Context, in *emptypb.Empty, opts ...grpc.CallOption) (*MovieProtoResponse, error) {
-	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	out := new(MovieProtoResponse)
-	err := c.cc.Invoke(ctx, MovieProtoService_GetMoviesProto_FullMethodName, in, out, cOpts...)
-	if err != nil {
-		return nil, err
-	}
-	return out, nil
-}
-
-// MovieProtoServiceServer is the server API for MovieProtoService service.
-// All implementations must embed UnimplementedMovieProtoServiceServer
-// for forward compatibility.
-type MovieProtoServiceServer interface {
-	GetMoviesProto(context.Context, *emptypb.Empty) (*MovieProtoResponse, error)
-	mustEmbedUnimplementedMovieProtoServiceServer()
-}
-
-// UnimplementedMovieProtoServiceServer must be embedded to have
-// forward compatible implementations.
-//
-// NOTE: this should be embedded by value instead of pointer to avoid a nil
-// pointer dereference when methods are called.
-type UnimplementedMovieProtoServiceServer struct{}
-
-func (UnimplementedMovieProtoServiceServer) GetMoviesProto(context.Context, *emptypb.Empty) (*MovieProtoResponse, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method GetMoviesProto not implemented")
-}
-func (UnimplementedMovieProtoServiceServer) mustEmbedUnimplementedMovieProtoServiceServer() {}
-func (UnimplementedMovieProtoServiceServer) testEmbeddedByValue()                           {}
-
-// UnsafeMovieProtoServiceServer may be embedded to opt out of forward compatibility for this service.
-// Use of this interface is not recommended, as added methods to MovieProtoServiceServer will
-// result in compilation errors.
-type UnsafeMovieProtoServiceServer interface {
-	mustEmbedUnimplementedMovieProtoServiceServer()
-}
-
-func RegisterMovieProtoServiceServer(s grpc.ServiceRegistrar, srv MovieProtoServiceServer) {
-	// If the following call pancis, it indicates UnimplementedMovieProtoServiceServer was
-	// embedded by pointer and is nil.  This will cause panics if an
-	// unimplemented method is ever invoked, so we test this at initialization
-	// time to prevent it from happening at runtime later due to I/O.
-	if t, ok := srv.(interface{ testEmbeddedByValue() }); ok {
-		t.testEmbeddedByValue()
-	}
-	s.RegisterService(&MovieProtoService_ServiceDesc, srv)
-}
-
-func _MovieProtoService_GetMoviesProto_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
-	in := new(emptypb.Empty)
-	if err := dec(in); err != nil {
-		return nil, err
-	}
-	if interceptor == nil {
-		return srv.(MovieProtoServiceServer).GetMoviesProto(ctx, in)
-	}
-	info := &grpc.UnaryServerInfo{
-		Server:     srv,
-		FullMethod: MovieProtoService_GetMoviesProto_FullMethodName,
-	}
-	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(MovieProtoServiceServer).GetMoviesProto(ctx, req.(*emptypb.Empty))
-	}
-	return interceptor(ctx, in, info, handler)
-}
-
-// MovieProtoService_ServiceDesc is the grpc.ServiceDesc for MovieProtoService service.
-// It's only intended for direct use with grpc.RegisterService,
-// and not to be introspected or modified (even as a copy)
-var MovieProtoService_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "movie.MovieProtoService",
-	HandlerType: (*MovieProtoServiceServer)(nil),
-	Methods: []grpc.MethodDesc{
+	Streams: []grpc.StreamDesc{
 		{
-			MethodName: "GetMoviesProto",
-			Handler:    _MovieProtoService_GetMoviesProto_Handler,
+			StreamName:    "GetMovieByRatingsChat",
+			Handler:       _Getter_GetMovieByRatingsChat_Handler,
+			ServerStreams: true,
+			ClientStreams: true,
 		},
 	},
-	Streams:  []grpc.StreamDesc{},
 	Metadata: "movie_services.proto",
 }

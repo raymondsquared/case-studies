@@ -19,7 +19,7 @@ import (
 	"case-studies/grpc/internal/validation"
 )
 
-func loadConfig() *config.ServerConfig {
+func loadConfig(logger *slog.Logger) *config.ServerConfig {
 	flagPort := flag.Int("port", config.DefaultPort, "The server port")
 	flagMovieDataFilePath := flag.String("movie-data-file-path", config.DefaultMovieDataFilePath, "The file path for movie data")
 
@@ -35,11 +35,11 @@ func loadConfig() *config.ServerConfig {
 	}
 
 	if err := validation.ValidatePort(baseConfig.Port); err != nil {
-		slog.Error("invalid port configuration", "error", err)
+		logger.Error("startup: invalid port configuration", "function", "loadConfig", "error", err)
 		os.Exit(1)
 	}
 	if err := validation.ValidateMovieDataFilePath(baseConfig.MovieDataFilePath); err != nil {
-		slog.Error("invalid file data path configuration", "error", err)
+		logger.Error("startup: invalid file data path configuration", "function", "loadConfig", "error", err)
 		os.Exit(1)
 	}
 
@@ -93,23 +93,23 @@ func createGRPCServer(cfg *config.ServerConfig, logger *slog.Logger) *grpc.Serve
 
 func main() {
 	logger := setupLogger()
-	cfg := loadConfig()
+	cfg := loadConfig(logger)
 
-	logger.Info("starting gRPC server", "port", cfg.Port)
+	logger.Info("startup: starting gRPC server", "function", "main", "port", cfg.Port)
 
 	lis, err := net.Listen("tcp", fmt.Sprintf(":%d", cfg.Port))
 	if err != nil {
-		logger.Error("failed to listen", "error", err, "port", cfg.Port)
+		logger.Error("startup: failed to listen", "function", "main", "error", err, "port", cfg.Port)
 		os.Exit(1)
 	}
 
 	// Create gRPC server
 	grpcServer := createGRPCServer(cfg, logger)
 
-	logger.Info("server listening", "address", lis.Addr())
+	logger.Info("startup: server listening", "function", "main", "address", lis.Addr())
 
 	if err := grpcServer.Serve(lis); err != nil {
-		logger.Error("failed to serve", "error", err)
+		logger.Error("startup: failed to serve", "function", "main", "error", err)
 		os.Exit(1)
 	}
 }
