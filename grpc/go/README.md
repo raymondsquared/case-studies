@@ -10,35 +10,97 @@ gRPC is a high-performance, open-source universal RPC framework that enables eff
 - **gRPC Server & Client**: Complete implementation of a service
   - Server: Implements a gRPC service that handles incoming requests, processes data, and returns responses. [See screenshot](#screenshot---grpc-server).
   - Client: Connects to the gRPC server primarily for sending requests to the server.
-- **Protocol Buffers**: Type-safe message definitions in a compressed format.
-
-  - Compact Data Storage: Protobuf encodes data in a compact binary format, which significantly reduces payload size.
-    - | [JSON](assets/movie-data.json) | [Protocol Buffer](assets/movie-data.textpb) |
-      | ------------------------------ | --------------------------------------- |
-      | 622 KB                         | 209 KB                                  |
-  - Strongly Typed & Schema-Driven: Protobuf uses predefined schemas (`.proto` files) that clearly define data structures, providing: compile-time type checking and self-documenting service contracts
-    - [messages](cmd/movie/movie_messages.proto)
-    - [services](cmd/movie/movie_services.proto)
-  - Cross-Language Support: Protobuf enables communication between services written in different languages (e.g., Go, Python, Java, C#, Node.js) by generating client and server code from the same `.proto` definitions.
-    - [Javascript](../javascript/)
-  - Optimized Code Generation: Automatically generates efficient classes using [protoc](https://pkg.go.dev/github.com/golang/protobuf/protoc-gen-go).
-    - [messages](cmd/helloworld/helloworld_messages.pb.go)
-    - [services](cmd/helloworld/helloworld_services.pb.go)
-    - [gRPC](cmd/helloworld/helloworld_services_grpc.pb.go)
-  - Backward & Forward Compatibility: Protobuf's schema evolution.
-    - 
-
+- **Protocol Buffers**: See [Protocol Buffers](#protocol-buffers) section below for more details.
 - **Streaming**: Demonstrates gRPC's support for client-server, and bidirectional streaming, enabling efficient handling of large data sets and real-time communication.
-- **Auth**: Supports authentication and authorization mechanisms, including SSL/TLS for encrypted communication, token-based authentication, and integration with existing identity providers.
+- **Auth**: Supports authentication and authorisation mechanisms, including SSL/TLS for encrypted communication, token-based authentication, and integration with existing identity providers.
 - **Performance**: High performance, using HTTP/2 for multiplexed streams, header compression, and efficient binary serialisation via Protocol Buffers.
+
+### Protocol Buffers
+
+Type-safe message definitions in a compressed format.
+
+- Compact Data Storage: Protobuf encodes data in a compact binary format, which significantly reduces payload size.
+  - | [JSON](assets/movie-data.json) | [Protocol Buffer](assets/movie-data.textpb) |
+    | ------------------------------ | ------------------------------------------- |
+    | 622 KB                         | 209 KB                                      |
+- Strongly Typed & Schema-Driven: Protobuf uses predefined schemas (`.proto` files) that clearly define data structures, providing: compile-time type checking and self-documenting service contracts
+  - [messages](cmd/movie/movie_messages.proto)
+  - [services](cmd/movie/movie_services.proto)
+- Cross-Language Support: Protobuf enables communication between services written in different languages (e.g., Go, Python, Java, C#, Node.js) by generating client and server code from the same `.proto` definitions.
+  - [Javascript](../javascript/)
+- Optimised Code Generation: Automatically generates efficient classes using [protoc](https://pkg.go.dev/github.com/golang/protobuf/protoc-gen-go).
+  - [messages](cmd/helloworld/helloworld_messages.pb.go)
+  - [services](cmd/helloworld/helloworld_services.pb.go)
+  - [gRPC](cmd/helloworld/helloworld_services_grpc.pb.go)
+- Backward & Forward Compatibility: Protobuf's schema evolution.
+
+  1. Don't Re-use a Tag Number
+
+  2. Do Reserve Names and Tag Numbers for Deleted Fields
+
+  3. Don't Change the Type of a Field
+
+     It messes up deserialisation. There could be serialised versions of proto somewhere.
+
+     ```proto
+     message Movie {
+       string movie_id = 1;
+
+       // Deprecated property
+       // string title = 2;
+
+       // Good: Reserve Names and Tag Numbers
+       reserved "title";
+       reserved 2;
+
+       // Good: new a Tag Name and Number
+       string good_new_title = 3;
+
+       // Bad: It messes up deserialisation with older version of proto
+       int32 title = 2;
+
+       // Bad: It messes up deserialisation with older version of proto
+       string good_new_title = 2;
+     }
+     ```
+
+  4. Include a Version Field to Allow for Consistent Reads
+
+  5. Don't Include Primitive Types in a Top-level Request or Response Proto
+
+     Your top-level proto should almost always be a container for other messages that can grow independently.
+
+     ```proto
+     message VersionInfo {
+       int64 timestamp = 1;
+       string source_id = 2;
+     }
+     ```
+
+     ```proto
+     message GetMovieOuput {
+       repeated Movie movies = 1;
+       VersionInfo version_info = 2;
+     }
+     ```
+
+     ```proto
+     message Movie {
+       string movie_id = 1;
+       string title = 2;
+       Director director = 3;
+     }
+     ```
+
+  6. For Mutations, Support Partial Updates or Append-Only Updates, Not Full Replaces
 
 ## Drawbacks
 
 - Protocol buffers tend to assume that entire messages can be loaded into memory at once and are not larger than an object graph. For data that exceeds a few megabytes, consider a different solution; when working with larger data, you may effectively end up with several copies of the data due to serialised copies, which can cause surprising spikes in memory usage.
-- When protocol buffers are serialised, the same data can have many different binary serializations. You cannot compare two messages for equality without fully parsing them.
-- Protocol buffers are not well supported in non-object-oriented languages popular in scientific computing, such as Fortran and IDL.
+- When protocol buffers are serialised, the same data can have many different binary serialisations. You cannot compare two messages for equality without fully parsing them.
+- gRPC are not well supported in non-object-oriented languages popular in scientific computing, such as Fortran and IDL.
 - Protocol buffer messages don't inherently self-describe their data, but they have a fully reflective schema that you can use to implement self-description. That is, you cannot fully interpret one without access to its corresponding `.proto` file.
-- Protocol buffers are not a formal standard of any organisation. This makes them unsuitable for use in environments with legal or other requirements to build on top of standards.
+- gRPC are not a formal standard of any organisation. This makes them unsuitable for use in environments with legal or other requirements to build on top of standards.
 
 ## Getting Started
 
