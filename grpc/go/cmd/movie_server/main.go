@@ -1,19 +1,21 @@
 package main
 
 import (
+	"crypto/tls"
+	"crypto/x509"
 	"flag"
 	"fmt"
 	"log/slog"
 	"net"
 	"os"
 
-	"case-studies/grpc/cmd/movie"
-
 	"google.golang.org/grpc"
+	"google.golang.org/grpc/credentials"
 	"google.golang.org/grpc/health"
 	grpc_health_v1 "google.golang.org/grpc/health/grpc_health_v1"
 	"google.golang.org/grpc/reflection"
 
+	"case-studies/grpc/cmd/movie"
 	"case-studies/grpc/internal/config"
 	"case-studies/grpc/internal/middleware"
 	"case-studies/grpc/internal/validation"
@@ -68,7 +70,32 @@ func createGRPCServer(cfg *config.ServerConfig, logger *slog.Logger) *grpc.Serve
 		validAPIKeys = append(validAPIKeys, k.Key)
 	}
 
+	cert, err := tls.LoadX509KeyPair("../assets/certificate.crt", "../assets/private.key")
+	if err != nil {
+		logger.Error("failed to load server key pair", "error", err)
+		os.Exit(1)
+	}
+	caCert, err := os.ReadFile("../assets/certificate.crt")
+	if err != nil {
+		logger.Error("failed to read CA certificate", "error", err)
+		os.Exit(1)
+	}
+	caPool := x509.NewCertPool()
+	if !caPool.AppendCertsFromPEM(caCert) {
+		logger.Error("failed to append CA certificate to pool")
+		os.Exit(1)
+	}
+
+	tlsConfig := &tls.Config{
+		Certificates: []tls.Certificate{cert},
+		ClientAuth:   tls.RequireAndVerifyClientCert,
+		ClientCAs:    caPool,
+	}
+
+	creds := credentials.NewTLS(tlsConfig)
+
 	serverOpts := []grpc.ServerOption{
+		grpc.Creds(creds),
 		grpc.ChainUnaryInterceptor(
 			middleware.APIKeyAuthInterceptor(validAPIKeys),
 			middleware.LoggingInterceptor(logger),

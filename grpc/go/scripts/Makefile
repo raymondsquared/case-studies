@@ -29,6 +29,13 @@ proto-generate-go:
 test:
 	go test -v ./../...
 
+.PHONY: tls
+tls:
+	openssl req -x509 -nodes -days 3650 -newkey rsa:2048 \
+  -subj "/CN=localhost" \
+  -addext "subjectAltName=DNS:localhost,IP:127.0.0.1,IP:0.0.0.0,DNS:host.docker.internal" \
+  -keyout private.key -out certificate.crt
+	
 # Run
 .PHONY: run-helloworld-server
 run-helloworld-server:

@@ -39,6 +39,7 @@ gRPC is a high-performance, open-source universal RPC framework that enables eff
 
 - **Security and Auth**: Supports security, authentication and authorisation mechanisms, including SSL/TLS and mTLS for encrypted communication, token-based authentication, and integration with existing identity providers.
 
+  - See [security](assets/certificate.crt) example.
   - See [auth](assets/api-config.yaml) example.
 
 - **Performance**: High performance, using HTTP/2 for multiplexed streams, header compression, and efficient binary serialisation via Protocol Buffers.

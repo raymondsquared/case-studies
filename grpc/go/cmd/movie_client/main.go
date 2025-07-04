@@ -2,6 +2,8 @@ package main
 
 import (
 	"context"
+	"crypto/tls"
+	"crypto/x509"
 	"flag"
 	"fmt"
 	"io"
@@ -10,14 +12,14 @@ import (
 	"path/filepath"
 	"time"
 
+	"google.golang.org/grpc"
+	"google.golang.org/grpc/credentials"
+	"google.golang.org/grpc/metadata"
+
 	"case-studies/grpc/cmd/movie"
 	"case-studies/grpc/internal/config"
 	"case-studies/grpc/internal/middleware"
 	"case-studies/grpc/internal/validation"
-
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/credentials/insecure"
-	"google.golang.org/grpc/metadata"
 )
 
 func loadConfig(logger *slog.Logger) *config.ClientConfig {
@@ -92,14 +94,37 @@ func CreateGRPCConnection(cfg *config.ClientConfig, logger *slog.Logger) (*grpc.
 	logger.Info("connecting to gRPC server",
 		"server", serverURL)
 
+	cert, err := tls.LoadX509KeyPair("../assets/certificate.crt", "../assets/private.key")
+	if err != nil {
+		logger.Error("failed to load client key pair", "error", err)
+		return nil, err
+	}
+	caCert, err := os.ReadFile("../assets/certificate.crt")
+	if err != nil {
+		logger.Error("failed to read CA certificate", "error", err)
+		return nil, err
+	}
+	caPool := x509.NewCertPool()
+	if !caPool.AppendCertsFromPEM(caCert) {
+		logger.Error("failed to append CA certificate to pool")
+		return nil, err
+	}
+
+	tlsConfig := &tls.Config{
+		Certificates: []tls.Certificate{cert},
+		RootCAs:      caPool,
+		ServerName:   "localhost",
+	}
+
+	creds := credentials.NewTLS(tlsConfig)
+
 	conn, err := grpc.NewClient(serverURL,
-		grpc.WithTransportCredentials(insecure.NewCredentials()),
+		grpc.WithTransportCredentials(creds),
 		grpc.WithUnaryInterceptor(middleware.ClientLoggingInterceptor(logger)),
 	)
 	if err != nil {
 		return nil, fmt.Errorf("failed to connect to %s: %w", serverURL, err)
 	}
-
 	logger.Info("successfully connected to gRPC server", "server", serverURL)
 	return conn, nil
 }
@@ -148,7 +173,6 @@ func main() {
 	}
 	requestCtx := metadata.AppendToOutgoingContext(context.Background(), "x-api-key", xApiKey)
 
-	// Make the requests
 	logger.Info("request: making the first request", "function", "main")
 
 	response, err := MakeGetterRequest(requestCtx, movieClient, 0.1, logger)
@@ -166,7 +190,6 @@ func main() {
 
 	time.Sleep(time.Second * 3)
 
-	// Streaming, with x-api-key metadata
 	MakeGetterRequestChatWithAPIKey(movieClient, logger, cfg)
 
 	logger.Info("shutdown: client completed successfully", "function", "main")
