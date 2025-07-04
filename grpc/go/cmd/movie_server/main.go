@@ -63,8 +63,14 @@ func setupLogger() *slog.Logger {
 }
 
 func createGRPCServer(cfg *config.ServerConfig, logger *slog.Logger) *grpc.Server {
+	var validAPIKeys []string
+	for _, k := range cfg.APIKeys {
+		validAPIKeys = append(validAPIKeys, k.Key)
+	}
+
 	serverOpts := []grpc.ServerOption{
 		grpc.ChainUnaryInterceptor(
+			middleware.APIKeyAuthInterceptor(validAPIKeys),
 			middleware.LoggingInterceptor(logger),
 			middleware.ErrorInterceptor(),
 			middleware.RecoveryInterceptor(logger),

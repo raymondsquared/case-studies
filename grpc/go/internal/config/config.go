@@ -3,6 +3,8 @@ package config
 import (
 	"os"
 	"strconv"
+
+	"gopkg.in/yaml.v3"
 )
 
 // Common configuration constants
@@ -14,9 +16,15 @@ const (
 )
 
 // ServerConfig holds server-specific configuration
+type APIKeyConfig struct {
+	Name string `yaml:"name"`
+	Key  string `yaml:"key"`
+}
+
 type ServerConfig struct {
 	Port              int
 	MovieDataFilePath string
+	APIKeys           []APIKeyConfig
 }
 
 // ClientConfig holds client-specific configuration
@@ -25,6 +33,7 @@ type ClientConfig struct {
 	Port              int
 	Name              string
 	MovieDataFilePath string
+	APIKey            string
 }
 
 // LoadServerConfig loads server configuration from flags and environment
@@ -42,6 +51,18 @@ func LoadServerConfig() *ServerConfig {
 
 	if movieDataFilePath := os.Getenv("MOVIE_DATA_FILE_PATH"); movieDataFilePath != "" {
 		config.MovieDataFilePath = movieDataFilePath
+	}
+
+	// Load API keys from YAML file
+	apiConfigPath := "../assets/api-config.yaml"
+	if f, err := os.Open(apiConfigPath); err == nil {
+		defer f.Close()
+		var data struct {
+			APIKeys []APIKeyConfig `yaml:"api_keys"`
+		}
+		if err := yaml.NewDecoder(f).Decode(&data); err == nil {
+			config.APIKeys = data.APIKeys
+		}
 	}
 
 	return config
@@ -72,6 +93,10 @@ func LoadClientConfig() *ClientConfig {
 
 	if movieDataFilePath := os.Getenv("MOVIE_DATA_FILE_PATH"); movieDataFilePath != "" {
 		config.MovieDataFilePath = movieDataFilePath
+	}
+
+	if envKey := os.Getenv("X_API_KEY"); envKey != "" {
+		config.APIKey = envKey
 	}
 
 	return config

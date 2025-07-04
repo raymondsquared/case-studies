@@ -2,6 +2,7 @@
 PROTO_DIRS=../cmd/helloworld ../cmd/movie
 PROTO_JS_DIRS=../../javascript/protobuf
 CONTAINER_IMAGE_VERSION=0.0.2-20250701local
+X_API_KEY=abcd-efgh-1234-5678
 
 # Dependencies
 .PHONY: dependencies
@@ -43,7 +44,7 @@ run-helloworld-client:
 
 .PHONY: run-movie-client
 run-movie-client:
-	go run ../cmd/movie_client/*.go
+	X_API_KEY=$(X_API_KEY) go run ../cmd/movie_client/*.go
 
 .PHONY: run-helloworld-e2e
 run-helloworld-e2e:

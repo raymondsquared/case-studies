@@ -122,3 +122,24 @@ func ClientLoggingInterceptor(logger *slog.Logger) grpc.UnaryClientInterceptor {
 		return err
 	}
 }
+
+// APIKeyAuthInterceptor checks for a valid x-api-key in the gRPC metadata
+func APIKeyAuthInterceptor(validAPIKeys []string) grpc.UnaryServerInterceptor {
+	return func(ctx context.Context, req interface{}, info *grpc.UnaryServerInfo, handler grpc.UnaryHandler) (interface{}, error) {
+		md, ok := metadata.FromIncomingContext(ctx)
+		if !ok {
+			return nil, status.Error(codes.Unauthenticated, "missing metadata")
+		}
+		apiKeys := md.Get("x-api-key")
+		if len(apiKeys) == 0 {
+			return nil, status.Error(codes.Unauthenticated, "invalid or missing API key")
+		}
+		incomingKey := apiKeys[0]
+		for _, valid := range validAPIKeys {
+			if incomingKey == valid {
+				return handler(ctx, req)
+			}
+		}
+		return nil, status.Error(codes.Unauthenticated, "invalid or missing API key")
+	}
+}

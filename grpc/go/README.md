@@ -37,7 +37,9 @@ gRPC is a high-performance, open-source universal RPC framework that enables eff
     - current browser JavaScript APIs do not yet offer native support for consuming these binary data frames directly.
     - Browser APIs (like Fetch) often don't expose HTTP/2's full-duplex capabilities for request-response.
 
-- **Auth**: Supports authentication and authorisation mechanisms, including SSL/TLS for encrypted communication, token-based authentication, and integration with existing identity providers.
+- **Security and Auth**: Supports security, authentication and authorisation mechanisms, including SSL/TLS and mTLS for encrypted communication, token-based authentication, and integration with existing identity providers.
+
+  - See [auth](assets/api-config.yaml) example.
 
 - **Performance**: High performance, using HTTP/2 for multiplexed streams, header compression, and efficient binary serialisation via Protocol Buffers.
 
