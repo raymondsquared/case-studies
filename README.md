@@ -13,8 +13,11 @@ This repository showcases a curated collection of unique case studies from past 
 
 ## Getting Started
 
-- **Prerequisites**: List of required tools and versions
-- **Project Structure**: Visual representation of the codebase organisation
+### Case Studies
+
+- Case study 1: [gRPC](./grpc/go/) 
+
+---
 
 ### Project Structure
 
@@ -23,7 +26,11 @@ case-studies/
 ├── .github/                        # GitHub Action
 │   └── workflows/                  # Workflows directory for GitHub Action
 ├── grpc/                           # Case study
-│   └── go/                         # Programming language or Framework
+│   │── go/                         # Programming language or Framework
+│   │   └── README.md               # Sub-project documentation
+│   │── javascript/                 # Programming language or Framework
+│   │   └── README.md               # Sub-project documentation
+│   └── tests/                      # Test projects
 │       └── README.md               # Sub-project documentation
 └── README.md                       # Project documentation
 ```
@@ -62,16 +69,18 @@ Example:
 
 ## Status & Roadmap
 
-| Items              | Status      |
-| ------------------ | ----------- |
-| [gRPC](./grpc/go/) | IN PROGRESS |
-| Kubernetes         | TO DO       |
+| Items                 | Status      |
+| --------------------- | ----------- |
+| [gRPC](./grpc/go/)    | IN PROGRESS |
+| Kubernetes            | TO DO       |
+| Medalion Architecture | TO DO       |
 
 ## Inspiration
 
 - [3musketeers](https://3musketeers.io/)
 - [Semantic Versioning](https://semver.org/)
 - [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+- [Grafana K6](https://k6.io/)
 
 ## Contact
 

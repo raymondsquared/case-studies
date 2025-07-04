@@ -1,23 +1,32 @@
+var grpc = require('@grpc/grpc-js');
+
 var parseArgs = require('minimist');
 var messages = require('./protobuf/helloworld_messages_pb');
-var services = require('./protobuf/helloworld_services_pb');
 var servicesGRPC = require('./protobuf/helloworld_services_grpc_pb');
-
-var grpc = require('@grpc/grpc-js');
 
 function main() {
   var argv = parseArgs(process.argv.slice(2), {
-    string: 'target',
+    string: ['host', 'port'],
   });
   var target;
-  if (argv.target) {
-    target = argv.target;
+  var host;
+  var port;
+  if (argv.host) {
+    host = argv.host;
   } else {
-    target = 'localhost:50051';
+    host = 'localhost';
   }
+
+  if (argv.port) {
+    port = argv.port;
+  } else {
+    port = '50051';
+  }
+
+  serverURL = host + ':' + port;
   
   var client = new servicesGRPC.GreeterClient(
-    target,
+    serverURL,
     grpc.credentials.createInsecure(),
   );
 

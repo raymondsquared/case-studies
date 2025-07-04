@@ -2,6 +2,6 @@
 
 set -e
 
-echo "Running GRPC server on: $SERVER_HOST:$SERVER_PORT ..."
+echo "Running gRPC server on: $SERVER_HOST:$SERVER_PORT ..."
 
 exec "$@"

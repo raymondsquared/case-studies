@@ -44,6 +44,10 @@ run-helloworld-server:
 .PHONY: run-movie-server
 run-movie-server:
 	go run ../cmd/movie_server/*.go
+	
+.PHONY: run-movie-rest-server
+run-movie-rest-server:
+	go run ../cmd/movie_rest_server/*.go -server_cert ../assets/certificate.crt -server_key ../assets/private.key -ca_cert ../assets/certificate.crt
 
 .PHONY: run-helloworld-client
 run-helloworld-client:
@@ -52,6 +56,14 @@ run-helloworld-client:
 .PHONY: run-movie-client
 run-movie-client:
 	X_API_KEY=$(X_API_KEY) go run ../cmd/movie_client/*.go
+
+.PHONY: run-movie-stream-client
+run-movie-stream-client:
+	X_API_KEY=$(X_API_KEY) go run ../cmd/movie_stream_client/*.go
+
+.PHONY: run-movie-rest-client
+run-movie-rest-client:
+	go run ../cmd/movie_rest_client/*.go -client_cert ../assets/certificate.crt -client_key ../assets/private.key -ca_cert ../assets/certificate.crt
 
 .PHONY: run-helloworld-e2e
 run-helloworld-e2e:

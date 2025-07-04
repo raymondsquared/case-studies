@@ -16,7 +16,7 @@ import (
 	"google.golang.org/grpc/credentials/insecure"
 )
 
-func loadConfig() *config.ClientConfig {
+func loadConfig() *config.HelloWorldClientConfig {
 	flagHost := flag.String("host", config.DefaultHost, "the server host to connect to")
 	flagPort := flag.Int("port", config.DefaultPort, "the server port to connect to")
 	flagName := flag.String("name", config.DefaultName, "Name to greet")
@@ -24,7 +24,7 @@ func loadConfig() *config.ClientConfig {
 	flag.Parse()
 
 	// Load base config from environment
-	baseConfig := config.LoadClientConfig()
+	baseConfig := config.LoadHelloWorldClientConfig()
 
 	// Only override with command line flags if they were set by the user
 	if flag.CommandLine.Lookup("host").Value.String() != config.DefaultHost || flag.NFlag() > 0 {
@@ -59,10 +59,6 @@ func setupLogger() *slog.Logger {
 		Level: slog.LevelInfo,
 	}
 
-	if config.GetDebugMode() {
-		opts.Level = slog.LevelDebug
-	}
-
 	handler := slog.NewJSONHandler(os.Stdout, opts)
 	logger := slog.New(handler)
 	slog.SetDefault(logger)
@@ -70,7 +66,7 @@ func setupLogger() *slog.Logger {
 	return logger
 }
 
-func CreateGRPCConnection(cfg *config.ClientConfig, logger *slog.Logger) (*grpc.ClientConn, error) {
+func CreateGRPCConnection(cfg *config.HelloWorldClientConfig, logger *slog.Logger) (*grpc.ClientConn, error) {
 	serverURL := fmt.Sprintf("%s:%d", cfg.Host, cfg.Port)
 
 	logger.Info("connecting to gRPC server",
@@ -109,7 +105,7 @@ func main() {
 		}
 	}()
 
-	// Create clients
+	// Create client
 	helloworldClient := helloworld.NewGreeterClient(conn)
 
 	// Use background context for request

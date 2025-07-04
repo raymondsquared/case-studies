@@ -223,3 +223,38 @@ func TestValidateMovieDataFilePath(t *testing.T) {
 		})
 	}
 }
+
+func TestValidateLogLevel(t *testing.T) {
+	tests := []struct {
+		name    string
+		level   string
+		wantErr bool
+	}{
+		{"valid debug", "debug", false},
+		{"valid info", "info", false},
+		{"valid warn", "warn", false},
+		{"valid error", "error", false},
+		{"invalid empty", "", true},
+		{"invalid typo", "infp", true},
+		{"invalid uppercase", "INFO", true},
+		{"invalid random", "verbose", true},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			err := ValidateLogLevel(tt.level)
+			if (err != nil) != tt.wantErr {
+				t.Errorf("ValidateLogLevel(%q) error = %v, wantErr %v", tt.level, err, tt.wantErr)
+			}
+			if err != nil {
+				if st, ok := status.FromError(err); ok {
+					if st.Code() != codes.InvalidArgument {
+						t.Errorf("ValidateLogLevel() status code = %v, want %v", st.Code(), codes.InvalidArgument)
+					}
+				} else {
+					t.Errorf("ValidateLogLevel() returned non-gRPC error: %v", err)
+				}
+			}
+		})
+	}
+}

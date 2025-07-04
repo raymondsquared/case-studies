@@ -16,7 +16,6 @@ func LoggingInterceptor(logger *slog.Logger) grpc.UnaryServerInterceptor {
 	return func(ctx context.Context, req interface{}, info *grpc.UnaryServerInfo, handler grpc.UnaryHandler) (interface{}, error) {
 		start := time.Now()
 
-		// Extract metadata
 		md, _ := metadata.FromIncomingContext(ctx)
 		userAgent := "unknown"
 		if ua := md.Get("user-agent"); len(ua) > 0 {
@@ -28,12 +27,11 @@ func LoggingInterceptor(logger *slog.Logger) grpc.UnaryServerInterceptor {
 			peer = p[0]
 		}
 
-		logger.Info("gRPC request started",
+		logger.Debug("gRPC request started",
 			"method", info.FullMethod,
 			"user_agent", userAgent,
 			"peer", peer)
 
-		// Call the handler
 		resp, err := handler(ctx, req)
 
 		duration := time.Since(start)
@@ -46,7 +44,7 @@ func LoggingInterceptor(logger *slog.Logger) grpc.UnaryServerInterceptor {
 			}
 		}
 
-		logger.Info("gRPC request completed",
+		logger.Debug("gRPC request completed",
 			"method", info.FullMethod,
 			"duration", duration,
 			"status_code", code.String(),
@@ -62,12 +60,10 @@ func ErrorInterceptor() grpc.UnaryServerInterceptor {
 		resp, err := handler(ctx, req)
 
 		if err != nil {
-			// Log the error with context
 			slog.Error("gRPC error occurred",
 				"method", info.FullMethod,
 				"error", err)
 
-			// Ensure we return a proper gRPC status
 			if _, ok := status.FromError(err); !ok {
 				err = status.Errorf(codes.Internal, "internal server error: %v", err)
 			}
@@ -98,7 +94,7 @@ func ClientLoggingInterceptor(logger *slog.Logger) grpc.UnaryClientInterceptor {
 	return func(ctx context.Context, method string, req, reply interface{}, cc *grpc.ClientConn, invoker grpc.UnaryInvoker, opts ...grpc.CallOption) error {
 		start := time.Now()
 
-		logger.Info("gRPC client request started",
+		logger.Debug("gRPC client request started",
 			"method", method)
 
 		err := invoker(ctx, method, req, reply, cc, opts...)
@@ -113,7 +109,7 @@ func ClientLoggingInterceptor(logger *slog.Logger) grpc.UnaryClientInterceptor {
 			}
 		}
 
-		logger.Info("gRPC client request completed",
+		logger.Debug("gRPC client request completed",
 			"method", method,
 			"duration", duration,
 			"status_code", code.String(),

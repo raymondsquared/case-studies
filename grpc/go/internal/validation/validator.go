@@ -8,7 +8,6 @@ import (
 	"google.golang.org/grpc/status"
 )
 
-// ValidationError represents a validation error
 type ValidationError struct {
 	Field   string
 	Message string
@@ -18,7 +17,6 @@ func (e ValidationError) Error() string {
 	return e.Message
 }
 
-// ValidateName validates a name field
 func ValidateName(name string) error {
 	if name == "" {
 		return status.Errorf(codes.InvalidArgument, "name cannot be empty")
@@ -48,7 +46,6 @@ func ValidateName(name string) error {
 	return nil
 }
 
-// ValidateString validates a string field with custom constraints
 func ValidateString(value, fieldName string, maxLength int, allowEmpty bool) error {
 	if !allowEmpty && value == "" {
 		return status.Errorf(codes.InvalidArgument, "%s cannot be empty", fieldName)
@@ -61,7 +58,6 @@ func ValidateString(value, fieldName string, maxLength int, allowEmpty bool) err
 	return nil
 }
 
-// ValidatePort validates a port number
 func ValidatePort(port int) error {
 	if port < 1 || port > 65535 {
 		return status.Errorf(codes.InvalidArgument, "port must be between 1 and 65535")
@@ -70,7 +66,6 @@ func ValidatePort(port int) error {
 	return nil
 }
 
-// ValidateHost validates a host string
 func ValidateHost(host string) error {
 	if host == "" {
 		return status.Errorf(codes.InvalidArgument, "host cannot be empty")
@@ -112,7 +107,6 @@ func SanitizeString(input string) string {
 	return strings.TrimSpace(result.String())
 }
 
-// ValidateMovieRatings validates that the movie rating is between 0.01 and 9.99
 func ValidateMovieRatings(rating float32) error {
 	if rating < 0.00 || rating > 10.00 {
 		return status.Errorf(codes.InvalidArgument, "ratings must be between 0.00 and 10.00")
@@ -120,7 +114,6 @@ func ValidateMovieRatings(rating float32) error {
 	return nil
 }
 
-// ValidateMovieDataFilePath validates a file path for movie data files
 func ValidateMovieDataFilePath(path string) error {
 	if path == "" {
 		return status.Errorf(codes.InvalidArgument, "file path cannot be empty")
@@ -136,4 +129,13 @@ func ValidateMovieDataFilePath(path string) error {
 	}
 
 	return nil
+}
+
+func ValidateLogLevel(level string) error {
+	switch level {
+	case "debug", "info", "warn", "error":
+		return nil
+	default:
+		return status.Errorf(codes.InvalidArgument, "log level must be one of: debug, info, warn, error")
+	}
 }

@@ -18,12 +18,14 @@ import (
 	"case-studies/grpc/cmd/movie"
 	"case-studies/grpc/internal/config"
 	"case-studies/grpc/internal/middleware"
+	"case-studies/grpc/internal/observability"
 	"case-studies/grpc/internal/validation"
 )
 
 func loadConfig(logger *slog.Logger) *config.ServerConfig {
 	flagPort := flag.Int("port", config.DefaultPort, "The server port")
 	flagMovieDataFilePath := flag.String("movie-data-file-path", config.DefaultMovieDataFilePath, "The file path for movie data")
+	flagLogLevel := flag.String("log-level", config.DefaultLogLevel, "Log level (debug, info, warn, error)")
 
 	flag.Parse()
 
@@ -35,6 +37,9 @@ func loadConfig(logger *slog.Logger) *config.ServerConfig {
 	if flag.CommandLine.Lookup("movie-data-file-path").Value.String() != config.DefaultMovieDataFilePath || flag.NFlag() > 0 {
 		baseConfig.MovieDataFilePath = *flagMovieDataFilePath
 	}
+	if flag.CommandLine.Lookup("log-level").Value.String() != config.DefaultLogLevel || flag.NFlag() > 0 {
+		baseConfig.LogLevel = *flagLogLevel
+	}
 
 	if err := validation.ValidatePort(baseConfig.Port); err != nil {
 		logger.Error("startup: invalid port configuration", "function", "loadConfig", "error", err)
@@ -44,23 +49,21 @@ func loadConfig(logger *slog.Logger) *config.ServerConfig {
 		logger.Error("startup: invalid file data path configuration", "function", "loadConfig", "error", err)
 		os.Exit(1)
 	}
+	if err := validation.ValidateLogLevel(baseConfig.LogLevel); err != nil {
+		logger.Error("startup: invalid log level configuration", "function", "loadConfig", "error", err)
+		os.Exit(1)
+	}
 
 	return baseConfig
 }
 
-func setupLogger() *slog.Logger {
+func setupLogger(logLevel string) *slog.Logger {
 	opts := &slog.HandlerOptions{
-		Level: slog.LevelInfo,
+		Level: observability.ParseLogLevel(logLevel),
 	}
-
-	if config.GetDebugMode() {
-		opts.Level = slog.LevelDebug
-	}
-
 	handler := slog.NewJSONHandler(os.Stdout, opts)
 	logger := slog.New(handler)
 	slog.SetDefault(logger)
-
 	return logger
 }
 
@@ -106,15 +109,20 @@ func createGRPCServer(cfg *config.ServerConfig, logger *slog.Logger) *grpc.Serve
 
 	grpcServer := grpc.NewServer(serverOpts...)
 
-	// Register services
 	movieServer := &server{logger: logger, movieDataFilePath: cfg.MovieDataFilePath}
+
+	movies, err := movieServer.loadMovies()
+	if err != nil {
+		logger.Error("startup: failed to load movie data", "function", "createGRPCServer", "error", err)
+		os.Exit(1)
+	}
+	movieServer.movies = movies
+
 	movie.RegisterGetterServer(grpcServer, movieServer)
 
-	// Register health check service
 	healthServer := health.NewServer()
 	grpc_health_v1.RegisterHealthServer(grpcServer, healthServer)
 
-	healthServer.SetServingStatus("helloworld.Greeter", grpc_health_v1.HealthCheckResponse_SERVING)
 	healthServer.SetServingStatus("movie.Getter", grpc_health_v1.HealthCheckResponse_SERVING)
 
 	reflection.Register(grpcServer)
@@ -125,8 +133,8 @@ func createGRPCServer(cfg *config.ServerConfig, logger *slog.Logger) *grpc.Serve
 }
 
 func main() {
-	logger := setupLogger()
-	cfg := loadConfig(logger)
+	cfg := loadConfig(nil)
+	logger := setupLogger(cfg.LogLevel)
 
 	logger.Info("startup: starting gRPC server", "function", "main", "port", cfg.Port)
 

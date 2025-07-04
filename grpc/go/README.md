@@ -44,6 +44,22 @@ gRPC is a high-performance, open-source universal RPC framework that enables eff
 
 - **Performance**: High performance, using HTTP/2 for multiplexed streams, header compression, and efficient binary serialisation via Protocol Buffers.
 
+  - JSON REST API
+
+    | Requests | Concurrency | Avg Latency | p50 Latency | p90 Latency | p99 Latency | Total Time | Throughput (RPS) |
+    | -------- | ----------- | ----------- | ----------- | ----------- | ----------- | ---------- | ---------------- |
+    | 1,000    | 1           | 9.07 ms     | 9.03 ms     | 9.42 ms     | 9.86 ms     | 13.35 s    | 74.93            |
+    | 10,000   | 1           | 9.17 ms     | 9.10 ms     | 9.58 ms     | 10.41 ms    | 135.52 s   | 73.79            |
+    | 10,000   | 100         | 133.77 ms   | 126.90 ms   | 216.21 ms   | 307.17 ms   | 17.37 s    | 575.74           |
+
+  - gRPC API
+
+    | Requests | Concurrency | Avg Latency | p50 Latency | p90 Latency | p99 Latency | Total Time | Throughput (RPS) |
+    | -------- | ----------- | ----------- | ----------- | ----------- | ----------- | ---------- | ---------------- |
+    | 1,000    | 1           | 6.49 ms     | 6.39 ms     | 6.82 ms     | 9.28 ms     | 6.49 s     | 133.47           |
+    | 10,000   | 1           | 6.59 ms     | 6.51 ms     | 7 ms        | 7.88 ms     | 68.94 s    | 131.69           |
+    | 10,000   | 100         | 82.39 ms    | 78.34 ms    | 104.6 ms    | 164.17 ms   | 8.22 s     | 1063.66          |
+
 ### Protocol Buffers
 
 Type-safe message definitions in a compressed format.
@@ -89,7 +105,7 @@ Type-safe message definitions in a compressed format.
        int32 title = 2;
 
        // Bad: It messes up deserialisation with older version of proto
-       string good_new_title = 2;
+       string bad_new_title = 2;
      }
      ```
 
@@ -125,10 +141,16 @@ Type-safe message definitions in a compressed format.
 
 ## Drawbacks
 
-- Protocol buffers tend to assume that entire messages can be loaded into memory at once and are not larger than an object graph. For data that exceeds a few megabytes, consider a different solution; when working with larger data, you may effectively end up with several copies of the data due to serialised copies, which can cause surprising spikes in memory usage.
+- Unless your service handles high traffic or involves complex domain models/DTOs, a REST server is generally more efficient. Protobuf's serialisation and deserialisation can introduce a performance and resource overhead that outweighs its benefits for simpler services.
+
+- Protocol buffers tend to assume that entire messages can be loaded into memory at once and are not larger than an object graph.
+
 - When protocol buffers are serialised, the same data can have many different binary serialisations. You cannot compare two messages for equality without fully parsing them.
-- gRPC are not well supported in non-object-oriented languages popular in scientific computing, such as Fortran and IDL.
+
+- gRPC are not well supported in non-object-oriented languages popular.
+
 - Protocol buffer messages don't inherently self-describe their data, but they have a fully reflective schema that you can use to implement self-description. That is, you cannot fully interpret one without access to its corresponding `.proto` file.
+
 - gRPC are not a formal standard of any organisation. This makes them unsuitable for use in environments with legal or other requirements to build on top of standards.
 
 ## Getting Started
@@ -147,6 +169,8 @@ grpc/go/
 ├── internal/               # Internal packages
 │   ├── config/             # Configuration management
 │   ├── middleware/         # gRPC middleware
+│   ├── movie/              # Common utility for movie
+│   ├── observability/      # Obserability for the project
 │   └── validation/         # Input validation
 ├── deployments/            # Deployment configurations
 │   ├── docker/             # Docker configurations
@@ -204,7 +228,7 @@ make run-k8s
 
 ## Screenshots
 
-#### Screenshot - GRPC Server
+#### Screenshot - gRPC Server
 
 <img src="assets/grpc-server.png" alt="gRPC Server" width="400" />
 
@@ -247,7 +271,6 @@ message HelloReply {
 - [Protocol Buffers](https://protobuf.dev/)
 - [gRPC](https://grpc.io/)
 - [Golang - Project Layout](https://github.com/golang-standards/project-layout)
-- TODO
 
 ## Contact
 

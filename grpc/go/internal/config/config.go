@@ -1,6 +1,7 @@
 package config
 
 import (
+	"fmt"
 	"os"
 	"strconv"
 
@@ -13,9 +14,9 @@ const (
 	DefaultPort              = 50051
 	DefaultName              = "world"
 	DefaultMovieDataFilePath = "../assets"
+	DefaultLogLevel          = "info"
 )
 
-// ServerConfig holds server-specific configuration
 type APIKeyConfig struct {
 	Name string `yaml:"name"`
 	Key  string `yaml:"key"`
@@ -25,15 +26,36 @@ type ServerConfig struct {
 	Port              int
 	MovieDataFilePath string
 	APIKeys           []APIKeyConfig
+	LogLevel          string
 }
 
-// ClientConfig holds client-specific configuration
 type ClientConfig struct {
-	Host              string
-	Port              int
-	Name              string
+	Host string
+	Port int
+}
+
+type HelloWorldClientConfig struct {
+	ClientConfig
+	Name string
+}
+
+type MovieClientConfig struct {
+	ClientConfig
 	MovieDataFilePath string
 	APIKey            string
+	LogLevel          string
+}
+
+func validateLogLevel(level string) string {
+	switch level {
+	case "debug", "info", "warn", "error":
+		return level
+	default:
+		if level != "" {
+			fmt.Fprintf(os.Stderr, "Warning: invalid LOG_LEVEL '%s'. Defaulting to 'info'. Valid values: debug, info, warn, error\n", level)
+		}
+		return "info"
+	}
 }
 
 // LoadServerConfig loads server configuration from flags and environment
@@ -41,6 +63,7 @@ func LoadServerConfig() *ServerConfig {
 	config := &ServerConfig{
 		Port:              DefaultPort,
 		MovieDataFilePath: DefaultMovieDataFilePath,
+		LogLevel:          "info",
 	}
 
 	if envPortStr := os.Getenv("SERVER_PORT"); envPortStr != "" {
@@ -51,6 +74,10 @@ func LoadServerConfig() *ServerConfig {
 
 	if movieDataFilePath := os.Getenv("MOVIE_DATA_FILE_PATH"); movieDataFilePath != "" {
 		config.MovieDataFilePath = movieDataFilePath
+	}
+
+	if logLevel := os.Getenv("LOG_LEVEL"); logLevel != "" {
+		config.LogLevel = validateLogLevel(logLevel)
 	}
 
 	// Load API keys from YAML file
@@ -68,28 +95,46 @@ func LoadServerConfig() *ServerConfig {
 	return config
 }
 
-// LoadClientConfig loads client configuration from flags and environment
 func LoadClientConfig() *ClientConfig {
 	config := &ClientConfig{
-		Host:              DefaultHost,
-		Port:              DefaultPort,
-		Name:              DefaultName,
-		MovieDataFilePath: DefaultMovieDataFilePath,
+		Host: DefaultHost,
+		Port: DefaultPort,
 	}
 
-	if envHost := os.Getenv("SERVER_HOST"); envHost != "" {
-		config.Host = envHost
+	loadClientConfigFromEnv(config)
+
+	return config
+}
+
+func LoadHelloWorldClientConfig() *HelloWorldClientConfig {
+	config := &HelloWorldClientConfig{
+		ClientConfig: ClientConfig{
+			Host: DefaultHost,
+			Port: DefaultPort,
+		},
+		Name: DefaultName,
 	}
 
-	if envPortStr := os.Getenv("SERVER_PORT"); envPortStr != "" {
-		if p, err := strconv.Atoi(envPortStr); err == nil {
-			config.Port = p
-		}
-	}
+	loadClientConfigFromEnv(&config.ClientConfig)
 
 	if envName := os.Getenv("NAME"); envName != "" {
 		config.Name = envName
 	}
+
+	return config
+}
+
+func LoadMovieClientConfig() *MovieClientConfig {
+	config := &MovieClientConfig{
+		ClientConfig: ClientConfig{
+			Host: DefaultHost,
+			Port: DefaultPort,
+		},
+		MovieDataFilePath: DefaultMovieDataFilePath,
+		LogLevel:          "info",
+	}
+
+	loadClientConfigFromEnv(&config.ClientConfig)
 
 	if movieDataFilePath := os.Getenv("MOVIE_DATA_FILE_PATH"); movieDataFilePath != "" {
 		config.MovieDataFilePath = movieDataFilePath
@@ -99,9 +144,21 @@ func LoadClientConfig() *ClientConfig {
 		config.APIKey = envKey
 	}
 
+	if logLevel := os.Getenv("LOG_LEVEL"); logLevel != "" {
+		config.LogLevel = validateLogLevel(logLevel)
+	}
+
 	return config
 }
 
-func GetDebugMode() bool {
-	return os.Getenv("DEBUG") == "true"
+func loadClientConfigFromEnv(config *ClientConfig) {
+	if envHost := os.Getenv("SERVER_HOST"); envHost != "" {
+		config.Host = envHost
+	}
+
+	if envPortStr := os.Getenv("SERVER_PORT"); envPortStr != "" {
+		if p, err := strconv.Atoi(envPortStr); err == nil {
+			config.Port = p
+		}
+	}
 }

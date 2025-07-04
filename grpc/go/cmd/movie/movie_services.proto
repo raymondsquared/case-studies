@@ -7,7 +7,7 @@ package movie;
 import "movie_messages.proto";
 
 service Getter {
-  rpc GetMovieByRatings (GetMovieInput) returns (GetMovieOutput) {}
+  rpc GetMoviesByRatings (GetMovieInput) returns (GetMovieOutput) {}
 
-  rpc GetMovieByRatingsChat (stream GetMovieInput) returns (stream GetMovieOutput) {}
+  rpc GetMoviesByRatingsStream (stream GetMovieInput) returns (stream GetMovieOutput) {}
 }

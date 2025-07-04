@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"io"
 	"log/slog"
+	"sort"
 	"sync"
 	"time"
 
@@ -17,43 +18,34 @@ type server struct {
 	logger            *slog.Logger
 	movieDataFilePath string
 	mu                sync.Mutex // Protects moviesCountSoFar
+	movies            []*movie.Movie
 }
 
-func (server *server) GetMovieByRatings(ctx context.Context, input *movie.GetMovieInput) (*movie.GetMovieOutput, error) {
+func (server *server) GetMoviesByRatings(ctx context.Context, input *movie.GetMovieInput) (*movie.GetMovieOutput, error) {
 	start := time.Now()
-	server.logger.Info("get_movies_by_rating: started", "ratings_score", input.GetMinimumRatingsScore())
+	server.logger.Debug("get_movies_by_rating: started", "ratings_score", input.GetMinimumRatingsScore())
 
 	if err := validation.ValidateMovieRatings(input.GetMinimumRatingsScore()); err != nil {
-		server.logger.Error("get_movies_by_rating: invalid input", "function", "GetMovieByRatings", "ratings_score", input.GetMinimumRatingsScore(), "error", err)
+		server.logger.Error("get_movies_by_rating: invalid input", "function", "GetMoviesByRatings", "ratings_score", input.GetMinimumRatingsScore(), "error", err)
 		return nil, err
 	}
 
 	sanitisedMinimumRatingsScore := input.GetMinimumRatingsScore()
 
-	movies, err := server.loadMovies()
-	if err != nil {
-		server.logger.Error("get_movies_by_rating: loadMovies error", "function", "GetMovieByRatings", "error", err)
-		return nil, err
-	}
-
-	filtered, moviesCount := server.filterMoviesByRating(movies, sanitisedMinimumRatingsScore)
+	filtered, moviesCount := server.filterMoviesByRating(server.movies, sanitisedMinimumRatingsScore)
 
 	response := &movie.GetMovieOutput{Movie: filtered, MovieCount: moviesCount}
 
 	duration := time.Since(start)
-	server.logger.Info("get_movies_by_rating: success", "ratings_score", sanitisedMinimumRatingsScore, "total_movies", len(filtered), "duration", duration)
+	server.logger.Debug("get_movies_by_rating: success", "ratings_score", sanitisedMinimumRatingsScore, "total_movies", len(filtered), "duration", duration)
 
 	return response, nil
 }
 
-func (server *server) GetMovieByRatingsChat(stream movie.Getter_GetMovieByRatingsChatServer) error {
+func (server *server) GetMoviesByRatingsStream(stream movie.Getter_GetMoviesByRatingsStreamServer) error {
 	var moviesCountSoFar int32
 
-	movies, err := server.loadMovies()
-	if err != nil {
-		server.logger.Error("get_movies_by_rating_chat: loadMovies error", "function", "GetMovieByRatingsChat", "error", err)
-		return err
-	}
+	movies := server.movies
 
 	for {
 		getMovieInput, err := stream.Recv()
@@ -62,15 +54,15 @@ func (server *server) GetMovieByRatingsChat(stream movie.Getter_GetMovieByRating
 			return nil
 		}
 		if err != nil {
-			server.logger.Error("get_movies_by_rating_chat: stream.Recv error", "function", "GetMovieByRatingsChat", "error", err)
+			server.logger.Error("get_movies_by_ratings_stream: stream.Recv error", "function", "GetMoviesByRatingsStream", "error", err)
 			return err
 		}
 
 		start := time.Now()
-		server.logger.Info("get_movies_by_rating_chat: started", "ratings_score", getMovieInput.GetMinimumRatingsScore())
+		server.logger.Debug("get_movies_by_ratings_stream: started", "ratings_score", getMovieInput.GetMinimumRatingsScore())
 
 		if err := validation.ValidateMovieRatings(getMovieInput.GetMinimumRatingsScore()); err != nil {
-			server.logger.Error("get_movies_by_rating_chat: invalid input", "function", "GetMovieByRatingsChat", "ratings_score", getMovieInput.GetMinimumRatingsScore(), "error", err)
+			server.logger.Error("get_movies_by_ratings_stream: invalid input", "function", "GetMoviesByRatingsStream", "ratings_score", getMovieInput.GetMinimumRatingsScore(), "error", err)
 			return err
 		}
 
@@ -90,12 +82,12 @@ func (server *server) GetMovieByRatingsChat(stream movie.Getter_GetMovieByRating
 				MovieCountSoFar: moviesCountSoFar,
 			},
 		); err != nil {
-			server.logger.Error("get_movies_by_rating_chat: stream.Send error", "function", "GetMovieByRatingsChat", "error", err)
+			server.logger.Error("get_movies_by_ratings_stream: stream.Send error", "function", "GetMoviesByRatingsStream", "error", err)
 			return err
 		}
 
 		duration := time.Since(start)
-		server.logger.Info("get_movies_by_rating_chat: success", "ratings_score", sanitisedMinimumRatingsScore, "total_movies", len(filtered), "duration", duration)
+		server.logger.Debug("get_movies_by_ratings_stream: success", "ratings_score", sanitisedMinimumRatingsScore, "total_movies", len(filtered), "duration", duration)
 	}
 }
 
@@ -112,17 +104,23 @@ func (server *server) loadMovies() ([]*movie.Movie, error) {
 		server.logger.Error("loadMovies: decode error", "function", "loadMovies", "error", err)
 		return nil, err
 	}
+
+	// Sort movies by rating score for efficient filtering
+	sort.Slice(movies, func(i, j int) bool {
+		return movies[i].GetRatingsScore() < movies[j].GetRatingsScore()
+	})
+
 	return movies, nil
 }
 
 func (server *server) filterMoviesByRating(movies []*movie.Movie, minRating float32) ([]*movie.Movie, int32) {
-	filtered := make([]*movie.Movie, 0, len(movies))
+	var filtered []*movie.Movie
 	for _, m := range movies {
-		if m.GetRatingsScore() > minRating {
+		if m.GetRatingsScore() >= minRating {
 			filtered = append(filtered, m)
 		}
 	}
 
-	server.logger.Info("filterMoviesByRating: filtered", "ratings_score", minRating, "total_movies", len(filtered))
+	server.logger.Debug("filterMoviesByRating: filtered", "ratings_score", minRating, "total_movies", len(filtered))
 	return filtered, int32(len(filtered))
 }

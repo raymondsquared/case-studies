@@ -19,16 +19,16 @@ import (
 const _ = grpc.SupportPackageIsVersion9
 
 const (
-	Getter_GetMovieByRatings_FullMethodName     = "/movie.Getter/GetMovieByRatings"
-	Getter_GetMovieByRatingsChat_FullMethodName = "/movie.Getter/GetMovieByRatingsChat"
+	Getter_GetMoviesByRatings_FullMethodName       = "/movie.Getter/GetMoviesByRatings"
+	Getter_GetMoviesByRatingsStream_FullMethodName = "/movie.Getter/GetMoviesByRatingsStream"
 )
 
 // GetterClient is the client API for Getter service.
 //
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://pkg.go.dev/google.golang.org/grpc/?tab=doc#ClientConn.NewStream.
 type GetterClient interface {
-	GetMovieByRatings(ctx context.Context, in *GetMovieInput, opts ...grpc.CallOption) (*GetMovieOutput, error)
-	GetMovieByRatingsChat(ctx context.Context, opts ...grpc.CallOption) (grpc.BidiStreamingClient[GetMovieInput, GetMovieOutput], error)
+	GetMoviesByRatings(ctx context.Context, in *GetMovieInput, opts ...grpc.CallOption) (*GetMovieOutput, error)
+	GetMoviesByRatingsStream(ctx context.Context, opts ...grpc.CallOption) (grpc.BidiStreamingClient[GetMovieInput, GetMovieOutput], error)
 }
 
 type getterClient struct {
@@ -39,19 +39,19 @@ func NewGetterClient(cc grpc.ClientConnInterface) GetterClient {
 	return &getterClient{cc}
 }
 
-func (c *getterClient) GetMovieByRatings(ctx context.Context, in *GetMovieInput, opts ...grpc.CallOption) (*GetMovieOutput, error) {
+func (c *getterClient) GetMoviesByRatings(ctx context.Context, in *GetMovieInput, opts ...grpc.CallOption) (*GetMovieOutput, error) {
 	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
 	out := new(GetMovieOutput)
-	err := c.cc.Invoke(ctx, Getter_GetMovieByRatings_FullMethodName, in, out, cOpts...)
+	err := c.cc.Invoke(ctx, Getter_GetMoviesByRatings_FullMethodName, in, out, cOpts...)
 	if err != nil {
 		return nil, err
 	}
 	return out, nil
 }
 
-func (c *getterClient) GetMovieByRatingsChat(ctx context.Context, opts ...grpc.CallOption) (grpc.BidiStreamingClient[GetMovieInput, GetMovieOutput], error) {
+func (c *getterClient) GetMoviesByRatingsStream(ctx context.Context, opts ...grpc.CallOption) (grpc.BidiStreamingClient[GetMovieInput, GetMovieOutput], error) {
 	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
-	stream, err := c.cc.NewStream(ctx, &Getter_ServiceDesc.Streams[0], Getter_GetMovieByRatingsChat_FullMethodName, cOpts...)
+	stream, err := c.cc.NewStream(ctx, &Getter_ServiceDesc.Streams[0], Getter_GetMoviesByRatingsStream_FullMethodName, cOpts...)
 	if err != nil {
 		return nil, err
 	}
@@ -60,14 +60,14 @@ func (c *getterClient) GetMovieByRatingsChat(ctx context.Context, opts ...grpc.C
 }
 
 // This type alias is provided for backwards compatibility with existing code that references the prior non-generic stream type by name.
-type Getter_GetMovieByRatingsChatClient = grpc.BidiStreamingClient[GetMovieInput, GetMovieOutput]
+type Getter_GetMoviesByRatingsStreamClient = grpc.BidiStreamingClient[GetMovieInput, GetMovieOutput]
 
 // GetterServer is the server API for Getter service.
 // All implementations must embed UnimplementedGetterServer
 // for forward compatibility.
 type GetterServer interface {
-	GetMovieByRatings(context.Context, *GetMovieInput) (*GetMovieOutput, error)
-	GetMovieByRatingsChat(grpc.BidiStreamingServer[GetMovieInput, GetMovieOutput]) error
+	GetMoviesByRatings(context.Context, *GetMovieInput) (*GetMovieOutput, error)
+	GetMoviesByRatingsStream(grpc.BidiStreamingServer[GetMovieInput, GetMovieOutput]) error
 	mustEmbedUnimplementedGetterServer()
 }
 
@@ -78,11 +78,11 @@ type GetterServer interface {
 // pointer dereference when methods are called.
 type UnimplementedGetterServer struct{}
 
-func (UnimplementedGetterServer) GetMovieByRatings(context.Context, *GetMovieInput) (*GetMovieOutput, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method GetMovieByRatings not implemented")
+func (UnimplementedGetterServer) GetMoviesByRatings(context.Context, *GetMovieInput) (*GetMovieOutput, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method GetMoviesByRatings not implemented")
 }
-func (UnimplementedGetterServer) GetMovieByRatingsChat(grpc.BidiStreamingServer[GetMovieInput, GetMovieOutput]) error {
-	return status.Errorf(codes.Unimplemented, "method GetMovieByRatingsChat not implemented")
+func (UnimplementedGetterServer) GetMoviesByRatingsStream(grpc.BidiStreamingServer[GetMovieInput, GetMovieOutput]) error {
+	return status.Errorf(codes.Unimplemented, "method GetMoviesByRatingsStream not implemented")
 }
 func (UnimplementedGetterServer) mustEmbedUnimplementedGetterServer() {}
 func (UnimplementedGetterServer) testEmbeddedByValue()                {}
@@ -105,30 +105,30 @@ func RegisterGetterServer(s grpc.ServiceRegistrar, srv GetterServer) {
 	s.RegisterService(&Getter_ServiceDesc, srv)
 }
 
-func _Getter_GetMovieByRatings_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+func _Getter_GetMoviesByRatings_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
 	in := new(GetMovieInput)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(GetterServer).GetMovieByRatings(ctx, in)
+		return srv.(GetterServer).GetMoviesByRatings(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: Getter_GetMovieByRatings_FullMethodName,
+		FullMethod: Getter_GetMoviesByRatings_FullMethodName,
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(GetterServer).GetMovieByRatings(ctx, req.(*GetMovieInput))
+		return srv.(GetterServer).GetMoviesByRatings(ctx, req.(*GetMovieInput))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
-func _Getter_GetMovieByRatingsChat_Handler(srv interface{}, stream grpc.ServerStream) error {
-	return srv.(GetterServer).GetMovieByRatingsChat(&grpc.GenericServerStream[GetMovieInput, GetMovieOutput]{ServerStream: stream})
+func _Getter_GetMoviesByRatingsStream_Handler(srv interface{}, stream grpc.ServerStream) error {
+	return srv.(GetterServer).GetMoviesByRatingsStream(&grpc.GenericServerStream[GetMovieInput, GetMovieOutput]{ServerStream: stream})
 }
 
 // This type alias is provided for backwards compatibility with existing code that references the prior non-generic stream type by name.
-type Getter_GetMovieByRatingsChatServer = grpc.BidiStreamingServer[GetMovieInput, GetMovieOutput]
+type Getter_GetMoviesByRatingsStreamServer = grpc.BidiStreamingServer[GetMovieInput, GetMovieOutput]
 
 // Getter_ServiceDesc is the grpc.ServiceDesc for Getter service.
 // It's only intended for direct use with grpc.RegisterService,
@@ -138,14 +138,14 @@ var Getter_ServiceDesc = grpc.ServiceDesc{
 	HandlerType: (*GetterServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
-			MethodName: "GetMovieByRatings",
-			Handler:    _Getter_GetMovieByRatings_Handler,
+			MethodName: "GetMoviesByRatings",
+			Handler:    _Getter_GetMoviesByRatings_Handler,
 		},
 	},
 	Streams: []grpc.StreamDesc{
 		{
-			StreamName:    "GetMovieByRatingsChat",
-			Handler:       _Getter_GetMovieByRatingsChat_Handler,
+			StreamName:    "GetMoviesByRatingsStream",
+			Handler:       _Getter_GetMoviesByRatingsStream_Handler,
 			ServerStreams: true,
 			ClientStreams: true,
 		},

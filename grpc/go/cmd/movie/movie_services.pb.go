@@ -24,20 +24,20 @@ var File_movie_services_proto protoreflect.FileDescriptor
 
 const file_movie_services_proto_rawDesc = "" +
 	"\n" +
-	"\x14movie_services.proto\x12\x05movie\x1a\x14movie_messages.proto2\x98\x01\n" +
-	"\x06Getter\x12B\n" +
-	"\x11GetMovieByRatings\x12\x14.movie.GetMovieInput\x1a\x15.movie.GetMovieOutput\"\x00\x12J\n" +
-	"\x15GetMovieByRatingsChat\x12\x14.movie.GetMovieInput\x1a\x15.movie.GetMovieOutput\"\x00(\x010\x01B\x1dZ\x1bcase-studies/grpc/cmd/movieb\x06proto3"
+	"\x14movie_services.proto\x12\x05movie\x1a\x14movie_messages.proto2\x9c\x01\n" +
+	"\x06Getter\x12C\n" +
+	"\x12GetMoviesByRatings\x12\x14.movie.GetMovieInput\x1a\x15.movie.GetMovieOutput\"\x00\x12M\n" +
+	"\x18GetMoviesByRatingsStream\x12\x14.movie.GetMovieInput\x1a\x15.movie.GetMovieOutput\"\x00(\x010\x01B\x1dZ\x1bcase-studies/grpc/cmd/movieb\x06proto3"
 
 var file_movie_services_proto_goTypes = []any{
 	(*GetMovieInput)(nil),  // 0: movie.GetMovieInput
 	(*GetMovieOutput)(nil), // 1: movie.GetMovieOutput
 }
 var file_movie_services_proto_depIdxs = []int32{
-	0, // 0: movie.Getter.GetMovieByRatings:input_type -> movie.GetMovieInput
-	0, // 1: movie.Getter.GetMovieByRatingsChat:input_type -> movie.GetMovieInput
-	1, // 2: movie.Getter.GetMovieByRatings:output_type -> movie.GetMovieOutput
-	1, // 3: movie.Getter.GetMovieByRatingsChat:output_type -> movie.GetMovieOutput
+	0, // 0: movie.Getter.GetMoviesByRatings:input_type -> movie.GetMovieInput
+	0, // 1: movie.Getter.GetMoviesByRatingsStream:input_type -> movie.GetMovieInput
+	1, // 2: movie.Getter.GetMoviesByRatings:output_type -> movie.GetMovieOutput
+	1, // 3: movie.Getter.GetMoviesByRatingsStream:output_type -> movie.GetMovieOutput
 	2, // [2:4] is the sub-list for method output_type
 	0, // [0:2] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name

@@ -42,10 +42,6 @@ func setupLogger() *slog.Logger {
 		Level: slog.LevelInfo,
 	}
 
-	if config.GetDebugMode() {
-		opts.Level = slog.LevelDebug
-	}
-
 	handler := slog.NewJSONHandler(os.Stdout, opts)
 	logger := slog.New(handler)
 	slog.SetDefault(logger)
