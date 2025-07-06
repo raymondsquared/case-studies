@@ -182,7 +182,7 @@ func TestValidateMovieRatings(t *testing.T) {
 	}
 }
 
-func TestValidateMovieDataFilePath(t *testing.T) {
+func TestValidateAssetsFilePath(t *testing.T) {
 	tests := []struct {
 		name    string
 		path    string
@@ -191,7 +191,7 @@ func TestValidateMovieDataFilePath(t *testing.T) {
 		{"empty path", "", true},
 		{"valid filename", "movie-data.json", false},
 		{"valid relative path", "assets/movie-data.json", false},
-		{"valid with underscores", "assets/movie_data.pb", false},
+		{"valid with underscores", "assets/movie_data.textpb", false},
 		{"too long", strings.Repeat("a", 256), true},
 		{"contains <", "movie<data.json", true},
 		{"contains >", "movie>data.json", true},
@@ -207,17 +207,17 @@ func TestValidateMovieDataFilePath(t *testing.T) {
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			err := ValidateMovieDataFilePath(tt.path)
+			err := ValidateAssetsFilePath(tt.path)
 			if (err != nil) != tt.wantErr {
-				t.Errorf("ValidateMovieDataFilePath(%q) error = %v, wantErr %v", tt.path, err, tt.wantErr)
+				t.Errorf("ValidateAssetsFilePath(%q) error = %v, wantErr %v", tt.path, err, tt.wantErr)
 			}
 			if err != nil {
 				if st, ok := status.FromError(err); ok {
 					if st.Code() != codes.InvalidArgument {
-						t.Errorf("ValidateMovieDataFilePath() status code = %v, want %v", st.Code(), codes.InvalidArgument)
+						t.Errorf("ValidateAssetsFilePath() status code = %v, want %v", st.Code(), codes.InvalidArgument)
 					}
 				} else {
-					t.Errorf("ValidateMovieDataFilePath() returned non-gRPC error: %v", err)
+					t.Errorf("ValidateAssetsFilePath() returned non-gRPC error: %v", err)
 				}
 			}
 		})

@@ -3,6 +3,7 @@ package config
 import (
 	"fmt"
 	"os"
+	"path/filepath"
 	"strconv"
 
 	"gopkg.in/yaml.v3"
@@ -10,11 +11,11 @@ import (
 
 // Common configuration constants
 const (
-	DefaultHost              = "localhost"
-	DefaultPort              = 50051
-	DefaultName              = "world"
-	DefaultMovieDataFilePath = "../assets"
-	DefaultLogLevel          = "info"
+	DefaultHost           = "localhost"
+	DefaultPort           = 50051
+	DefaultName           = "world"
+	DefaultAssetsFilePath = "../assets"
+	DefaultLogLevel       = "info"
 )
 
 type APIKeyConfig struct {
@@ -23,10 +24,10 @@ type APIKeyConfig struct {
 }
 
 type ServerConfig struct {
-	Port              int
-	MovieDataFilePath string
-	APIKeys           []APIKeyConfig
-	LogLevel          string
+	Port           int
+	AssetsFilePath string
+	APIKeys        []APIKeyConfig
+	LogLevel       string
 }
 
 type ClientConfig struct {
@@ -41,9 +42,9 @@ type HelloWorldClientConfig struct {
 
 type MovieClientConfig struct {
 	ClientConfig
-	MovieDataFilePath string
-	APIKey            string
-	LogLevel          string
+	AssetsFilePath string
+	APIKey         string
+	LogLevel       string
 }
 
 func validateLogLevel(level string) string {
@@ -61,9 +62,9 @@ func validateLogLevel(level string) string {
 // LoadServerConfig loads server configuration from flags and environment
 func LoadServerConfig() *ServerConfig {
 	config := &ServerConfig{
-		Port:              DefaultPort,
-		MovieDataFilePath: DefaultMovieDataFilePath,
-		LogLevel:          "info",
+		Port:           DefaultPort,
+		AssetsFilePath: DefaultAssetsFilePath,
+		LogLevel:       "info",
 	}
 
 	if envPortStr := os.Getenv("SERVER_PORT"); envPortStr != "" {
@@ -72,8 +73,8 @@ func LoadServerConfig() *ServerConfig {
 		}
 	}
 
-	if movieDataFilePath := os.Getenv("MOVIE_DATA_FILE_PATH"); movieDataFilePath != "" {
-		config.MovieDataFilePath = movieDataFilePath
+	if assetsFilePath := os.Getenv("ASSETS_FILE_PATH"); assetsFilePath != "" {
+		config.AssetsFilePath = assetsFilePath
 	}
 
 	if logLevel := os.Getenv("LOG_LEVEL"); logLevel != "" {
@@ -81,7 +82,7 @@ func LoadServerConfig() *ServerConfig {
 	}
 
 	// Load API keys from YAML file
-	apiConfigPath := "../assets/api-config.yaml"
+	apiConfigPath := filepath.Join(config.AssetsFilePath, "api-config.yaml")
 	if f, err := os.Open(apiConfigPath); err == nil {
 		defer f.Close()
 		var data struct {
@@ -130,14 +131,14 @@ func LoadMovieClientConfig() *MovieClientConfig {
 			Host: DefaultHost,
 			Port: DefaultPort,
 		},
-		MovieDataFilePath: DefaultMovieDataFilePath,
-		LogLevel:          "info",
+		AssetsFilePath: DefaultAssetsFilePath,
+		LogLevel:       "info",
 	}
 
 	loadClientConfigFromEnv(&config.ClientConfig)
 
-	if movieDataFilePath := os.Getenv("MOVIE_DATA_FILE_PATH"); movieDataFilePath != "" {
-		config.MovieDataFilePath = movieDataFilePath
+	if assetsFilePath := os.Getenv("ASSETS_FILE_PATH"); assetsFilePath != "" {
+		config.AssetsFilePath = assetsFilePath
 	}
 
 	if envKey := os.Getenv("X_API_KEY"); envKey != "" {

@@ -63,7 +63,7 @@ func main() {
 
 	logger.Info("request: first request completed successfully", "function", "main")
 
-	if err := WriteMoviesToFile(response, cfg.MovieDataFilePath, logger); err != nil {
+	if err := WriteMoviesToFile(response, cfg.AssetsFilePath, logger); err != nil {
 		logger.Error("request: failed to write movies to file", "function", "main", "error", err)
 		os.Exit(1)
 	}

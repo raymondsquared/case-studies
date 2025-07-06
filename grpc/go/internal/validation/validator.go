@@ -114,7 +114,7 @@ func ValidateMovieRatings(rating float32) error {
 	return nil
 }
 
-func ValidateMovieDataFilePath(path string) error {
+func ValidateAssetsFilePath(path string) error {
 	if path == "" {
 		return status.Errorf(codes.InvalidArgument, "file path cannot be empty")
 	}

@@ -34,10 +34,16 @@ WORKDIR /app
 
 RUN chown appuser:appgroup /app
 
-COPY --from=builder --chown=appuser:appgroup /app/bin/grpc-greeter-server .
-COPY --from=builder --chown=appuser:appgroup /app/bin/grpc-greeter-client .
+COPY --from=builder --chown=appuser:appgroup /app/assets/api-config.yaml ./assets/
+COPY --from=builder --chown=appuser:appgroup /app/assets/certificate.crt ./assets/
+COPY --from=builder --chown=appuser:appgroup /app/assets/private.key ./assets/
+COPY --from=builder --chown=appuser:appgroup /app/assets/movie-data.json ./assets/
+
+COPY --from=builder --chown=appuser:appgroup /app/bin/grpc-helloworld-server .
+COPY --from=builder --chown=appuser:appgroup /app/bin/grpc-helloworld-client .
 COPY --from=builder --chown=appuser:appgroup /app/bin/grpc-movie-server .
 COPY --from=builder --chown=appuser:appgroup /app/bin/grpc-movie-client .
+COPY --from=builder --chown=appuser:appgroup /app/bin/grpc-movie-stream-client .
 COPY --from=builder --chown=appuser:appgroup /app/grpcurl .
 COPY --from=builder --chown=appuser:appgroup /app/grpcui .
 COPY --from=builder --chown=appuser:appgroup /app/deployments/docker/helloworld-full/start.sh .

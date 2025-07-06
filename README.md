@@ -1,5 +1,7 @@
 # Case Studies
 
+[![gRPC Go - CD](https://github.com/raymondsquared/case-studies/actions/workflows/grpc-go-cd.yaml/badge.svg)](https://github.com/raymondsquared/case-studies/actions/workflows/grpc-go-cd.yaml)
+
 ## Overview
 
 This repository showcases a curated collection of unique case studies from past projects. Each case highlights a complex challenge, the strategic approach taken, and the measurable outcomes achieved. The goal is to illustrate problem-solving capabilities, technical depth, and alignment with business objectives.
@@ -15,7 +17,9 @@ This repository showcases a curated collection of unique case studies from past 
 
 ### Case Studies
 
-- Case study 1: [gRPC](./grpc/go/) 
+| Case Study    | Status                                                                                                                                                                                          |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [gRPC](grpc/) | [![gRPC Go - CI](https://github.com/raymondsquared/case-studies/actions/workflows/grpc-go-ci.yaml/badge.svg)](https://github.com/raymondsquared/case-studies/actions/workflows/grpc-go-ci.yaml) |
 
 ---
 
@@ -25,14 +29,14 @@ This repository showcases a curated collection of unique case studies from past 
 case-studies/
 ├── .github/                        # GitHub Action
 │   └── workflows/                  # Workflows directory for GitHub Action
-├── grpc/                           # Case study
-│   │── go/                         # Programming language or Framework
-│   │   └── README.md               # Sub-project documentation
-│   │── javascript/                 # Programming language or Framework
-│   │   └── README.md               # Sub-project documentation
-│   └── tests/                      # Test projects
-│       └── README.md               # Sub-project documentation
-└── README.md                       # Project documentation
+│
+├── grpc/                           # Case study #1 - gRPC
+│   └── go/                         # Programming language or framework
+│       └── README.md
+│
+├── scripts/                        # Utility Scripts
+│
+└── README.md                       # Main documentation
 ```
 
 ## Technologies Used
@@ -42,13 +46,13 @@ case-studies/
 
 ## Setup & Installation
 
-- Install Go lang
-
 To clone locally:
 
 ```bash
 git clone https://github.com/raymondsquared/case-studies.git
-cd case-studies
+
+cd case-studies/xxx
+make run-xxx
 ```
 
 ## Usage & Code Examples
@@ -69,11 +73,19 @@ Example:
 
 ## Status & Roadmap
 
-| Items                 | Status      |
-| --------------------- | ----------- |
-| [gRPC](./grpc/go/)    | IN PROGRESS |
-| Kubernetes            | TO DO       |
-| Medalion Architecture | TO DO       |
+| Items                      | Status    | Version |
+| -------------------------- | --------- | ------- |
+| [gRPC](grpc/)              | COMPLETED | 0.0.2   |
+| REST API                   | TO DO     |         |
+| GraphQL API                | TO DO     |         |
+| Domain Driven Design       | TO DO     |         |
+| Concurrency vs Parallelism | TO DO     |         |
+| Actor Based                | TO DO     |         |
+| Kubernetes                 | TO DO     |         |
+| Integration                | TO DO     |         |
+| Kafka                      | TO DO     |         |
+| Data Platform              | TO DO     |         |
+| AI                         | TO DO     |         |
 
 ## Inspiration
 

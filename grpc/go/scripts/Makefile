@@ -1,7 +1,7 @@
 # Variables
 PROTO_DIRS=../cmd/helloworld ../cmd/movie
 PROTO_JS_DIRS=../../javascript/protobuf
-CONTAINER_IMAGE_VERSION=0.0.2-20250701local
+CONTAINER_IMAGE_VERSION=0.0.2-202507006local
 X_API_KEY=abcd-efgh-1234-5678
 
 # Dependencies
@@ -39,35 +39,35 @@ tls:
 # Run
 .PHONY: run-helloworld-server
 run-helloworld-server:
-	go run ../cmd/greeter_server/*.go
+	go run ../cmd/helloworld/server/*.go
 
 .PHONY: run-movie-server
 run-movie-server:
-	go run ../cmd/movie_server/*.go
+	go run ../cmd/movie/server/*.go
 	
 .PHONY: run-movie-rest-server
 run-movie-rest-server:
-	go run ../cmd/movie_rest_server/*.go -server_cert ../assets/certificate.crt -server_key ../assets/private.key -ca_cert ../assets/certificate.crt
+	go run ../cmd/movie/rest/server/*.go -server_cert ../assets/certificate.crt -server_key ../assets/private.key -ca_cert ../assets/certificate.crt
 
 .PHONY: run-helloworld-client
 run-helloworld-client:
-	go run ../cmd/greeter_client/*.go
+	go run ../cmd/helloworld/client/*.go
 
 .PHONY: run-movie-client
 run-movie-client:
-	X_API_KEY=$(X_API_KEY) go run ../cmd/movie_client/*.go
+	X_API_KEY=$(X_API_KEY) go run ../cmd/movie/client/*.go
 
 .PHONY: run-movie-stream-client
 run-movie-stream-client:
-	X_API_KEY=$(X_API_KEY) go run ../cmd/movie_stream_client/*.go
+	X_API_KEY=$(X_API_KEY) go run ../cmd/movie/stream/client/*.go
 
 .PHONY: run-movie-rest-client
 run-movie-rest-client:
-	go run ../cmd/movie_rest_client/*.go -client_cert ../assets/certificate.crt -client_key ../assets/private.key -ca_cert ../assets/certificate.crt
+	go run ../cmd/movie/rest/client/*.go -client_cert ../assets/certificate.crt -client_key ../assets/private.key -ca_cert ../assets/certificate.crt
 
 .PHONY: run-helloworld-e2e
 run-helloworld-e2e:
-	CONTAINER_IMAGE_VERSION=$(CONTAINER_IMAGE_VERSION) docker compose -p grpc-greeter -f ../deployments/docker/helloworld-compose.yaml up -d
+	CONTAINER_IMAGE_VERSION=$(CONTAINER_IMAGE_VERSION) docker compose -p grpc-helloworld -f ../deployments/docker/helloworld-compose.yaml up -d
 
 .PHONY: run-movie-e2e
 run-movie-e2e:
@@ -89,26 +89,28 @@ clean-k8s:
 # Build
 .PHONY: build-server
 build-server:
-	go build -o ../bin/grpc-greeter-server ../cmd/greeter_server/
-	go build -o ../bin/grpc-movie-server ../cmd/movie_server/
+	go build -o ../bin/grpc-helloworld-server ../cmd/helloworld/server/
+	go build -o ../bin/grpc-movie-server ../cmd/movie/server/
 
 .PHONY: build-client
 build-client:
-	go build -o ../bin/grpc-greeter-client ../cmd/greeter_client/
-	go build -o ../bin/grpc-movie-client ../cmd/movie_client/
+	go build -o ../bin/grpc-helloworld-client ../cmd/helloworld/client/
+	go build -o ../bin/grpc-movie-client ../cmd/movie/client/
+	go build -o ../bin/grpc-movie-stream-client ../cmd/movie/stream/client/
 
 .PHONY: build
 build: build-server build-client
 
 .PHONY: build-linux-server
 build-linux-server:
-	CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -ldflags="-w -s" -o ../bin/grpc-greeter-server ../cmd/greeter_server/
-	CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -ldflags="-w -s" -o ../bin/grpc-movie-server ../cmd/movie_server/
+	CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -ldflags="-w -s" -o ../bin/grpc-helloworld-server ../cmd/helloworld/server/
+	CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -ldflags="-w -s" -o ../bin/grpc-movie-server ../cmd/movie/server/
 
 .PHONY: build-linux-client
 build-linux-client:
-	CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -ldflags="-w -s" -o ../bin/grpc-greeter-client ../cmd/greeter_client/
-	CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -ldflags="-w -s" -o ../bin/grpc-movie-client ../cmd/movie_client/
+	CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -ldflags="-w -s" -o ../bin/grpc-helloworld-client ../cmd/helloworld/client/
+	CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -ldflags="-w -s" -o ../bin/grpc-movie-client ../cmd/movie/client/
+	CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -ldflags="-w -s" -o ../bin/grpc-movie-stream-client ../cmd/movie/stream/client/
 
 # Package
 .PHONY: package-helloworld-server

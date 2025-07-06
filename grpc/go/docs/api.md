@@ -1,9 +1,38 @@
-syntax = "proto3";
+## API Reference
 
-option go_package = "case-studies/grpc/cmd/movie";
+#### Hello World
 
-package movie;
+The project implements a simple Hello World gRPC service:
 
+```protobuf
+service Greeter {
+  rpc SayHello (HelloRequest) returns (HelloReply) {}
+}
+```
+
+```protobuf
+message HelloRequest {
+  string name = 1;
+}
+
+message HelloReply {
+  string message = 1;
+}
+```
+
+---
+
+#### Movie
+
+```protobuf
+service Getter {
+  rpc GetMoviesByRatings (GetMovieInput) returns (GetMovieOutput) {}
+
+  rpc GetMoviesByRatingsStream (stream GetMovieInput) returns (stream GetMovieOutput) {}
+}
+```
+
+```protobuf
 message GetMovieInput {
   float minimum_ratings_score = 1;
 }
@@ -46,3 +75,4 @@ message CrewMember {
   string name = 1;
   string role = 2;
 }
+```

@@ -8,6 +8,7 @@ import (
 	"log/slog"
 	"net"
 	"os"
+	"path/filepath"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
@@ -24,7 +25,7 @@ import (
 
 func loadConfig(logger *slog.Logger) *config.ServerConfig {
 	flagPort := flag.Int("port", config.DefaultPort, "The server port")
-	flagMovieDataFilePath := flag.String("movie-data-file-path", config.DefaultMovieDataFilePath, "The file path for movie data")
+	flagAssetsFilePath := flag.String("assets-file-path", config.DefaultAssetsFilePath, "The file path for assets")
 	flagLogLevel := flag.String("log-level", config.DefaultLogLevel, "Log level (debug, info, warn, error)")
 
 	flag.Parse()
@@ -34,8 +35,8 @@ func loadConfig(logger *slog.Logger) *config.ServerConfig {
 	if flag.CommandLine.Lookup("port").Value.String() != fmt.Sprintf("%d", config.DefaultPort) || flag.NFlag() > 0 {
 		baseConfig.Port = *flagPort
 	}
-	if flag.CommandLine.Lookup("movie-data-file-path").Value.String() != config.DefaultMovieDataFilePath || flag.NFlag() > 0 {
-		baseConfig.MovieDataFilePath = *flagMovieDataFilePath
+	if flag.CommandLine.Lookup("assets-file-path").Value.String() != config.DefaultAssetsFilePath || flag.NFlag() > 0 {
+		baseConfig.AssetsFilePath = *flagAssetsFilePath
 	}
 	if flag.CommandLine.Lookup("log-level").Value.String() != config.DefaultLogLevel || flag.NFlag() > 0 {
 		baseConfig.LogLevel = *flagLogLevel
@@ -45,7 +46,7 @@ func loadConfig(logger *slog.Logger) *config.ServerConfig {
 		logger.Error("startup: invalid port configuration", "function", "loadConfig", "error", err)
 		os.Exit(1)
 	}
-	if err := validation.ValidateMovieDataFilePath(baseConfig.MovieDataFilePath); err != nil {
+	if err := validation.ValidateAssetsFilePath(baseConfig.AssetsFilePath); err != nil {
 		logger.Error("startup: invalid file data path configuration", "function", "loadConfig", "error", err)
 		os.Exit(1)
 	}
@@ -73,12 +74,16 @@ func createGRPCServer(cfg *config.ServerConfig, logger *slog.Logger) *grpc.Serve
 		validAPIKeys = append(validAPIKeys, k.Key)
 	}
 
-	cert, err := tls.LoadX509KeyPair("../assets/certificate.crt", "../assets/private.key")
+	certFilePath := filepath.Join(cfg.AssetsFilePath, "certificate.crt")
+	keyFilePath := filepath.Join(cfg.AssetsFilePath, "private.key")
+
+	cert, err := tls.LoadX509KeyPair(certFilePath, keyFilePath)
 	if err != nil {
 		logger.Error("failed to load server key pair", "error", err)
 		os.Exit(1)
 	}
-	caCert, err := os.ReadFile("../assets/certificate.crt")
+	// Since we are testing with the same certificate for both client ans server
+	caCert, err := os.ReadFile(certFilePath)
 	if err != nil {
 		logger.Error("failed to read CA certificate", "error", err)
 		os.Exit(1)
@@ -109,7 +114,7 @@ func createGRPCServer(cfg *config.ServerConfig, logger *slog.Logger) *grpc.Serve
 
 	grpcServer := grpc.NewServer(serverOpts...)
 
-	movieServer := &server{logger: logger, movieDataFilePath: cfg.MovieDataFilePath}
+	movieServer := &server{logger: logger, assetsFilePath: cfg.AssetsFilePath}
 
 	movies, err := movieServer.loadMovies()
 	if err != nil {

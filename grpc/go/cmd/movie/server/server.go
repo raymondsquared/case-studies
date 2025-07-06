@@ -15,10 +15,10 @@ import (
 
 type server struct {
 	movie.UnimplementedGetterServer
-	logger            *slog.Logger
-	movieDataFilePath string
-	mu                sync.Mutex // Protects moviesCountSoFar
-	movies            []*movie.Movie
+	logger         *slog.Logger
+	assetsFilePath string
+	mu             sync.Mutex // Protects moviesCountSoFar
+	movies         []*movie.Movie
 }
 
 func (server *server) GetMoviesByRatings(ctx context.Context, input *movie.GetMovieInput) (*movie.GetMovieOutput, error) {
@@ -92,7 +92,7 @@ func (server *server) GetMoviesByRatingsStream(stream movie.Getter_GetMoviesByRa
 }
 
 func (server *server) loadMovies() ([]*movie.Movie, error) {
-	reader, err := NewMoviesFileReader(server.movieDataFilePath, server.logger)
+	reader, err := NewMoviesFileReader(server.assetsFilePath, server.logger)
 	if err != nil {
 		server.logger.Error("loadMovies: NewMoviesFileReader error", "function", "loadMovies", "error", err)
 		return nil, err

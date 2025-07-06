@@ -28,7 +28,7 @@ WORKDIR /app
 
 RUN chown appuser:appgroup /app
 
-COPY --from=builder --chown=appuser:appgroup /app/bin/grpc-greeter-server .
+COPY --from=builder --chown=appuser:appgroup /app/bin/grpc-helloworld-server .
 COPY --from=builder --chown=appuser:appgroup /app/deployments/docker/helloworld-server/start.sh .
 COPY --from=builder --chown=appuser:appgroup /bin/grpc_health_probe .
 
@@ -43,4 +43,4 @@ RUN ls -al
 ENTRYPOINT ["./start.sh"]
 
 # Use CMD to provide default arguments to the ENTRYPOINT
-CMD ["./grpc-greeter-server"]
+CMD ["./grpc-helloworld-server"]

@@ -24,6 +24,9 @@ WORKDIR /app
 
 RUN chown appuser:appgroup /app
 
+COPY --from=builder --chown=appuser:appgroup /app/assets/certificate.crt ./assets/
+COPY --from=builder --chown=appuser:appgroup /app/assets/private.key ./assets/
+
 COPY --from=builder --chown=appuser:appgroup /app/bin/grpc-movie-client .
 COPY --from=builder --chown=appuser:appgroup /app/deployments/docker/movie-client/start.sh .
 

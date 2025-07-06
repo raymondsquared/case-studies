@@ -11,6 +11,7 @@ import (
 	"fmt"
 	"log/slog"
 	"os"
+	"path/filepath"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
@@ -19,7 +20,7 @@ import (
 func LoadConfig(logger *slog.Logger) *config.MovieClientConfig {
 	flagHost := flag.String("host", config.DefaultHost, "the server host to connect to")
 	flagPort := flag.Int("port", config.DefaultPort, "the server port to connect to")
-	flagMovieDataFilePath := flag.String("movie-data-file-path", config.DefaultMovieDataFilePath, "The file path for movie data")
+	flagAssetsFilePath := flag.String("assets-file-path", config.DefaultAssetsFilePath, "The file path for assets")
 	flagAPIKey := flag.String("api-key", "", "API key for authentication (overrides X_API_KEY env var)")
 	flagLogLevel := flag.String("log-level", config.DefaultLogLevel, "Log level (debug, info, warn, error)")
 
@@ -33,14 +34,14 @@ func LoadConfig(logger *slog.Logger) *config.MovieClientConfig {
 	if flag.CommandLine.Lookup("port").Value.String() != fmt.Sprintf("%d", config.DefaultPort) || flag.NFlag() > 0 {
 		baseConfig.Port = *flagPort
 	}
-	if flag.CommandLine.Lookup("movie-data-file-path").Value.String() != config.DefaultMovieDataFilePath || flag.NFlag() > 0 {
-		baseConfig.MovieDataFilePath = *flagMovieDataFilePath
-	}
-	if *flagAPIKey != "" {
-		baseConfig.APIKey = *flagAPIKey
+	if flag.CommandLine.Lookup("assets-file-path").Value.String() != config.DefaultAssetsFilePath || flag.NFlag() > 0 {
+		baseConfig.AssetsFilePath = *flagAssetsFilePath
 	}
 	if flag.CommandLine.Lookup("log-level").Value.String() != config.DefaultLogLevel || flag.NFlag() > 0 {
 		baseConfig.LogLevel = *flagLogLevel
+	}
+	if *flagAPIKey != "" {
+		baseConfig.APIKey = *flagAPIKey
 	}
 
 	if err := validation.ValidateHost(baseConfig.Host); err != nil {
@@ -51,8 +52,8 @@ func LoadConfig(logger *slog.Logger) *config.MovieClientConfig {
 		logger.Error("startup: invalid port configuration", "function", "loadConfig", "error", err)
 		os.Exit(1)
 	}
-	if flag.CommandLine.Lookup("movie-data-file-path") != nil && flag.CommandLine.Lookup("movie-data-file-path").Value.String() != "" {
-		if err := validation.ValidateMovieDataFilePath(baseConfig.MovieDataFilePath); err != nil {
+	if flag.CommandLine.Lookup("assets-file-path") != nil && flag.CommandLine.Lookup("assets-file-path").Value.String() != "" {
+		if err := validation.ValidateAssetsFilePath(baseConfig.AssetsFilePath); err != nil {
 			logger.Error("startup: invalid file data path configuration", "function", "loadConfig", "error", err)
 			os.Exit(1)
 		}
@@ -81,12 +82,16 @@ func CreateGRPCConnection(cfg *config.MovieClientConfig, logger *slog.Logger) (*
 	logger.Info("connecting to gRPC server",
 		"server", serverURL)
 
-	cert, err := tls.LoadX509KeyPair("../assets/certificate.crt", "../assets/private.key")
+	certFilePath := filepath.Join(cfg.AssetsFilePath, "certificate.crt")
+	keyFilePath := filepath.Join(cfg.AssetsFilePath, "private.key")
+
+	cert, err := tls.LoadX509KeyPair(certFilePath, keyFilePath)
 	if err != nil {
 		logger.Error("failed to load client key pair", "error", err)
 		return nil, err
 	}
-	caCert, err := os.ReadFile("../assets/certificate.crt")
+	// Since we are testing with the same certificate for both client ans server
+	caCert, err := os.ReadFile(certFilePath)
 	if err != nil {
 		logger.Error("failed to read CA certificate", "error", err)
 		return nil, err
