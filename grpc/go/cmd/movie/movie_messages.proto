@@ -46,7 +46,3 @@ message CrewMember {
   string name = 1;
   string role = 2;
 }
-
-message MovieProtoResponse {
-  string proto_content = 1;
-}

@@ -1,4 +1,5 @@
 name: gRPC Go - CD
+
 on:
   workflow_dispatch:
     inputs:
@@ -16,6 +17,10 @@ on:
           - 'development'
           - 'staging'
           - 'production'
+
+env:
+  DOCKER_REGISTRY: 'raymondsquared'
+
 jobs:
   prepare:
     runs-on: ubuntu-latest
@@ -39,70 +44,53 @@ jobs:
       - name: Display variables
         run: |
           echo "Final package version ${{ steps.set_variables.outputs.final_release_version }} ..."
-  package-server:
+
+  package:
     needs: prepare
     runs-on: ubuntu-latest
     outputs:
       final_release_version: ${{ needs.prepare.outputs.final_release_version }}
+    strategy:
+      matrix:
+        component: [server, client]
     steps:
       - uses: actions/checkout@v4
       - name: Display inputs
         run: |
           echo "Deploying package version ${{ needs.prepare.outputs.final_release_version }} ..."
-          echo "Deploying to environment: ${{ github.event.inputs.target_environment }} ..."
+          echo "Deploying ${{ matrix.component }} to environment: ${{ github.event.inputs.target_environment }} ..."
       - name: Package into docker image
         run: |
-          cd grpc/go/scripts && make package-helloworld CONTAINER_IMAGE_VERSION=${{ needs.prepare.outputs.final_release_version }}
+          cd grpc/go && make package-helloworld CONTAINER_IMAGE_VERSION=${{ needs.prepare.outputs.final_release_version }}
       - name: Save Docker image as tar
         run: |
-          docker save raymondsquared/grpc-helloworld-server:${{ needs.prepare.outputs.final_release_version }} -o grpc-go-server-image.tar
-      - name: Upload server Docker image artifact
+          docker save ${{ env.DOCKER_REGISTRY }}/grpc-helloworld-${{ matrix.component }}:${{ needs.prepare.outputs.final_release_version }} -o grpc-go-${{ matrix.component }}-image.tar
+      - name: Upload ${{ matrix.component }} Docker image artifact
         uses: actions/upload-artifact@v4
         with:
-          name: grpc-go-server-image
-          path: grpc-go-server-image.tar
+          name: grpc-go-${{ matrix.component }}-image
+          path: grpc-go-${{ matrix.component }}-image.tar
           retention-days: 1
           overwrite: true
-  package-client:
-    needs: prepare
+  publish:
+    needs: package
     runs-on: ubuntu-latest
-    outputs:
-      final_release_version: ${{ needs.prepare.outputs.final_release_version }}
+    strategy:
+      matrix:
+        component: [server, client]
     steps:
       - uses: actions/checkout@v4
       - name: Display inputs
         run: |
-          echo "Deploying package version ${{ needs.prepare.outputs.final_release_version }} ..."
-          echo "Deploying to environment: ${{ github.event.inputs.target_environment }} ..."
-      - name: Package into docker image
-        run: |
-          cd grpc/go/scripts && make package-helloworld CONTAINER_IMAGE_VERSION=${{ needs.prepare.outputs.final_release_version }}
-      - name: Save Docker images as tar
-        run: |
-          docker save raymondsquared/grpc-helloworld-server:${{ needs.prepare.outputs.final_release_version }} -o grpc-go-client-image.tar
-      - name: Upload Docker image artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: grpc-go-client-image
-          path: grpc-go-client-image.tar
-          retention-days: 1
-          overwrite: true
-  publish-server:
-    needs: package-server
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Display inputs
-        run: |
-          echo "Publishing package version ${{ needs.package-server.outputs.final_release_version }} ..."
-          echo "Publishing to environment: ${{ github.event.inputs.target_environment }} ..."
+          echo "Publishing package version ${{ needs.package.outputs.final_release_version }} ..."
+          echo "Publishing ${{ matrix.component }} to environment: ${{ github.event.inputs.target_environment }} ..."
       - name: Download Docker image artifact
         uses: actions/download-artifact@v4
         with:
-          name: grpc-go-server-image
+          name: grpc-go-${{ matrix.component }}-image
       - name: Load Docker image from tar
         run: |
-          docker load -i grpc-go-server-image.tar
+          docker load -i grpc-go-${{ matrix.component }}-image.tar
       - name: Log in to Docker Hub
         uses: docker/login-action@f4ef78c080cd8ba55a85445d5b36e214a81df20a
         with:
@@ -110,28 +98,4 @@ jobs:
           password: ${{ secrets.DOCKER_HUB_PASSWORD }}
       - name: Push Docker image
         run: |
-          cd grpc/go/scripts && make publish-helloworld-server CONTAINER_IMAGE_VERSION=${{ needs.package-server.outputs.final_release_version }}
-  publish-client:
-    needs: package-client
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Display inputs
-        run: |
-          echo "Publishing package version ${{ needs.package-client.outputs.final_release_version }} ..."
-          echo "Publishing to environment: ${{ github.event.inputs.target_environment }} ..."
-      - name: Download Docker image artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: grpc-go-client-image
-      - name: Load Docker image from tar
-        run: |
-          docker load -i grpc-go-client-image.tar
-      - name: Log in to Docker Hub
-        uses: docker/login-action@f4ef78c080cd8ba55a85445d5b36e214a81df20a
-        with:
-          username: ${{ secrets.DOCKER_HUB_USERNAME }}
-          password: ${{ secrets.DOCKER_HUB_PASSWORD }}
-      - name: Push Docker image
-        run: |
-          cd grpc/go/scripts && make publish-helloworld-client CONTAINER_IMAGE_VERSION=${{ needs.package-client.outputs.final_release_version }}
+          cd grpc/go && make publish-helloworld-${{ matrix.component }} CONTAINER_IMAGE_VERSION=${{ needs.package.outputs.final_release_version }}

@@ -9,9 +9,9 @@ COPY . .
 # RUN pwd
 # RUN ls -al
 
-RUN cd scripts && make dependencies
+RUN make dependencies
 
-RUN cd scripts && make build-linux-client
+RUN make build-linux-client
 
 # --- FINAL STAGE ---
 # Use a minimal base image for the final runtime.
@@ -24,7 +24,7 @@ WORKDIR /app
 
 RUN chown appuser:appgroup /app
 
-COPY --from=builder --chown=appuser:appgroup /app/bin/grpc-greeter-client .
+COPY --from=builder --chown=appuser:appgroup /app/bin/grpc-helloworld-client .
 COPY --from=builder --chown=appuser:appgroup /app/deployments/docker/helloworld-client/start.sh .
 
 USER appuser
@@ -36,4 +36,4 @@ USER appuser
 ENTRYPOINT ["./start.sh"]
 
 # Use CMD to provide default arguments to the ENTRYPOINT
-CMD ["./grpc-greeter-client"]
+CMD ["./grpc-helloworld-client"]

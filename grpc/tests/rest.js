@@ -8,8 +8,8 @@ export const options = {
   tlsAuth: [
     {
       domains: ['localhost'],
-      cert: open('../go/assets/certificate.crt'),
-      key: open('../go/assets/private.key'),
+      cert: open('../go/assets/tls/server-public.key'),
+key: open('../go/assets/tls/server-private.key'),
     },
   ],
   insecureSkipTLSVerify: true,

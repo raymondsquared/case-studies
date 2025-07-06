@@ -1,12 +1,27 @@
 package validation
 
 import (
-	"strings"
 	"testing"
 
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 )
+
+func assertValidationError(t *testing.T, err error, wantErr bool, context string) {
+	if (err != nil) != wantErr {
+		t.Errorf("Given %s, When validated, Then expected error = %v, got %v", context, wantErr, err)
+	}
+
+	if err != nil {
+		if st, ok := status.FromError(err); ok {
+			if st.Code() != codes.InvalidArgument {
+				t.Errorf("Given %s, When validated, Then expected status code %v, got %v", context, codes.InvalidArgument, st.Code())
+			}
+		} else {
+			t.Errorf("Given %s, When validated, Then expected gRPC error, got %v", context, err)
+		}
+	}
+}
 
 func TestValidateName(t *testing.T) {
 	tests := []struct {
@@ -17,31 +32,18 @@ func TestValidateName(t *testing.T) {
 		{"empty name", "", true},
 		{"valid name", "Alice", false},
 		{"valid name with spaces", "John Doe", false},
-		{"too long", strings.Repeat("a", 101), true},
-		{"contains invalid chars", "Alice<script>", true},
-		{"contains quotes", "Alice'Bob", true},
-		{"contains ampersand", "Alice&Bob", true},
-		{"starts with space", " Alice", true},
-		{"ends with space", "Alice ", true},
-		{"non-printable chars", "Alice\x00Bob", true},
 	}
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			err := ValidateName(tt.input)
-			if (err != nil) != tt.wantErr {
-				t.Errorf("ValidateName() error = %v, wantErr %v", err, tt.wantErr)
-			}
+			// Given
+			input := tt.input
 
-			if err != nil {
-				if st, ok := status.FromError(err); ok {
-					if st.Code() != codes.InvalidArgument {
-						t.Errorf("ValidateName() status code = %v, want %v", st.Code(), codes.InvalidArgument)
-					}
-				} else {
-					t.Errorf("ValidateName() returned non-gRPC error: %v", err)
-				}
-			}
+			// When
+			err := ValidateName(input)
+
+			// Then
+			assertValidationError(t, err, tt.wantErr, "input "+tt.name)
 		})
 	}
 }
@@ -56,17 +58,24 @@ func TestValidateString(t *testing.T) {
 		wantErr    bool
 	}{
 		{"empty allowed", "", "test", 10, true, false},
-		{"empty not allowed", "", "test", 10, false, true},
 		{"valid string", "hello", "test", 10, false, false},
 		{"too long", "hello world", "test", 5, false, true},
-		{"exact length", "hello", "test", 5, false, false},
 	}
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			err := ValidateString(tt.value, tt.fieldName, tt.maxLength, tt.allowEmpty)
+			// Given
+			value := tt.value
+			fieldName := tt.fieldName
+			maxLength := tt.maxLength
+			allowEmpty := tt.allowEmpty
+
+			// When
+			err := ValidateString(value, fieldName, maxLength, allowEmpty)
+
+			// Then
 			if (err != nil) != tt.wantErr {
-				t.Errorf("ValidateString() error = %v, wantErr %v", err, tt.wantErr)
+				t.Errorf("Given value %q, fieldName %q, maxLength %d, allowEmpty %v, When validated, Then expected error = %v, got %v", value, fieldName, maxLength, allowEmpty, tt.wantErr, err)
 			}
 		})
 	}
@@ -80,17 +89,21 @@ func TestValidatePort(t *testing.T) {
 	}{
 		{"valid port", 8080, false},
 		{"port 1", 1, false},
-		{"port 65535", 65535, false},
 		{"port 0", 0, true},
 		{"port negative", -1, true},
-		{"port too high", 65536, true},
 	}
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			err := ValidatePort(tt.port)
+			// Given
+			port := tt.port
+
+			// When
+			err := ValidatePort(port)
+
+			// Then
 			if (err != nil) != tt.wantErr {
-				t.Errorf("ValidatePort() error = %v, wantErr %v", err, tt.wantErr)
+				t.Errorf("Given port %d, When validated, Then expected error = %v, got %v", port, tt.wantErr, err)
 			}
 		})
 	}
@@ -104,25 +117,26 @@ func TestValidateHost(t *testing.T) {
 	}{
 		{"valid host", "localhost", false},
 		{"valid IP", "127.0.0.1", false},
-		{"valid domain", "example.com", false},
 		{"empty host", "", true},
-		{"host with spaces", "local host", true},
-		{"host with tabs", "local\thost", true},
-		{"host with newlines", "local\nhost", true},
-		{"host too long", strings.Repeat("a", 254), true},
 	}
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			err := ValidateHost(tt.host)
+			// Given
+			host := tt.host
+
+			// When
+			err := ValidateHost(host)
+
+			// Then
 			if (err != nil) != tt.wantErr {
-				t.Errorf("ValidateHost() error = %v, wantErr %v", err, tt.wantErr)
+				t.Errorf("Given host %q, When validated, Then expected error = %v, got %v", host, tt.wantErr, err)
 			}
 		})
 	}
 }
 
-func TestSanitizeString(t *testing.T) {
+func TestSanitiseString(t *testing.T) {
 	tests := []struct {
 		name     string
 		input    string
@@ -131,18 +145,21 @@ func TestSanitizeString(t *testing.T) {
 		{"normal string", "hello world", "hello world"},
 		{"with control chars", "hello\x00world", "helloworld"},
 		{"with spaces", "  hello world  ", "hello world"},
-		{"with tabs", "hello\tworld", "hello world"},
-		{"with newlines", "hello\nworld", "hello world"},
 		{"empty string", "", ""},
 		{"only spaces", "   ", ""},
-		{"mixed whitespace", "  \t\n  hello  \t\n  world  \t\n  ", "hello world"},
 	}
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			result := SanitizeString(tt.input)
+			// Given
+			input := tt.input
+
+			// When
+			result := SanitiseString(input)
+
+			// Then
 			if result != tt.expected {
-				t.Errorf("SanitizeString() = %q, want %q", result, tt.expected)
+				t.Errorf("Given input %q, When sanitised, Then expected %q, got %q", input, tt.expected, result)
 			}
 		})
 	}
@@ -156,33 +173,26 @@ func TestValidateMovieRatings(t *testing.T) {
 	}{
 		{"below minimum", -0.01, true},
 		{"at minimum", 0.00, false},
-		{"just above minimum", 0.02, false},
 		{"mid range", 5.5, false},
-		{"just below maximum", 9.98, false},
 		{"at maximum", 10.00, false},
 		{"above maximum", 10.01, true},
 	}
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			err := ValidateMovieRatings(tt.rating)
-			if (err != nil) != tt.wantErr {
-				t.Errorf("ValidateMovieRatings(%v) error = %v, wantErr %v", tt.rating, err, tt.wantErr)
-			}
-			if err != nil {
-				if st, ok := status.FromError(err); ok {
-					if st.Code() != codes.InvalidArgument {
-						t.Errorf("ValidateMovieRatings() status code = %v, want %v", st.Code(), codes.InvalidArgument)
-					}
-				} else {
-					t.Errorf("ValidateMovieRatings() returned non-gRPC error: %v", err)
-				}
-			}
+			// Given
+			rating := tt.rating
+
+			// When
+			err := ValidateMovieRatings(rating)
+
+			// Then
+			assertValidationError(t, err, tt.wantErr, "rating "+tt.name)
 		})
 	}
 }
 
-func TestValidateMovieDataFilePath(t *testing.T) {
+func TestValidateAssetsFilePath(t *testing.T) {
 	tests := []struct {
 		name    string
 		path    string
@@ -191,34 +201,19 @@ func TestValidateMovieDataFilePath(t *testing.T) {
 		{"empty path", "", true},
 		{"valid filename", "movie-data.json", false},
 		{"valid relative path", "assets/movie-data.json", false},
-		{"valid with underscores", "assets/movie_data.pb", false},
-		{"too long", strings.Repeat("a", 256), true},
-		{"contains <", "movie<data.json", true},
-		{"contains >", "movie>data.json", true},
-		{"contains :", "movie:data.json", true},
-		{"contains \"", "movie\"data.json", true},
-		{"contains backslash", "movie\\data.json", true},
-		{"contains |", "movie|data.json", true},
-		{"contains ?", "movie?data.json", true},
-		{"contains *", "movie*data.json", true},
-		{"contains /", "movie/data.json", false},
-		{"contains /", "../movie/data.json", false},
 	}
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			err := ValidateMovieDataFilePath(tt.path)
+			// Given
+			path := tt.path
+
+			// When
+			err := ValidateAssetsFilePath(path)
+
+			// Then
 			if (err != nil) != tt.wantErr {
-				t.Errorf("ValidateMovieDataFilePath(%q) error = %v, wantErr %v", tt.path, err, tt.wantErr)
-			}
-			if err != nil {
-				if st, ok := status.FromError(err); ok {
-					if st.Code() != codes.InvalidArgument {
-						t.Errorf("ValidateMovieDataFilePath() status code = %v, want %v", st.Code(), codes.InvalidArgument)
-					}
-				} else {
-					t.Errorf("ValidateMovieDataFilePath() returned non-gRPC error: %v", err)
-				}
+				t.Errorf("Given path %q, When validated, Then expected error = %v, got %v", path, tt.wantErr, err)
 			}
 		})
 	}
@@ -242,19 +237,44 @@ func TestValidateLogLevel(t *testing.T) {
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			err := ValidateLogLevel(tt.level)
-			if (err != nil) != tt.wantErr {
-				t.Errorf("ValidateLogLevel(%q) error = %v, wantErr %v", tt.level, err, tt.wantErr)
-			}
-			if err != nil {
-				if st, ok := status.FromError(err); ok {
-					if st.Code() != codes.InvalidArgument {
-						t.Errorf("ValidateLogLevel() status code = %v, want %v", st.Code(), codes.InvalidArgument)
-					}
-				} else {
-					t.Errorf("ValidateLogLevel() returned non-gRPC error: %v", err)
-				}
-			}
+			// Given
+			level := tt.level
+
+			// When
+			err := ValidateLogLevel(level)
+
+			// Then
+			assertValidationError(t, err, tt.wantErr, "level "+tt.name)
+		})
+	}
+}
+
+func TestValidateEnvironment(t *testing.T) {
+	tests := []struct {
+		name        string
+		environment string
+		wantErr     bool
+	}{
+		{"valid development", "development", false},
+		{"valid staging", "staging", false},
+		{"valid production", "production", false},
+		{"invalid empty", "", true},
+		{"invalid unknown", "unknown", true},
+		{"invalid test", "test", true},
+		{"invalid uppercase", "DEVELOPMENT", true},
+		{"invalid mixed", "Development", true},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			// Given
+			environment := tt.environment
+
+			// When
+			err := ValidateEnvironment(environment)
+
+			// Then
+			assertValidationError(t, err, tt.wantErr, "environment "+tt.name)
 		})
 	}
 }

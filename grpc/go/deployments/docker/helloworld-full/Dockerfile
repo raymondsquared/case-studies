@@ -9,10 +9,10 @@ COPY . .
 # RUN pwd
 # RUN ls -al
 
-RUN cd scripts && make dependencies
+RUN make dependencies
 
-RUN cd scripts && make build-linux-server
-RUN cd scripts && make build-linux-client
+RUN make build-linux-server
+RUN make build-linux-client
 
 RUN wget https://github.com/fullstorydev/grpcurl/releases/download/v1.9.3/grpcurl_1.9.3_linux_x86_64.tar.gz
 RUN tar -zxvf grpcurl_1.9.3_linux_x86_64.tar.gz
@@ -34,10 +34,19 @@ WORKDIR /app
 
 RUN chown appuser:appgroup /app
 
-COPY --from=builder --chown=appuser:appgroup /app/bin/grpc-greeter-server .
-COPY --from=builder --chown=appuser:appgroup /app/bin/grpc-greeter-client .
+COPY --from=builder --chown=appuser:appgroup /app/assets/api-config.yaml ./assets/
+COPY --from=builder --chown=appuser:appgroup /app/assets/tls/ca-public.key ./assets/tls/
+COPY --from=builder --chown=appuser:appgroup /app/assets/tls/server-public.key ./assets/tls/
+COPY --from=builder --chown=appuser:appgroup /app/assets/tls/server-private.key ./assets/tls/
+COPY --from=builder --chown=appuser:appgroup /app/assets/tls/client-public.key ./assets/tls/
+COPY --from=builder --chown=appuser:appgroup /app/assets/tls/client-private.key ./assets/tls/
+COPY --from=builder --chown=appuser:appgroup /app/assets/movie-data.json ./assets/
+
+COPY --from=builder --chown=appuser:appgroup /app/bin/grpc-helloworld-server .
+COPY --from=builder --chown=appuser:appgroup /app/bin/grpc-helloworld-client .
 COPY --from=builder --chown=appuser:appgroup /app/bin/grpc-movie-server .
 COPY --from=builder --chown=appuser:appgroup /app/bin/grpc-movie-client .
+COPY --from=builder --chown=appuser:appgroup /app/bin/grpc-movie-stream-client .
 COPY --from=builder --chown=appuser:appgroup /app/grpcurl .
 COPY --from=builder --chown=appuser:appgroup /app/grpcui .
 COPY --from=builder --chown=appuser:appgroup /app/deployments/docker/helloworld-full/start.sh .

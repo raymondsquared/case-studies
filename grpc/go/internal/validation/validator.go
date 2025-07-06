@@ -84,9 +84,9 @@ func ValidateHost(host string) error {
 	return nil
 }
 
-// SanitizeString removes potentially dangerous characters from a string
-func SanitizeString(input string) string {
-	// Normalize all unicode whitespace to a single space, remove non-printable non-whitespace
+// SanitiseString removes potentially dangerous characters from a string
+func SanitiseString(input string) string {
+	// Normalise all unicode whitespace to a single space, remove non-printable non-whitespace
 	var result strings.Builder
 	prevSpace := false
 
@@ -114,7 +114,7 @@ func ValidateMovieRatings(rating float32) error {
 	return nil
 }
 
-func ValidateMovieDataFilePath(path string) error {
+func ValidateAssetsFilePath(path string) error {
 	if path == "" {
 		return status.Errorf(codes.InvalidArgument, "file path cannot be empty")
 	}
@@ -137,5 +137,14 @@ func ValidateLogLevel(level string) error {
 		return nil
 	default:
 		return status.Errorf(codes.InvalidArgument, "log level must be one of: debug, info, warn, error")
+	}
+}
+
+func ValidateEnvironment(environment string) error {
+	switch environment {
+	case "development", "staging", "production":
+		return nil
+	default:
+		return status.Errorf(codes.InvalidArgument, "environment must be one of: development, staging, production")
 	}
 }

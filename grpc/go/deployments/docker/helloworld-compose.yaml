@@ -2,15 +2,16 @@ services:
   grpc-greeter-server:
     image: raymondsquared/grpc-helloworld-server:${CONTAINER_IMAGE_VERSION}
     ports:
-      - "50051:50051"
+      - '50051:50051'
     environment:
-      SERVER_PORT: "50051"
+      ENVIRONMENT: 'development'
+      SERVER_PORT: '50051'
     deploy:
       resources:
         limits:
           memory: 1G
     healthcheck:
-      test: ["CMD", "./grpc_health_probe", "-addr", "0.0.0.0:50051"]
+      test: ['CMD', './grpc_health_probe', '-addr', '0.0.0.0:50051']
       interval: 5s
       timeout: 3s
       retries: 3
@@ -18,9 +19,10 @@ services:
   grpc-greeter-client:
     image: raymondsquared/grpc-helloworld-client:${CONTAINER_IMAGE_VERSION}
     environment:
+      ENVIRONMENT: 'development'
       # SERVER_HOST: "host.docker.internal"
-      SERVER_HOST: "grpc-greeter-server"
-      SERVER_PORT: "50051"
+      SERVER_HOST: 'grpc-greeter-server'
+      SERVER_PORT: '50051'
     deploy:
       resources:
         limits:
@@ -34,14 +36,14 @@ services:
   grpc-greeter-full:
     image: raymondsquared/grpc-helloworld-full:${CONTAINER_IMAGE_VERSION}
     ports:
-      - "0.0.0.0:50052:50052"
+      - '0.0.0.0:50052:50052'
     environment:
+      ENVIRONMENT: 'development'
       # SERVER_HOST: "host.docker.internal"
-      SERVER_HOST: "grpc-greeter-server"
-      SERVER_PORT: "50051"
-      UI_HOST: "0.0.0.0"
-      UI_PORT: "50052"
-      MOVIE_DATA_FILE_PATH: "./"
+      SERVER_HOST: 'grpc-greeter-server'
+      SERVER_PORT: '50051'
+      UI_HOST: '0.0.0.0'
+      UI_PORT: '50052'
     deploy:
       resources:
         limits:

@@ -9,9 +9,9 @@ COPY . .
 # RUN pwd
 # RUN ls -al
 
-RUN cd scripts && make dependencies
+RUN make dependencies
 
-RUN cd scripts && make build-linux-server
+RUN make build-linux-server
 
 RUN GRPC_HEALTH_PROBE_VERSION=v0.4.13 && \
     wget -qO/bin/grpc_health_probe https://github.com/grpc-ecosystem/grpc-health-probe/releases/download/${GRPC_HEALTH_PROBE_VERSION}/grpc_health_probe-linux-amd64 && \
@@ -28,10 +28,15 @@ WORKDIR /app
 
 RUN chown appuser:appgroup /app
 
+COPY --from=builder --chown=appuser:appgroup /app/assets/api-config.yaml ./assets/
+COPY --from=builder --chown=appuser:appgroup /app/assets/tls/ca-public.key ./assets/tls/
+COPY --from=builder --chown=appuser:appgroup /app/assets/tls/server-public.key ./assets/tls/
+COPY --from=builder --chown=appuser:appgroup /app/assets/tls/server-private.key ./assets/tls/
+COPY --from=builder --chown=appuser:appgroup /app/assets/movie-data.json ./assets/
+
 COPY --from=builder --chown=appuser:appgroup /app/bin/grpc-movie-server .
 COPY --from=builder --chown=appuser:appgroup /app/deployments/docker/movie-server/start.sh .
 COPY --from=builder --chown=appuser:appgroup /bin/grpc_health_probe .
-COPY --from=builder --chown=appuser:appgroup /app/assets/movie-data.json .
 
 USER appuser
 

@@ -449,50 +449,6 @@ func (x *CrewMember) GetRole() string {
 	return ""
 }
 
-type MovieProtoResponse struct {
-	state         protoimpl.MessageState `protogen:"open.v1"`
-	ProtoContent  string                 `protobuf:"bytes,1,opt,name=proto_content,json=protoContent,proto3" json:"proto_content,omitempty"`
-	unknownFields protoimpl.UnknownFields
-	sizeCache     protoimpl.SizeCache
-}
-
-func (x *MovieProtoResponse) Reset() {
-	*x = MovieProtoResponse{}
-	mi := &file_movie_messages_proto_msgTypes[7]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
-
-func (x *MovieProtoResponse) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
-
-func (*MovieProtoResponse) ProtoMessage() {}
-
-func (x *MovieProtoResponse) ProtoReflect() protoreflect.Message {
-	mi := &file_movie_messages_proto_msgTypes[7]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
-}
-
-// Deprecated: Use MovieProtoResponse.ProtoReflect.Descriptor instead.
-func (*MovieProtoResponse) Descriptor() ([]byte, []int) {
-	return file_movie_messages_proto_rawDescGZIP(), []int{7}
-}
-
-func (x *MovieProtoResponse) GetProtoContent() string {
-	if x != nil {
-		return x.ProtoContent
-	}
-	return ""
-}
-
 var File_movie_messages_proto protoreflect.FileDescriptor
 
 const file_movie_messages_proto_rawDesc = "" +
@@ -531,9 +487,7 @@ const file_movie_messages_proto_rawDesc = "" +
 	"\n" +
 	"CrewMember\x12\x12\n" +
 	"\x04name\x18\x01 \x01(\tR\x04name\x12\x12\n" +
-	"\x04role\x18\x02 \x01(\tR\x04role\"9\n" +
-	"\x12MovieProtoResponse\x12#\n" +
-	"\rproto_content\x18\x01 \x01(\tR\fprotoContentB\x1dZ\x1bcase-studies/grpc/cmd/movieb\x06proto3"
+	"\x04role\x18\x02 \x01(\tR\x04roleB\x1dZ\x1bcase-studies/grpc/cmd/movieb\x06proto3"
 
 var (
 	file_movie_messages_proto_rawDescOnce sync.Once
@@ -547,16 +501,15 @@ func file_movie_messages_proto_rawDescGZIP() []byte {
 	return file_movie_messages_proto_rawDescData
 }
 
-var file_movie_messages_proto_msgTypes = make([]protoimpl.MessageInfo, 8)
+var file_movie_messages_proto_msgTypes = make([]protoimpl.MessageInfo, 7)
 var file_movie_messages_proto_goTypes = []any{
-	(*GetMovieInput)(nil),      // 0: movie.GetMovieInput
-	(*GetMovieOutput)(nil),     // 1: movie.GetMovieOutput
-	(*Movie)(nil),              // 2: movie.Movie
-	(*Director)(nil),           // 3: movie.Director
-	(*Producer)(nil),           // 4: movie.Producer
-	(*CastMember)(nil),         // 5: movie.CastMember
-	(*CrewMember)(nil),         // 6: movie.CrewMember
-	(*MovieProtoResponse)(nil), // 7: movie.MovieProtoResponse
+	(*GetMovieInput)(nil),  // 0: movie.GetMovieInput
+	(*GetMovieOutput)(nil), // 1: movie.GetMovieOutput
+	(*Movie)(nil),          // 2: movie.Movie
+	(*Director)(nil),       // 3: movie.Director
+	(*Producer)(nil),       // 4: movie.Producer
+	(*CastMember)(nil),     // 5: movie.CastMember
+	(*CrewMember)(nil),     // 6: movie.CrewMember
 }
 var file_movie_messages_proto_depIdxs = []int32{
 	2, // 0: movie.GetMovieOutput.movie:type_name -> movie.Movie
@@ -582,7 +535,7 @@ func file_movie_messages_proto_init() {
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
 			RawDescriptor: unsafe.Slice(unsafe.StringData(file_movie_messages_proto_rawDesc), len(file_movie_messages_proto_rawDesc)),
 			NumEnums:      0,
-			NumMessages:   8,
+			NumMessages:   7,
 			NumExtensions: 0,
 			NumServices:   0,
 		},

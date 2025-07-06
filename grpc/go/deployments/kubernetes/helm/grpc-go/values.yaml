@@ -5,12 +5,12 @@ serviceAccount:
 
 serverImage:
   repository: raymondsquared/grpc-helloworld-server
-  tag: "0.0.2-20250701local"
+  tag: "0.0.2-20250706local"
   pullPolicy: "Always"
 
 clientImage:
   repository: raymondsquared/grpc-helloworld-client
-  tag: "0.0.2-20250701local"
+  tag: "0.0.2-20250706local"
   pullPolicy: "Always"
 
 replicaCount: 1
@@ -46,3 +46,4 @@ service:
 
 app:
   serverPort: 500051
+  environment: development

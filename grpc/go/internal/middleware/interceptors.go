@@ -2,8 +2,10 @@ package middleware
 
 import (
 	"context"
-	"log/slog"
+	"fmt"
 	"time"
+
+	"case-studies/grpc/internal/observability"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
@@ -12,7 +14,7 @@ import (
 )
 
 // LoggingInterceptor provides structured logging for gRPC requests
-func LoggingInterceptor(logger *slog.Logger) grpc.UnaryServerInterceptor {
+func LoggingInterceptor() grpc.UnaryServerInterceptor {
 	return func(ctx context.Context, req interface{}, info *grpc.UnaryServerInfo, handler grpc.UnaryHandler) (interface{}, error) {
 		start := time.Now()
 
@@ -27,10 +29,11 @@ func LoggingInterceptor(logger *slog.Logger) grpc.UnaryServerInterceptor {
 			peer = p[0]
 		}
 
-		logger.Debug("gRPC request started",
-			"method", info.FullMethod,
-			"user_agent", userAgent,
-			"peer", peer)
+		observability.LogInfrastructureInput("gRPC request started", map[string]interface{}{
+			"method":     info.FullMethod,
+			"user_agent": userAgent,
+			"peer":       peer,
+		})
 
 		resp, err := handler(ctx, req)
 
@@ -44,11 +47,12 @@ func LoggingInterceptor(logger *slog.Logger) grpc.UnaryServerInterceptor {
 			}
 		}
 
-		logger.Debug("gRPC request completed",
-			"method", info.FullMethod,
-			"duration", duration,
-			"status_code", code.String(),
-			"error", err)
+		observability.LogInfrastructureOutput("gRPC request completed", map[string]interface{}{
+			"method":      info.FullMethod,
+			"duration":    duration,
+			"status_code": code.String(),
+			"error":       err,
+		})
 
 		return resp, err
 	}
@@ -60,9 +64,9 @@ func ErrorInterceptor() grpc.UnaryServerInterceptor {
 		resp, err := handler(ctx, req)
 
 		if err != nil {
-			slog.Error("gRPC error occurred",
-				"method", info.FullMethod,
-				"error", err)
+			observability.LogInfrastructureError("gRPC error occurred", err, map[string]interface{}{
+				"method": info.FullMethod,
+			})
 
 			if _, ok := status.FromError(err); !ok {
 				err = status.Errorf(codes.Internal, "internal server error: %v", err)
@@ -74,13 +78,14 @@ func ErrorInterceptor() grpc.UnaryServerInterceptor {
 }
 
 // RecoveryInterceptor provides panic recovery
-func RecoveryInterceptor(logger *slog.Logger) grpc.UnaryServerInterceptor {
+func RecoveryInterceptor() grpc.UnaryServerInterceptor {
 	return func(ctx context.Context, req interface{}, info *grpc.UnaryServerInfo, handler grpc.UnaryHandler) (resp interface{}, err error) {
 		defer func() {
 			if r := recover(); r != nil {
-				logger.Error("panic recovered in gRPC handler",
-					"method", info.FullMethod,
-					"panic", r)
+				observability.LogInfrastructureError("panic recovered in gRPC handler", fmt.Errorf("panic: %v", r), map[string]interface{}{
+					"method": info.FullMethod,
+					"panic":  r,
+				})
 				err = status.Errorf(codes.Internal, "internal server error")
 			}
 		}()
@@ -90,12 +95,13 @@ func RecoveryInterceptor(logger *slog.Logger) grpc.UnaryServerInterceptor {
 }
 
 // ClientLoggingInterceptor provides logging for client requests
-func ClientLoggingInterceptor(logger *slog.Logger) grpc.UnaryClientInterceptor {
+func ClientLoggingInterceptor() grpc.UnaryClientInterceptor {
 	return func(ctx context.Context, method string, req, reply interface{}, cc *grpc.ClientConn, invoker grpc.UnaryInvoker, opts ...grpc.CallOption) error {
 		start := time.Now()
 
-		logger.Debug("gRPC client request started",
-			"method", method)
+		observability.LogInfrastructureInput("gRPC client request started", map[string]interface{}{
+			"method": method,
+		})
 
 		err := invoker(ctx, method, req, reply, cc, opts...)
 
@@ -109,11 +115,12 @@ func ClientLoggingInterceptor(logger *slog.Logger) grpc.UnaryClientInterceptor {
 			}
 		}
 
-		logger.Debug("gRPC client request completed",
-			"method", method,
-			"duration", duration,
-			"status_code", code.String(),
-			"error", err)
+		observability.LogInfrastructureOutput("gRPC client request completed", map[string]interface{}{
+			"method":      method,
+			"duration":    duration,
+			"status_code": code.String(),
+			"error":       err,
+		})
 
 		return err
 	}

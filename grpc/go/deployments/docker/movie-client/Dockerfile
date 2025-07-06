@@ -9,9 +9,9 @@ COPY . .
 # RUN pwd
 # RUN ls -al
 
-RUN cd scripts && make dependencies
+RUN make dependencies
 
-RUN cd scripts && make build-linux-client
+RUN make build-linux-client
 
 # --- FINAL STAGE ---
 # Use a minimal base image for the final runtime.
@@ -23,6 +23,10 @@ RUN addgroup -g 1000 appgroup && adduser -u 1000 -D -G appgroup -S appuser
 WORKDIR /app
 
 RUN chown appuser:appgroup /app
+
+COPY --from=builder --chown=appuser:appgroup /app/assets/tls/ca-public.key ./assets/tls/
+COPY --from=builder --chown=appuser:appgroup /app/assets/tls/client-public.key ./assets/tls/
+COPY --from=builder --chown=appuser:appgroup /app/assets/tls/client-private.key ./assets/tls/
 
 COPY --from=builder --chown=appuser:appgroup /app/bin/grpc-movie-client .
 COPY --from=builder --chown=appuser:appgroup /app/deployments/docker/movie-client/start.sh .

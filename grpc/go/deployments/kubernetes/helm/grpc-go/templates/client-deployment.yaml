@@ -43,12 +43,12 @@ spec:
           image: "{{ .Values.clientImage.repository }}:{{ .Values.clientImage.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.clientImage.pullPolicy }}
           env:
+            - name: ENVIRONMENT
+              value: {{ .Values.app.environment }}
             - name: SERVER_HOST
               value: {{ include "grpc-go.fullname" . }}-service
             - name: SERVER_PORT
               value: {{ .Values.serverPort }}
-            - name: MOVIE_DATA_FILE_PATH
-              value: "./"
           {{- with .Values.livenessProbe }}
           livenessProbe:
             {{- toYaml . | nindent 12 }}
