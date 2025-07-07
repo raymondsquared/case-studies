@@ -34,6 +34,10 @@ case-studies/
 │   └── go/                         # Programming language or framework
 │       └── README.md
 │
+├── kubernetes/                     # Case study #2 - Kubernetes
+│   └── terraform/                  # Programming language or framework
+│       └── README.md
+│
 ├── scripts/                        # Utility Scripts
 │
 └── README.md                       # Main documentation
@@ -43,6 +47,7 @@ case-studies/
 
 - Makefile
 - Docker
+- Kubernetes
 
 ## Setup & Installation
 
@@ -73,19 +78,21 @@ Example:
 
 ## Status & Roadmap
 
-| Items                      | Status    | Version |
-| -------------------------- | --------- | ------- |
-| [gRPC](grpc/)              | COMPLETED | 0.0.2   |
-| REST API                   | TO DO     |         |
-| GraphQL API                | TO DO     |         |
-| Domain Driven Design       | TO DO     |         |
-| Concurrency vs Parallelism | TO DO     |         |
-| Actor Based                | TO DO     |         |
-| Kubernetes                 | TO DO     |         |
-| Integration                | TO DO     |         |
-| Kafka                      | TO DO     |         |
-| Data Platform              | TO DO     |         |
-| AI                         | TO DO     |         |
+| Items                                                      | Status      | Version |
+| ---------------------------------------------------------- | ----------- | ------- |
+| [gRPC](grpc/)                                              | COMPLETED   | 0.0.2   |
+| REST API                                                   | TO DO       |         |
+| GraphQL API                                                | TO DO       |         |
+| Domain Driven Design                                       | TO DO       |         |
+| Concurrency vs Parallelism                                 | TO DO       |         |
+| Actor Based                                                | TO DO       |         |
+| Design Pattern                                             | TO DO       |         |
+| [Kubernetes](kubernetes/)                                  | IN PROGRESS | 0.0.3   |
+| Integration                                                | TO DO       |         |
+| Kafka                                                      | TO DO       |         |
+| Data Platform                                              | TO DO       |         |
+| AI                                                         | TO DO       |         |
+| Compliance (GDPR, HIPPA ISO27001, PCI DSS, NIST,and SOC 2) | TO DO       |         |
 
 ## Inspiration
 
