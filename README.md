@@ -78,19 +78,21 @@ Example:
 
 ## Status & Roadmap
 
-| Items                      | Status       | Version |
-| -------------------------- | ------------ | ------- |
-| [gRPC](grpc/)              | COMPLETED    | 0.0.2   |
-| REST API                   | TO DO        |         |
-| GraphQL API                | TO DO        |         |
-| Domain Driven Design       | TO DO        |         |
-| Concurrency vs Parallelism | TO DO        |         |
-| Actor Based                | TO DO        |         |
-| [Kubernetes](kubernetes/)  | IN PROGRESS  | 0.0.3   |
-| Integration                | TO DO        |         |
-| Kafka                      | TO DO        |         |
-| Data Platform              | TO DO        |         |
-| AI                         | TO DO        |         |
+| Items                                                         | Status       | Version |
+| ------------------------------------------------------------- | ------------ | ------- |
+| [gRPC](grpc/)                                                 | COMPLETED    | 0.0.2   |
+| REST API                                                      | TO DO        |         |
+| GraphQL API                                                   | TO DO        |         |
+| Domain Driven Design                                          | TO DO        |         |
+| Concurrency vs Parallelism                                    | TO DO        |         |
+| Actor Based                                                   | TO DO        |         |
+| [Kubernetes](kubernetes/)                                     | IN PROGRESS  | 0.0.3   |
+| Integration                                                   | TO DO        |         |
+| Kafka                                                         | TO DO        |         |
+| Data Platform                                                 | TO DO        |         |
+| AI                                                            | TO DO        |         |
+| Compliance (ISO27001, PCIDSS, NIST, SOC, HIPAA, GDPR, etc)    | TO DO        |         |
+
 
 ## Inspiration
 

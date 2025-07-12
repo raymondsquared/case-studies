@@ -1,0 +1,92 @@
+{
+  "name": "terraform",
+  "version": "1.0.0",
+  "description": "Production-grade Terraform CDK infrastructure with security, compliance, and monitoring",
+  "main": "main.js",
+  "types": "main.ts",
+  "license": "MPL-2.0",
+  "private": true,
+  "scripts": {
+    "get": "cdktf get",
+    "build": "tsc",
+    "synth": "cdktf synth",
+    "compile": "tsc --pretty",
+    "watch": "tsc -w",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:unit": "jest --testPathPatterns=unit",
+    "test:integration": "jest --testPathPatterns=integration",
+    "test:e2e": "jest --testPathPatterns=e2e",
+    "test:smoke": "jest --testPathPatterns=smoke",
+    "test:coverage": "jest --coverage",
+    "test:security": "jest --testPathPatterns=security-tests",
+    "test:constructs": "jest --testPathPatterns=construct-unit-tests",
+    "test:validation": "jest --testPathPatterns=infrastructure-validation-tests",
+    "test:all": "jest",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "format": "prettier --write src/**/*.ts",
+    "format:check": "prettier --check src/**/*.ts",
+    "type-check": "tsc --noEmit",
+    "security-scan": "make security-scan",
+    "cost-analysis": "make cost-analysis",
+    "health-check": "node scripts/health-check.js",
+    "performance-check": "node scripts/performance-check.js",
+    "validate": "make validate",
+    "plan": "make plan",
+    "deploy": "make deploy",
+    "destroy": "make destroy",
+    "clean": "make clean",
+    "setup": "make setup",
+    "development": "make development",
+    "staging": "make staging",
+    "production": "make production",
+    "pre-commit": "make pre-commit",
+    "upgrade": "npm i cdktf@latest cdktf-cli@latest",
+    "upgrade:next": "npm i cdktf@next cdktf-cli@next",
+    "docs": "typedoc src/**/*.ts --out docs/api",
+    "docs:serve": "typedoc src/**/*.ts --out docs/api --serve"
+  },
+  "engines": {
+    "node": ">=20.9"
+  },
+  "dependencies": {
+    "@cdktf/provider-aws": "^21.0.0",
+    "cdktf": "^0.21.0",
+    "constructs": "^10.4.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.0.10",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "jest": "^30.0.4",
+    "prettier": "^3.0.0",
+    "ts-jest": "^29.4.0",
+    "ts-node": "^10.9.2",
+    "typedoc": "^0.28.0",
+    "typescript": "^5.8.3"
+  },
+  "keywords": [
+    "terraform",
+    "cdktf",
+    "aws",
+    "infrastructure",
+    "production",
+    "security",
+    "compliance",
+    "monitoring"
+  ],
+  "author": "Raymond Boles",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/case-studies.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-org/case-studies/issues"
+  },
+  "homepage": "https://github.com/your-org/case-studies#readme"
+}
