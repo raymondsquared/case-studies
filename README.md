@@ -20,6 +20,7 @@ This repository showcases a curated collection of unique case studies from past 
 | Case Study    | Status                                                                                                                                                                                          |
 | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [gRPC](grpc/) | [![gRPC Go - CI](https://github.com/raymondsquared/case-studies/actions/workflows/grpc-go-ci.yaml/badge.svg)](https://github.com/raymondsquared/case-studies/actions/workflows/grpc-go-ci.yaml) |
+| [gRPC](kubernetes/) | [![Kubernetes Terraform - CI](https://github.com/raymondsquared/case-studies/actions/workflows/kubernetes-terraform-ci.yaml/badge.svg)](https://github.com/raymondsquared/case-studies/actions/workflows/kubernetes-terraform-ci.yaml) |
 
 ---
 
