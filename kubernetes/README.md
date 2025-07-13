@@ -59,6 +59,10 @@ kubernetes/
 - [3musketeers](https://3musketeers.io/)
 - [Kubernetes](https://kubernetes.io/)
 - [Terraform](https://developer.hashicorp.com/terraform/)
+- [NestJS](https://awesome-nestjs.com/resources/examples.html)
+- [NodeJS](https://nodejs.org/en)
+- [NVM](https://github.com/nvm-sh/nvm)
+
 
 ## Contact
 
