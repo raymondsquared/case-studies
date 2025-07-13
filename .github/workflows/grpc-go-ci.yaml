@@ -1,6 +1,7 @@
 name: gRPC Go - CI
 
 on:
+  workflow_dispatch:
   push:
     paths:
       - grpc/go/**

@@ -1,0 +1,81 @@
+name: Kubernetes Terraform - CI
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - kubernetes/terraform/**
+    branches:
+      - 'main'
+      - 'feature/*'
+
+env:
+  ENVIRONMENT: 'development'
+  REGION: 'AUSTRALIA_EAST'
+  VENDOR: 'AWS'
+  NODE_VERSION: '22'
+  TERRAFORM_VERSION: 'v1.12.2'
+  TERRAFORM_HOSTNAME: 'app.terraform.io'
+  TERRAFORM_ORGANISATION: ${{ secrets.TERRAFORM_ORGANISATION }}
+  TERRAFORM_WORKSPACE: 'case-studies-kubernetes'
+  CDKTF_VERSION: '0.21.0'
+  AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+          cache-dependency-path: ./kubernetes/terraform/package-lock.json
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: ${{ env.TERRAFORM_VERSION }}
+
+      - name: Install runner dependencies
+        run: npm install --global cdktf-cli@${{ env.CDKTF_VERSION }}
+
+      - name: Install app dependencies
+        run: cd kubernetes/terraform && make dependencies
+
+      - name: lint
+        run: cd kubernetes/terraform && make lint
+
+  test:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+          cache-dependency-path: ./kubernetes/terraform/package-lock.json
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: ${{ env.TERRAFORM_VERSION }}
+
+      - name: Install runner dependencies
+        run: npm install --global cdktf-cli@${{ env.CDKTF_VERSION }}
+
+      - name: Install app dependencies
+        run: cd kubernetes/terraform && make dependencies
+
+      - name: test
+        run: cd kubernetes/terraform && make test
+
+      - name: validate
+        run: cd kubernetes/terraform && make validate
+        env:
+          TERRAFORM_WORKSPACE: ${{ env.TERRAFORM_WORKSPACE }}-${{ env.ENVIRONMENT }}
+          AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }}
