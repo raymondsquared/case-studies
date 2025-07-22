@@ -1,13 +1,16 @@
 import { Region, Environment, Vendor } from '../common/enums';
 import {
   DEFAULT_TERRAFORM_HOSTNAME,
+  DEFAULT_EKS_VERSION,
+  DEFAULT_EKS_CORE_ADD_ONS,
+  DEFAULT_EKS_CONTROL_PLANE_LOG_TYPES,
   DEFAULT_VPC_CIDR_BLOCK,
 } from '../common/constants';
 import { Tags } from '../../utils/tagging/types';
-import { Config, MainConfig, TerraformConfig, CloudConfig } from './types';
+import { Config, MainConfig, TerraformConfig, CloudConfig, KubernetesConfig } from './types';
 
 export class ConfigBuilder {
-  private config: Partial<MainConfig & TerraformConfig & CloudConfig> = {};
+  private config: Partial<MainConfig & TerraformConfig & CloudConfig & KubernetesConfig> = {};
 
   withEnvironment(environment: Environment): ConfigBuilder {
     this.config.environment = environment;
@@ -71,6 +74,26 @@ export class ConfigBuilder {
     return this;
   }
 
+  withEksVersion(eksVersion: string): ConfigBuilder {
+    this.config.eksVersion = eksVersion;
+    return this;
+  }
+
+  withEksEndpointPublicAccess(eksEndpointPublicAccess: boolean): ConfigBuilder {
+    this.config.eksEndpointPublicAccess = eksEndpointPublicAccess;
+    return this;
+  }
+
+  withEksControlPlaneLogTypes(eksControlPlaneLogTypes: string[]): ConfigBuilder {
+    this.config.eksControlPlaneLogTypes = eksControlPlaneLogTypes;
+    return this;
+  }
+
+  withEksAddOns(eksAddOns: string[]): ConfigBuilder {
+    this.config.eksAddOns = eksAddOns;
+    return this;
+  }
+
   build(): Config {
     if (!this.config.terraformWorkspace || !this.config.terraformOrganisation) {
       throw new Error('Terraform workspace and organisation are required');
@@ -93,6 +116,11 @@ export class ConfigBuilder {
       privateSubnetCIDRBlocks: this.config.privateSubnetCIDRBlocks,
       ...(this.config.tags ? { tags: this.config.tags } : {}),
       ...(this.config.awsConfig ? { awsConfig: this.config.awsConfig } : {}),
+      eksVersion: this.config.eksVersion || DEFAULT_EKS_VERSION,
+      eksEndpointPublicAccess: this.config.eksEndpointPublicAccess ?? false,
+      eksControlPlaneLogTypes:
+        this.config.eksControlPlaneLogTypes || DEFAULT_EKS_CONTROL_PLANE_LOG_TYPES,
+      eksAddOns: this.config.eksAddOns || DEFAULT_EKS_CORE_ADD_ONS,
     } as Config;
   }
 }

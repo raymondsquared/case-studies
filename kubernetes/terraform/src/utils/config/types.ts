@@ -31,4 +31,11 @@ export interface CloudConfig {
   awsConfig?: AwsConfig;
 }
 
-export interface Config extends MainConfig, TerraformConfig, CloudConfig {}
+export interface KubernetesConfig {
+  eksVersion?: string;
+  eksEndpointPublicAccess?: boolean;
+  eksControlPlaneLogTypes?: string[];
+  eksAddOns?: string[];
+}
+
+export interface Config extends MainConfig, TerraformConfig, CloudConfig, KubernetesConfig {}

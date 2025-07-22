@@ -1,5 +1,5 @@
 import { App, TerraformStack } from 'cdktf';
-import { AwsProvider } from '../../../../.gen/providers/aws/provider';
+import { AwsProvider } from '@cdktf/provider-aws/lib/provider';
 import { Kms, KmsProps } from '../security/kms';
 import { Environment, Region, Vendor } from '../../../utils/common/enums';
 import { Config } from '../../../utils/config';
@@ -116,7 +116,9 @@ describe('Kms', () => {
         const expectedAlias: string = `alias/${'testkms'}-${'dev'}-kmskey`;
         const synthesised = parseSynthesizedStack(stack);
         const aliasResources = synthesised.resource?.aws_kms_alias || {};
-        const aliasName: string | undefined = (Object.values(aliasResources)[0] as TerraformSynthKmsAlias)?.name;
+        const aliasName: string | undefined = (
+          Object.values(aliasResources)[0] as TerraformSynthKmsAlias
+        )?.name;
         expect(aliasName).toBe(expectedAlias);
       });
     });
@@ -125,7 +127,9 @@ describe('Kms', () => {
   describe('Given a configuration with custom options', () => {
     describe('When creating a KMS key with custom description', () => {
       it('Then it should create KMS key with custom description', (): void => {
-        const stack: TestStack = createTestStack(app, config, { description: 'Custom KMS key for testing' });
+        const stack: TestStack = createTestStack(app, config, {
+          description: 'Custom KMS key for testing',
+        });
         expect(() => assertStackSynthesis(stack)).not.toThrow();
         expect(stack.kms.kmsKey).toBeDefined();
       });
@@ -146,7 +150,9 @@ describe('Kms', () => {
         const stack: TestStack = createTestStack(app, config, { aliasName: testKeyAlias });
         const synthesised = parseSynthesizedStack(stack);
         const aliasResources = synthesised.resource?.aws_kms_alias || {};
-        const aliasName: string | undefined = (Object.values(aliasResources)[0] as TerraformSynthKmsAlias)?.name;
+        const aliasName: string | undefined = (
+          Object.values(aliasResources)[0] as TerraformSynthKmsAlias
+        )?.name;
         expect(aliasName).toBe(`alias/${testKeyAlias}`);
       });
     });
