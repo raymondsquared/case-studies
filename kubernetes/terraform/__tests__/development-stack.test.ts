@@ -179,4 +179,28 @@ describe('DevelopmentStack', () => {
       });
     });
   });
+
+  describe('Given a development stack with IAM and Kubernetes resources', () => {
+    describe('When synthesising', () => {
+      it('Then it should create IAM and EKS resources with expected properties', () => {
+        const app = new App();
+        const stack = new DevelopmentStack(app, 'test-dev-stack', {
+          config,
+        });
+
+        expect(() => {
+          Testing.fullSynth(stack);
+        }).not.toThrow();
+
+        expect(stack.controlPlaneIamRole).toBeDefined();
+        expect(stack.controlPlaneIamRole.arn).toBeDefined();
+        expect(stack.controlPlaneIamRole.name).toBeDefined();
+
+        expect(stack.eks).toBeDefined();
+        expect(stack.eks.name).toBeDefined();
+        expect(stack.eks.arn).toBeDefined();
+        expect(stack.eks.endpoint).toBeDefined();
+      });
+    });
+  });
 });

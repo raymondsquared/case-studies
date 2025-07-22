@@ -10,6 +10,9 @@ import {
 } from './src/utils/common';
 import { Environment, Region, Vendor } from './src/utils/common/enums';
 import {
+  DEFAULT_EKS_CONTROL_PLANE_LOG_TYPES,
+  DEFAULT_EKS_CORE_ADD_ONS,
+  DEFAULT_EKS_VERSION,
   DEFAULT_SERVICE_NAME,
   DEFAULT_VPC_CIDR_BLOCK,
   DEFAULT_VPC_PRIVATE_SUBNET_CIDR_BLOCK,
@@ -30,6 +33,7 @@ function main() {
     const serviceName = DEFAULT_SERVICE_NAME;
     const serviceNameAndEnvironment = `${serviceName}-${environment}`;
     const serviceResourceType = 'stack';
+    const eksVersion = process.env.EKS_VERSION || DEFAULT_EKS_VERSION;
 
     // Environment-specific configuration
     switch (environment) {
@@ -37,7 +41,8 @@ function main() {
         StackClass = DevelopmentStack;
         configBuilder = configBuilder
           .withEnvironment(Environment.DEVELOPMENT)
-          .withPublicSubnetCidrBlocks(DEFAULT_VPC_PUBLIC_SUBNET_CIDR_BLOCK);
+          .withPublicSubnetCidrBlocks(DEFAULT_VPC_PUBLIC_SUBNET_CIDR_BLOCK)
+          .withEksEndpointPublicAccess(true);
         break;
       case Environment.PRODUCTION:
         StackClass = ProductionStack;
@@ -75,6 +80,9 @@ function main() {
         terraformOrganisation,
         process.env.TERRAFORM_HOSTNAME
       )
+      .withEksVersion(eksVersion)
+      .withEksControlPlaneLogTypes(DEFAULT_EKS_CONTROL_PLANE_LOG_TYPES)
+      .withEksAddOns(DEFAULT_EKS_CORE_ADD_ONS)
       .build();
     validateConfig(config);
 

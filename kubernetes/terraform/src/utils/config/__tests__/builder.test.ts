@@ -323,6 +323,30 @@ describe('ConfigBuilder', () => {
     });
   });
 
+  describe('Given Kubernetes configuration', () => {
+    describe('When setting KubernetesConfig properties', () => {
+      it('Then they should be present and correctly assigned in the config', () => {
+        const eksVersion = '1.27';
+        const eksEndpointPublicAccess = true;
+        const eksControlPlaneLogTypes = ['api', 'audit'];
+        const eksAddOns: Record<string, string> = { 'vpc-cni': 'v1', coredns: 'v2' };
+
+        const config = new ConfigBuilder()
+          .withTerraformConfig('workspace', 'org')
+          .withEksVersion(eksVersion)
+          .withEksEndpointPublicAccess(eksEndpointPublicAccess)
+          .withEksControlPlaneLogTypes(eksControlPlaneLogTypes)
+          .withEksAddOns(eksAddOns)
+          .build();
+
+        expect(config.eksVersion).toBe(eksVersion);
+        expect(config.eksEndpointPublicAccess).toBe(eksEndpointPublicAccess);
+        expect(config.eksControlPlaneLogTypes).toEqual(eksControlPlaneLogTypes);
+        expect(config.eksAddOns).toEqual(eksAddOns);
+      });
+    });
+  });
+
   describe('Given builder chaining and override behavior', () => {
     describe('When chaining all configuration methods', () => {
       it('Then it should support method chaining for all options', () => {

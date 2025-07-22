@@ -7,6 +7,8 @@ TERRAFORM_HOSTNAME ?= app.terraform.io
 
 AWS_REGION ?= ap-southeast-2
 
+EKS_VERSION ?= 1.33
+
 .PHONY: dependencies
 dependencies:
 	npm install

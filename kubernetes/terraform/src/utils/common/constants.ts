@@ -17,3 +17,15 @@ export const DEFAULT_VPC_PUBLIC_SUBNET_CIDR_BLOCK = [
   '10.0.103.0/24',
 ];
 
+export const DEFAULT_IAM_ROLE_MANAGED_POLICY_ARNS = [
+  'arn:aws:iam::aws:policy/AmazonEKSClusterPolicy',
+];
+
+export const DEFAULT_EKS_VERSION = '1.33';
+export const DEFAULT_EKS_CONTROL_PLANE_LOG_TYPES = ['api', 'audit', 'authenticator'];
+
+export const DEFAULT_EKS_CORE_ADD_ONS: Record<string, string> = {
+  'vpc-cni': 'v1.19.6-eksbuild.7',
+  'kube-proxy': 'v1.33.0-eksbuild.2',
+  // coredns: 'v1.12.2-eksbuild.4',
+};
