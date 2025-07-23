@@ -1,10 +1,10 @@
-import { cleanString, cleanEnvironment, cleanRegion } from '../string';
+import { getCleanString, getCleanEnvironment, getCleanRegion } from '../string';
 import { Environment, Region } from '../enums';
 
-describe('cleanString', () => {
+describe('getCleanString', () => {
   it('Given undefined or empty string, When cleaning, Then it should return empty string', () => {
-    expect(cleanString()).toBe('');
-    expect(cleanString('')).toBe('');
+    expect(getCleanString()).toBe('');
+    expect(getCleanString('')).toBe('');
   });
 
   it.each([
@@ -18,27 +18,27 @@ describe('cleanString', () => {
     ['\thello\t', 'hello'],
     ['\nhello\n', 'hello'],
   ])('Given "%s", When cleaning, Then it should return "%s"', (input, expected) => {
-    expect(cleanString(input)).toBe(expected);
+    expect(getCleanString(input)).toBe(expected);
   });
 });
 
-describe('cleanEnvironment', () => {
+describe('getCleanEnvironment', () => {
   it.each([
     [Environment.OTHERS, 'o'],
     [Environment.DEVELOPMENT, 'dev'],
     [Environment.STAGING, 'stg'],
     [Environment.PRODUCTION, 'prod'],
   ])('Given %s, When cleaning environment, Then it should return "%s"', (input, expected) => {
-    expect(cleanEnvironment(input)).toBe(expected);
+    expect(getCleanEnvironment(input)).toBe(expected);
   });
 
   it('Given an unknown environment, When cleaning environment, Then it should default to dev', () => {
     const unknownEnv = 'UNKNOWN' as Environment;
-    expect(cleanEnvironment(unknownEnv)).toBe('dev');
+    expect(getCleanEnvironment(unknownEnv)).toBe('dev');
   });
 });
 
-describe('cleanRegion', () => {
+describe('getCleanRegion', () => {
   it.each([
     [Region.AUSTRALIA_EAST, 'aue'],
     [Region.US_EAST, 'use'],
@@ -46,11 +46,11 @@ describe('cleanRegion', () => {
     [Region.EUROPE_WEST, 'euw'],
     [Region.OTHERS, 'o'],
   ])('Given %s, When cleaning region, Then it should return "%s"', (input, expected) => {
-    expect(cleanRegion(input)).toBe(expected);
+    expect(getCleanRegion(input)).toBe(expected);
   });
 
   it('Given an unknown region, When cleaning region, Then it should default to o', () => {
     const unknownRegion = 'UNKNOWN' as Region;
-    expect(cleanRegion(unknownRegion)).toBe('o');
+    expect(getCleanRegion(unknownRegion)).toBe('o');
   });
 });

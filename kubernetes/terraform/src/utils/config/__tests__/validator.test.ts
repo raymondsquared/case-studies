@@ -10,9 +10,9 @@ const testConfig = {
   terraformOrganisation: 'my-org',
   terraformWorkspace: 'my-workspace',
   terraformHostname: 'app.terraform.io',
-  enableEncryption: true,
-  enableSecretsManager: false,
-  enableNatGateway: true,
+  hasEncryption: true,
+  hasSecretsManager: false,
+  hasNatGateway: true,
   tags: { key: 'value' },
 };
 
@@ -66,7 +66,7 @@ describe('validateConfig', () => {
     });
 
     describe('When boolean fields are invalid', () => {
-      const booleanFields = ['enableEncryption', 'enableSecretsManager'];
+      const booleanFields = ['hasEncryption', 'hasSecretsManager'];
 
       booleanFields.forEach(field => {
         describe(`When ${field} is non-boolean`, () => {

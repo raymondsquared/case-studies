@@ -17,9 +17,9 @@ const testConfig: Config = {
   terraformOrganisation: 'test-org',
   terraformWorkspace: 'test-workspace',
   terraformHostname: 'app.terraform.io',
-  enableEncryption: true,
-  enableSecretsManager: true,
-  enableNatGateway: true,
+  hasEncryption: true,
+  hasSecretsManager: true,
+  hasNatGateway: true,
   publicSubnetCIDRBlocks: DEFAULT_VPC_PUBLIC_SUBNET_CIDR_BLOCK,
   privateSubnetCIDRBlocks: DEFAULT_VPC_PRIVATE_SUBNET_CIDR_BLOCK,
   tags: {
@@ -77,27 +77,27 @@ describe('DevelopmentStack', () => {
         const configVariations = [
           {
             ...config,
-            enableEncryption: false,
-            enableSecretsManager: false,
+            hasEncryption: false,
+            hasSecretsManager: false,
             publicSubnetCIDRBlocks: undefined,
           },
           {
             ...config,
-            enableEncryption: true,
-            enableSecretsManager: true,
+            hasEncryption: true,
+            hasSecretsManager: true,
             publicSubnetCIDRBlocks: undefined,
           },
           {
             ...config,
-            enableEncryption: false,
-            enableSecretsManager: true,
+            hasEncryption: false,
+            hasSecretsManager: true,
             publicSubnetCIDRBlocks: DEFAULT_VPC_PUBLIC_SUBNET_CIDR_BLOCK,
           },
           {
             ...config,
             region: Region.US_EAST,
-            enableEncryption: true,
-            enableSecretsManager: true,
+            hasEncryption: true,
+            hasSecretsManager: true,
             publicSubnetCIDRBlocks: DEFAULT_VPC_PUBLIC_SUBNET_CIDR_BLOCK,
           },
         ];
@@ -116,7 +116,7 @@ describe('DevelopmentStack', () => {
           expect(stack.vpc).toBeDefined();
           expect(stack.kms).toBeDefined();
 
-          if (configVar.enableSecretsManager) {
+          if (configVar.hasSecretsManager) {
             expect(stack.secretsManager).toBeDefined();
             expect(stack.secretsManager.count).toBeGreaterThan(0);
           }
@@ -201,6 +201,35 @@ describe('DevelopmentStack', () => {
         expect(stack.eks.arn).toBeDefined();
         expect(stack.eks.endpoint).toBeDefined();
       });
+    });
+  });
+
+  describe('Given an invalid configuration', () => {
+    describe('When creating a development stack', () => {
+      it('Then it should throw an error for missing config', () => {
+        const app = new App();
+        expect(() => {
+          new DevelopmentStack(app, 'test-dev-stack', {} as any);
+        }).toThrow();
+      });
+
+      it.each([
+        [{ name: undefined }],
+        [{ environment: undefined }],
+        [{ terraformOrganisation: undefined }],
+        [{ vendor: undefined }],
+      ])(
+        'Then it should throw an error for missing required field',
+        (overrides: Partial<Config>) => {
+          const invalidConfig: Config = { ...testConfig, ...overrides } as unknown as Config;
+          const app = new App();
+          expect(() => {
+            new DevelopmentStack(app, 'test-dev-stack', {
+              config: invalidConfig,
+            });
+          }).toThrow();
+        }
+      );
     });
   });
 });

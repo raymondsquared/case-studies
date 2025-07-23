@@ -9,9 +9,9 @@ import {
   Vendor,
   Environment,
   Region,
-  cleanEnvironment,
-  cleanString,
-  cleanRegion,
+  getCleanEnvironment,
+  getCleanString,
+  getCleanRegion,
 } from '../common';
 import { BaseTags, Tags } from './types';
 
@@ -26,7 +26,7 @@ export class TaggingUtility {
 
   getTags(inputTags: Tags = {}): Tags {
     validateConfig(this.config);
-    this.validateTags(inputTags);
+    this.updateTags(inputTags);
 
     let tags: Tags = {};
 
@@ -34,7 +34,7 @@ export class TaggingUtility {
       ...tags,
       ...TaggingUtility.getValidTags(this.getTagsFromBaseTags(this.getBaseTags())),
     };
-    tags = { ...tags, ...TaggingUtility.getValidTags(this.getTagsfromConfig(this.config)) };
+    tags = { ...tags, ...TaggingUtility.getValidTags(this.getTagsFromConfig(this.config)) };
     tags = { ...tags, ...TaggingUtility.getValidTags(this.tags ?? {}) };
     tags = { ...tags, ...TaggingUtility.getValidTags(inputTags) };
 
@@ -50,9 +50,9 @@ export class TaggingUtility {
       inputResourceType !== undefined ? inputResourceType : this.config.resourceType;
 
     // Actual AWS tagging for Name
-    const resourceName: string = `${cleanString(name)}-${cleanEnvironment(
+    const resourceName: string = `${getCleanString(name)}-${getCleanEnvironment(
       _env as Environment
-    )}-${cleanString(resourceType)}-${cleanRegion(this.config.region)}`;
+    )}-${getCleanString(resourceType)}-${getCleanRegion(this.config.region)}`;
     tags['Name'] = resourceName;
 
     // Need to do this to fix error
@@ -60,10 +60,10 @@ export class TaggingUtility {
     delete tags['name'];
 
     // Sort tags by key for stable output
-    return TaggingUtility.sortTags(tags);
+    return TaggingUtility.getSortedTags(tags);
   }
 
-  private validateTags(inputTags: Tags): void {
+  private updateTags(inputTags: Tags): void {
     const inputName: string | undefined = inputTags['name'];
     const name: string = inputName !== undefined ? inputName : this.config.name;
     if (!name || name.trim() === '') {
@@ -104,7 +104,7 @@ export class TaggingUtility {
     return Object.fromEntries(Object.entries(baseTags).map(([key, value]) => [key, String(value)]));
   }
 
-  private getTagsfromConfig(config: Config): Tags {
+  private getTagsFromConfig(config: Config): Tags {
     const tag: Tags = {};
 
     this.getTagFromConfigProperties(config, tag);
@@ -152,7 +152,44 @@ export class TaggingUtility {
     return filtered;
   }
 
-  private static sortTags(tags: Tags): Tags {
+  private static getSortedTags(tags: Tags): Tags {
     return Object.fromEntries(Object.entries(tags).sort(([a], [b]) => a.localeCompare(b)));
+  }
+
+  // Getter methods for convenient access to properties
+  public get configName(): string {
+    return this.config.name;
+  }
+
+  public get configEnvironment(): string {
+    return this.config.environment;
+  }
+
+  public get configRegion(): string {
+    return this.config.region;
+  }
+
+  public get configVendor(): string {
+    return this.config.vendor;
+  }
+
+  public get resourceType(): string {
+    return this.config.resourceType;
+  }
+
+  public get hasCustomTags(): boolean {
+    return this.tags !== undefined && Object.keys(this.tags).length > 0;
+  }
+
+  public get defaultTags(): Tags {
+    return this.getTagsFromBaseTags(this.getBaseTags());
+  }
+
+  public get configTags(): Tags {
+    return this.getTagsFromConfig(this.config);
+  }
+
+  public get customTags(): Tags {
+    return this.tags || {};
   }
 }

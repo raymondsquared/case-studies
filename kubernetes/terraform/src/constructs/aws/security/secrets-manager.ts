@@ -6,18 +6,18 @@ import { SecretsmanagerSecretVersion } from '@cdktf/provider-aws/lib/secretsmana
 import { Config } from '../../../utils/config';
 import { TaggingUtility } from '../../../utils/tagging';
 import { Tags } from '../../../utils/tagging/types';
-import { cleanEnvironment, cleanString } from '../../../utils/common';
+import { getCleanEnvironment, getCleanString } from '../../../utils/common';
 
-export interface SecretConfig {
+export interface SecretArgs {
   readonly name: string;
   readonly description?: string;
   readonly secretString?: string;
   readonly tags?: Tags;
 }
 
-export interface SecretsManagerProps {
+export interface SecretsManagerArgs {
   readonly config: Config;
-  readonly secrets: SecretConfig[];
+  readonly secrets: SecretArgs[];
   readonly kmsKeyId?: string;
   readonly tags?: Tags;
 }
@@ -25,32 +25,31 @@ export interface SecretsManagerProps {
 export class SecretsManager extends Construct {
   public readonly secrets: SecretsmanagerSecret[];
 
-  constructor(scope: Construct, id: string, props: SecretsManagerProps) {
+  constructor(scope: Construct, id: string, args: SecretsManagerArgs) {
     super(scope, id);
 
-    const { config, secrets, kmsKeyId, tags } = props;
+    const { config, secrets, kmsKeyId, tags } = args;
     const taggingUtility: TaggingUtility = new TaggingUtility(config, {
       ...tags,
       layer: 'security',
     });
 
-    // Create secrets in AWS Secrets Manager
-    this.secrets = secrets.map((secretConfig, index) => {
+    this.secrets = secrets.map((secretArgs, index) => {
       const secret: SecretsmanagerSecret = new SecretsmanagerSecret(this, `secret-${index}`, {
         name: [
-          cleanString(config.name),
-          cleanEnvironment(config.environment),
-          secretConfig.name,
+          getCleanString(config.name),
+          getCleanEnvironment(config.environment),
+          secretArgs.name,
         ].join('/'),
-        description: secretConfig.description,
-        kmsKeyId: kmsKeyId,
-        tags: taggingUtility.getTags({ ...secretConfig.tags, resourceType: 'secret' }),
+        description: secretArgs.description,
+        kmsKeyId: config.hasEncryption ? kmsKeyId : undefined,
+        tags: taggingUtility.getTags({ ...secretArgs.tags, resourceType: 'secret' }),
       });
 
-      if (secretConfig.secretString) {
+      if (secretArgs.secretString) {
         new SecretsmanagerSecretVersion(this, `secret-version-${index}`, {
           secretId: secret.id,
-          secretString: secretConfig.secretString,
+          secretString: secretArgs.secretString,
         });
       }
 

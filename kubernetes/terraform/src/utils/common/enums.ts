@@ -38,3 +38,29 @@ export enum Environment {
   STAGING = 'staging',
   PRODUCTION = 'production',
 }
+
+export enum SecurityGroupRuleType {
+  INGRESS = 'ingress',
+  EGRESS = 'egress',
+}
+
+export enum NodeNetwork {
+  PRIVATE = 'private',
+  PUBLIC = 'public',
+}
+
+export enum NodeCapacityType {
+  SPOT = 'SPOT',
+  ON_DEMAND = 'ON_DEMAND',
+}
+
+export enum NodeInstanceFamily {
+  CPU = 'cpu',
+  GPU = 'gpu',
+}
+
+export enum NodeInstanceSize {
+  SMALL = 'small',
+  MEDIUM = 'medium',
+  LARGE = 'large',
+}

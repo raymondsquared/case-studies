@@ -1,4 +1,15 @@
-import { Vendor, Region, Environment, Confidentiality, Criticality } from '../enums';
+import {
+  Vendor,
+  Region,
+  Environment,
+  Confidentiality,
+  Criticality,
+  SecurityGroupRuleType,
+  NodeNetwork,
+  NodeCapacityType,
+  NodeInstanceFamily,
+  NodeInstanceSize,
+} from '../enums';
 
 describe('Enums', () => {
   describe('Vendor', () => {
@@ -11,8 +22,12 @@ describe('Enums', () => {
     ];
 
     testCases.forEach(({ value, expected }) => {
-      it(`Given ${expected} vendor, When accessing enum, Then it should return ${expected} string`, () => {
-        expect(value).toBe(expected);
+      describe(`Given ${expected} vendor`, () => {
+        describe('When accessing enum', () => {
+          it(`Then it should return ${expected} string`, () => {
+            expect(value).toBe(expected);
+          });
+        });
       });
     });
   });
@@ -27,8 +42,12 @@ describe('Enums', () => {
     ];
 
     testCases.forEach(({ value, expected }) => {
-      it(`Given ${expected} region, When accessing enum, Then it should return ${expected} string`, () => {
-        expect(value).toBe(expected);
+      describe(`Given ${expected} region`, () => {
+        describe('When accessing enum', () => {
+          it(`Then it should return ${expected} string`, () => {
+            expect(value).toBe(expected);
+          });
+        });
       });
     });
   });
@@ -42,8 +61,12 @@ describe('Enums', () => {
     ];
 
     testCases.forEach(({ value, expected }) => {
-      it(`Given ${expected} environment, When accessing enum, Then it should return ${expected} string`, () => {
-        expect(value).toBe(expected);
+      describe(`Given ${expected} environment`, () => {
+        describe('When accessing enum', () => {
+          it(`Then it should return ${expected} string`, () => {
+            expect(value).toBe(expected);
+          });
+        });
       });
     });
   });
@@ -59,8 +82,12 @@ describe('Enums', () => {
     ];
 
     testCases.forEach(({ value, expected }) => {
-      it(`Given level ${expected}, When accessing enum, Then it should return ${expected}`, () => {
-        expect(value).toBe(expected);
+      describe(`Given level ${expected}`, () => {
+        describe('When accessing enum', () => {
+          it(`Then it should return ${expected}`, () => {
+            expect(value).toBe(expected);
+          });
+        });
       });
     });
   });
@@ -76,8 +103,98 @@ describe('Enums', () => {
     ];
 
     testCases.forEach(({ value, expected }) => {
-      it(`Given level ${expected}, When accessing enum, Then it should return ${expected}`, () => {
-        expect(value).toBe(expected);
+      describe(`Given level ${expected}`, () => {
+        describe('When accessing enum', () => {
+          it(`Then it should return ${expected}`, () => {
+            expect(value).toBe(expected);
+          });
+        });
+      });
+    });
+  });
+
+  describe('SecurityGroupRuleType', () => {
+    const testCases = [
+      { value: SecurityGroupRuleType.INGRESS, expected: 'ingress' },
+      { value: SecurityGroupRuleType.EGRESS, expected: 'egress' },
+    ];
+
+    testCases.forEach(({ value, expected }) => {
+      describe(`Given ${expected} rule type`, () => {
+        describe('When accessing enum', () => {
+          it(`Then it should return ${expected} string`, () => {
+            expect(value).toBe(expected);
+          });
+        });
+      });
+    });
+  });
+
+  describe('NodeNetwork', () => {
+    const testCases = [
+      { value: NodeNetwork.PRIVATE, expected: 'private' },
+      { value: NodeNetwork.PUBLIC, expected: 'public' },
+    ];
+
+    testCases.forEach(({ value, expected }) => {
+      describe(`Given ${expected} network`, () => {
+        describe('When accessing enum', () => {
+          it(`Then it should return ${expected} string`, () => {
+            expect(value).toBe(expected);
+          });
+        });
+      });
+    });
+  });
+
+  describe('NodeCapacityType', () => {
+    const testCases = [
+      { value: NodeCapacityType.SPOT, expected: 'SPOT' },
+      { value: NodeCapacityType.ON_DEMAND, expected: 'ON_DEMAND' },
+    ];
+
+    testCases.forEach(({ value, expected }) => {
+      describe(`Given ${expected} capacity type`, () => {
+        describe('When accessing enum', () => {
+          it(`Then it should return ${expected} string`, () => {
+            expect(value).toBe(expected);
+          });
+        });
+      });
+    });
+  });
+
+  describe('NodeInstanceFamily', () => {
+    const testCases = [
+      { value: NodeInstanceFamily.CPU, expected: 'cpu' },
+      { value: NodeInstanceFamily.GPU, expected: 'gpu' },
+    ];
+
+    testCases.forEach(({ value, expected }) => {
+      describe(`Given ${expected} instance family`, () => {
+        describe('When accessing enum', () => {
+          it(`Then it should return ${expected} string`, () => {
+            expect(value).toBe(expected);
+          });
+        });
+      });
+    });
+  });
+
+  describe('NodeInstanceSize', () => {
+    const testCases = [
+      { value: NodeInstanceSize.SMALL, expected: 'small' },
+      { value: NodeInstanceSize.MEDIUM, expected: 'medium' },
+      { value: NodeInstanceSize.LARGE, expected: 'large' },
+    ];
+
+    testCases.forEach(({ value, expected }) => {
+      describe(`Given ${expected} instance size`, () => {
+        describe('When accessing enum', () => {
+          it(`Then it should return ${expected} string`, () => {
+            expect(value).toBe(expected);
+          });
+        });
       });
     });
   });

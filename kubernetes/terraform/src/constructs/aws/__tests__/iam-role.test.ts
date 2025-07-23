@@ -71,8 +71,8 @@ function createConfig(overrides: Partial<Config> = {}): Config {
     terraformOrganisation: 'test-org',
     terraformWorkspace: 'test-workspace',
     terraformHostname: 'app.terraform.io',
-    enableEncryption: true,
-    enableSecretsManager: true,
+    hasEncryption: true,
+    hasSecretsManager: true,
     tags: { purpose: 'testing' } as Record<string, string>,
     ...overrides,
   };
@@ -160,7 +160,7 @@ describe('IamRole', () => {
     });
   });
 
-  describe('Given different environment configurations', () => {
+  describe('Given different environment arguments', () => {
     describe('When creating IAM roles in different environments', () => {
       it.each([
         [Environment.DEVELOPMENT, 'dev'],

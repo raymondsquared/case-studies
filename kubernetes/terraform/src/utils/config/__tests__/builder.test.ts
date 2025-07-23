@@ -20,8 +20,8 @@ describe('ConfigBuilder', () => {
         expect(config.terraformWorkspace).toBe('test-workspace');
         expect(config.terraformOrganisation).toBe('test-org');
         expect(config.terraformHostname).toBe(DEFAULT_TERRAFORM_HOSTNAME);
-        expect(config.enableEncryption).toBe(true);
-        expect(config.enableSecretsManager).toBe(true);
+        expect(config.hasEncryption).toBe(true);
+        expect(config.hasSecretsManager).toBe(true);
         expect(config.tags).toBeUndefined();
       });
     });
@@ -35,8 +35,8 @@ describe('ConfigBuilder', () => {
         expect(config.resourceType).toBe('');
         expect(config.region).toBe(Region.OTHERS);
         expect(config.vendor).toBe(Vendor.OTHERS);
-        expect(config.enableEncryption).toBe(true);
-        expect(config.enableSecretsManager).toBe(true);
+        expect(config.hasEncryption).toBe(true);
+        expect(config.hasSecretsManager).toBe(true);
         expect(config.tags).toBeUndefined();
       });
     });
@@ -71,8 +71,8 @@ describe('ConfigBuilder', () => {
         expect(config.terraformWorkspace).toBe('prod-workspace');
         expect(config.terraformOrganisation).toBe('my-org');
         expect(config.terraformHostname).toBe('custom.terraform.io');
-        expect(config.enableEncryption).toBe(true);
-        expect(config.enableSecretsManager).toBe(true);
+        expect(config.hasEncryption).toBe(true);
+        expect(config.hasSecretsManager).toBe(true);
         expect(config.tags).toEqual(tags);
       });
     });
@@ -327,22 +327,35 @@ describe('ConfigBuilder', () => {
     describe('When setting KubernetesConfig properties', () => {
       it('Then they should be present and correctly assigned in the config', () => {
         const eksVersion = '1.27';
-        const eksEndpointPublicAccess = true;
+        const hasEksEndpointPublicAccess = true;
         const eksControlPlaneLogTypes = ['api', 'audit'];
         const eksAddOns: Record<string, string> = { 'vpc-cni': 'v1', coredns: 'v2' };
+        const nodeConfig = { hasPrivateNodes: true, hasPublicNodes: false, spotMaxPrice: '0.50' };
 
         const config = new ConfigBuilder()
           .withTerraformConfig('workspace', 'org')
           .withEksVersion(eksVersion)
-          .withEksEndpointPublicAccess(eksEndpointPublicAccess)
+          .withEksEndpointPublicAccess(hasEksEndpointPublicAccess)
           .withEksControlPlaneLogTypes(eksControlPlaneLogTypes)
           .withEksAddOns(eksAddOns)
+          .withNodesConfig(nodeConfig)
           .build();
 
         expect(config.eksVersion).toBe(eksVersion);
-        expect(config.eksEndpointPublicAccess).toBe(eksEndpointPublicAccess);
+        expect(config.hasEksEndpointPublicAccess).toBe(hasEksEndpointPublicAccess);
         expect(config.eksControlPlaneLogTypes).toEqual(eksControlPlaneLogTypes);
         expect(config.eksAddOns).toEqual(eksAddOns);
+        expect(config.nodes).toEqual(nodeConfig);
+      });
+
+      it('Then config should work without node configuration', () => {
+        const config = new ConfigBuilder()
+          .withTerraformConfig('workspace', 'org')
+          .withEksVersion('1.27')
+          .build();
+
+        expect(config.eksVersion).toBe('1.27');
+        expect(config.nodes).toBeUndefined();
       });
     });
   });

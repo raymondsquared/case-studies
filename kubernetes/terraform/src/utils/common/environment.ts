@@ -6,8 +6,6 @@ export function getRequiredEnvironmentVariableValue(envVarName: string): string 
   return value;
 }
 
-// Utility function to retrieve a value from an enum using an environment variable.
-// Throws an error if the environment variable is missing or invalid.
 export function getEnumFromRequiredEnvironmentVariable<T extends Record<string, unknown>>(
   envVar: string | undefined,
   enumType: T,

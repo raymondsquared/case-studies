@@ -21,9 +21,9 @@ export interface AwsConfig {
 }
 
 export interface CloudConfig {
-  enableEncryption: boolean;
-  enableSecretsManager: boolean;
-  enableNatGateway?: boolean;
+  hasEncryption: boolean;
+  hasSecretsManager: boolean;
+  hasNatGateway?: boolean;
   vpcCIDRBlock?: string;
   publicSubnetCIDRBlocks?: string[];
   privateSubnetCIDRBlocks?: string[];
@@ -33,9 +33,14 @@ export interface CloudConfig {
 
 export interface KubernetesConfig {
   eksVersion?: string;
-  eksEndpointPublicAccess?: boolean;
+  hasEksEndpointPublicAccess?: boolean;
   eksControlPlaneLogTypes?: string[];
   eksAddOns?: Record<string, string>;
+  nodes?: {
+    hasPrivateNodes?: boolean;
+    hasPublicNodes?: boolean;
+    spotMaxPrice?: string;
+  };
 }
 
 export interface Config extends MainConfig, TerraformConfig, CloudConfig, KubernetesConfig {}

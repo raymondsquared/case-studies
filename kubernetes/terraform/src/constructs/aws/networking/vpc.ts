@@ -17,7 +17,7 @@ import { Config } from '../../../utils/config';
 import { TaggingUtility, Tags } from '../../../utils/tagging';
 import { getAwsRegion } from '../../../utils/vendor';
 
-export interface VpcProps {
+export interface VpcArgs {
   readonly config: Config;
   readonly tags?: Tags;
 }
@@ -33,10 +33,10 @@ export class Vpc extends Construct {
   public privateRouteTable?: RouteTable;
   public securityGroups: SecurityGroup[] = [];
 
-  constructor(scope: Construct, id: string, props: VpcProps) {
+  constructor(scope: Construct, id: string, vpcArgs: VpcArgs) {
     super(scope, id);
 
-    const { config, tags } = props;
+    const { config, tags } = vpcArgs;
 
     const vpcCIDRBlock: string = config.vpcCIDRBlock ?? DEFAULT_VPC_CIDR_BLOCK;
     const publicSubnetCIDRBlocks: string[] | undefined = config.publicSubnetCIDRBlocks;
@@ -103,7 +103,7 @@ export class Vpc extends Construct {
 
     this.publicRouteTable = new RouteTable(this, 'public-route-table', {
       vpcId: this.vpc.id,
-      tags: taggingUtility.getTags({ nameSuffix: 'public', resourceType: 'rt' }),
+      tags: taggingUtility.getTags({ nameSuffix: 'pub', resourceType: 'rt' }),
     });
 
     new Route(this, 'public-internet-gateway-route', {
@@ -143,7 +143,7 @@ export class Vpc extends Construct {
       tags: taggingUtility.getTags({ nameSuffix: 'priv', resourceType: 'rt' }),
     });
 
-    if (this.publicSubnets.length > 0 && config.enableNatGateway !== false) {
+    if (this.publicSubnets.length > 0 && config.hasNatGateway !== false) {
       this.createNatGateway(taggingUtility);
     }
 
@@ -260,5 +260,62 @@ export class Vpc extends Construct {
     const azIndex: number = index % maxAzs;
     const azSuffixes: string[] = ['a', 'b', 'c'];
     return `${awsRegion}${azSuffixes[azIndex]}`;
+  }
+
+  // Getter methods for computed properties
+  public get vpcId(): string {
+    return this.vpc.id;
+  }
+
+  public get vpcArn(): string {
+    return this.vpc.arn;
+  }
+
+  public get vpcCidrBlock(): string {
+    return this.vpc.cidrBlock;
+  }
+
+  public get privateSubnetIds(): string[] {
+    return this.privateSubnets.map(subnet => subnet.id);
+  }
+
+  public get publicSubnetIds(): string[] {
+    return this.publicSubnets.map(subnet => subnet.id);
+  }
+
+  public get allSubnetIds(): string[] {
+    return [...this.privateSubnetIds, ...this.publicSubnetIds];
+  }
+
+  public get securityGroupIds(): string[] {
+    return this.securityGroups.map(sg => sg.id);
+  }
+
+  public get natGatewayIds(): string[] {
+    return this.natGateways.map(nat => nat.id);
+  }
+
+  public get hasPublicSubnets(): boolean {
+    return this.publicSubnets.length > 0;
+  }
+
+  public get hasPrivateSubnets(): boolean {
+    return this.privateSubnets.length > 0;
+  }
+
+  public get hasNatGateways(): boolean {
+    return this.natGateways.length > 0;
+  }
+
+  public get internetGatewayId(): string | undefined {
+    return this.internetGateway?.id;
+  }
+
+  public get publicRouteTableId(): string | undefined {
+    return this.publicRouteTable?.id;
+  }
+
+  public get privateRouteTableId(): string | undefined {
+    return this.privateRouteTable?.id;
   }
 }

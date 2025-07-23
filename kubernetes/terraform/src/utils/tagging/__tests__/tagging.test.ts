@@ -14,9 +14,9 @@ function getConfig(config: Partial<Config> = {}): Config {
     terraformOrganisation: 'test-org',
     terraformWorkspace: 'test-workspace',
     terraformHostname: 'app.terraform.io',
-    enableEncryption: true,
-    enableSecretsManager: true,
-    enableNatGateway: true,
+    hasEncryption: true,
+    hasSecretsManager: true,
+    hasNatGateway: true,
     tags: {},
     ...config,
   };
@@ -52,13 +52,13 @@ describe('TaggingUtility', () => {
     it.each([
       [
         { environment: Environment.PRODUCTION },
-        undefined,
+        {},
         'testservice-prod-vpc-aue',
         'production environment reflected in Name tag',
       ],
       [
         { name: 'test@service#123' },
-        undefined,
+        {},
         'testservice123-dev-vpc-aue',
         'special characters in name are cleaned',
       ],
@@ -74,12 +74,7 @@ describe('TaggingUtility', () => {
         'testservice-dev-subnet-aue',
         'custom resourceType in inputTags is used',
       ],
-      [
-        { region: Region.US_EAST },
-        undefined,
-        'testservice-dev-vpc-use',
-        'region reflected in Name tag',
-      ],
+      [{ region: Region.US_EAST }, {}, 'testservice-dev-vpc-use', 'region reflected in Name tag'],
     ])(
       'Given config %p and inputTags %p, When getting tags, Then the Name tag should be %s (%s)',
       (configOverrides, inputTags, expectedName, _desc) => {
@@ -121,16 +116,16 @@ describe('TaggingUtility', () => {
 
     it('Given a config with various tag properties, When getting tags, Then only BaseTags properties should be added as tags', () => {
       const utility = getTaggingUtility({
-        enableEncryption: true,
-        enableSecretsManager: false,
+        hasEncryption: true,
+        hasSecretsManager: false,
         vpcCIDRBlock: '10.0.0.0/16',
         publicSubnetCIDRBlocks: ['10.0.1.0/24', '10.0.2.0/24'],
         privateSubnetCIDRBlocks: ['10.0.10.0/24', '10.0.11.0/24'],
         awsConfig: { awsAccountId: '123456789012' },
       });
       const tags = utility.getTags();
-      expect(tags.enableEncryption).toBeUndefined();
-      expect(tags.enableSecretsManager).toBeUndefined();
+      expect(tags.hasEncryption).toBeUndefined();
+      expect(tags.hasSecretsManager).toBeUndefined();
       expect(tags.vpcCIDRBlock).toBeUndefined();
       expect(tags.publicSubnetCIDRBlocks).toBeUndefined();
       expect(tags.privateSubnetCIDRBlocks).toBeUndefined();
@@ -163,10 +158,10 @@ describe('TaggingUtility', () => {
     });
 
     it.each([
-      [{ name: '' }, undefined, 'Config validation error: name is required and cannot be empty.'],
+      [{ name: '' }, {}, 'Config validation error: name is required and cannot be empty.'],
       [
         { resourceType: '' },
-        undefined,
+        {},
         'Config validation error: resourceType is required and cannot be empty.',
       ],
       [{}, { name: '' }, 'Name cannot be empty. Please provide a valid name for the resource.'],

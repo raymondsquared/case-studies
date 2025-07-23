@@ -1,6 +1,6 @@
 import { Environment, Region } from './enums';
 
-export function cleanString(name?: string): string {
+export function getCleanString(name?: string): string {
   return (name ?? '')
     .replace(/[^a-zA-Z0-9]/g, '')
     .toLowerCase()
@@ -8,7 +8,7 @@ export function cleanString(name?: string): string {
 }
 
 let _env: string;
-export function cleanEnvironment(inputEnv: Environment): string {
+export function getCleanEnvironment(inputEnv: Environment): string {
   switch (inputEnv) {
     case Environment.PRODUCTION:
       _env = 'prod';
@@ -28,7 +28,7 @@ export function cleanEnvironment(inputEnv: Environment): string {
 }
 
 let region: string;
-export function cleanRegion(inputRegion: Region): string {
+export function getCleanRegion(inputRegion: Region): string {
   switch (inputRegion) {
     case Region.AUSTRALIA_EAST:
       region = 'aue';

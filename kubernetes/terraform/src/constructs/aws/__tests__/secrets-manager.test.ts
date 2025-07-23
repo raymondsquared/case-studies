@@ -1,6 +1,6 @@
 import { App, TerraformStack } from 'cdktf';
 import { AwsProvider } from '@cdktf/provider-aws/lib/provider';
-import { SecretsManager, SecretsManagerProps, SecretConfig } from '../security/secrets-manager';
+import { SecretsManager, SecretsManagerArgs, SecretArgs } from '../security/secrets-manager';
 import { Kms } from '../security/kms';
 import { Environment, Region, Vendor } from '../../../utils/common/enums';
 import { Config } from '../../../utils/config';
@@ -25,7 +25,7 @@ class TestStack extends TerraformStack {
     scope: App,
     id: string,
     config: Config,
-    secretsManagerProps: Partial<SecretsManagerProps>
+    secretsManagerConfig: Partial<SecretsManagerArgs>
   ) {
     super(scope, id);
 
@@ -45,14 +45,14 @@ class TestStack extends TerraformStack {
 
     this.secretsManager = new SecretsManager(this, 'test-secrets-manager', {
       config,
-      secrets: secretsManagerProps.secrets || [],
-      kmsKeyId: config.enableEncryption ? this.kms.id : undefined,
-      tags: secretsManagerProps.tags,
+      secrets: secretsManagerConfig.secrets || [],
+      kmsKeyId: config.hasEncryption ? this.kms.id : undefined,
+      tags: secretsManagerConfig.tags,
     });
   }
 }
 
-const testSecretConfigs: SecretConfig[] = [
+const testSecretArgss: SecretArgs[] = [
   {
     name: 'database-password',
     description: 'Database password for the application',
@@ -77,8 +77,8 @@ function createConfig(overrides: Partial<Config> = {}): Config {
     terraformOrganisation: 'test-org',
     terraformWorkspace: 'test-workspace',
     terraformHostname: 'app.terraform.io',
-    enableEncryption: true,
-    enableSecretsManager: true,
+    hasEncryption: true,
+    hasSecretsManager: true,
     tags: { purpose: 'testing' } as Record<string, string>,
     ...overrides,
   };
@@ -88,9 +88,9 @@ function createConfig(overrides: Partial<Config> = {}): Config {
 function createTestStack(
   app: App,
   config: Config,
-  secretsManagerProps: Partial<SecretsManagerProps> = {}
+  secretsManagerConfig: Partial<SecretsManagerArgs> = {}
 ): TestStack {
-  return new TestStack(app, 'test-stack', config, secretsManagerProps);
+  return new TestStack(app, 'test-stack', config, secretsManagerConfig);
 }
 
 describe('SecretsManager', () => {
@@ -105,7 +105,7 @@ describe('SecretsManager', () => {
   describe('Given a valid configuration', () => {
     describe('When creating a SecretsManager construct', () => {
       it('Then it should create secrets successfully', (): void => {
-        const stack: TestStack = createTestStack(app, config, { secrets: testSecretConfigs });
+        const stack: TestStack = createTestStack(app, config, { secrets: testSecretArgss });
         expect(() => assertStackSynthesis(stack)).not.toThrow();
         expect(stack.secretsManager.secrets).toHaveLength(2);
         expect(stack.secretsManager.count).toBe(2);
@@ -119,7 +119,7 @@ describe('SecretsManager', () => {
       });
 
       it('Then it should return correct property values', (): void => {
-        const stack: TestStack = createTestStack(app, config, { secrets: testSecretConfigs });
+        const stack: TestStack = createTestStack(app, config, { secrets: testSecretArgss });
         expect(() => assertStackSynthesis(stack)).not.toThrow();
         expect(stack.secretsManager.arns).toHaveLength(2);
         expect(stack.secretsManager.names).toHaveLength(2);
@@ -127,7 +127,7 @@ describe('SecretsManager', () => {
       });
 
       it('Then it should create required Terraform outputs', (): void => {
-        const stack: TestStack = createTestStack(app, config, { secrets: testSecretConfigs });
+        const stack: TestStack = createTestStack(app, config, { secrets: testSecretArgss });
         expect(() => assertStackSynthesis(stack)).not.toThrow();
         const synthesised: string = getSynthesizedStack(stack);
         expect(synthesised).toContain('secrets_arns');
@@ -139,7 +139,7 @@ describe('SecretsManager', () => {
   describe('Given a configuration with custom options', () => {
     describe('When creating a SecretsManager with custom tags', () => {
       it('Then it should apply the custom tags', (): void => {
-        const customSecrets: SecretConfig[] = [
+        const customSecrets: SecretArgs[] = [
           {
             name: 'custom-secret',
             description: 'Secret with custom tags',
@@ -153,9 +153,9 @@ describe('SecretsManager', () => {
       });
     });
 
-    describe('When creating secrets with different configurations', () => {
+    describe('When creating secrets with different arguments', () => {
       it('Then it should handle secrets with and without values', (): void => {
-        const mixedSecrets: SecretConfig[] = [
+        const mixedSecrets: SecretArgs[] = [
           {
             name: 'versioned-secret',
             description: 'Secret with a value',
@@ -173,7 +173,7 @@ describe('SecretsManager', () => {
     });
   });
 
-  describe('Given different environment configurations', () => {
+  describe('Given different environment arguments', () => {
     describe('When creating SecretsManager in different environments', () => {
       it.each([
         [Environment.DEVELOPMENT, 'development'],
@@ -182,7 +182,7 @@ describe('SecretsManager', () => {
         'Then it should create secrets successfully for environment %s',
         (env: Environment): void => {
           const envConfig: Config = createConfig({ environment: env });
-          const stack: TestStack = createTestStack(app, envConfig, { secrets: testSecretConfigs });
+          const stack: TestStack = createTestStack(app, envConfig, { secrets: testSecretArgss });
           expect(() => assertStackSynthesis(stack)).not.toThrow();
           expect(stack.secretsManager.names).toHaveLength(2);
         }
@@ -192,7 +192,7 @@ describe('SecretsManager', () => {
     describe('When creating SecretsManager with different project names', () => {
       it('Then it should create secrets successfully', (): void => {
         const customConfig: Config = createConfig({ name: 'custom-project' });
-        const stack: TestStack = createTestStack(app, customConfig, { secrets: testSecretConfigs });
+        const stack: TestStack = createTestStack(app, customConfig, { secrets: testSecretArgss });
         expect(() => assertStackSynthesis(stack)).not.toThrow();
         expect(stack.secretsManager.names).toHaveLength(2);
       });
@@ -202,12 +202,12 @@ describe('SecretsManager', () => {
   describe('Given a SecretsManager is created', () => {
     describe('When synthesizing the stack', () => {
       it('Then it should create properly configured secret resources', (): void => {
-        const stack: TestStack = createTestStack(app, config, { secrets: testSecretConfigs });
+        const stack: TestStack = createTestStack(app, config, { secrets: testSecretArgss });
         const secrets: TerraformSynthSecret[] = getAllResourcesFromStack(
           stack,
           'aws_secretsmanager_secret'
         ) as TerraformSynthSecret[];
-        expect(secrets.length).toBe(testSecretConfigs.length);
+        expect(secrets.length).toBe(testSecretArgss.length);
 
         const expectedNames: string[] = [
           'testsecrets/dev/database-password',
@@ -237,10 +237,10 @@ describe('SecretsManager', () => {
     });
   });
 
-  describe('Given complex secret configurations', () => {
-    describe('When creating multiple secrets with different configurations', () => {
+  describe('Given complex secret arguments', () => {
+    describe('When creating multiple secrets with different arguments', () => {
       it('Then it should handle all variations correctly', (): void => {
-        const complexSecrets: SecretConfig[] = [
+        const complexSecrets: SecretArgs[] = [
           {
             name: 'database-credentials',
             description: 'Database connection credentials',
@@ -277,13 +277,13 @@ describe('SecretsManager', () => {
     describe('When creating a SecretsManager', () => {
       it('Then it should throw an error for missing config', (): void => {
         expect((): void => {
-          new SecretsManager(app, 'test-secrets-manager', {} as SecretsManagerProps);
+          new SecretsManager(app, 'test-secrets-manager', {} as SecretsManagerArgs);
         }).toThrow();
       });
 
       it('Then it should throw an error for missing secrets array', (): void => {
         expect((): void => {
-          new SecretsManager(app, 'test-secrets-manager', { config } as SecretsManagerProps);
+          new SecretsManager(app, 'test-secrets-manager', { config } as SecretsManagerArgs);
         }).toThrow();
       });
 
@@ -296,7 +296,7 @@ describe('SecretsManager', () => {
         (overrides: Partial<Config>): void => {
           const invalidConfig: Config = { ...createConfig(), ...overrides } as unknown as Config;
           expect((): void => {
-            createTestStack(app, invalidConfig, { secrets: testSecretConfigs });
+            createTestStack(app, invalidConfig, { secrets: testSecretArgss });
           }).toThrow();
         }
       );

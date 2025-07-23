@@ -1,6 +1,6 @@
 import { App, TerraformStack } from 'cdktf';
 import { AwsProvider } from '@cdktf/provider-aws/lib/provider';
-import { Vpc, VpcProps } from '../networking/vpc';
+import { Vpc, VpcArgs } from '../networking/vpc';
 import { Environment, Region, Vendor } from '../../../utils/common/enums';
 import { Config } from '../../../utils/config';
 import { TaggingUtility } from '../../../utils/tagging';
@@ -30,14 +30,14 @@ type TerraformSynthVpc = {
 class TestStack extends TerraformStack {
   public readonly vpc: Vpc;
 
-  constructor(scope: App, id: string, config: Config, vpcProps: Partial<VpcProps> = {}) {
+  constructor(scope: App, id: string, config: Config, args: Partial<VpcArgs> = {}) {
     super(scope, id);
     const taggingUtility = new TaggingUtility({ ...config, layer: 'network' });
     new AwsProvider(this, 'AWS', {
       region: 'ap-southeast-2',
       defaultTags: [{ tags: { ...taggingUtility.getTags() } }],
     });
-    this.vpc = new Vpc(this, 'test-vpc', { config, ...vpcProps });
+    this.vpc = new Vpc(this, 'test-vpc', { config, ...args });
   }
 }
 
@@ -54,9 +54,9 @@ function createConfig(overrides: Partial<Config> = {}): Config {
     terraformOrganisation: 'test-org',
     terraformWorkspace: 'test-workspace',
     terraformHostname: 'app.terraform.io',
-    enableEncryption: true,
-    enableSecretsManager: true,
-    enableNatGateway: true,
+    hasEncryption: true,
+    hasSecretsManager: true,
+    hasNatGateway: true,
     publicSubnetCIDRBlocks: DEFAULT_VPC_PUBLIC_SUBNET_CIDR_BLOCK,
     privateSubnetCIDRBlocks: DEFAULT_VPC_PRIVATE_SUBNET_CIDR_BLOCK,
     tags: { purpose: 'testing' } as Record<string, string>,
@@ -68,9 +68,9 @@ function createConfig(overrides: Partial<Config> = {}): Config {
 function createTestStack(
   app: App,
   config: Config = createConfig(),
-  vpcProps: Partial<VpcProps> = {}
+  args: Partial<VpcArgs> = {}
 ): TestStack {
-  return new TestStack(app, 'test-stack', config, vpcProps);
+  return new TestStack(app, 'test-stack', config, args);
 }
 
 describe('Vpc', () => {
@@ -140,7 +140,7 @@ describe('Vpc', () => {
     });
 
     describe('When creating a VPC with custom subnet CIDR blocks', () => {
-      it('Then it should use the custom subnet configurations', (): void => {
+      it('Then it should use the custom subnet arguments', (): void => {
         const customConfig: Config = createConfig({
           publicSubnetCIDRBlocks: ['10.0.1.0/24', '10.0.2.0/24'],
           privateSubnetCIDRBlocks: ['10.0.10.0/24', '10.0.11.0/24'],
@@ -153,7 +153,7 @@ describe('Vpc', () => {
     });
   });
 
-  describe('Given different environment configurations', () => {
+  describe('Given different environment arguments', () => {
     describe('When creating VPCs in different environments', () => {
       it.each([
         [Environment.DEVELOPMENT, 'development'],
@@ -249,7 +249,7 @@ describe('Vpc', () => {
     describe('When creating a VPC', () => {
       it('Then it should throw an error for missing config', (): void => {
         expect((): void => {
-          new Vpc(new App(), 'test-vpc', {} as VpcProps);
+          new Vpc(new App(), 'test-vpc', {} as VpcArgs);
         }).toThrow();
       });
 
@@ -272,7 +272,7 @@ describe('Vpc', () => {
   describe('Given NAT gateway configuration', () => {
     describe('When enableNatGateway is true', () => {
       it('Then it should create NAT gateway when public and private subnets exist', (): void => {
-        const configWithNatGateway: Config = createConfig({ enableNatGateway: true });
+        const configWithNatGateway: Config = createConfig({ hasNatGateway: true });
         const stack: TestStack = createTestStack(app, configWithNatGateway);
         expect(() => assertStackSynthesis(stack)).not.toThrow();
         expect(stack.vpc.natGateways).toHaveLength(1);
@@ -281,7 +281,7 @@ describe('Vpc', () => {
 
     describe('When enableNatGateway is false', () => {
       it('Then it should not create NAT gateway even when public and private subnets exist', (): void => {
-        const configWithoutNatGateway: Config = createConfig({ enableNatGateway: false });
+        const configWithoutNatGateway: Config = createConfig({ hasNatGateway: false });
         const stack: TestStack = createTestStack(app, configWithoutNatGateway);
         expect(() => assertStackSynthesis(stack)).not.toThrow();
         expect(stack.vpc.natGateways).toHaveLength(0);

@@ -1,6 +1,6 @@
 import { App, TerraformStack } from 'cdktf';
 import { AwsProvider } from '@cdktf/provider-aws/lib/provider';
-import { Kms, KmsProps } from '../security/kms';
+import { Kms, KmsArgs } from '../security/kms';
 import { Environment, Region, Vendor } from '../../../utils/common/enums';
 import { Config } from '../../../utils/config';
 import { TaggingUtility } from '../../../utils/tagging';
@@ -31,7 +31,7 @@ type TerraformSynthKmsAlias = {
 class TestStack extends TerraformStack {
   public readonly kms: Kms;
 
-  constructor(scope: App, id: string, config: Config, kmsProps: Partial<KmsProps>) {
+  constructor(scope: App, id: string, config: Config, args: Partial<KmsArgs>) {
     super(scope, id);
 
     const taggingUtility = new TaggingUtility({ ...config, layer: 'security' });
@@ -43,9 +43,9 @@ class TestStack extends TerraformStack {
 
     this.kms = new Kms(this, 'test-kms', {
       config,
-      description: kmsProps.description,
-      aliasName: kmsProps.aliasName,
-      tags: kmsProps.tags,
+      description: args.description,
+      aliasName: args.aliasName,
+      tags: args.tags,
     });
   }
 }
@@ -62,16 +62,16 @@ function createConfig(overrides: Partial<Config> = {}): Config {
     terraformOrganisation: 'test-org',
     terraformWorkspace: 'test-workspace',
     terraformHostname: 'app.terraform.io',
-    enableEncryption: true,
-    enableSecretsManager: true,
+    hasEncryption: true,
+    hasSecretsManager: true,
     tags: { purpose: 'testing' } as Record<string, string>,
     ...overrides,
   };
   return baseConfig;
 }
 
-function createTestStack(app: App, config: Config, kmsProps: Partial<KmsProps> = {}): TestStack {
-  return new TestStack(app, 'test-stack', config, kmsProps);
+function createTestStack(app: App, config: Config, kmsArgs: Partial<KmsArgs> = {}): TestStack {
+  return new TestStack(app, 'test-stack', config, kmsArgs);
 }
 
 describe('Kms', () => {
@@ -158,7 +158,7 @@ describe('Kms', () => {
     });
   });
 
-  describe('Given different environment configurations', () => {
+  describe('Given different environment arguments', () => {
     describe('When creating KMS keys in different environments', () => {
       it.each([
         [Environment.DEVELOPMENT, 'dev'],
@@ -224,7 +224,7 @@ describe('Kms', () => {
     describe('When creating a KMS key', () => {
       it('Then it should throw an error for missing config', (): void => {
         expect((): void => {
-          new Kms(app, 'test-kms', {} as KmsProps);
+          new Kms(app, 'test-kms', {} as KmsArgs);
         }).toThrow();
       });
 

@@ -4,9 +4,9 @@ import { Construct } from 'constructs';
 
 import { Config } from '../../../utils/config';
 import {
-  cleanEnvironment,
-  cleanRegion,
-  cleanString,
+  getCleanEnvironment,
+  getCleanRegion,
+  getCleanString,
   DEFAULT_EKS_CONTROL_PLANE_LOG_TYPES,
   DEFAULT_EKS_CORE_ADD_ONS,
   DEFAULT_EKS_VERSION,
@@ -14,7 +14,7 @@ import {
 import { TaggingUtility } from '../../../utils/tagging';
 import { Tags } from '../../../utils/tagging/types';
 
-export interface EksProps {
+export interface EksArgs {
   readonly config: Config;
   readonly subnetIds?: string[];
   readonly securityGroupIds?: string[];
@@ -26,23 +26,22 @@ export interface EksProps {
 export class Eks extends Construct {
   public readonly eksCluster: EksCluster;
 
-  constructor(scope: Construct, id: string, props: EksProps) {
+  constructor(scope: Construct, id: string, args: EksArgs) {
     super(scope, id);
 
-    const { config, tags } = props;
+    const { config, tags } = args;
 
-    const subnetIds: string[] = props.subnetIds || [];
-    const securityGroupIds: string[] = props.securityGroupIds || [];
-    const roleArn: string = props.roleArn || '';
+    const subnetIds: string[] = args.subnetIds || [];
+    const securityGroupIds: string[] = args.securityGroupIds || [];
+    const roleArn: string = args.roleArn || '';
     const version: string = config.eksVersion || DEFAULT_EKS_VERSION;
-    const endpointPublicAccess: boolean = config.eksEndpointPublicAccess ?? false;
-    const endpointPrivateAccess: boolean = !config.eksEndpointPublicAccess;
+    const hasEndpointPublicAccess: boolean = config.hasEksEndpointPublicAccess ?? false;
     const controlPlaneLogTypes: string[] =
       config.eksControlPlaneLogTypes || DEFAULT_EKS_CONTROL_PLANE_LOG_TYPES;
 
-    const eksClusterName: string = `${cleanString(config.name)}-${cleanEnvironment(
+    const eksClusterName: string = `${getCleanString(config.name)}-${getCleanEnvironment(
       config.environment
-    )}-cluster-${cleanRegion(config.region)}`;
+    )}-cluster-${getCleanRegion(config.region)}`;
 
     const taggingUtility: TaggingUtility = new TaggingUtility(config, {
       ...tags,
@@ -55,8 +54,8 @@ export class Eks extends Construct {
       vpcConfig: {
         subnetIds,
         securityGroupIds,
-        endpointPrivateAccess,
-        endpointPublicAccess,
+        endpointPrivateAccess: true,
+        endpointPublicAccess: hasEndpointPublicAccess,
       },
       version,
       enabledClusterLogTypes: controlPlaneLogTypes,
@@ -65,11 +64,11 @@ export class Eks extends Construct {
 
     const finalAddOns: Record<string, string> = {
       ...DEFAULT_EKS_CORE_ADD_ONS,
-      ...(props.addOns || {}),
+      ...(args.addOns || {}),
     };
 
     Object.entries(finalAddOns).forEach(([addOn, version]: [string, string]) => {
-      new EksAddon(this, `eks-addon-${cleanString(addOn)}`, {
+      new EksAddon(this, `eks-addon-${getCleanString(addOn)}`, {
         clusterName: this.eksCluster.name,
         addonName: addOn,
         addonVersion: version,
