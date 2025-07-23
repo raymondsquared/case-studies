@@ -30,12 +30,12 @@ export function validateConfig(config: Config): void {
   if (typeof config.terraformHostname !== 'string' || config.terraformHostname.trim() === '') {
     throw new Error('Config validation error: terraformHostname is required and cannot be empty.');
   }
-  if (typeof config.enableEncryption !== 'boolean') {
-    throw new Error('Config validation error: enableEncryption is required and must be a boolean.');
+  if (typeof config.hasEncryption !== 'boolean') {
+    throw new Error('Config validation error: hasEncryption is required and must be a boolean.');
   }
-  if (typeof config.enableSecretsManager !== 'boolean') {
+  if (typeof config.hasSecretsManager !== 'boolean') {
     throw new Error(
-      'Config validation error: enableSecretsManager is required and must be a boolean.'
+      'Config validation error: hasSecretsManager is required and must be a boolean.'
     );
   }
   if (config.tags !== undefined) {

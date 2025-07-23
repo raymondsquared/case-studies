@@ -4,11 +4,11 @@ import { TerraformOutput } from 'cdktf';
 import { Construct } from 'constructs';
 
 import { Config } from '../../../utils/config';
-import { cleanEnvironment, cleanString } from '../../../utils/common';
+import { getCleanEnvironment, getCleanString } from '../../../utils/common';
 import { TaggingUtility } from '../../../utils/tagging';
 import { Tags } from '../../../utils/tagging/types';
 
-export interface KmsProps {
+export interface KmsArgs {
   readonly config: Config;
   readonly description?: string;
   readonly aliasName?: string;
@@ -19,10 +19,10 @@ export class Kms extends Construct {
   public readonly kmsKey: KmsKey;
   public readonly kmsAlias: KmsAlias;
 
-  constructor(scope: Construct, id: string, props: KmsProps) {
+  constructor(scope: Construct, id: string, kmsArgs: KmsArgs) {
     super(scope, id);
 
-    const { config, description, aliasName, tags } = props;
+    const { config, description, aliasName, tags } = kmsArgs;
     const taggingUtility: TaggingUtility = new TaggingUtility(config, {
       ...tags,
       layer: 'security',
@@ -32,7 +32,8 @@ export class Kms extends Construct {
 
     const keyDescription: string = description || `KMS key for encryption in ${config.environment}`;
     const alias: string =
-      aliasName || `${cleanString(config.name)}-${cleanEnvironment(config.environment)}-kmskey`;
+      aliasName ||
+      `${getCleanString(config.name)}-${getCleanEnvironment(config.environment)}-kmskey`;
 
     this.kmsKey = new KmsKey(this, 'kms-key', {
       description: keyDescription,

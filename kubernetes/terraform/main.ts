@@ -42,11 +42,14 @@ function main() {
         configBuilder = configBuilder
           .withEnvironment(Environment.DEVELOPMENT)
           .withPublicSubnetCidrBlocks(DEFAULT_VPC_PUBLIC_SUBNET_CIDR_BLOCK)
-          .withEksEndpointPublicAccess(true);
+          .withEksEndpointPublicAccess(true)
+          .withNodesConfig({ hasPrivateNodes: false, hasPublicNodes: true });
         break;
       case Environment.PRODUCTION:
         StackClass = ProductionStack;
-        configBuilder = configBuilder.withEnvironment(Environment.PRODUCTION);
+        configBuilder = configBuilder
+          .withEnvironment(Environment.PRODUCTION)
+          .withNodesConfig({ hasPrivateNodes: true, hasPublicNodes: false });
         break;
       default:
         throw new Error(`Unknown environment: ${environment}`);

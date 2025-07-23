@@ -17,7 +17,7 @@ import { Config } from '../../../utils/config';
 import { TaggingUtility, Tags } from '../../../utils/tagging';
 import { getAwsRegion } from '../../../utils/vendor';
 
-export interface VpcProps {
+export interface VpcArgs {
   readonly config: Config;
   readonly tags?: Tags;
 }
@@ -33,10 +33,10 @@ export class Vpc extends Construct {
   public privateRouteTable?: RouteTable;
   public securityGroups: SecurityGroup[] = [];
 
-  constructor(scope: Construct, id: string, props: VpcProps) {
+  constructor(scope: Construct, id: string, vpcArgs: VpcArgs) {
     super(scope, id);
 
-    const { config, tags } = props;
+    const { config, tags } = vpcArgs;
 
     const vpcCIDRBlock: string = config.vpcCIDRBlock ?? DEFAULT_VPC_CIDR_BLOCK;
     const publicSubnetCIDRBlocks: string[] | undefined = config.publicSubnetCIDRBlocks;
@@ -143,7 +143,7 @@ export class Vpc extends Construct {
       tags: taggingUtility.getTags({ nameSuffix: 'priv', resourceType: 'rt' }),
     });
 
-    if (this.publicSubnets.length > 0 && config.enableNatGateway !== false) {
+    if (this.publicSubnets.length > 0 && config.hasNatGateway !== false) {
       this.createNatGateway(taggingUtility);
     }
 

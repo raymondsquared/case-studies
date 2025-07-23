@@ -69,8 +69,8 @@ export class ConfigBuilder {
     return this;
   }
 
-  withEnableNatGateway(enableNatGateway: boolean): ConfigBuilder {
-    this.config.enableNatGateway = enableNatGateway;
+  withNatGateway(hasNatGateway: boolean): ConfigBuilder {
+    this.config.hasNatGateway = hasNatGateway;
     return this;
   }
 
@@ -79,8 +79,8 @@ export class ConfigBuilder {
     return this;
   }
 
-  withEksEndpointPublicAccess(eksEndpointPublicAccess: boolean): ConfigBuilder {
-    this.config.eksEndpointPublicAccess = eksEndpointPublicAccess;
+  withEksEndpointPublicAccess(hasEksEndpointPublicAccess: boolean): ConfigBuilder {
+    this.config.hasEksEndpointPublicAccess = hasEksEndpointPublicAccess;
     return this;
   }
 
@@ -91,6 +91,15 @@ export class ConfigBuilder {
 
   withEksAddOns(eksAddOns: Record<string, string>): ConfigBuilder {
     this.config.eksAddOns = eksAddOns;
+    return this;
+  }
+
+  withNodesConfig(nodesConfig: {
+    hasPrivateNodes?: boolean;
+    hasPublicNodes?: boolean;
+    spotMaxPrice?: string;
+  }): ConfigBuilder {
+    this.config.nodes = nodesConfig;
     return this;
   }
 
@@ -108,19 +117,20 @@ export class ConfigBuilder {
       terraformOrganisation: this.config.terraformOrganisation,
       terraformWorkspace: this.config.terraformWorkspace,
       terraformHostname: this.config.terraformHostname || DEFAULT_TERRAFORM_HOSTNAME,
-      enableEncryption: true,
-      enableSecretsManager: true,
-      enableNatGateway: this.config.enableNatGateway ?? false,
-      vpcCIDRBlock: this.config.vpcCIDRBlock || DEFAULT_VPC_CIDR_BLOCK,
-      publicSubnetCIDRBlocks: this.config.publicSubnetCIDRBlocks,
-      privateSubnetCIDRBlocks: this.config.privateSubnetCIDRBlocks,
-      ...(this.config.tags ? { tags: this.config.tags } : {}),
-      ...(this.config.awsConfig ? { awsConfig: this.config.awsConfig } : {}),
+      hasEncryption: true,
+      hasSecretsManager: true,
+      hasNatGateway: this.config.hasNatGateway ?? false,
       eksVersion: this.config.eksVersion || DEFAULT_EKS_VERSION,
-      eksEndpointPublicAccess: this.config.eksEndpointPublicAccess ?? false,
       eksControlPlaneLogTypes:
         this.config.eksControlPlaneLogTypes || DEFAULT_EKS_CONTROL_PLANE_LOG_TYPES,
       eksAddOns: this.config.eksAddOns || DEFAULT_EKS_CORE_ADD_ONS,
-    } as Config;
+      hasEksEndpointPublicAccess: this.config.hasEksEndpointPublicAccess ?? false,
+      nodes: this.config.nodes,
+      vpcCIDRBlock: this.config.vpcCIDRBlock || DEFAULT_VPC_CIDR_BLOCK,
+      publicSubnetCIDRBlocks: this.config.publicSubnetCIDRBlocks,
+      privateSubnetCIDRBlocks: this.config.privateSubnetCIDRBlocks,
+      tags: this.config.tags,
+      awsConfig: this.config.awsConfig,
+    };
   }
 }

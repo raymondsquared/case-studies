@@ -1,22 +1,12 @@
 import { Construct } from 'constructs';
-
-import { BaseStack, BaseStackProps } from './base-stack';
-import { SecretConfig } from '../constructs/aws/security/secrets-manager';
-
-export interface DevelopmentStackProps extends Omit<BaseStackProps, 'environmentName'> {
-  readonly description?: string;
-}
+import { BaseStack, BaseStackArgs } from './base-stack';
 
 export class DevelopmentStack extends BaseStack {
-  constructor(scope: Construct, id: string, props: DevelopmentStackProps) {
-    super(scope, id, {
-      ...props,
-      environmentName: 'development',
-      description: props.description || 'Development infrastructure stack',
-    });
+  constructor(scope: Construct, id: string, args: BaseStackArgs) {
+    super(scope, id, args);
   }
 
-  protected getSecretsConfig(): SecretConfig[] {
+  protected getSecretsArgs() {
     return [
       {
         name: 'movie-service-secrets',

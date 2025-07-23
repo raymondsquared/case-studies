@@ -72,8 +72,8 @@ function createConfig(overrides: Partial<Config> = {}): Config {
     terraformOrganisation: 'test-org',
     terraformWorkspace: 'test-workspace',
     terraformHostname: 'app.terraform.io',
-    enableEncryption: true,
-    enableSecretsManager: true,
+    hasEncryption: true,
+    hasSecretsManager: true,
     tags: { purpose: 'testing' } as Record<string, string>,
     ...overrides,
   };
@@ -130,6 +130,24 @@ describe('Eks', () => {
         expect(eksCluster).toBeDefined();
       });
 
+      it('Then it should use custom EKS version when specified', (): void => {
+        const customEksVersion = '1.28';
+        const customConfig = createConfig({ eksVersion: customEksVersion });
+        const stack = new TerraformStack(app, 'test-stack-version');
+        new AwsProvider(stack, 'AWS', { region: 'ap-southeast-2' });
+        new Eks(stack, 'test-eks-version', {
+          config: customConfig,
+          subnetIds: testSubnetIds,
+          securityGroupIds: testSecurityGroupIds,
+          roleArn: testRoleArn,
+        });
+        const synthesised = parseSynthesizedStack(stack);
+        const eksResources = synthesised.resource?.aws_eks_cluster || {};
+        const eksCluster: TerraformSynthEks = Object.values(eksResources)[0] as TerraformSynthEks;
+        expect(eksCluster).toBeDefined();
+        expect(() => assertStackSynthesis(stack)).not.toThrow();
+      });
+
       it('Then it should set the correct tags', (): void => {
         const stack: TestStack = createTestStack(
           app,
@@ -148,6 +166,38 @@ describe('Eks', () => {
         });
       });
 
+      it('Then it should configure endpoint public access when enabled', (): void => {
+        const publicAccessConfig = createConfig({ hasEksEndpointPublicAccess: true });
+        const stack = new TerraformStack(app, 'test-stack-public-access');
+        new AwsProvider(stack, 'AWS', { region: 'ap-southeast-2' });
+        new Eks(stack, 'test-eks-public-access', {
+          config: publicAccessConfig,
+          subnetIds: testSubnetIds,
+          securityGroupIds: testSecurityGroupIds,
+          roleArn: testRoleArn,
+        });
+        const synthesised = parseSynthesizedStack(stack);
+        const eksResources = synthesised.resource?.aws_eks_cluster || {};
+        const eksCluster: TerraformSynthEks = Object.values(eksResources)[0] as TerraformSynthEks;
+        expect(eksCluster).toBeDefined();
+        expect(() => assertStackSynthesis(stack)).not.toThrow();
+      });
+
+      it('Then it should disable endpoint public access by default', (): void => {
+        const stack: TestStack = createTestStack(
+          app,
+          config,
+          testSubnetIds,
+          testSecurityGroupIds,
+          testRoleArn
+        );
+        const synthesised = parseSynthesizedStack(stack);
+        const eksResources = synthesised.resource?.aws_eks_cluster || {};
+        const eksCluster: TerraformSynthEks = Object.values(eksResources)[0] as TerraformSynthEks;
+        expect(eksCluster).toBeDefined();
+        expect(() => assertStackSynthesis(stack)).not.toThrow();
+      });
+
       it('Then it should merge default and custom addOns correctly', (): void => {
         const customAddOns = {
           'vpc-cni': 'v1.12.0-custom',
@@ -164,22 +214,24 @@ describe('Eks', () => {
         });
         const synthesised = parseSynthesizedStack(stack);
         const eksAddons = synthesised.resource?.aws_eks_addon || {};
-        const addonNames = Object.values(eksAddons).map((addon) => (addon as TerraformSynthEksAddOns).addon_name);
+        const addonNames = Object.values(eksAddons).map(
+          addon => (addon as TerraformSynthEksAddOns).addon_name
+        );
         expect(addonNames).toContain('vpc-cni');
         expect(addonNames).toContain('my-custom-addon');
         const vpcCniAddon = Object.values(eksAddons).find(
-          (addon) => (addon as TerraformSynthEksAddOns).addon_name === 'vpc-cni'
+          addon => (addon as TerraformSynthEksAddOns).addon_name === 'vpc-cni'
         ) as TerraformSynthEksAddOns | undefined;
         expect(vpcCniAddon?.addon_version).toBe('v1.12.0-custom');
         const customAddon = Object.values(eksAddons).find(
-          (addon) => (addon as TerraformSynthEksAddOns).addon_name === 'my-custom-addon'
+          addon => (addon as TerraformSynthEksAddOns).addon_name === 'my-custom-addon'
         ) as TerraformSynthEksAddOns | undefined;
         expect(customAddon?.addon_version).toBe('v2.0.0');
       });
     });
   });
 
-  describe('Given different environment configurations', () => {
+  describe('Given different environment arguments', () => {
     describe('When creating EKS clusters in different environments', () => {
       it.each([
         [Environment.DEVELOPMENT, 'dev'],
