@@ -3,15 +3,6 @@
 .DS_Store?
 ._*
 
-node_modules/
-*.tsbuildinfo
-coverage/
-
-cdktf.out/
-.gen/
-
 .env
-.env.local
 
-coverage/
-*.lcov
+.terraform/
